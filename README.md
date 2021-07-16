@@ -1,4 +1,4 @@
-## Tung Kieu
+# Tung Kieu
 
 Assistant Professor\
 Department of Computer Science\
@@ -19,7 +19,19 @@ I obtained my Ph.D. degree from Aalborg University in April 2021 under supervisi
 Data mining and machine leanring, in particular, on spatio-temporal data, time series, graphs, and uncertain data.
 
 ## Teaching
-# Courses
+### Courses
 Advanced Algorithm (shared with Bin Yang and Chenjuan Guo).\
 Algorithms and Computability (shared with Bin Yang, Dalin Zhang, and Alvaro Torralba).\
-Algorithms and Satisfiability (shared with Bin Yang, Dalin Zhang, and Alvaro Torralba).\
+Algorithms and Satisfiability (shared with Bin Yang, Dalin Zhang, and Alvaro Torralba).
+
+### Supervision
+Software 5 (SW5).\
+Software 6 (SW5).\
+Specialization course in Database Technology (SpDT).\
+Master Thesis (shared with Bin Yang).
+
+### Teaching Assistant
+Algorithms and Data Structures (shared with Sean Bin Yang).\
+Advanced Algorithm (shared with Sean Bin Yang).\
+Algorithms and Computability (shared with Jákup Odssonur Svöðstein).\
+Algorithms and Satisfiability (shared with Jákup Odssonur Svöðstein).
