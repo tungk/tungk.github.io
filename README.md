@@ -40,7 +40,7 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 ### Supervision
 - Software 5 (SW5).
 - Software 6 (SW6).
-- Specialization course in Database Technology (**SpDT**).
+- Specialization course in Database Technology (SpDT).
 - Master Thesis (shared with Bin Yang).
 
 ### Teaching Assistant
