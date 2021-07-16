@@ -24,6 +24,13 @@ B.Eng. in Civil Engineering, University of Architecture, Ho Chi Minh City, Vietn
 M.Sc. in Information System, University of Science, Vietnam National University, Ho Chi Minh City, Vietnam.\
 Ph.D. in Computer Science, Aalborg University, Aalborg, Denmark.
 
+## Work Experience
+Data entry operator at FTA Research & Consultant, Ho Chi Minh City, Vietnam.\
+Web developer at BeRich.vn, Ho Chi Minh City, Vietnam.\
+Data Warehouse Specialist at FPT, Ho Chi Minh City, Vietnam.\
+Database Specialist at FPT, Ho Chi Minh City, Vietnam.\
+Researcher at Aalborg University, Aalborg, Denmark.\
+
 ## Teaching
 ### Courses
 Advanced Algorithm (shared with Bin Yang and Chenjuan Guo).\
