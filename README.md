@@ -19,36 +19,36 @@ I obtained my Ph.D. degree from Aalborg University in April 2021 under supervisi
 Data mining and machine leanring, in particular, on spatio-temporal data, time series, graphs, and uncertain data.
 
 ## Education
-B.Sc. in Information Technology, University of Science, Vietnam National University, Ho Chi Minh City, Vietnam.\
-B.Eng. in Civil Engineering, University of Architecture, Ho Chi Minh City, Vietnam.\
-M.Sc. in Information System, University of Science, Vietnam National University, Ho Chi Minh City, Vietnam.\
-Ph.D. in Computer Science, Aalborg University, Aalborg, Denmark.
+- B.Sc. in Information Technology, University of Science, Vietnam National University, Ho Chi Minh City, Vietnam.
+- B.Eng. in Civil Engineering, University of Architecture, Ho Chi Minh City, Vietnam.
+- M.Sc. in Information System, University of Science, Vietnam National University, Ho Chi Minh City, Vietnam.
+- Ph.D. in Computer Science, Aalborg University, Aalborg, Denmark.
 
 ## Work Experience
-Data entry operator at FTA Research & Consultant, Ho Chi Minh City, Vietnam.\
-Web developer at BeRich.vn, Ho Chi Minh City, Vietnam.\
-Data Warehouse Specialist at FPT, Ho Chi Minh City, Vietnam.\
-Database Specialist at FPT, Ho Chi Minh City, Vietnam.\
-Researcher at Aalborg University, Aalborg, Denmark.\
+- Data entry operator at FTA Research & Consultant, Ho Chi Minh City, Vietnam.
+- Web developer at BeRich.vn, Ho Chi Minh City, Vietnam.
+- Data Warehouse Specialist at FPT, Ho Chi Minh City, Vietnam.
+- Database Specialist at FPT, Ho Chi Minh City, Vietnam.
+- Researcher at Aalborg University, Aalborg, Denmark.
 
 ## Teaching
 ### Courses
-Advanced Algorithm (shared with Bin Yang and Chenjuan Guo).\
-Algorithms and Computability (shared with Bin Yang, Dalin Zhang, and Alvaro Torralba).\
-Algorithms and Satisfiability (shared with Bin Yang, Dalin Zhang, and Alvaro Torralba).
+- Advanced Algorithm (shared with Bin Yang and Chenjuan Guo).
+- Algorithms and Computability (shared with Bin Yang, Dalin Zhang, and Alvaro Torralba).
+- Algorithms and Satisfiability (shared with Bin Yang, Dalin Zhang, and Alvaro Torralba).
 
 ### Supervision
-Software 5 (SW5).\
-Software 6 (SW5).\
-Specialization course in Database Technology (SpDT).\
-Master Thesis (shared with Bin Yang).
+- Software 5 (SW5).
+- Software 6 (SW5).
+- Specialization course in Database Technology (SpDT).
+- Master Thesis (shared with Bin Yang).
 
 ### Teaching Assistant
-Algorithms and Data Structures (shared with Sean Bin Yang).\
-Advanced Algorithm (shared with Sean Bin Yang).\
-Algorithms and Computability (shared with Jákup Odssonur Svöðstein).\
-Algorithms and Satisfiability (shared with Jákup Odssonur Svöðstein).
+- Algorithms and Data Structures (shared with Sean Bin Yang).
+- Advanced Algorithm (shared with Sean Bin Yang).
+- Algorithms and Computability (shared with Jákup Odssonur Svöðstein).
+- Algorithms and Satisfiability (shared with Jákup Odssonur Svöðstein).
 
 ## Collaboration
-Collaborating with TADAA! (in aSTEP project).\
-Collaborating with the BioX (in aSTEP project).
+- Collaborating with TADAA! (in aSTEP project).
+- Collaborating with the BioX (in aSTEP project).
