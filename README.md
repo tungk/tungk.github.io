@@ -21,15 +21,15 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 ## Education
 - B.Sc. in Computer Science, _University of Science_, _Vietnam National University_, Ho Chi Minh City, Vietnam.
 - B.Eng. in Civil Engineering, _University of Architecture_, Ho Chi Minh City, Vietnam.
-- M.Sc. in Computer Science, _University of Science_, V_ietnam National University_, Ho Chi Minh City, Vietnam.
+- M.Sc. in Computer Science, _University of Science_, _Vietnam National University_, Ho Chi Minh City, Vietnam.
 - Ph.D. in Computer Science, _Aalborg University_, Aalborg, Denmark.
 
 ## Work Experience
-- **Data Entry Operator** at _FTA Research & Consultant_, Ho Chi Minh City, Vietnam.
-- **Web Developer** at _BeRich.vn_, Ho Chi Minh City, Vietnam.
-- **Data Warehouse Specialist** at _FPT_, Ho Chi Minh City, Vietnam.
-- **Database Specialist** at _FPT_, Ho Chi Minh City, Vietnam.
-- **Researcher** at _Aalborg University_, Aalborg, Denmark.
+- Data Entry Operator at _FTA Research & Consultant_, Ho Chi Minh City, Vietnam.
+- Web Developer at _BeRich.vn_, Ho Chi Minh City, Vietnam.
+- Data Warehouse Specialist at _FPT_, Ho Chi Minh City, Vietnam.
+- Database Specialist at _FPT_, Ho Chi Minh City, Vietnam.
+- Researcher at _Aalborg University_, Aalborg, Denmark.
 
 ## Teaching
 ### Courses
