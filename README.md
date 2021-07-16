@@ -52,3 +52,7 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 ## Collaboration
 - Collaborating with TADAA! (in aSTEP project).
 - Collaborating with the BioX (in aSTEP project).
+
+## Scientific Services
+- Reviewer for Conferences: **KDD**, **IJCAI**, **AAAI**, **VLDB**, **ICDE**, **CIKM**, **APWEB**, and **MDM**; and Journals: **JAIR**, **TNNLS**, **TKDE**.
+- Committee member **CIKM**, **APWEB**.
