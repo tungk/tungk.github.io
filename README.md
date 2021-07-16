@@ -54,5 +54,19 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 - Collaborating with the _BioX_ (in aSTEP project).
 
 ## Scientific Services
-- Reviewer for Conferences: **KDD**, **IJCAI**, **AAAI**, **VLDB**, **ICDE**, **CIKM**, **APWEB**, and **MDM**; and Journals: **JAIR**, **TNNLS**, **TKDE**.
-- Committee member **CIKM**, **APWEB**.
+### Conferences
+- ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD)
+- International Joint Conference on Artificial Intelligence (IJCAI)
+- AAAI Conference on Artificial Intelligence (AAAI)
+- International Conference on Very Large Data Bases (VLDB)
+- IEEE International Conference on Data Engineering (ICDE)
+- ACM International Conference on Information and Knowledge Management (CIKM)
+- APWeb-WAIM International Joint Conference on Web and Big Data (APWEB-WAIM)
+- IEEE International Conference on Mobile Data Management (MDM)
+
+### Journals
+- Journal of Artificial Intelligence Research (JAIR)
+- IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
+- IEEE Transactions on Knowledge and Data Engineering (TKDE)
+- Neural Processing Letters
+- IEEE Access
