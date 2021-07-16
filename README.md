@@ -11,25 +11,25 @@ Email: [tungkvt at cs dot aau dot dk](tungkvt@cs.aau.dk)
 
 ## Profile
 
-I am an Assistant Professor in Department of Computer Science at Aalborg University. I am a faculty member in Center for Data-Intensive Systems. I am also affiliated with the department's team on Artificial Intelligence and Machine Learning and the university's center on AI for the People.
+I am an Assistant Professor in _Department of Computer Science_ at _Aalborg University_. I am a faculty member in _Center for Data-Intensive Systems_. I am also affiliated with the department's team on Artificial Intelligence and Machine Learning and the university's _Center on AI for the People_.
 
-I obtained my Ph.D. degree from Aalborg University in April 2021 under supervision of  Prof. [Christian S. Jensen](https://people.cs.aau.dk/~csj/) and Prof. [Bin Yang](https://people.cs.aau.dk/~byang/). During April 2021 to May 2021, I was a Research Assistant at Aalborg University. During June 2021 to August 2021,  I was a Postdoctoral Fellow at Aalborg University. All the time, I have worked in the Data-Intensive Systems [(Daisy)](https://www.daisy.aau.dk/) group headed by Prof. [Christian S. Jensen](https://people.cs.aau.dk/~csj/).
+I obtained my Ph.D. degree from _Aalborg University_ in April 2021 under supervision of  Prof. [Christian S. Jensen](https://people.cs.aau.dk/~csj/) and Prof. [Bin Yang](https://people.cs.aau.dk/~byang/). During April 2021 to May 2021, I was a Research Assistant at _Aalborg University_. During June 2021 to August 2021,  I was a Postdoctoral Fellow at _Aalborg University_. All the time, I have worked in the _Data-Intensive Systems_ [(Daisy)](https://www.daisy.aau.dk/) group headed by Prof. [Christian S. Jensen](https://people.cs.aau.dk/~csj/).
 
 ## Research Interests
 Data mining and machine leanring, in particular, on spatio-temporal data, time series, graphs, and uncertain data.
 
 ## Education
-- B.Sc. in Information Technology, University of Science, Vietnam National University, Ho Chi Minh City, Vietnam.
-- B.Eng. in Civil Engineering, University of Architecture, Ho Chi Minh City, Vietnam.
-- M.Sc. in Information System, University of Science, Vietnam National University, Ho Chi Minh City, Vietnam.
-- Ph.D. in Computer Science, Aalborg University, Aalborg, Denmark.
+- **B.Sc.** in **Computer Science**, _University of Science_, _Vietnam National University_, Ho Chi Minh City, Vietnam.
+- **B.Eng.** in **Civil Engineering**, _University of Architecture_, Ho Chi Minh City, Vietnam.
+- **M.Sc.** in **Computer Science**, _University of Science_, V_ietnam National University_, Ho Chi Minh City, Vietnam.
+- **Ph.D.** in **Computer Science**, _Aalborg University_, Aalborg, Denmark.
 
 ## Work Experience
-- Data entry operator at FTA Research & Consultant, Ho Chi Minh City, Vietnam.
-- Web developer at BeRich.vn, Ho Chi Minh City, Vietnam.
-- Data Warehouse Specialist at FPT, Ho Chi Minh City, Vietnam.
-- Database Specialist at FPT, Ho Chi Minh City, Vietnam.
-- Researcher at Aalborg University, Aalborg, Denmark.
+- **Data Entry Operator** at _FTA Research & Consultant_, Ho Chi Minh City, Vietnam.
+- **Web Developer** at _BeRich.vn_, Ho Chi Minh City, Vietnam.
+- **Data Warehouse Specialist** at _FPT_, Ho Chi Minh City, Vietnam.
+- **Database Specialist** at _FPT_, Ho Chi Minh City, Vietnam.
+- **Researcher** at _Aalborg University_, Aalborg, Denmark.
 
 ## Teaching
 ### Courses
@@ -39,8 +39,8 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 
 ### Supervision
 - Software 5 (SW5).
-- Software 6 (SW5).
-- Specialization course in Database Technology (SpDT).
+- Software 6 (SW6).
+- Specialization course in Database Technology (**SpDT**).
 - Master Thesis (shared with Bin Yang).
 
 ### Teaching Assistant
@@ -50,8 +50,8 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 - Algorithms and Satisfiability (shared with Jákup Odssonur Svöðstein).
 
 ## Collaboration
-- Collaborating with TADAA! (in aSTEP project).
-- Collaborating with the BioX (in aSTEP project).
+- Collaborating with _TADAA!_ (in aSTEP project).
+- Collaborating with the _BioX_ (in aSTEP project).
 
 ## Scientific Services
 - Reviewer for Conferences: **KDD**, **IJCAI**, **AAAI**, **VLDB**, **ICDE**, **CIKM**, **APWEB**, and **MDM**; and Journals: **JAIR**, **TNNLS**, **TKDE**.
