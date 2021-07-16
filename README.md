@@ -17,3 +17,9 @@ I obtained my Ph.D. degree from Aalborg University in April 2021 under supervisi
 
 ## Research Interests
 Data mining and machine leanring, in particular, on spatio-temporal data, time series, graphs, and uncertain data.
+
+## Teaching
+# Courses
+Advanced Algorithm (shared with Bin Yang and Chenjuan Guo).\
+Algorithms and Computability (shared with Bin Yang, Dalin Zhang, and Alvaro Torralba).\
+Algorithms and Satisfiability (shared with Bin Yang, Dalin Zhang, and Alvaro Torralba).\
