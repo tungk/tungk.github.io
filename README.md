@@ -34,8 +34,8 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 ## Teaching
 ### Courses
 - Advanced Algorithm (shared with Prof. Bin Yang and Prof. Chenjuan Guo).
-- Algorithms and Computability (shared with Prof. Bin Yang, Dalin Zhang, and Prof. Alvaro Torralba).
-- Algorithms and Satisfiability (shared with Prof. Bin Yang, Dalin Zhang, and Prof. Alvaro Torralba).
+- Algorithms and Computability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba).
+- Algorithms and Satisfiability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba).
 
 ### Supervision
 - Software 5 (SW5).
