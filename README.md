@@ -19,10 +19,10 @@ I obtained my Ph.D. degree from _Aalborg University_ in April 2021 under supervi
 Data mining and machine leanring, in particular, on spatio-temporal data, time series, graphs, and uncertain data.
 
 ## Education
-- **B.Sc.** in **Computer Science**, _University of Science_, _Vietnam National University_, Ho Chi Minh City, Vietnam.
-- **B.Eng.** in **Civil Engineering**, _University of Architecture_, Ho Chi Minh City, Vietnam.
-- **M.Sc.** in **Computer Science**, _University of Science_, V_ietnam National University_, Ho Chi Minh City, Vietnam.
-- **Ph.D.** in **Computer Science**, _Aalborg University_, Aalborg, Denmark.
+- B.Sc. in Computer Science, _University of Science_, _Vietnam National University_, Ho Chi Minh City, Vietnam.
+- B.Eng. in Civil Engineering, _University of Architecture_, Ho Chi Minh City, Vietnam.
+- M.Sc. in Computer Science, _University of Science_, V_ietnam National University_, Ho Chi Minh City, Vietnam.
+- Ph.D. in Computer Science, _Aalborg University_, Aalborg, Denmark.
 
 ## Work Experience
 - **Data Entry Operator** at _FTA Research & Consultant_, Ho Chi Minh City, Vietnam.
@@ -33,15 +33,15 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 
 ## Teaching
 ### Courses
-- Advanced Algorithm (shared with Bin Yang and Chenjuan Guo).
-- Algorithms and Computability (shared with Bin Yang, Dalin Zhang, and Alvaro Torralba).
-- Algorithms and Satisfiability (shared with Bin Yang, Dalin Zhang, and Alvaro Torralba).
+- Advanced Algorithm (shared with Prof. Bin Yang and Prof. Chenjuan Guo).
+- Algorithms and Computability (shared with Prof. Bin Yang, Dalin Zhang, and Prof. Alvaro Torralba).
+- Algorithms and Satisfiability (shared with Prof. Bin Yang, Dalin Zhang, and Prof. Alvaro Torralba).
 
 ### Supervision
 - Software 5 (SW5).
 - Software 6 (SW6).
 - Specialization course in Database Technology (SpDT).
-- Master Thesis (shared with Bin Yang).
+- Master Thesis (shared with Prof. Bin Yang).
 
 ### Teaching Assistant
 - Algorithms and Data Structures (shared with Sean Bin Yang).
