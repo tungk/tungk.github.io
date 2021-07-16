@@ -18,6 +18,12 @@ I obtained my Ph.D. degree from Aalborg University in April 2021 under supervisi
 ## Research Interests
 Data mining and machine leanring, in particular, on spatio-temporal data, time series, graphs, and uncertain data.
 
+## Education
+B.Sc. in Information Technology, University of Science, Vietnam National University, Ho Chi Minh City, Vietnam.\
+B.Eng. in Civil Engineering, University of Architecture, Ho Chi Minh City, Vietnam.\
+M.Sc. in Information System, University of Science, Vietnam National University, Ho Chi Minh City, Vietnam.\
+Ph.D. in Computer Science, Aalborg University, Aalborg, Denmark.
+
 ## Teaching
 ### Courses
 Advanced Algorithm (shared with Bin Yang and Chenjuan Guo).\
