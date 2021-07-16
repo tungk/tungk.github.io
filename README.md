@@ -35,3 +35,7 @@ Algorithms and Data Structures (shared with Sean Bin Yang).\
 Advanced Algorithm (shared with Sean Bin Yang).\
 Algorithms and Computability (shared with Jákup Odssonur Svöðstein).\
 Algorithms and Satisfiability (shared with Jákup Odssonur Svöðstein).
+
+## Collaboration
+Collaborating with TADAA! (in aSTEP project).\
+Collaborating with the BioX (in aSTEP project).
