@@ -68,5 +68,10 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 - Journal of Artificial Intelligence Research (JAIR)
 - IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
 - IEEE Transactions on Knowledge and Data Engineering (TKDE)
+- IEEE Transactions on Intelligent Transportation Systems (TITS)
+- IEEE Transactions on Network Science and Engineering (TNSE)
+- IEEE Transactions on Industrial Informatics (TII)
+- Data Mining and Knowledge Discovery (DMKD)
+- Pattern Recognition
 - Neural Processing Letters
 - IEEE Access
