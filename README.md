@@ -33,14 +33,14 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 - Assistant Professor at _Aalborg University_, Aalborg, Denmark.
 
 ## Publication
-- Yan Zhao, Xuanhao Chen, Liwei Deng, Tung Kieu, Chenjuan Guo, Bin Yang, Kai Zheng and Christian S. Jensen. _Outlier Detection for Streaming Task Assignment in Crowdsourcing_. WWW 2022
-- Tung Kieu, Bin Yang, Chenjuan Guo, Razvan-Gabriel Cirstea, Yan Zhao, Yale Song, and Christian S. Jensen. _Anomaly Detection in Time Series with Robust Variational Quasi-Recurrent Autoencoders_. ICDE 2022
-- David Campos, Tung Kieu, Chenjuan Guo, Feiteng Huang, Kai Zheng, Bin Yang, and Christian S. Jensen. _Unsupervised Time Series Outlier Detection with Diversity-Driven Convolutional Ensembles_. PVLDB 2022
-- Razvan-Gabriel Cirstea, Tung Kieu, Chenjuan Guo, Bin Yang, and Sinno Jialin Pan. _EnhanceNet: Plugin Neural Networks for Enhancing Correlated Time Series Forecasting_. ICDE 2021
-- Tung Kieu, Bin Yang, Chenjuan Guo, and Christian S. Jensen. _Outlier Detection for Time Series with Recurrent Autoencoder Ensembles_. IJCAI 2019
-- Tung Kieu, Bin Yang, Chenjuan Guo, Christian S. Jensen. _Distinguishing Trajectories from Different Drivers using Incompletely Labeled Trajectories_. CIKM 2018
-- Tung Kieu, Bin Yang, Christian S. Jensen. _Outlier Detection for Multidimensional Time Series Using Deep Neural Networks_. MDM 2018
-- Tung Kieu, Bay Vo, Tuong Le, Zhi-Hong Deng, Bac Le. _Mining Top-k Co-occurrence Items with Sequential Pattern_. Expert Syst. Appl. 85 2017
+- Yan Zhao, Xuanhao Chen, Liwei Deng, **Tung Kieu**, Chenjuan Guo, Bin Yang, Kai Zheng and Christian S. Jensen. _Outlier Detection for Streaming Task Assignment in Crowdsourcing_. WWW 2022
+- **Tung Kieu**, Bin Yang, Chenjuan Guo, Razvan-Gabriel Cirstea, Yan Zhao, Yale Song, and Christian S. Jensen. _Anomaly Detection in Time Series with Robust Variational Quasi-Recurrent Autoencoders_. ICDE 2022
+- David Campos, **Tung Kieu**, Chenjuan Guo, Feiteng Huang, Kai Zheng, Bin Yang, and Christian S. Jensen. _Unsupervised Time Series Outlier Detection with Diversity-Driven Convolutional Ensembles_. PVLDB 2022
+- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Bin Yang, and Sinno Jialin Pan. _EnhanceNet: Plugin Neural Networks for Enhancing Correlated Time Series Forecasting_. ICDE 2021
+- **Tung Kieu**, Bin Yang, Chenjuan Guo, and Christian S. Jensen. _Outlier Detection for Time Series with Recurrent Autoencoder Ensembles_. IJCAI 2019
+- **Tung Kieu**, Bin Yang, Chenjuan Guo, Christian S. Jensen. _Distinguishing Trajectories from Different Drivers using Incompletely Labeled Trajectories_. CIKM 2018
+- **Tung Kieu**, Bin Yang, Christian S. Jensen. _Outlier Detection for Multidimensional Time Series Using Deep Neural Networks_. MDM 2018
+- **Tung Kieu**, Bay Vo, Tuong Le, Zhi-Hong Deng, Bac Le. _Mining Top-k Co-occurrence Items with Sequential Pattern_. Expert Syst. Appl. 85 2017
 
 ## Teaching
 ### Courses
