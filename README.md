@@ -64,6 +64,13 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 - Collaborating with _TADAA!_ (in aSTEP project).
 - Collaborating with the _BioX_ (in aSTEP project).
 
+## Students
+### M.Sc.
+- David Campos (co-supervised with Prof. Bin Yang)
+- Mik Christensen (co-supervised with Prof. Bin Yang)
+## Ph.D.
+- David Campos (co-supervised with Prof. Bin Yang)
+
 ## Scientific Services
 ### Conferences
 - ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD)
