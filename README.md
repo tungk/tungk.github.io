@@ -68,7 +68,7 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 ### M.Sc.
 - David Campos (co-supervised with Prof. Bin Yang)
 - Mik Christensen (co-supervised with Prof. Bin Yang)
-## Ph.D.
+### Ph.D.
 - David Campos (co-supervised with Prof. Bin Yang)
 
 ## Scientific Services
