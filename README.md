@@ -75,6 +75,7 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 ## Scientific Services
 ### Conferences
 - ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD)
+- Conference on Neural Information Processing Systems (NEURIPS)
 - International Joint Conference on Artificial Intelligence (IJCAI)
 - AAAI Conference on Artificial Intelligence (AAAI)
 - International Conference on Very Large Data Bases (VLDB)
