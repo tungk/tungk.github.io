@@ -63,6 +63,7 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 ## Collaboration
 - Collaborating with _TADAA!_ (in aSTEP project).
 - Collaborating with the _BioX_ (in aSTEP project).
+- Collaborating with _Huawei_ (in Huawei project)
 
 ## Students
 ### M.Sc.
