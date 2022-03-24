@@ -9,7 +9,7 @@ Selma Lagerlöfs Vej 300\
 DK-9220, Aalborg Øst, Denmark\
 Email: [tungkvt at cs dot aau dot dk](mailto:tungkvt@cs.aau.dk)
 
-| [Profile](#profile) | [Research](#research-interests) | [Education](#education) | [Work](#work-experience) | [Publication](#publication) | [Teaching](#teaching) | [Students](#students) | [Collaboration](#collaboration) | [Services](#services) |
+| [Profile](#profile) | [Research](#research-interests) | [Education](#education) | [Work](#work-experience) | [Publication](#publication) | [Teaching](#teaching) | [Collaboration](#collaboration) | [Students](#students) | [Services](#scientific-services) |
 
 
 # Profile
