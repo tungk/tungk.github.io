@@ -7,7 +7,9 @@ Aalborg University\
 Office 3.2.03\
 Selma Lagerlöfs Vej 300\
 DK-9220, Aalborg Øst, Denmark\
-Email: [tungkvt at cs dot aau dot dk](mailto:tungkvt@cs.aau.dk)
+:email: [tungkvt at cs dot aau dot dk](mailto:tungkvt@cs.aau.dk)
+:email: [kvttung at gmail dot com](mailto:kvttung@gmail.com)
+
 
 | [Profile](#profile) | [Research](#research-interests) | [Education](#education) | [Work](#work-experience) | [Publication](#publication) | [Teaching](#teaching) | [Collaboration](#collaboration) | [Students](#students) | [Services](#scientific-services) |
 
