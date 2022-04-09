@@ -7,8 +7,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aalborg University
 
 🚪 Office 3.2.03\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selma Lagerlöfs Vej 300\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DK-9220, Aalborg Øst, Denmark
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selma Lagerlöfs Vej 300\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DK-9220, Aalborg Øst, Denmark
 
 📧 [tungkvt at cs dot aau dot dk](mailto:tungkvt@cs.aau.dk)\
 📧 [kvttung at gmail dot com](mailto:kvttung@gmail.com)
