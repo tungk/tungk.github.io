@@ -3,8 +3,8 @@
 💻 Assistant Professor
 
 🏛 Department of Computer Science\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Technical Faculty of IT and Design\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aalborg University
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Technical Faculty of IT and Design\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aalborg University
 
 🚪 Office 3.2.03\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selma Lagerlöfs Vej 300\
