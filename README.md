@@ -1,17 +1,17 @@
 # Tung Kieu
 
-Assistant Professor
+💻 Assistant Professor
 
-:classical_building: Department of Computer Science\
+🏛 Department of Computer Science\
 The Technical Faculty of IT and Design\
 Aalborg University
 
-:door: Office 3.2.03\
+🚪 Office 3.2.03\
 Selma Lagerlöfs Vej 300\
 DK-9220, Aalborg Øst, Denmark
 
-:email: [tungkvt at cs dot aau dot dk](mailto:tungkvt@cs.aau.dk)\
-:email: [kvttung at gmail dot com](mailto:kvttung@gmail.com)
+📧 [tungkvt at cs dot aau dot dk](mailto:tungkvt@cs.aau.dk)\
+📧 [kvttung at gmail dot com](mailto:kvttung@gmail.com)
 
 
 | [Profile](#profile) | [Research](#research-interests) | [Education](#education) | [Work](#work-experience) | [Publication](#publication) | [Teaching](#teaching) | [Collaboration](#collaboration) | [Students](#students) | [Services](#scientific-services) |
