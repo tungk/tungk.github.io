@@ -3,11 +3,11 @@
 Assistant Professor\
 Department of Computer Science\
 The Technical Faculty of IT and Design\
-Aalborg University\
-Office 3.2.03\
-Selma Lagerlöfs Vej 300\
-DK-9220, Aalborg Øst, Denmark\
-:email: [tungkvt at cs dot aau dot dk](mailto:tungkvt@cs.aau.dk)
+:office: Aalborg University\
+         Office 3.2.03\
+         Selma Lagerlöfs Vej 300\
+         DK-9220, Aalborg Øst, Denmark\
+:email: [tungkvt at cs dot aau dot dk](mailto:tungkvt@cs.aau.dk)\
 :email: [kvttung at gmail dot com](mailto:kvttung@gmail.com)
 
 
