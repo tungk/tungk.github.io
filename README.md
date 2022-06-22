@@ -50,8 +50,10 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 # Publication
 [](Publication)
 
-- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Xuanyi Dong, Shirui Pan, and Bin Yang. _TRACE: Triangular, Variable-Specific Attention for Long Sequence Multivariate Time Series Forecasting_. **IJCAI** 2022
-- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Shirui Pan, and Bin Yang. _Towards Spatio-Temporal Aware Traffic Time Series Forecasting_. **ICDE** 2022
+- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Xuanyi Dong, Shirui Pan, and Bin Yang. _TRACE: Triangular, Variable-Specific Attention for Long Sequence Multivariate Time Series Forecasting_. 
+**IJCAI** 2022
+- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Shirui Pan, and Bin Yang. _Towards Spatio-Temporal Aware Traffic Time Series Forecasting_.
+**ICDE** 2022
 - **Tung Kieu**, Bin Yang, Chenjuan Guo, Christian S. Jensen, Yan Zhao, Feiteng Huang, and Kai Zheng. _Robust and Explainable Autoencoders for Time Series Outlier Detection_. **ICDE** 2022
 - **Tung Kieu**, Bin Yang, Chenjuan Guo, Razvan-Gabriel Cirstea, Yan Zhao, Yale Song, and Christian S. Jensen. _Anomaly Detection in Time Series with Robust Variational Quasi-Recurrent Autoencoders_. **ICDE** 2022
 - Yan Zhao, Xuanhao Chen, Liwei Deng, **Tung Kieu**, Chenjuan Guo, Bin Yang, Kai Zheng, and Christian S. Jensen. _Outlier Detection for Streaming Task Assignment in Crowdsourcing_. **WWW** 2022
