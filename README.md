@@ -119,11 +119,14 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 - International Conference on Very Large Data Bases (VLDB)
 - IEEE International Conference on Data Engineering (ICDE)
 - ACM International Conference on Information and Knowledge Management (CIKM)
+- ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (SIGSPATIAL/GIS)
+- International Conference on Advanced Data Mining and Applications (ADMA)
 - APWeb-WAIM International Joint Conference on Web and Big Data (APWEB-WAIM)
 - IEEE International Conference on Mobile Data Management (MDM)
 
 ## Journals
 - Journal of Artificial Intelligence Research (JAIR)
+- ACM Transactions on Information Systems (TOIS)
 - IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
 - IEEE Transactions on Knowledge and Data Engineering (TKDE)
 - IEEE Transactions on Intelligent Transportation Systems (TITS)
@@ -131,5 +134,7 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 - IEEE Transactions on Industrial Informatics (TII)
 - Data Mining and Knowledge Discovery (DMKD)
 - Pattern Recognition
+- Expert Systems with Applications
 - Neural Processing Letters
 - IEEE Access
+
