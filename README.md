@@ -50,23 +50,23 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 # Publication
 [](Publication)
 
-- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Xuanyi Dong, Shirui Pan, and Bin Yang. _TRACE: Triangular, Variable-Specific Attention for Long Sequence Multivariate Time Series Forecasting_[pdf](https://github.com/tungk/tungk.github.io/blob/main/Triformer_Triangular__Variable_Specific_Attentions_for_Long_Sequence_Multivariate_Time_Series_Forecasting__IJCAI_22.pdf).<br>
+- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Xuanyi Dong, Shirui Pan, and Bin Yang. _TRACE: Triangular, Variable-Specific Attention for Long Sequence Multivariate Time Series Forecasting_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/Triformer_Triangular__Variable_Specific_Attentions_for_Long_Sequence_Multivariate_Time_Series_Forecasting__IJCAI_22.pdf).<br>
 **IJCAI** 2022
-- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Shirui Pan, and Bin Yang. _Towards Spatio-Temporal Aware Traffic Time Series Forecasting_[pdf](https://github.com/tungk/tungk.github.io/blob/main/Towards_Spatio_Temporal_Aware_Traffic_Time_Series_Forecasting__ICDE_22.pdf).<br>
+- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Shirui Pan, and Bin Yang. _Towards Spatio-Temporal Aware Traffic Time Series Forecasting_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/Towards_Spatio_Temporal_Aware_Traffic_Time_Series_Forecasting__ICDE_22.pdf).<br>
 **ICDE** 2022
-- **Tung Kieu**, Bin Yang, Chenjuan Guo, Christian S. Jensen, Yan Zhao, Feiteng Huang, and Kai Zheng. _Robust and Explainable Autoencoders for Time Series Outlier Detection_[pdf](https://github.com/tungk/tungk.github.io/blob/main/Robust_and_Explainable_Autoencoders_for_Time_Series_Outlier_Detection__ICDE_22.pdf).<br>
+- **Tung Kieu**, Bin Yang, Chenjuan Guo, Christian S. Jensen, Yan Zhao, Feiteng Huang, and Kai Zheng. _Robust and Explainable Autoencoders for Time Series Outlier Detection_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/Robust_and_Explainable_Autoencoders_for_Time_Series_Outlier_Detection__ICDE_22.pdf).<br>
 **ICDE** 2022
-- **Tung Kieu**, Bin Yang, Chenjuan Guo, Razvan-Gabriel Cirstea, Yan Zhao, Yale Song, and Christian S. Jensen. _Anomaly Detection in Time Series with Robust Variational Quasi-Recurrent Autoencoders_[pdf](https://github.com/tungk/tungk.github.io/blob/main/Anomaly_Detection_in_Time_Series_with_Robust_Variational_Quasi_Recurrent_Autoencoders__ICDE_22.pdf).<br>
+- **Tung Kieu**, Bin Yang, Chenjuan Guo, Razvan-Gabriel Cirstea, Yan Zhao, Yale Song, and Christian S. Jensen. _Anomaly Detection in Time Series with Robust Variational Quasi-Recurrent Autoencoders_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/Anomaly_Detection_in_Time_Series_with_Robust_Variational_Quasi_Recurrent_Autoencoders__ICDE_22.pdf).<br>
 **ICDE** 2022
-- Yan Zhao, Xuanhao Chen, Liwei Deng, **Tung Kieu**, Chenjuan Guo, Bin Yang, Kai Zheng, and Christian S. Jensen. _Outlier Detection for Streaming Task Assignment in Crowdsourcing_[pdf](https://github.com/tungk/tungk.github.io/blob/main/Outlier_Detection_for_Streaming_Task_Assignment_in_Crowdsourcing__WWW_22.pdf).<br>
+- Yan Zhao, Xuanhao Chen, Liwei Deng, **Tung Kieu**, Chenjuan Guo, Bin Yang, Kai Zheng, and Christian S. Jensen. _Outlier Detection for Streaming Task Assignment in Crowdsourcing_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/Outlier_Detection_for_Streaming_Task_Assignment_in_Crowdsourcing__WWW_22.pdf).<br>
 **WWW** 2022
-- David Campos, **Tung Kieu**, Chenjuan Guo, Feiteng Huang, Kai Zheng, Bin Yang, and Christian S. Jensen. _Unsupervised Time Series Outlier Detection with Diversity-Driven Convolutional Ensembles_[pdf](https://github.com/tungk/tungk.github.io/blob/main/Unsupervised_Time_Series_Outlier_Detection_with_Diversity-Driven_Convolutional_Ensembles__VLDB_22.pdf).<br>
+- David Campos, **Tung Kieu**, Chenjuan Guo, Feiteng Huang, Kai Zheng, Bin Yang, and Christian S. Jensen. _Unsupervised Time Series Outlier Detection with Diversity-Driven Convolutional Ensembles_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/Unsupervised_Time_Series_Outlier_Detection_with_Diversity-Driven_Convolutional_Ensembles__VLDB_22.pdf).<br>
 **VLDB** 2022
-- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Bin Yang, and Sinno Jialin Pan. _EnhanceNet: Plugin Neural Networks for Enhancing Correlated Time Series Forecasting_[pdf](https://github.com/tungk/tungk.github.io/blob/main/EnhanceNet_Plugin_Neural_Networks_for_Enhancing_Correlated_Time_Series_Forecasting__ICDE_21.pdf).<br>
+- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Bin Yang, and Sinno Jialin Pan. _EnhanceNet: Plugin Neural Networks for Enhancing Correlated Time Series Forecasting_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/EnhanceNet_Plugin_Neural_Networks_for_Enhancing_Correlated_Time_Series_Forecasting__ICDE_21.pdf).<br>
 **ICDE** 2021
-- **Tung Kieu**, Bin Yang, Chenjuan Guo, and Christian S. Jensen. _Outlier Detection for Time Series with Recurrent Autoencoder Ensembles_[pdf](https://github.com/tungk/tungk.github.io/blob/main/Outlier_Detection_for_Time_Series_with_Recurrent_Autoencoder_Ensembles__IJCAI_19.pdf).<br>
+- **Tung Kieu**, Bin Yang, Chenjuan Guo, and Christian S. Jensen. _Outlier Detection for Time Series with Recurrent Autoencoder Ensembles_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/Outlier_Detection_for_Time_Series_with_Recurrent_Autoencoder_Ensembles__IJCAI_19.pdf).<br>
 **IJCAI** 2019
-- **Tung Kieu**, Bin Yang, Chenjuan Guo, and Christian S. Jensen. _Distinguishing Trajectories from Different Drivers using Incompletely Labeled Trajectories_[pdf](https://github.com/tungk/tungk.github.io/blob/main/Distinguishing_Trajectories_from_Different_Drivers_using_Incompletely_Labeled_Trajectories__CIKM_18.pdf).<br>
+- **Tung Kieu**, Bin Yang, Chenjuan Guo, and Christian S. Jensen. _Distinguishing Trajectories from Different Drivers using Incompletely Labeled Trajectories_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/Distinguishing_Trajectories_from_Different_Drivers_using_Incompletely_Labeled_Trajectories__CIKM_18.pdf).<br>
 **CIKM** 2018
 - **Tung Kieu**, Bin Yang, and Christian S. Jensen. _Outlier Detection for Multidimensional Time Series Using Deep Neural Networks_.<br>
 **MDM** 2018
