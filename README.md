@@ -68,9 +68,9 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 **IJCAI** 2019
 - **Tung Kieu**, Bin Yang, Chenjuan Guo, and Christian S. Jensen. _Distinguishing Trajectories from Different Drivers using Incompletely Labeled Trajectories_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/Distinguishing_Trajectories_from_Different_Drivers_using_Incompletely_Labeled_Trajectories__CIKM_18.pdf).<br>
 **CIKM** 2018
-- **Tung Kieu**, Bin Yang, and Christian S. Jensen. _Outlier Detection for Multidimensional Time Series Using Deep Neural Networks_.<br>
+- **Tung Kieu**, Bin Yang, and Christian S. Jensen. _Outlier Detection for Multidimensional Time Series Using Deep Neural Networks_ [[pdf]] (https://github.com/tungk/tungk.github.io/blob/main/Outlier_Detection_for_Multidimensional_Time_Series_using_Deep_Neural_Networks__MDM_18_.pdf).<br>
 **MDM** 2018
-- **Tung Kieu**, Bay Vo, Tuong Le, Zhi-Hong Deng, and Bac Le. _Mining Top-k Co-occurrence Items with Sequential Pattern_.<br>
+- **Tung Kieu**, Bay Vo, Tuong Le, Zhi-Hong Deng, and Bac Le. _Mining Top-k Co-occurrence Items with Sequential Pattern_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/Mining_Top-k_Co-occurrence_Items_with_Sequential_Pattern__ESWA_17_.pdf).<br>
 **Expert Syst. Appl.** 85 2017
 
 # Teaching
@@ -134,6 +134,8 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 - IEEE Transactions on Industrial Informatics (TII)
 - Data Mining and Knowledge Discovery (DMKD)
 - Pattern Recognition
+- Neural Networks
+- Machine Learning
 - Expert Systems with Applications
 - Neural Processing Letters
 - IEEE Access
