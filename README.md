@@ -14,7 +14,7 @@
 📧 [kvttung at gmail dot com](mailto:kvttung@gmail.com)
 
 
-| [Profile](#profile) | [Research](#research-interests) | [Education](#education) | [Work](#work-experience) | [Publication](#publication) | [Teaching](#teaching) | [Collaboration](#collaboration) | [Students](#students) | [Services](#scientific-services) |
+| [Profile](#profile) | [Research](#research-interests) | [Education](#education) | [Work](#work-experience) | [Publication](#publication) | [Preprint](#preprint) | [Teaching](#teaching) | [Collaboration](#collaboration) | [Students](#students) | [Services](#scientific-services) |
 
 
 # Profile
@@ -68,10 +68,19 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 **IJCAI** 2019
 - **Tung Kieu**, Bin Yang, Chenjuan Guo, and Christian S. Jensen. _Distinguishing Trajectories from Different Drivers using Incompletely Labeled Trajectories_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/Distinguishing_Trajectories_from_Different_Drivers_using_Incompletely_Labeled_Trajectories__CIKM_18.pdf).<br>
 **CIKM** 2018
-- **Tung Kieu**, Bin Yang, and Christian S. Jensen. _Outlier Detection for Multidimensional Time Series Using Deep Neural Networks_ [[pdf]] (https://github.com/tungk/tungk.github.io/blob/main/Outlier_Detection_for_Multidimensional_Time_Series_using_Deep_Neural_Networks__MDM_18_.pdf).<br>
+- **Tung Kieu**, Bin Yang, and Christian S. Jensen. _Outlier Detection for Multidimensional Time Series Using Deep Neural Networks_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/Outlier_Detection_for_Multidimensional_Time_Series_using_Deep_Neural_Networks__MDM_18_.pdf).<br>
 **MDM** 2018
 - **Tung Kieu**, Bay Vo, Tuong Le, Zhi-Hong Deng, and Bac Le. _Mining Top-k Co-occurrence Items with Sequential Pattern_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/Mining_Top-k_Co-occurrence_Items_with_Sequential_Pattern__ESWA_17_.pdf).<br>
 **Expert Syst. Appl.** 85 2017
+
+# Preprint
+[](Preprint)
+
+- **Tung Kieu**, Bin Yang, Chenjuan Guo, Christian S. Jensen, Yan Zhao, Feiteng Huang, and Kai Zheng. _Robust and Explainable Autoencoders for Time Series Outlier Detection--Extended Version_ [[pdf]](https://arxiv.org/abs/2204.03341.pdf).<br>
+- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Xuanyi Dong, Shirui Pan, and Bin Yang. _Triformer: Triangular, Variable-Specific Attentions for Long Sequence Multivariate Time Series Forecasting--Extended Version_ [[pdf]](https://arxiv.org/abs/2204.13767.pdf).<br>
+- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Shirui Pan, and Bin Yang. _Towards Spatio-Temporal Aware Traffic Time Series Forecasting--Extended Version_ [[pdf]](https://arxiv.org/pdf/2203.15737.pdf).<br>
+- David Campos, **Tung Kieu**, Chenjuan Guo, Feiteng Huang, Kai Zheng, Bin Yang, and Christian S. Jensen. _Unsupervised Time Series Outlier Detection with Diversity-Driven Convolutional Ensembles--Extended Version_ [[pdf]](https://arxiv.org/pdf/2111.11108.pdf).<br>
+- Yan Zhao, Liwei Deng, Xuanhao Chen, Chenjuan Guo, Bin Yang, **Tung Kieu**, Feiteng Huang, Torben Bach Pedersen, Kai Zheng, and Christian S. Jensen. _A Comparative Study on Unsupervised Anomaly Detection for Time Series: Experiments and Analysis_ [[pdf]](https://arxiv.org/abs/2209.04635.pdf).<br>
 
 # Teaching
 [](Teaching)
