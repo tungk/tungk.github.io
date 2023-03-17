@@ -76,7 +76,7 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 
 # Preprint
 [](Preprint)
-
+- David Campos, Miao Zhang, Bin Yang, **Tung Kieu**, Chenjuan Guo, Christian S. Jensen. _LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation--Extended Version_[[pdf]](https://arxiv.org/pdf/2302.12721.pdf).<br>
 - **Tung Kieu**, Bin Yang, Chenjuan Guo, Christian S. Jensen, Yan Zhao, Feiteng Huang, and Kai Zheng. _Robust and Explainable Autoencoders for Time Series Outlier Detection--Extended Version_ [[pdf]](https://arxiv.org/abs/2204.03341.pdf).<br>
 - Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Xuanyi Dong, Shirui Pan, and Bin Yang. _Triformer: Triangular, Variable-Specific Attentions for Long Sequence Multivariate Time Series Forecasting--Extended Version_ [[pdf]](https://arxiv.org/abs/2204.13767.pdf).<br>
 - Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Shirui Pan, and Bin Yang. _Towards Spatio-Temporal Aware Traffic Time Series Forecasting--Extended Version_ [[pdf]](https://arxiv.org/pdf/2203.15737.pdf).<br>
