@@ -49,6 +49,8 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 
 # Publication
 [](Publication)
+- DHuy Le, **Tung Kieu**, Anh Nguyen, Ngan Le. _WAVER: Writing-style Agnostic Video Retrieval via Distilling Vision-Language Models Through Open-Vocabulary Knowledge _[[pdf]](https://arxiv.org/pdf/2312.09507.pdf).<br>
+**ICASSP** 2024
 - David Campos, Miao Zhang, Bin Yang, **Tung Kieu**, Chenjuan Guo, and Christian S. Jensen. _LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/LightTS_Lightweight_Time_Series_Classification_with_Adaptive_Ensemble_Distillation__SIGMOD_23.pdf).<br>
 **SIGMOD** 2023
 - Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Xuanyi Dong, Shirui Pan, and Bin Yang. _Triformer: Triangular, Variable-Specific Attention for Long Sequence Multivariate Time Series Forecasting_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/Triformer_Triangular_Variable_Specific_Attentions_for_Long_Sequence_Multivariate_Time_Series_Forecasting__IJCAI_22.pdf).<br>
@@ -76,7 +78,8 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 
 # Preprint
 [](Preprint)
-- David Campos, Miao Zhang, Bin Yang, **Tung Kieu**, Chenjuan Guo, Christian S. Jensen. _LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation--Extended Version_[[pdf]](https://arxiv.org/pdf/2302.12721.pdf).<br>
+- DHuy Le, **Tung Kieu**, Anh Nguyen, Ngan Le. _WAVER: Writing-style Agnostic Video Retrieval via Distilling Vision-Language Models Through Open-Vocabulary Knowledge_ [[pdf]](https://arxiv.org/pdf/2312.09507.pdf).<br>
+- David Campos, Miao Zhang, Bin Yang, **Tung Kieu**, Chenjuan Guo, Christian S. Jensen. _LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation--Extended Version_ [[pdf]](https://arxiv.org/pdf/2302.12721.pdf).<br>
 - **Tung Kieu**, Bin Yang, Chenjuan Guo, Christian S. Jensen, Yan Zhao, Feiteng Huang, and Kai Zheng. _Robust and Explainable Autoencoders for Time Series Outlier Detection--Extended Version_ [[pdf]](https://arxiv.org/abs/2204.03341.pdf).<br>
 - Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Xuanyi Dong, Shirui Pan, and Bin Yang. _Triformer: Triangular, Variable-Specific Attentions for Long Sequence Multivariate Time Series Forecasting--Extended Version_ [[pdf]](https://arxiv.org/abs/2204.13767.pdf).<br>
 - Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Shirui Pan, and Bin Yang. _Towards Spatio-Temporal Aware Traffic Time Series Forecasting--Extended Version_ [[pdf]](https://arxiv.org/pdf/2203.15737.pdf).<br>
