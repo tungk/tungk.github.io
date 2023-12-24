@@ -49,7 +49,7 @@ Data mining and machine leanring, in particular, on spatio-temporal data, time s
 
 # Publication
 [](Publication)
-- DHuy Le, **Tung Kieu**, Anh Nguyen, Ngan Le. _WAVER: Writing-style Agnostic Video Retrieval via Distilling Vision-Language Models Through Open-Vocabulary Knowledge _[[pdf]](https://arxiv.org/pdf/2312.09507.pdf).<br>
+- DHuy Le, **Tung Kieu**, Anh Nguyen, Ngan Le. _WAVER: Writing-style Agnostic Video Retrieval via Distilling Vision-Language Models Through Open-Vocabulary Knowledge_ [[pdf]](https://arxiv.org/pdf/2312.09507.pdf).<br>
 **ICASSP** 2024
 - David Campos, Miao Zhang, Bin Yang, **Tung Kieu**, Chenjuan Guo, and Christian S. Jensen. _LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation_ [[pdf]](https://github.com/tungk/tungk.github.io/blob/main/LightTS_Lightweight_Time_Series_Classification_with_Adaptive_Ensemble_Distillation__SIGMOD_23.pdf).<br>
 **SIGMOD** 2023
