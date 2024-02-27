@@ -45,6 +45,7 @@ Data mining and machine learning, in particular, on spatio-temporal data, time s
 - Data Warehouse Specialist at _FPT_, Ho Chi Minh City, Vietnam.
 - Database Specialist at _FPT_, Ho Chi Minh City, Vietnam.
 - Researcher at _Aalborg University_, Aalborg, Denmark.
+- Lecturer at _RMIT University_, Ho Chi Minh City, Vietnam.
 - Assistant Professor at _Aalborg University_, Aalborg, Denmark.
 
 # Publication
@@ -93,6 +94,9 @@ Data mining and machine learning, in particular, on spatio-temporal data, time s
 - Advanced Algorithm (shared with Prof. Bin Yang and Prof. Chenjuan Guo).
 - Algorithms and Computability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba).
 - Algorithms and Satisfiability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba).
+- Introduction to Database Systems
+- Programming Bootcamp
+- Programming Studio
 
 ## Supervision
 - Software 5 (SW5).
