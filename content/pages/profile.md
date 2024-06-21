@@ -15,9 +15,9 @@ __Email__: (1) tungkvt[at]cs[dot]aau[dot]dk; (2) kvttung[at]gmail[dot]com
 
 I am an Assistant Professor in the _Department of Computer Science_ at _Aalborg University_. I am a faculty member in _Center for Data-Intensive Systems_. I am also affiliated with the department's team on Artificial Intelligence and Machine Learning and the university's _Center on AI for the People_.
 
-I obtained my Ph.D. degree in *Computer Science* at _Aalborg University_ in April 2021 under the supervision of  Prof. [Christian S. Jensen](https://people.cs.aau.dk/~csj/) and Prof. [Bin Yang](https://people.cs.aau.dk/~byang/). From April 2021 to May 2021, I was a Research Assistant at _Aalborg University_. From June 2021 to August 2021,  I was a Postdoctoral Fellow at _Aalborg University_. All the time, I have worked in the _Data-Intensive Systems_ [(Daisy)](https://www.daisy.aau.dk/) group headed by Prof. [Christian S. Jensen](https://people.cs.aau.dk/~csj/).
+I obtained Ph.D. degree in *Computer Science* at _Aalborg University_ in April 2021 under the supervision of  Prof. [Christian S. Jensen](https://people.cs.aau.dk/~csj/) and Prof. [Bin Yang](https://people.cs.aau.dk/~byang/). From April 2021 to May 2021, I was a Research Assistant at _Aalborg University_. From June 2021 to August 2021,  I was a Postdoctoral Fellow at _Aalborg University_. All the time, I have worked in the _Data-Intensive Systems_ [(Daisy)](https://www.daisy.aau.dk/) group headed by Prof. [Christian S. Jensen](https://people.cs.aau.dk/~csj/).
 
-I obtained B.Sc. and M.Sc. degrees in *Computer Science* at the *University of Science, Vietnam National University*, Ho Chi Minh City in September 2012 and 2015, respectively. 
+I obtained B.Sc. and M.Sc. degrees in *Computer Science* at the *University of Science, Vietnam National University*, Ho Chi Minh City in September 2012 and 2015, respectively under the supervision of  Prof. [Bac Le](https://scholar.google.com.vn/citations?user=UA_83MUAAAAJ&hl=en) and Prof. [Bay Vo](https://scholar.google.com.vn/citations?user=UBGqPDYAAAAJ&hl=en). 
 
 I also obtained B.Eng. in *Civil Engineering* at the *University of Architecture*, Ho Chi Minh City in April 2013. 
 
