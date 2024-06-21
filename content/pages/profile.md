@@ -14,12 +14,13 @@ I also obtained B.Eng. in Civil Engineering at the University of Architecture in
 
 ## Information
 
-Office: (1) A.C. Meyers Vænge 15, Room 2.095, Copenhagen, Denmark; (2) Selma Lagerløfs Vej 300, 3-2-05, Aalborg, Denmark
-Email: (1) tungkvt@cs.aau.dk; (2) kvttung@gmail.com
+__Office__: (1) A.C. Meyers Vaenge 15, Room 2.095, Copenhagen, Denmark; (2) Selma Lagerlofs Vej 300, Room 3-2-05, Aalborg, Denmark
+
+__Email__: (1) tungkvt[at]cs[dot]aau[dot]dk; (2) kvttung[at]gmail[dot]com
 
 ## Research Interests
 
-Data mining and machine learning, in particular, on spatial data, temporal data, spatio-temporal data, time series data, graph data, and uncertain data.
+Data mining and machine learning, in particular, on *spatial data*, *temporal data*, *spatio-temporal data*, *time series data*, *graph data*, and *uncertain data*.
 
 ## Education
 
