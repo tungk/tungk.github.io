@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Tung Kieu</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Tung Kieu</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 22 Jun 2024 01:20:14 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Robustness of Autoencoders for Anomaly Detection Under Adversarial Impact</title>
+      <link>http://localhost:1313/posts/robustness_autoencoder_anomaly_detection/</link>
+      <pubDate>Sat, 22 Jun 2024 01:20:14 +0200</pubDate>
+      <guid>http://localhost:1313/posts/robustness_autoencoder_anomaly_detection/</guid>
+      <description>Abstract&#xD;Link to heading&#xD;Deep learning methods have achieved state-of-the-art performance in anomaly detection in recent years; unsupervised methods being particularly popular. However, deep learning methods can be fragile to small perturbations in the input data. This phenomena has been widely studied in the context of supervised image classification since its discovery, however such studies for an anomaly detection setting are sorely lacking. Moreover, the plethora of defense mechanisms that have been proposed are often not applicable to unsupervised anomaly detection models</description>
+    </item>
+    <item>
+      <title>Stichable Neural Networks</title>
+      <link>http://localhost:1313/posts/stichable_neural_networks/</link>
+      <pubDate>Fri, 21 Jun 2024 23:55:12 +0200</pubDate>
+      <guid>http://localhost:1313/posts/stichable_neural_networks/</guid>
+      <description>Abstract&#xD;Link to heading&#xD;As each model family consists of pretrained models with diverse scales (e.g., DeiT-Ti/S/B), it naturally arises a fundamental question of how to efficiently assemble these readily available models in a family for dynamic accuracy-efficiency trade-offs at runtime.&#xA;The paper presents Stitchable Neural Networks (SN-Net), a novel scalable and efficient framework for model deployment. It cheaply produces numerous networks with different complexity and performance trade-offs given a family of pretrained neural networks, which are called anchors.</description>
+    </item>
+  </channel>
+</rss>

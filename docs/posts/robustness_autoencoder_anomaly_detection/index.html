@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Robustness of Autoencoders for Anomaly Detection Under Adversarial Impact · Tung Kieu
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Tung Kieu">
+<meta name="description" content="AbstractLink to headingDeep learning methods have achieved state-of-the-art performance in anomaly detection in recent years; unsupervised methods being particularly popular. However, deep learning methods can be fragile to small perturbations in the input data. This phenomena has been widely studied in the context of supervised image classification since its discovery, however such studies for an anomaly detection setting are sorely lacking. Moreover, the plethora of defense mechanisms that have been proposed are often not applicable to unsupervised anomaly detection models">
+<meta name="keywords" content="blog,researcher,personal">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Robustness of Autoencoders for Anomaly Detection Under Adversarial Impact">
+  <meta name="twitter:description" content="AbstractLink to headingDeep learning methods have achieved state-of-the-art performance in anomaly detection in recent years; unsupervised methods being particularly popular. However, deep learning methods can be fragile to small perturbations in the input data. This phenomena has been widely studied in the context of supervised image classification since its discovery, however such studies for an anomaly detection setting are sorely lacking. Moreover, the plethora of defense mechanisms that have been proposed are often not applicable to unsupervised anomaly detection models">
+
+<meta property="og:url" content="http://localhost:1313/posts/robustness_autoencoder_anomaly_detection/">
+  <meta property="og:site_name" content="Tung Kieu">
+  <meta property="og:title" content="Robustness of Autoencoders for Anomaly Detection Under Adversarial Impact">
+  <meta property="og:description" content="AbstractLink to headingDeep learning methods have achieved state-of-the-art performance in anomaly detection in recent years; unsupervised methods being particularly popular. However, deep learning methods can be fragile to small perturbations in the input data. This phenomena has been widely studied in the context of supervised image classification since its discovery, however such studies for an anomaly detection setting are sorely lacking. Moreover, the plethora of defense mechanisms that have been proposed are often not applicable to unsupervised anomaly detection models">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-22T01:20:14+02:00">
+    <meta property="article:modified_time" content="2024-06-22T01:20:14+02:00">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/robustness_autoencoder_anomaly_detection/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+
+  
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+  
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      Tung Kieu
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/profile/">Profile</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/publication/">Publication</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/teaching/">Teaching</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/services/">Services</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/robustness_autoencoder_anomaly_detection/">
+              Robustness of Autoencoders for Anomaly Detection Under Adversarial Impact
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-06-22T01:20:14&#43;02:00">
+                June 22, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              7-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="abstract">
+  Abstract
+  <a class="heading-link" href="#abstract">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Deep learning methods have achieved state-of-the-art performance in anomaly detection in recent years; unsupervised methods being particularly popular. However, deep learning methods can be fragile to small perturbations in the input data. This phenomena has been widely studied in the context of supervised image classification since its discovery, however such studies for an anomaly detection setting are sorely lacking. Moreover, the plethora of defense mechanisms that have been proposed are often not applicable to unsupervised anomaly detection models</p>
+<h2 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Anomaly is observations which deviates so much from other observations as to arouse suspicion it was generated by a different mechanism.</p>
+<p>Recently, deep learning methods have given the best performance; particularly popular is to train an autoencoder to reconstruct data of the normal class, using the reconstruction error to determine whether a point is anomalous.</p>
+<p>Despite their successes, the highly complex operations of deep learning models can make their outputs fragile to small perturbations in input data. This makes them vulnerable to an adversary who may exploit perturbations that are purpose- fully designed to greatly hinder model performance.</p>
+<p>A number of defense mechanisms have been devised against adversarial attacks which is ‘adversarial training’. This introduces data that has been perturbed with an adversarial attack into the training set along with their correct labels.</p>
+<p>In the case of unsupervised anomaly detection, no labels are supplied to the model and anomalies are only seen during test time, meaning this defense is inapplicable.</p>
+<h2 id="background">
+  Background
+  <a class="heading-link" href="#background">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="anomaly-detection-with-autoencoders">
+  Anomaly Detection with Autoencoders
+  <a class="heading-link" href="#anomaly-detection-with-autoencoders">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Autoencoders are neural networks that are trained to reconstruct the input data, with the error between the original and the reconstruction</p>
+$$
+\tag{1}
+\mathrm{err}(\mathbf{x}) = || \mathbf{x} - \mathrm{AE}(\mathbf{x}) ||
+$$
+<p>where \(\mathbf{x}\) and \(\mathrm{AE}(\mathbf{x})\) is the input and output of the autoencoder respectively and \(|| \cdot ||\) is typically some type of norm.</p>
+<h3 id="adversarial-attack">
+  Adversarial Attack
+  <a class="heading-link" href="#adversarial-attack">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The input data can be perturbed as to hinder model performance through adversarial attacks. In fast gradient sign method (FGSM) inputs are moved in the direction of the gradient of the loss function to increase the loss function with respect to the true class and encourage a misclassification.</p>
+$$
+\tag{2}
+\mathbf{x}_{0}^{\text{adv}} = \mathbf{x}\\
+\mathbf{x}_{t+1}^{\text{adv}} = \mathrm{clip}_{\mathbf{x}, \epsilon}\{\mathbf{x}_{t}^{\text{adv}} + \alpha \cdot \mathrm{sign}(\nabla_{\mathbf{x}}(\mathcal{L}(\mathbf{x}_{t}^{\text{adv}}, y_{\text{true}})))\}
+$$
+<h2 id="related-work">
+  Related Work
+  <a class="heading-link" href="#related-work">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Unsupervised versions of anomaly detection algorithms have been developed, most notably the <strong>One-class SVM</strong> and <strong>LOF</strong>. The non-linearity of <strong>autoencoders</strong> allows for better detection of anomalies than linear <strong>PCA</strong>, whilst being computationally cheaper than <strong>kernel PCA</strong>.</p>
+<p>Some studies improve the robustness of anomaly detec- tion models to noisy data, such as <strong>Robust SVM</strong> and <strong>Robust PCA</strong>. The approach taken in the latter; filtering noise out of input data via matrix decomposition, has also been adopted for autoencoders. However, no similar techniques have been developed in the case of adversarial perturbations.</p>
+<h2 id="methods">
+  Methods
+  <a class="heading-link" href="#methods">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="attacks">
+  Attacks
+  <a class="heading-link" href="#attacks">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Perturbations to anomalous points in the test set that cause the model to misclassify as many of them as possible as normal points. This is achieved by reducing reconstruction error.</p>
+<p>Two such attacks are tested: a <strong>randomized</strong> attack and an <strong>FGSM</strong> attack.</p>
+<p>In the first, a randomly generated vector is added to the original point. If the reconstruction error of this perturbed point is reduced compared to the original, then the perturbation is kept, otherwise it is discarded and another random vector is tested.</p>
+<p>In the second, for FGSM he adaptation ensures the reconstruction error i.e. the loss function, decreases rather than increases as follows</p>
+$$
+\tag{3}
+\mathbf{x}_{0}^{\text{adv}} = \mathbf{x}\\
+\mathbf{x}_{t+1}^{\text{adv}} = \mathbf{x}_{t}^{\text{adv}} - \alpha \cdot \mathrm{sign}(\nabla_{\mathbf{x}}(\mathcal{L}(\mathbf{x}_{t}^{\text{adv}})))
+$$
+<h3 id="defenses">
+  Defenses
+  <a class="heading-link" href="#defenses">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<h4 id="approximate-projection">
+  Approximate Projection
+  <a class="heading-link" href="#approximate-projection">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p><img src="/images/Dcekcbt.png">
+Figure 1: Points \(\mathbf{x}\) and \(\mathbf{y}\) and their projections \(\mathbf{x}'\) and \(\mathbf{y}\), respectively on the image \(\mathcal{M}\).</p>
+<p>Autoencoders reconstruct complex data using lower dimensional representations. Adversarial vulnerability can arise because they can learn highly unstable functions that change rapidly in response to small input perturbations.</p>
+<p>A class of <strong>projection</strong> functions which are much more robust is considered.</p>
+<p>Formally, let \(A : \mathbb{R}^{d} \rightarrow \mathbb{R}^{d}\) be an autoencoder, and define the image \(\mathcal{M}= \{A(\mathbf{x}) : \mathbf{x} \in \mathbb{R}^{d}\}\) i.e. the set of points that the au- toencoder can map to.</p>
+<p>Define the projection \(f(\mathbf{x})\) as the closest point in \(\mathcal{M}\) to \(x\).</p>
+$$
+f(\mathbf{x}) = \mathrm{arg}\min_{\mathbf{x}' \in \mathcal{M}} ||\mathbf{x} - \mathbf{x}'||
+$$
+<p>Like in autoencoders, the reconstruction error \(\mathrm{err}(x) = ||\mathbf{x}-f(\mathbf{x})||\) is used as an anomaly score.</p>
+<p><strong>Theorem 1.</strong> If an adversary perturbs a data point from \(\mathbf{x}\) to \(\mathbf{y}\) such that \(||\mathbf{x} - \mathbf{y}|| \leq \epsilon\), then we have:</p>
+$$
+||\mathrm{err}(\mathbf{y}) - \mathrm{err}(\mathbf{x})|| \leq \epsilon
+$$
+<p>i.e. the adversary can change the reconstruction error of any point \(\mathbf{x}\) by at most $\epsilon$.</p>
+<p><strong>Proof.</strong> By the triangle inequality we have:</p>
+$$
+\tag{4}
+||\mathbf{x} - f(\mathbf{y})|| \leq ||y - f(\mathbf{x})|| + \epsilon
+$$
+<p>\(f(\mathbf{x})\) is the projection of \(\mathbf{x}\) onto \(\mathcal{M}\), therefore, it is the closest point to \(\mathbf{x}\) on \(\mathcal{M}\), so:</p>
+$$
+\tag{5}
+||\mathbf{x} - f(\mathbf{x})|| \leq ||\mathbf{x} - f(\mathbf{y})||
+$$
+<p>Combining this with Equation 4 gives:</p>
+$$
+\tag{6}
+||\mathbf{x} - f(\mathbf{x})|| \leq ||\mathbf{y} - f(\mathbf{y})|| + \epsilon
+$$
+<p>or \(\mathrm{err}(x) \leq \mathrm{err}(x) + \epsilon\). By symmetry, the same result holds when swapping \(\mathbf{x}$ and $\mathbf{y}\), completing the proof.</p>
+<p>Theorem 1 shows that in the worst-case scenario, an adversary moving a point by \(\epsilon\) distance can decrease the reconstruction error under \(f\) by at most \(\epsilon\). In reality, the projection \(f\) is not accessible as the image \(\mathcal{M}\) is unknown and highly complex.</p>
+<p>Instead, after fitting an autoencoder \(A\), we approximate a projection by performing gradient descent on the latent embedding of the data, encoded at the bottleneck layer. Upon convergence, this will lead to a reconstruction that is closer to the optimum; the projection. Gradient descent updates are made via the following formula:</p>
+$$
+\tag{7}
+\mathbf{z}_{0} = \mathbf{z} \\
+\mathbf{z}_{t+1} = \mathbf{z}_{t} - \alpha * \nabla_{\mathbf{z}}\mathcal{L}(\theta, \mathbf{z})
+$$
+<p>where \(\mathbf{z}\) is the original latent embeddings of test set points under $A$.</p>
+<h4 id="feature-weighting">
+  Feature Weighting
+  <a class="heading-link" href="#feature-weighting">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Different features vary in their discriminative capabilities. In particular, regardless of whether points are normal or anomalous, different features tend to be more accurately reconstructed than others through the autoencoder. It is useful to normalize reconstruction error across the different features in order to account for these differences</p>
+$$
+\hat{J}_{i} = \frac{J_{i}}{\epsilon + \tilde{J}_{i}}
+$$
+<p>where \(J_{i}\) is the reconstruction error associated with feature \(i\) for a single point, \(\tilde{J}_{i}\) is the normalizing factor and \(\epsilon\) is a small constant. Various formulations of \(\tilde{J}_{i}\) were considered; the median provides robustness against outliers and good empirical performance. The optimal value of \(\epsilon\) varies between \(10^{-4}\) and \(10^{-6}\) depending on the dataset.</p>
+<p>This is a form of normalization which prevents the reconstruction error, and therefore the anomaly score, from being dominated by those features which are reconstructed most poorly regardless of the class.</p>
+<p>Whilst improving detection performance, this step alone does not necessarily improve robustness against adversarial attacks. However, in combination with the gradient descent defense, the autoencoder would be more accurate as well as more robust in both the presence and absence of adversarial attacks.</p>
+<h2 id="experiments">
+  Experiments
+  <a class="heading-link" href="#experiments">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h4 id="datasets">
+  Datasets
+  <a class="heading-link" href="#datasets">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>#Feature</th>
+<th>#Train</th>
+<th>#Test</th>
+<th>#Anomalies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WADI</td>
+<td>1220</td>
+<td>1,048,571</td>
+<td>127,792</td>
+<td>5.99%</td>
+</tr>
+<tr>
+<td>SWaT</td>
+<td>500</td>
+<td>496,791</td>
+<td>449,910</td>
+<td>11.97%</td>
+</tr>
+</tbody>
+</table>
+<p>Table 1: Summary of the two datasets used in experiments.</p>
+<h4 id="models">
+  Models
+  <a class="heading-link" href="#models">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ul>
+<li>APAE: The proposed Approximate Projection Autoencoder</li>
+<li>AE: Autoencoder</li>
+<li>PCA: Principal Component Analysis</li>
+<li>OC-SVM: One-class Support Vector Machine</li>
+<li>DAGMM: Deep Autoencoding Gaussian Mixture Model</li>
+<li>MAD-GAN: Generative Adversarial Networks based Model</li>
+</ul>
+<h4 id="results">
+  Results
+  <a class="heading-link" href="#results">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p><img src="/images/ztUhPu4.png">
+Table 2: AUC score for various anomaly detection methods.</p>
+<p><img src="/images/8XqGxzU.png">
+Table 3: Precision, Recall and F1 measures for various anomaly score thresholds for the original test set, the randomly-attacked test set and the FGSM-attacked test set for WADI (top) and SWaT (bottom) datasets</p>
+<p><img src="/images/Z8OWv7r.png"> <img src="/images/OiL5mGn.png">
+Figure 4: Receiver operating characteristic (ROC) curve for the anomaly-detecting autoencoder on the three test sets used for WADI (left) and SWaT (right).</p>
+<p><img src="/images/vJDV0uV.png">
+Table 5: WADI: AUC for the three different types of attack with and without defenses.</p>
+<p><img src="/images/7AN8P7D.png">
+Table 6: SWaT: AUC for the three different types of attack with and without defenses.</p>
+<h2 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Deep autoencoders are trained to learn patterns from a set of data of only the normal class. The reconstruction error associated with a point in the test set is used to determine whether it is normal or anomalous. We have considered the context in which an adversary perturbs this data in order to have as many anomalies go undetected as possible. We have shown that the model is indeed vulnerable to this kind of attack, especially to a gradient-based attack like the basic iterative method.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2024
+     Tung Kieu 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
