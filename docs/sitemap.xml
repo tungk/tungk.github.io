@@ -2,34 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://tungk.github.io/posts/</loc>
     <lastmod>2024-06-22T01:20:14+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/robustness_autoencoder_anomaly_detection/</loc>
+    <loc>https://tungk.github.io/posts/robustness_autoencoder_anomaly_detection/</loc>
     <lastmod>2024-06-22T01:20:14+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://tungk.github.io/</loc>
     <lastmod>2024-06-22T01:20:14+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/stichable_neural_networks/</loc>
+    <loc>https://tungk.github.io/posts/stichable_neural_networks/</loc>
     <lastmod>2024-06-21T23:55:12+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>https://tungk.github.io/authors/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://tungk.github.io/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/</loc>
+    <loc>https://tungk.github.io/pages/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/profile/</loc>
+    <loc>https://tungk.github.io/pages/profile/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/publication/</loc>
+    <loc>https://tungk.github.io/pages/publication/</loc>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://tungk.github.io/series/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/services/</loc>
+    <loc>https://tungk.github.io/pages/services/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://tungk.github.io/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/teaching/</loc>
+    <loc>https://tungk.github.io/pages/teaching/</loc>
   </url>
 </urlset>
