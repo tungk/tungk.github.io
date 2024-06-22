@@ -2,34 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tungk.github.io/posts/</loc>
+    <loc>http://localhost:1313/posts/hdc_minirocket/</loc>
+    <lastmod>2024-06-22T14:55:12+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-06-22T14:55:12+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-06-22T14:55:12+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/robustness_autoencoder_anomaly_detection/</loc>
     <lastmod>2024-06-22T01:20:14+02:00</lastmod>
   </url><url>
-    <loc>https://tungk.github.io/posts/robustness_autoencoder_anomaly_detection/</loc>
-    <lastmod>2024-06-22T01:20:14+02:00</lastmod>
-  </url><url>
-    <loc>https://tungk.github.io/</loc>
-    <lastmod>2024-06-22T01:20:14+02:00</lastmod>
-  </url><url>
-    <loc>https://tungk.github.io/posts/stichable_neural_networks/</loc>
+    <loc>http://localhost:1313/posts/stichable_neural_networks/</loc>
     <lastmod>2024-06-21T23:55:12+02:00</lastmod>
   </url><url>
-    <loc>https://tungk.github.io/authors/</loc>
+    <loc>http://localhost:1313/authors/</loc>
   </url><url>
-    <loc>https://tungk.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://tungk.github.io/pages/</loc>
+    <loc>http://localhost:1313/pages/</loc>
   </url><url>
-    <loc>https://tungk.github.io/pages/profile/</loc>
+    <loc>http://localhost:1313/pages/profile/</loc>
   </url><url>
-    <loc>https://tungk.github.io/pages/publication/</loc>
+    <loc>http://localhost:1313/pages/publication/</loc>
   </url><url>
-    <loc>https://tungk.github.io/series/</loc>
+    <loc>http://localhost:1313/series/</loc>
   </url><url>
-    <loc>https://tungk.github.io/pages/services/</loc>
+    <loc>http://localhost:1313/pages/services/</loc>
   </url><url>
-    <loc>https://tungk.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url><url>
-    <loc>https://tungk.github.io/pages/teaching/</loc>
+    <loc>http://localhost:1313/pages/teaching/</loc>
   </url>
 </urlset>

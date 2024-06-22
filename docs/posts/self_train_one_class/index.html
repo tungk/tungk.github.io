@@ -21,20 +21,20 @@
   <meta name="twitter:title" content="Self-Trained One-class Classification for Unsupervised Anomaly Detection">
   <meta name="twitter:description" content="AbstractLink to headingIn this work, we focus on unsupervised AD problems whose entire training data are unlabeled and may contain both normal and anomalous samples. To tackle this problem, we build a robust one-class classification framework via data refinement. To refine the data accurately, we propose an ensemble of one-class classifiers, each of which is trained on a disjoint subset of training data. Moreover, we propose a self-training of deep representation one-class classifiers (STOC) that iteratively refines the data and deep representations.">
 
-<meta property="og:url" content="http://localhost:1313/pages/profile/">
+<meta property="og:url" content="http://localhost:1313/posts/self_train_one_class/">
   <meta property="og:site_name" content="Tung Kieu">
   <meta property="og:title" content="Self-Trained One-class Classification for Unsupervised Anomaly Detection">
   <meta property="og:description" content="AbstractLink to headingIn this work, we focus on unsupervised AD problems whose entire training data are unlabeled and may contain both normal and anomalous samples. To tackle this problem, we build a robust one-class classification framework via data refinement. To refine the data accurately, we propose an ensemble of one-class classifiers, each of which is trained on a disjoint subset of training data. Moreover, we propose a self-training of deep representation one-class classifiers (STOC) that iteratively refines the data and deep representations.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="pages">
+    <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2024-06-22T19:43:19+02:00">
     <meta property="article:modified_time" content="2024-06-22T19:43:19+02:00">
 
 
 
 
-<link rel="canonical" href="http://localhost:1313/pages/profile/">
+<link rel="canonical" href="http://localhost:1313/posts/self_train_one_class/">
 
 
 <link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -156,24 +156,45 @@
 
     <div class="content">
       
-  <section class="container page">
-  <article>
-    <header>
-      <h1 class="title">
-        <a class="title-link" href="http://localhost:1313/pages/profile/">
-          Self-Trained One-class Classification for Unsupervised Anomaly Detection
-        </a>
-      </h1>
-    </header>
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/self_train_one_class/">
+              Self-Trained One-class Classification for Unsupervised Anomaly Detection
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-06-22T19:43:19&#43;02:00">
+                June 22, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              15-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
 
-    <h2 id="abstract">
+      <div class="post-content">
+        
+        <h2 id="abstract">
   Abstract
   <a class="heading-link" href="#abstract">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<p>In this work, we focus on unsupervised AD problems whose entire training data are unlabeled and may contain both normal and anomalous samples. To tackle this problem, we build a robust one-class classification framework via data refinement. To refine the data accurately, we propose an ensemble of one-class classifiers, each of which is trained on a disjoint subset of training data. Moreover, we propose a self-training of deep representation one-class classifiers (STOC) that iteratively refines the data and deep representations. In experiments, we show the efficacy of our method for unsupervised anomaly detection on benchmarks from image and tabular data domains. For example, with a 10% anomaly ratio on CIFAR-10 data, the proposed method outperforms state-of-the-art one-class classification method by \(6.3\) AUC and \(12.5\) average precision.</p>
+<p>In this work, we focus on unsupervised AD problems whose entire training data are unlabeled and may contain both normal and anomalous samples. To tackle this problem, we build a robust one-class classification framework via data refinement. To refine the data accurately, we propose an ensemble of one-class classifiers, each of which is trained on a disjoint subset of training data. Moreover, we propose a self-training of deep representation one-class classifiers (STOC) that iteratively refines the data and deep representations. In experiments, we show the efficacy of our method for unsupervised anomaly detection on benchmarks from image and tabular data domains. For example, with a \(10\%\) anomaly ratio on CIFAR-10 data, the proposed method outperforms state-of-the-art one-class classification method by \(6.3\) AUC and \(12.5\) average precision.</p>
 <h2 id="introduction">
   Introduction
   <a class="heading-link" href="#introduction">
@@ -181,7 +202,7 @@
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<p><img src="https://i.imgur.com/TWp0JkL.png"></p>
+<p><img src="/images/TWp0JkL.png"></p>
 <p>Figure 1: Anomaly detection problem settings. Blue and red are for labeled negative (normal) and positive (anomalous) samples, respectively. Grey dots denote unlabeled samples. While previous works mostly focus on supervised (a, b) or semi-supervised (c, d, e) settings, we tackle an anomaly detection using only unlabeled data (f) that may contain both negative and positive samples.</p>
 <p>In this paper, we focus on unsupervised anomaly detection problems, where only unlabeled data that may include both negative and positive samples are available during training. Given the impressive performance of one-class classifiers trained on negative samples [20, 23, 5, 41, 28], our goal is to utilize them, and improve their performance by refining the unlabeled training data so as to adopt learning strategies of one-class classification for unsupervised anomaly detection. Inspired by the recent success of self-training in learning without labels [7, 45], we propose a novel self-trained one- class classification (STOC) framework. We illustrate STOC built on a two-stage framework of deep one-class classifiers [41, 28] in Fig. 3. STOC iteratively trains deep representations using refined data while improving refinement of unlabeled data by excluding potential positive (anomalous) samples. For the data refinement process, we employ an ensemble of one-class classifiers, each of which is trained on a different subset of unlabeled training data, and dictate samples as normal with the consensus of all the classifiers. The refined training data are used to train the final one-class classifier to generate the anomaly scores in the unsupervised setting. Unlike previous works [48, 36, 20, 23, 5, 41, 28], STOC works under realistic assumptions that majority of the training data is negative – human labeling can be completely removed from the entire process.</p>
 <h2 id="related-work">
@@ -215,7 +236,7 @@
   </a>
 </h3>
 <p>A naive way to generate pseudo labels of unlabeled data is to construct a one-class classifier on raw or learned representations (e.g., [41]) and threshold the anomaly score to obtain a binary label of normal and anomalous. As we update the model with refined data that excludes samples predicted as positive, it is important to generate pseudo labels of training data as accurately as possible.</p>
-<p><img src="https://i.imgur.com/0vNEGBQ.png"></p>
+<p><img src="/images/0vNEGBQ.png"></p>
 <p>Figure 3: Block diagram of STOC composed of representation learner (Section 3.2), data refinement (Section 3.1), and the final one-class classifier blocks. Representation learner updates the deep models using refined data from the data refinement block, but is optional if using fixed representations. Data refinement is done by ensemble one-class classifiers, each of which is trained on K disjoint subsets of unlabeled training data. Samples predicted as normal by all classifiers are retained in the refined data.</p>
 <p>To this end, instead of training a single classifier, we train an ensemble of \(K\) one-class classifiers and aggregate their predictions to generate pseudo labels. We illustrate the data refinement block in Fig. 3 and as REFINEDATA in Algorithm 1. Specifically, we randomly divide the unlabeled training data \(\mathcal{D}\) into \(K\) disjoint subsets \(\mathcal{D}_1, \ldots, \mathcal{D}_K\), and train \(K\) different one-class classifiers \((f_1, \ldots, f_K)\) on corresponding subsets \((\mathcal{D}_1, \ldots, D_K)\). Then, we predict a binary label of the data \(\mathbf{x}_i \in D\) as follows:</p>
 $$
@@ -236,7 +257,7 @@ $$
 <p>STOC follows the idea of deep representation one-class classifiers [41], where in the first stage deep neural network is trained with self-supervision, such as rotation prediction [20], contrastive [41], or CutPaste [28], to provide meaningful representations of the data, and in the second stage off-the-shelf one-class classifiers are trained on these learned representations. Such a two-stage framework is shown to be beneficial as it prevents the degeneracy of the deep one-class classifiers [36].</p>
 <p>Here, we propose to conduct self-supervised representation learning jointly with the data refinement. More precisely, we train a trainable feature extractor \(g\) using \(\hat{\mathcal{D}} = \{\mathbf{x}_i : \hat{y}_i = 0\}\), a subset of unlabeled data \(\mathcal{D}\) that includes samples whose predicted labels with an ensemble one-class classifier are negative. We also update \(\hat{\mathcal{D}}\) as we proceed with the representation learning. The proposed method is illustrated in Algorithm 1 as STOC. In contrast to previous work [41, 28] that uses the entire training data for learning self-supervised representation, we find it necessary to refine the training data even for learning deep representations. Without representation refinement, the performance improvements of STOC are limited.</p>
 <p>Following representation learning, we train a one-class classifier on refined data \(\hat{\mathcal{D}}\) using updated representation by \(g\) for test time prediction, as in lines 13, and 14 in Algorithm 1.</p>
-<p><img src="https://i.imgur.com/1rOcUKe.png"></p>
+<p><img src="/images/1rOcUKe.png"></p>
 <h3 id="selecting-hyperparameters">
   Selecting hyperparameters
   <a class="heading-link" href="#selecting-hyperparameters">
@@ -261,7 +282,7 @@ $$
 </h3>
 <p><strong>Datasets.</strong> Following [48, 5], we test the efficacy of STOC on a variety of tabular datasets, including KDDCup, Thyroid, or Arrhythmia from UCI repository [3]. We also use KDDCup-Rev, where the labels of KDDCup is reversed so that the attack represents an anomaly [48]. To construct data splits, we use \(50\%\) of normal samples for training. In addition, we take anomaly samples worthy of the \(10\%\) of the normal samples in the training set. This allows to simulate unsupervised settings with an anomaly ratio of up to \(10\%\) of the entire training set. The rest of the data is used for testing.1 We conduct experiments using \(5\) random splits and \(5\) random seeds. We report the average and standard deviation of \(25\) F1-scores (with a scale \(0-100\)) for the performance metric.</p>
 <p><strong>Models.</strong> We re-implement GOAD [5], a type of augmentation prediction method [19, 41] with random projections for learning representations, for the baseline with a few modifications. First, instead of using embeddings to compute the loss, we use a parametric classifier, similar to the augmentation prediction [41]. Second, we follow the two-stage framework [41] to construct deep one-class classifiers. For N setting, our implementation achieves \(98.0\) for KDD, \(95.0\) for KDD-Rev, \(75.1\) for Thyroid, and \(54.8\) for Arrhythmia F1-scores, which are comparable to those reported in [5].</p>
-<p><img src="https://i.imgur.com/XEtIj7N.png"></p>
+<p><img src="/images/XEtIj7N.png"></p>
 <p>Figure 4: Unsupervised anomaly detection performance (F1-score) using GOAD [5] and that with STOC on various tabular datasets. Shaded areas represent the standard deviation.</p>
 <h3 id="experiments-on-image-domain">
   Experiments on Image Domain
@@ -272,9 +293,9 @@ $$
 </h3>
 <p><strong>Datasets.</strong> We evaluate STOC on visual anomaly detection benchmarks, including CIFAR-10 [25], f-MNIST [44], Dog-vs-Cat [16], and MVTec anomaly detection (AD) [6]. For CIFAR-10, f-MNIST, and Dog-vs-Cat datasets, samples from one class are set to be normal and the remainders from other classes are set to be anomaly. Similarly to experiments on tabular data, we swap a certain amount of the normal training data with anomalies so that the anomaly ratio reaches the target percentage for unsupervised settings. For MVTec AD experiments, since there is no anomalous data available for training, we borrow \(10\%\) of the anomalies from the test set and swap them with normal samples in the training set. Note that the \(10\%\) of samples borrowed from the test set are excluded from evaluation. For all datasets, we experiment with varying anomaly ratios from \(0\%\) to \(10\%\). We use area under ROC curve (AUC) and average precision (AP) metrics to quantify the performance of visual anomaly detection (with scale \(0-100\)). When computing AP, we set the minority class of the test set as label \(1\) and majority as label \(0\) (e.g., normal samples are set as label \(1\) for CIFAR-10 experiments as there are more anomaly samples that are from \(9\) classes in the test set). We run all experiments with 5 random seeds, and report the average performance for each dataset across all classes in Fig. 5 and Fig. 6.</p>
 <p><strong>Models.</strong> For semantic anomaly detection benchmarks, CIFAR-10, f-MNIST, and Dog-vs-Cat, we compare the STOC with two-stage one-class classifiers [41] using various representation learning methods, such as distribution-augmented contrastive learning [41], rotation prediction [19, 20] and its improved version [41], or denoising autoencoder. For MVTec AD benchmarks, we use CutPaste [28] as a baseline and compare to its version with STOC integration. For both experiments, we use ResNet-18 model, trained from random initialization, using the hyperparameters from [41] and [28]. The same model and hyperparameter configurations are used for STOC with \(K = 5\), the count of classifier ensembles. We set \(\gamma\) as twice the anomaly ratios of the training data. For \(0\%\) anomaly ratios, we set \(\gamma\) as \(0.5\). Finally, Gaussian Density Estimator (GDE) on learned representations is used for one-class classifiers.</p>
-<p><img src="https://i.imgur.com/9vsr65A.png"></p>
+<p><img src="/images/9vsr65A.png"></p>
 <p>Figure 5: Unsupervised anomaly detection performance with various one-class classifiers on CIFAR- 10 dataset. For STOC we adopt distribution-augmented contrastive representation learning [41]. (Left) AUC, (Right) Average Precision (AP).</p>
-<p><img src="https://i.imgur.com/2GxrGLB.png"></p>
+<p><img src="/images/2GxrGLB.png"></p>
 <p>Figure 6: Unsupervised anomaly detection performance on (a) MVTec AD (b) f-MNIST, and (c) Dog-vs-Cat datasets with varying anomaly ratios. We use state-of-the-art one-class classification models for baselines, such as distribution-augmented contrastive representations [41] for f-MNIST and Dog-vs-Cat, or CutPaste [28] for MVTec AD, and build STOC on top of them.</p>
 <h2 id="conclusion">
   Conclusion
@@ -286,10 +307,25 @@ $$
 <p>Anomaly detection has wide range of practical use cases. A challenging and costly aspect of building an anomaly detection system is labeling as anomalies are rare and are not easy to detect by humans. To enable high-performance anomaly detection without any labels, we propose a novel anomaly detection framework, STOC. STOC can be flexibly integrated with any one-class classifier, applied on raw data or on trainable representations. STOC employs an ensemble of multiple one-class classifiers to propose candidate anomaly samples that are refined from training, which allows more robust fitting of the anomaly decision boundaries as well as better learning of data representations. We demonstrate the state-of-the-art anomaly detection performance of STOC on multiple tabular and image data.</p>
 <p>STOC has the potential to make huge positive impact in real-world AD applications where detecting anomalies is crucial, such as for financial crime elimination, cybersecurity advances, or improving manufacturing quality. We note the potential risk associated with using STOC that when representations are not sufficiently good, there will be a negative cycle of refinement and representation updates/one-class classifier. While we rely on the existence of good representations this may not be true for other domains (e.g., cybersecurity). This paper focuses on unsupervised setting, and demonstrates strong anomaly detection performance. This opens new horizons for human-in-the-loop anomaly detection systems that are low-cost and robust. We leave these explorations to future work.</p>
 
-  </article>
-</section>
+      </div>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
     integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
   
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
@@ -306,6 +342,7 @@ $$
         ]
       }
     );"></script>
+  </section>
 
     </div>
 

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  HDC-MiniROCKET: Explicit Time Encoding in Time Series Classification with Hyperdimensional Computing · Tung Kieu
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Tung Kieu">
+<meta name="description" content="AbstractLink to headingClassification of time series data is an important task for many application domains. One of the best existing methods for this task, in terms of accuracy and computation time, is MiniROCKET. In this work, we extend this approach to provide better global temporal encodings using hyperdimensional computing (HDC) mechanisms. HDC (also known as Vector Symbolic Architectures, VSA) is a general method to explicitly represent and process information in high-dimensional vectors.">
+<meta name="keywords" content="blog, researcher, personal">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HDC-MiniROCKET: Explicit Time Encoding in Time Series Classification with Hyperdimensional Computing">
+  <meta name="twitter:description" content="AbstractLink to headingClassification of time series data is an important task for many application domains. One of the best existing methods for this task, in terms of accuracy and computation time, is MiniROCKET. In this work, we extend this approach to provide better global temporal encodings using hyperdimensional computing (HDC) mechanisms. HDC (also known as Vector Symbolic Architectures, VSA) is a general method to explicitly represent and process information in high-dimensional vectors.">
+
+<meta property="og:url" content="http://localhost:1313/posts/hdc_minirocket/">
+  <meta property="og:site_name" content="Tung Kieu">
+  <meta property="og:title" content="HDC-MiniROCKET: Explicit Time Encoding in Time Series Classification with Hyperdimensional Computing">
+  <meta property="og:description" content="AbstractLink to headingClassification of time series data is an important task for many application domains. One of the best existing methods for this task, in terms of accuracy and computation time, is MiniROCKET. In this work, we extend this approach to provide better global temporal encodings using hyperdimensional computing (HDC) mechanisms. HDC (also known as Vector Symbolic Architectures, VSA) is a general method to explicitly represent and process information in high-dimensional vectors.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-22T14:55:12+02:00">
+    <meta property="article:modified_time" content="2024-06-22T14:55:12+02:00">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/hdc_minirocket/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+
+  
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+  
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      Tung Kieu
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/profile/">Profile</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/publication/">Publication</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/teaching/">Teaching</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/services/">Services</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/hdc_minirocket/">
+              HDC-MiniROCKET: Explicit Time Encoding in Time Series Classification with Hyperdimensional Computing
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-06-22T14:55:12&#43;02:00">
+                June 22, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              7-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="abstract">
+  Abstract
+  <a class="heading-link" href="#abstract">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Classification of time series data is an important task for many application domains. One of the best existing methods for this task, in terms of accuracy and computation time, is MiniROCKET. In this work, we extend this approach to provide better global temporal encodings using hyperdimensional computing (HDC) mechanisms. HDC (also known as Vector Symbolic Architectures, VSA) is a general method to explicitly represent and process information in high-dimensional vectors. It has previously been used successfully in combination with deep neural networks and other signal processing algorithms. We argue that the internal high-dimensional representation of MiniROCKET is well suited to be complemented by the algebra of HDC. This leads to a more general formulation, HDC-MiniROCKET, where the original algorithm is only a special case. We will discuss and demonstrate that HDC-MiniROCKET can systematically overcome catastrophic failures of MiniROCKET on simple synthetic datasets. These results are confirmed by experiments on the 128 datasets from the UCR time series classification benchmark. The extension with HDC can achieve considerably better results on datasets with high temporal dependence without increasing the computational effort for inference.</p>
+<h2 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>MiniROCKET applies a set of parallel convolutions to the input signal. To achieve a low runtime, two important design decisions of MiniROCKET are (1) the usage of convolution filters of small size and (2) accumulation of filter responses over time based on the Proportion of Positive Values (PPV), which is a special kind of averaging. However, the combination of these design decisions can hamper the encoding of temporal variation of signals on a larger scale than the size of the convolution filters. To address this, the authors of MiniROCKET propose to use dilated convolutions. A dilated convolution virtually increases a filter kernel by adding sequences of zeros in between the values of the original filter kernel [12] (e.g. \([-1, 2, 1]\) becomes \([-1, 0, 2, 0 1]\) or \([-1, 0, 0, 2, 0, 0, 1]\) and so on).</p>
+<p><img src="/images/2DfUTpl.png"></p>
+<p>The first contribution of this paper is to demonstrate that although the dilatated convolutions of MiniROCKET perform well on a series of standard benchmark datasets like UCR [13], it is easy to create datasets where classification based on MiniROCKET is not much better than random guessing. This is due to a combination of two problems: (1) The location of the sharp peaks cannot be well captured by dilated convolutions with high dilation values due to their large gaps. (2) Although responses of filters with small or no dilation can represent the peak, the averaging implemented by PPV removes the temporal information on the global scale.</p>
+<p>HDC-MiniROCKET, that addressed this second problem. It is based on the observation that MiniROCKET’s Proportion of Positive Values (the second design decision from above) is a special case of a broader class of accumulation operations known as bundling in the context of Hyperdimensional Computing (HDC) and Vector Symbolic Architectures (VSA) [14]–[17]. This novel perspective encourages a straight-forward and computational efficient usage of a second HDC operator, binding, in order to explicitly and flexibly encode temporal information during the accumulation process in MiniROCKET. The original MiniROCKET then becomes a special case of the proposed more general HDC-MiniROCKET.</p>
+<h2 id="related-work">
+  Related Work
+  <a class="heading-link" href="#related-work">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="time-series-classification">
+  Time Series Classification
+  <a class="heading-link" href="#time-series-classification">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The survey papers used dataset collections for benchmarking: 1) the University of California, Riverside (UCR) time series classification and clustering repository [13] for univariate time series, and 2) the University of East Anglia (UEA) repository [19] for multivariate time series.</p>
+<h3 id="rocket-and-minirocket">
+  ROCKET and MiniROCKET
+  <a class="heading-link" href="#rocket-and-minirocket">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>As said before, MiniROCKET [9] is a variant of the earlier ROCKET [8] algorithm. Based on the great success of convolutional neural networks, both variants build upon convolutions with multiple kernels. However, learning the kernels is difficult if the dataset is too small, so [8] uses a fixed set of predefined kernels. While ROCKET uses randomly selected kernels with a high variety on length, weights, biases and dilations, MiniROCKET is more deterministic. It uses predefined kernels based on empirical observations of the behavior of ROCKET. Furthermore, instead of using two global pooling operation in ROCKET (max-pooling and proportion of positive values, PPV), MiniROCKET uses just one pooling value – the PPV. This leads to vectors that are only half as large (about \(10,000\) instead of \(20,000\) dimensions). MiniROCKET is up to \(75\) times faster than ROCKET on large datasets. To classify feature vectors, both ROCKET and MiniROCKET use a simple ridge regression.</p>
+<h3 id="hyperdimensional-computing-hdc">
+  Hyperdimensional Computing (HDC)
+  <a class="heading-link" href="#hyperdimensional-computing-hdc">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Hyperdimensional computing (also known as Vector Symbolic Architectures, VSA) is an established approach to solve computational problems using large numerical vectors (hypervectors) and well-defined mathematical operations. Basic literature with theoretical background and details on implementations of HDC are [14]–[17]; further general comparisons and overviews can be found in [22]–[25]. Moreover, hypervectors are also intermediate representations in most artificial neural networks. Therefore, a combination with HDC can be straightforward. Related to time series, for example, [30] used HDC in combination with deep-learned descriptors for temporal sequence encoding for image-based localization. A combination of HDC and neural networks for multivariate time series classification of driving styles was demonstrated in [37]. There, the HDC approach was used to first encode the sensory values and to then combine the temporal and spatial context in a single representation. This led to faster learning and better classification accuracy compared to standard LSTM neural networks.</p>
+<h2 id="methodology">
+  Methodology
+  <a class="heading-link" href="#methodology">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="minirocket">
+  MiniROCKET
+  <a class="heading-link" href="#minirocket">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Input is a time series signal \(x \in \mathbb{R}^T\) where \(T\) is the length of the time series. MiniROCKET can compute a \(D = 9,996\) dimensional output vector \(y\) that describes this signal.</p>
+<p>The first step in MiniROCKET is a dilated convolution of the input signal \(x\) with kernels \(W_{k,d}\):</p>
+$$
+c_{k,d} = x \star W_{k,d}
+$$
+<p>$d$ is the dilation parameter, \(k \in \{1, \ldots, 84\}\) refers to \(84\) predefined kernels \(W_k\). The length and weights of these kernels are based on insights from the first ROCKET method [8]: the MiniROCKET kernels have a length of \(9\), the weights are restricted to one of two values \(\{-1, 2\}\), and there are exactly three weights with value \(2\).</p>
+<p>In a second step, each convolution result \(c_{k,d}\) is element-wise compared to one or multiple bias values \(B_b\)</p>
+$$
+c_{k,d,b} = c_{k,d} > B_b
+$$
+<p>This is an approximation of the cumulative distribution function of the filter responses of this particular combination of kernel $k$ and dilation $d$.</p>
+<p>The final step of MiniROCKET is to compute each of the \(9,996\) dimensions of the output descriptor \(y^{PPV}\) as the mean value of one of the \(c_{k,d,b}\) vectors (referred to as PPV in [9]). This averaging is where potentially important temporal information is lost and this final step will be different in HDC-MiniROCKET.</p>
+<h3 id="hdc-minirocket">
+  HDC-MiniROCKET
+  <a class="heading-link" href="#hdc-minirocket">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The important difference is that HDC-MiniROCKET uses a Hyperdimensional Computing (HDC) binding operator to bind the convolution results to timestamps before creation of the final output.</p>
+<h3 id="a-hdc-perspective-on-minirocket">
+  A HDC perspective on MiniROCKET
+  <a class="heading-link" href="#a-hdc-perspective-on-minirocket">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>One of these operations is <em>bundling</em> \(\oplus\). Input to the bundling operation are two or more vectors from a vector space V and the output is a vector of the same size that is similar to each input vector. Dependent on the underlying vector space \(\mathbb{V}\), there are different Vector Symbolic Architectures (VSAs) that implement this operation differently. For example, the multiply-add-permute (MAP) architecture [16] can operate on bipolar vectors (with values \(\{-1, 1\}\)) and implements <em>bundling</em> with a simple element-wise summation – in high-dimensional vector spaces, the sum of vectors is similar to each summand [15]</p>
+<p>The valuable connection between HDC and MiniROCKET is that the \(9,996\) different vectors \(c_{k,d,b} \in \{0, 1\}^T\) from Eq. 2 in MiniROCKET also constitute a \(9,996\)-dimensional feature vector \(F_t\) for each timestep \(t \in \{1,\ldots,T\}\) (think of each vector \(c_{k,d,b}\) being a row in a matrix, then these feature vectors \(F_t\) are the columns). The averaging in MiniROCKET’s PPV (i.e. the row-wise mean in the above matrix) is then equivalent to bundling of these vectors \(F_t\). More specifically, if we convert \(F_t\) to bipolar by \(F_{t}^{BP} = 1 - 2 F_{t}\) and use the MAP architecture’s bundling operation (i.e. elementwise addition) then the result is proportional to the output of MiniROCKET:</p>
+$$
+\bigoplus_{t=1}^{T}F_{t}^{B P}=\sum_{t=1}^{T}(1-2F_{t})\propto y_{PPV}
+$$
+<p>This is just another way to compute output vectors that point in the same directions as the MiniROCKET output – which preserves cosine similarities between vectors. But much more importantly, it encourages the integration of a second HDC operation, <em>binding</em> \(\otimes\), as described in the following section.</p>
+<p>HDC-MiniROCKET extends MiniROCKET by using the HDC binding \(\otimes\) operation to also encode the timestamp \(t\) of each feature \(F_t^{BP}\) in the output vector (without increasing the vector size).</p>
+$$
+$y^{H D C}=\bigoplus_{t=1}^{T}(F_{t}^{B P}\otimes P_{t})=\sum_{t=1}^{T}(1-2F_{t}) \odot P_{t}
+$$
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2024
+     Tung Kieu 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

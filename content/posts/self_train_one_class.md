@@ -13,11 +13,11 @@ series = []
 
 ## Abstract
 
-In this work, we focus on unsupervised AD problems whose entire training data are unlabeled and may contain both normal and anomalous samples. To tackle this problem, we build a robust one-class classification framework via data refinement. To refine the data accurately, we propose an ensemble of one-class classifiers, each of which is trained on a disjoint subset of training data. Moreover, we propose a self-training of deep representation one-class classifiers (STOC) that iteratively refines the data and deep representations. In experiments, we show the efficacy of our method for unsupervised anomaly detection on benchmarks from image and tabular data domains. For example, with a 10% anomaly ratio on CIFAR-10 data, the proposed method outperforms state-of-the-art one-class classification method by \(6.3\) AUC and \(12.5\) average precision.
+In this work, we focus on unsupervised AD problems whose entire training data are unlabeled and may contain both normal and anomalous samples. To tackle this problem, we build a robust one-class classification framework via data refinement. To refine the data accurately, we propose an ensemble of one-class classifiers, each of which is trained on a disjoint subset of training data. Moreover, we propose a self-training of deep representation one-class classifiers (STOC) that iteratively refines the data and deep representations. In experiments, we show the efficacy of our method for unsupervised anomaly detection on benchmarks from image and tabular data domains. For example, with a \(10\%\) anomaly ratio on CIFAR-10 data, the proposed method outperforms state-of-the-art one-class classification method by \(6.3\) AUC and \(12.5\) average precision.
 
 ## Introduction
 
-![](https://i.imgur.com/TWp0JkL.png)
+![](/images/TWp0JkL.png)
 
 Figure 1: Anomaly detection problem settings. Blue and red are for labeled negative (normal) and positive (anomalous) samples, respectively. Grey dots denote unlabeled samples. While previous works mostly focus on supervised (a, b) or semi-supervised (c, d, e) settings, we tackle an anomaly detection using only unlabeled data (f) that may contain both negative and positive samples.
 
@@ -49,7 +49,7 @@ Let us denote a feature extractor as \(g : X \rightarrow Z\). \(g\) may include 
 
 A naive way to generate pseudo labels of unlabeled data is to construct a one-class classifier on raw or learned representations (e.g., [41]) and threshold the anomaly score to obtain a binary label of normal and anomalous. As we update the model with refined data that excludes samples predicted as positive, it is important to generate pseudo labels of training data as accurately as possible.
 
-![](https://i.imgur.com/0vNEGBQ.png)
+![](/images/0vNEGBQ.png)
 
 Figure 3: Block diagram of STOC composed of representation learner (Section 3.2), data refinement (Section 3.1), and the final one-class classifier blocks. Representation learner updates the deep models using refined data from the data refinement block, but is optional if using fixed representations. Data refinement is done by ensemble one-class classifiers, each of which is trained on K disjoint subsets of unlabeled training data. Samples predicted as normal by all classifiers are retained in the refined data.
 
@@ -75,7 +75,7 @@ Here, we propose to conduct self-supervised representation learning jointly with
 
 Following representation learning, we train a one-class classifier on refined data \(\hat{\mathcal{D}}\) using updated representation by \(g\) for test time prediction, as in lines 13, and 14 in Algorithm 1.
 
-![](https://i.imgur.com/1rOcUKe.png)
+![](/images/1rOcUKe.png)
 
 ### Selecting hyperparameters
 
@@ -89,7 +89,7 @@ Our data refinement block introduces two hyperparameters: the number of one-clas
 
 **Models.** We re-implement GOAD [5], a type of augmentation prediction method [19, 41] with random projections for learning representations, for the baseline with a few modifications. First, instead of using embeddings to compute the loss, we use a parametric classifier, similar to the augmentation prediction [41]. Second, we follow the two-stage framework [41] to construct deep one-class classifiers. For N setting, our implementation achieves \(98.0\) for KDD, \(95.0\) for KDD-Rev, \(75.1\) for Thyroid, and \(54.8\) for Arrhythmia F1-scores, which are comparable to those reported in [5].
 
-![](https://i.imgur.com/XEtIj7N.png)
+![](/images/XEtIj7N.png)
 
 Figure 4: Unsupervised anomaly detection performance (F1-score) using GOAD [5] and that with STOC on various tabular datasets. Shaded areas represent the standard deviation.
 
@@ -100,12 +100,12 @@ Figure 4: Unsupervised anomaly detection performance (F1-score) using GOAD [5] a
 **Models.** For semantic anomaly detection benchmarks, CIFAR-10, f-MNIST, and Dog-vs-Cat, we compare the STOC with two-stage one-class classifiers [41] using various representation learning methods, such as distribution-augmented contrastive learning [41], rotation prediction [19, 20] and its improved version [41], or denoising autoencoder. For MVTec AD benchmarks, we use CutPaste [28] as a baseline and compare to its version with STOC integration. For both experiments, we use ResNet-18 model, trained from random initialization, using the hyperparameters from [41] and [28]. The same model and hyperparameter configurations are used for STOC with \(K = 5\), the count of classifier ensembles. We set \(\gamma\) as twice the anomaly ratios of the training data. For \(0\%\) anomaly ratios, we set \(\gamma\) as \(0.5\). Finally, Gaussian Density Estimator (GDE) on learned representations is used for one-class classifiers.
 
 
-![](https://i.imgur.com/9vsr65A.png)
+![](/images/9vsr65A.png)
 
 Figure 5: Unsupervised anomaly detection performance with various one-class classifiers on CIFAR- 10 dataset. For STOC we adopt distribution-augmented contrastive representation learning [41]. (Left) AUC, (Right) Average Precision (AP).
 
 
-![](https://i.imgur.com/2GxrGLB.png)
+![](/images/2GxrGLB.png)
 
 Figure 6: Unsupervised anomaly detection performance on (a) MVTec AD (b) f-MNIST, and (c) Dog-vs-Cat datasets with varying anomaly ratios. We use state-of-the-art one-class classification models for baselines, such as distribution-augmented contrastive representations [41] for f-MNIST and Dog-vs-Cat, or CutPaste [28] for MVTec AD, and build STOC on top of them.
 
