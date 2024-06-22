@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Tung Kieu</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://tungk.github.io/posts/</link>
     <description>Recent content in Posts on Tung Kieu</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 22 Jun 2024 19:43:19 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tungk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Self-Trained One-class Classification for Unsupervised Anomaly Detection</title>
-      <link>http://localhost:1313/posts/self_train_one_class/</link>
+      <link>https://tungk.github.io/posts/self_train_one_class/</link>
       <pubDate>Sat, 22 Jun 2024 19:43:19 +0200</pubDate>
-      <guid>http://localhost:1313/posts/self_train_one_class/</guid>
+      <guid>https://tungk.github.io/posts/self_train_one_class/</guid>
       <description>Abstract&#xD;Link to heading&#xD;In this work, we focus on unsupervised AD problems whose entire training data are unlabeled and may contain both normal and anomalous samples. To tackle this problem, we build a robust one-class classification framework via data refinement. To refine the data accurately, we propose an ensemble of one-class classifiers, each of which is trained on a disjoint subset of training data. Moreover, we propose a self-training of deep representation one-class classifiers (STOC) that iteratively refines the data and deep representations.</description>
     </item>
     <item>
       <title>HDC-MiniROCKET: Explicit Time Encoding in Time Series Classification with Hyperdimensional Computing</title>
-      <link>http://localhost:1313/posts/hdc_minirocket/</link>
+      <link>https://tungk.github.io/posts/hdc_minirocket/</link>
       <pubDate>Sat, 22 Jun 2024 14:55:12 +0200</pubDate>
-      <guid>http://localhost:1313/posts/hdc_minirocket/</guid>
+      <guid>https://tungk.github.io/posts/hdc_minirocket/</guid>
       <description>Abstract&#xD;Link to heading&#xD;Classification of time series data is an important task for many application domains. One of the best existing methods for this task, in terms of accuracy and computation time, is MiniROCKET. In this work, we extend this approach to provide better global temporal encodings using hyperdimensional computing (HDC) mechanisms. HDC (also known as Vector Symbolic Architectures, VSA) is a general method to explicitly represent and process information in high-dimensional vectors.</description>
     </item>
     <item>
       <title>Robustness of Autoencoders for Anomaly Detection Under Adversarial Impact</title>
-      <link>http://localhost:1313/posts/robustness_autoencoder_anomaly_detection/</link>
+      <link>https://tungk.github.io/posts/robustness_autoencoder_anomaly_detection/</link>
       <pubDate>Sat, 22 Jun 2024 01:20:14 +0200</pubDate>
-      <guid>http://localhost:1313/posts/robustness_autoencoder_anomaly_detection/</guid>
+      <guid>https://tungk.github.io/posts/robustness_autoencoder_anomaly_detection/</guid>
       <description>Abstract&#xD;Link to heading&#xD;Deep learning methods have achieved state-of-the-art performance in anomaly detection in recent years; unsupervised methods being particularly popular. However, deep learning methods can be fragile to small perturbations in the input data. This phenomena has been widely studied in the context of supervised image classification since its discovery, however such studies for an anomaly detection setting are sorely lacking. Moreover, the plethora of defense mechanisms that have been proposed are often not applicable to unsupervised anomaly detection models</description>
     </item>
     <item>
       <title>Stichable Neural Networks</title>
-      <link>http://localhost:1313/posts/stichable_neural_networks/</link>
+      <link>https://tungk.github.io/posts/stichable_neural_networks/</link>
       <pubDate>Fri, 21 Jun 2024 23:55:12 +0200</pubDate>
-      <guid>http://localhost:1313/posts/stichable_neural_networks/</guid>
+      <guid>https://tungk.github.io/posts/stichable_neural_networks/</guid>
       <description>Abstract&#xD;Link to heading&#xD;As each model family consists of pretrained models with diverse scales (e.g., DeiT-Ti/S/B), it naturally arises a fundamental question of how to efficiently assemble these readily available models in a family for dynamic accuracy-efficiency trade-offs at runtime.&#xA;The paper presents Stitchable Neural Networks (SN-Net), a novel scalable and efficient framework for model deployment. It cheaply produces numerous networks with different complexity and performance trade-offs given a family of pretrained neural networks, which are called anchors.</description>
     </item>
   </channel>
