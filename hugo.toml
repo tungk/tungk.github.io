@@ -27,10 +27,12 @@ noClasses = false
 [params]
 author = "Tung Kieu"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
-description = "Tung Kieu's personal website"
-keywords = "blog,researcher,personal"
+description = "Tung Kieu's Personal Website"
+keywords = "blog, researcher, personal"
 info = ["Researcher", "Department of Computer Science, Aalborg University", "Pauca sed Matura"]
-avatarURL = "images/profile.png"
+avatarURL = "images/profile.jpg"
+avatarwidth = 240
+avatarHeight = 240
 #gravatar = "tungk@gmail.com"
 dateFormat = "January 2, 2006"
 since = 2024
