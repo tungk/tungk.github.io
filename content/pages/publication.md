@@ -23,6 +23,7 @@ draft = false
 
 
 ## Preprint
+- Chenjuan Guo, Ronghui Xu, Bin Yang, Ye Yuan, **Tung Kieu**, Yan Zhao, and Christian S. Jensen. *Efficient Stochastic Routing in Path-Centric Uncertain Road Networks--Extended Version*
 - David Campos, Bin Yang, **Tung Kieu**, Miao Zhang, Chenjuan Guo, and Christian S. Jensen. _QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models--Extended Version_
 - Huy Le, **Tung Kieu**, Anh Nguyen, and Ngan Le. _WAVER: Writing-style Agnostic Video Retrieval via Distilling Vision-Language Models Through Open-Vocabulary Knowledge--Extended Version_
 - David Campos, Miao Zhang, Bin Yang, **Tung Kieu**, Chenjuan Guo, and Christian S. Jensen. _LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation--Extended Version_

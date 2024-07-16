@@ -2,66 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tung Kieu</title>
-    <link>https://tungk.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Tung Kieu</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Jun 2024 19:43:19 +0200</lastBuildDate>
-    <atom:link href="https://tungk.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jun 2024 23:55:12 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Composed Video Retrieval via Enriched Context and Discriminative Embeddings</title>
+      <link>http://localhost:1313/posts/composed_video_retrieval/</link>
+      <pubDate>Wed, 26 Jun 2024 23:55:12 +0200</pubDate>
+      <guid>http://localhost:1313/posts/composed_video_retrieval/</guid>
+      <description>Abstract&#xD;Link to heading&#xD;Composed video retrieval (CoVR) is a challenging problem in computer vision which has recently highlighted the integration of modification text with visual queries for more sophisticated video search in large databases. Existing works predominantly rely on visual queries combined with modification text to distinguish relevant videos. However, such a strategy struggles to fully preserve the rich query-specific context in retrieved target videos and only represents the target video using visual embedding.</description>
+    </item>
     <item>
       <title>Self-Trained One-class Classification for Unsupervised Anomaly Detection</title>
-      <link>https://tungk.github.io/posts/self_train_one_class/</link>
+      <link>http://localhost:1313/posts/self_train_one_class/</link>
       <pubDate>Sat, 22 Jun 2024 19:43:19 +0200</pubDate>
-      <guid>https://tungk.github.io/posts/self_train_one_class/</guid>
+      <guid>http://localhost:1313/posts/self_train_one_class/</guid>
       <description>Abstract&#xD;Link to heading&#xD;In this work, we focus on unsupervised AD problems whose entire training data are unlabeled and may contain both normal and anomalous samples. To tackle this problem, we build a robust one-class classification framework via data refinement. To refine the data accurately, we propose an ensemble of one-class classifiers, each of which is trained on a disjoint subset of training data. Moreover, we propose a self-training of deep representation one-class classifiers (STOC) that iteratively refines the data and deep representations.</description>
     </item>
     <item>
       <title>HDC-MiniROCKET: Explicit Time Encoding in Time Series Classification with Hyperdimensional Computing</title>
-      <link>https://tungk.github.io/posts/hdc_minirocket/</link>
+      <link>http://localhost:1313/posts/hdc_minirocket/</link>
       <pubDate>Sat, 22 Jun 2024 14:55:12 +0200</pubDate>
-      <guid>https://tungk.github.io/posts/hdc_minirocket/</guid>
+      <guid>http://localhost:1313/posts/hdc_minirocket/</guid>
       <description>Abstract&#xD;Link to heading&#xD;Classification of time series data is an important task for many application domains. One of the best existing methods for this task, in terms of accuracy and computation time, is MiniROCKET. In this work, we extend this approach to provide better global temporal encodings using hyperdimensional computing (HDC) mechanisms. HDC (also known as Vector Symbolic Architectures, VSA) is a general method to explicitly represent and process information in high-dimensional vectors.</description>
     </item>
     <item>
       <title>Robustness of Autoencoders for Anomaly Detection Under Adversarial Impact</title>
-      <link>https://tungk.github.io/posts/robustness_autoencoder_anomaly_detection/</link>
+      <link>http://localhost:1313/posts/robustness_autoencoder_anomaly_detection/</link>
       <pubDate>Sat, 22 Jun 2024 01:20:14 +0200</pubDate>
-      <guid>https://tungk.github.io/posts/robustness_autoencoder_anomaly_detection/</guid>
+      <guid>http://localhost:1313/posts/robustness_autoencoder_anomaly_detection/</guid>
       <description>Abstract&#xD;Link to heading&#xD;Deep learning methods have achieved state-of-the-art performance in anomaly detection in recent years; unsupervised methods being particularly popular. However, deep learning methods can be fragile to small perturbations in the input data. This phenomena has been widely studied in the context of supervised image classification since its discovery, however such studies for an anomaly detection setting are sorely lacking. Moreover, the plethora of defense mechanisms that have been proposed are often not applicable to unsupervised anomaly detection models</description>
     </item>
     <item>
       <title>Stichable Neural Networks</title>
-      <link>https://tungk.github.io/posts/stichable_neural_networks/</link>
+      <link>http://localhost:1313/posts/stichable_neural_networks/</link>
       <pubDate>Fri, 21 Jun 2024 23:55:12 +0200</pubDate>
-      <guid>https://tungk.github.io/posts/stichable_neural_networks/</guid>
+      <guid>http://localhost:1313/posts/stichable_neural_networks/</guid>
       <description>Abstract&#xD;Link to heading&#xD;As each model family consists of pretrained models with diverse scales (e.g., DeiT-Ti/S/B), it naturally arises a fundamental question of how to efficiently assemble these readily available models in a family for dynamic accuracy-efficiency trade-offs at runtime.&#xA;The paper presents Stitchable Neural Networks (SN-Net), a novel scalable and efficient framework for model deployment. It cheaply produces numerous networks with different complexity and performance trade-offs given a family of pretrained neural networks, which are called anchors.</description>
     </item>
     <item>
       <title>Profile</title>
-      <link>https://tungk.github.io/pages/profile/</link>
+      <link>http://localhost:1313/pages/profile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tungk.github.io/pages/profile/</guid>
+      <guid>http://localhost:1313/pages/profile/</guid>
       <description>Contact Information&#xD;Link to heading&#xD;Office: (1) A.C. Meyers Vaenge 15, Room 2.095, Copenhagen, Denmark; (2) Selma Lagerlofs Vej 300, Room 3-2-05, Aalborg, Denmark&#xA;Email: (1) tungkvt[at]cs[dot]aau[dot]dk; (2) kvttung[at]gmail[dot]com&#xA;Biography&#xD;Link to heading&#xD;I am an Assistant Professor in the Department of Computer Science at Aalborg University. I am a faculty member in Center for Data-Intensive Systems. I am also affiliated with the department&amp;rsquo;s team on Artificial Intelligence and Machine Learning and the university&amp;rsquo;s Center on AI for the People.</description>
     </item>
     <item>
       <title>Publication</title>
-      <link>https://tungk.github.io/pages/publication/</link>
+      <link>http://localhost:1313/pages/publication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tungk.github.io/pages/publication/</guid>
+      <guid>http://localhost:1313/pages/publication/</guid>
       <description>Selected Publication&#xD;Link to heading&#xD;David Campos, Bin Yang, Tung Kieu, Miao Zhang, Chenjuan Guo, and Christian S. Jensen. QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models. VLDB 2024 (CORE A*) Chenjuan Guo, Ronghui Xu, Yuan Ye, Bin Yang, Tung Kieu, Yan Zhao, and Christian S. Jensen. Efficient Stochastic Routing in Path-Centric Uncertain Road Networks. VLDB 2024 (CORE A*) Huy Le, Tung Kieu, Anh Nguyen, and Ngan Le. WAVER: Writing-style Agnostic Video Retrieval via Distilling Vision-Language Models Through Open-Vocabulary Knowledge.</description>
     </item>
     <item>
       <title>Services</title>
-      <link>https://tungk.github.io/pages/services/</link>
+      <link>http://localhost:1313/pages/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tungk.github.io/pages/services/</guid>
+      <guid>http://localhost:1313/pages/services/</guid>
       <description>Conferences&#xD;Link to heading&#xD;ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD) ACM SIGMOD Conference on Management of Data (SIGMOD) Conference on Neural Information Processing Systems (NEURIPS) International Joint Conference on Artificial Intelligence (IJCAI) AAAI Conference on Artificial Intelligence (AAAI) International Conference on Very Large Data Bases (VLDB) IEEE International Conference on Data Engineering (ICDE) ACM International Conference on Information and Knowledge Management (CIKM) ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (SIGSPATIAL/GIS) International Conference on Advanced Data Mining and Applications (ADMA) APWeb-WAIM International Joint Conference on Web and Big Data (APWEB-WAIM) IEEE International Conference on Mobile Data Management (MDM) Journals&#xD;Link to heading&#xD;Journal of Artificial Intelligence Research (JAIR) ACM Transactions on Information Systems (TOIS) IEEE Transactions on Neural Networks and Learning Systems (TNNLS) IEEE Transactions on Knowledge and Data Engineering (TKDE) IEEE Transactions on Intelligent Transportation Systems (TITS) IEEE Transactions on Network Science and Engineering (TNSE) IEEE Transactions on Industrial Informatics (TII) Data Mining and Knowledge Discovery (DMKD) Pattern Recognition Neural Networks Machine Learning Expert Systems with Applications Neural Processing Letters IEEE Access Collaboration&#xD;Link to heading&#xD;Collaborating with TADAA!</description>
     </item>
     <item>
       <title>Teaching</title>
-      <link>https://tungk.github.io/pages/teaching/</link>
+      <link>http://localhost:1313/pages/teaching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tungk.github.io/pages/teaching/</guid>
+      <guid>http://localhost:1313/pages/teaching/</guid>
       <description>Courses&#xD;Link to heading&#xD;Advanced Algorithm (shared with Prof. Bin Yang and Prof. Chenjuan Guo). Algorithms and Computability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba). Algorithms and Satisfiability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba). Introduction to Database Systems (at RMIT University). Programming Bootcamp (at RMIT University). Programming Studio (at RMIT University). Data-intensive Sytems. Mobile Data and Location-based Services (shared with Prof.</description>
     </item>
   </channel>
