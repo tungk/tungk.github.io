@@ -5,7 +5,7 @@ draft = false
 
 <!-- # Teaching -->
 ## Courses
-- Advanced Algorithm (shared with Prof. Bin Yang and Prof. Chenjuan Guo).
+- Advanced Algorithms (shared with Prof. Bin Yang and Prof. Chenjuan Guo).
 - Algorithms and Computability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba).
 - Algorithms and Satisfiability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba).
 - Introduction to Database Systems (at RMIT University).
