@@ -23,7 +23,7 @@ draft = false
 
 ## Teaching Assistant
 - Algorithms and Data Structures (shared with Sean Bin Yang).
-- Advanced Algorithm (shared with Sean Bin Yang).
+- Advanced Algorithms (shared with Sean Bin Yang).
 - Algorithms and Computability (shared with Jákup Odssonur Svöðstein).
 - Algorithms and Satisfiability (shared with Jákup Odssonur Svöðstein).
 
