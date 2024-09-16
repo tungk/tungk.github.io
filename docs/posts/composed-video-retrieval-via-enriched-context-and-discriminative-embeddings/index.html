@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Composed Video Retrieval via Enriched Context and Discriminative Embeddings · Tung Kieu
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Tung Kieu">
+<meta name="description" content="AbstractLink to headingComposed video retrieval (CoVR) is a challenging problem in computer vision which has recently highlighted the integration of modification text with visual queries for more sophisticated video search in large databases. Existing works predominantly rely on visual queries combined with modification text to distinguish relevant videos. However, such a strategy struggles to fully preserve the rich query-specific context in retrieved target videos and only represents the target video using visual embedding.">
+<meta name="keywords" content="blog, researcher, personal">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Composed Video Retrieval via Enriched Context and Discriminative Embeddings">
+  <meta name="twitter:description" content="AbstractLink to headingComposed video retrieval (CoVR) is a challenging problem in computer vision which has recently highlighted the integration of modification text with visual queries for more sophisticated video search in large databases. Existing works predominantly rely on visual queries combined with modification text to distinguish relevant videos. However, such a strategy struggles to fully preserve the rich query-specific context in retrieved target videos and only represents the target video using visual embedding.">
+
+<meta property="og:url" content="http://localhost:1313/posts/composed-video-retrieval-via-enriched-context-and-discriminative-embeddings/">
+  <meta property="og:site_name" content="Tung Kieu">
+  <meta property="og:title" content="Composed Video Retrieval via Enriched Context and Discriminative Embeddings">
+  <meta property="og:description" content="AbstractLink to headingComposed video retrieval (CoVR) is a challenging problem in computer vision which has recently highlighted the integration of modification text with visual queries for more sophisticated video search in large databases. Existing works predominantly rely on visual queries combined with modification text to distinguish relevant videos. However, such a strategy struggles to fully preserve the rich query-specific context in retrieved target videos and only represents the target video using visual embedding.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-26T23:55:12+02:00">
+    <meta property="article:modified_time" content="2024-06-26T23:55:12+02:00">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/composed-video-retrieval-via-enriched-context-and-discriminative-embeddings/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+
+  
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+  
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      Tung Kieu
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/profile/">Profile</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/publication/">Publication</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/teaching/">Teaching</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/services/">Services</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/composed-video-retrieval-via-enriched-context-and-discriminative-embeddings/">
+              Composed Video Retrieval via Enriched Context and Discriminative Embeddings
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-06-26T23:55:12&#43;02:00">
+                June 26, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              11-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="abstract">
+  Abstract
+  <a class="heading-link" href="#abstract">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Composed video retrieval (CoVR) is a challenging problem in computer vision which has recently highlighted the integration of modification text with visual queries for more sophisticated video search in large databases. Existing works predominantly rely on visual queries combined with modification text to distinguish relevant videos. However, such a strategy struggles to fully preserve the rich query-specific context in retrieved target videos and only represents the target video using visual embedding. We introduce a novel CoVR framework that leverages detailed language descriptions to explicitly encode query-specific contextual information and learns discriminative embeddings of vision only, text only and vision-text for better alignment to accurately retrieve matched target videos. Our proposed framework can be flexibly employed for both composed video (CoVR) and image (CoIR) retrieval tasks. Experiments on three datasets show that our approach obtains state-of-the-art performance for both CovR and zero-shot CoIR tasks, achieving gains as high as around 7% in terms of recall@K=1 score</p>
+<h2 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Introduction Composed image retrieval (CoIR) is the task of retrieving matching images, given a query composed of an image along with natural language description (text). Compared to the classical problem of content-based image retrieval that utilizes a single (visual) modality, composed image retrieval (CoIR) uses multi-modal information (query comprising image and text) that aids in alleviating miss-interpretations by incorporating user’s intent specified in the form of language descriptions.</p>
+<p>The problem of CoVR poses two unique challenges: a) bridging the domain gap between the input query and the modification text, and b) simultaneously aligning the multimodal feature embedding with the feature embedding of the target videos that are inherently dynamic. Further, their context can also vary across different video frames.</p>
+<p>To addres the problem of CoVR, the recent work introduces an annotation pipeline to generate video-text-video triplets from existing video-caption datasets. The curated triplets contain the source and target video along with the change text describing the differences between the two videos.</p>
+<p>We note that the aforementioned framework struggles since the latent embedding of a query visual input (image/video) is likely to be insufficient to provide necessary semantic details about the query image/video due to the following reasons: a) visual inputs are high-dimensional and offer details, most of which are not related to the given context, b) the visual depiction often shows a part of the broader context and there exist non-visual contextual cues that play a crucial role in understanding the given inputs.</p>
+<p><img alt="image" src="/images/Sy-HgcXWR.png"></p>
+<p>Contributions: We propose a framework that explicitly leverages detailed language descriptions to preserve the query-specific contextual information, thereby reducing the domain gap with respect to the change text for CoVR.</p>
+<ul>
+<li>we utilize recent multi-modal conversational model to generate detailed textual descriptions which are then used during the training to complement the query videos.</li>
+<li>we learn discriminative embeddings of vision, text and vision-text during contrastive training to align the composed input query and change text with target semantics for enhanced CoVR.</li>
+</ul>
+<h2 id="related-work">
+  Related Work
+  <a class="heading-link" href="#related-work">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="composed-image-retrieval-coir">
+  Composed Image Retrieval (CoIR)
+  <a class="heading-link" href="#composed-image-retrieval-coir">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The problem holds extensive practical significance finding applications in diverse domains such as, product search, face recognition, and image geolocalization.</p>
+<p>CoIR is challenging since it requires image retrieval based on its reference image and corresponding relative change text. Most existing CoIR approaches are built on top of CLIP and learn the multi-model embeddings comprising reference image and relative change text caption for target image retrieval.</p>
+<p>These methods carefully harness the capabilities of large-scale pretrained image and text encoders, effectively amalgamating compositional image and text features to achieve improved performance</p>
+<h3 id="composed-video-retrieval-covr">
+  Composed Video Retrieval (CoVR)
+  <a class="heading-link" href="#composed-video-retrieval-covr">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Early efforts in this domain predominantly explored content-based retrieval approaches, leveraging key-frame analysis, color histograms, and local feature matching. The advent of deep learning techniques has further revolutionized text-to-video retrieval, with the emergence of multi-modal embeddings and attention mechanisms.</p>
+<p>Recently, a study explored the problem of composed video retrieval (CoVR) where the objective is to retrieve the target video, given the reference video and its corresponding compositional change text. It also proposes a new benchmark for CoVR, named <strong>WebVid-CoVR</strong>, which comprises a synthetic training set and a manually curated test set. Further, the authors also propose a framework, named <strong>CoVR-BLIP</strong>, that is built on top of <strong>BLIP</strong> where an image grounded text encoder is utilized to generate multi-model features and aligns it with target video embeddings using a contrastive loss.</p>
+<h3 id="our-approach">
+  Our Approach
+  <a class="heading-link" href="#our-approach">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Different from <strong>CoVR-BLIP</strong>, our approach leverages detailed language descriptions of the reference video that are automatically generated through a multimodal conversation model and provide with following advantages.</p>
+<ul>
+<li>It helps in preserving the query-specific contextual information and aids in reducing the domain gap with the change text.</li>
+<li>Rather than relying on only using the visual embedding to represent target video as in, learning discriminative embeddings through vision, text, and vision-text enables improved alignment due to the extracting complementary target video representations.</li>
+</ul>
+<h2 id="method">
+  Method
+  <a class="heading-link" href="#method">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="problem-statement">
+  Problem Statement
+  <a class="heading-link" href="#problem-statement">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Composed Video Retrieval (CoVR) strives to retrieve a target video from a database. This target video is desired to be aligned with the visual cues from a query video but with the characteristics of the desired change represented by the text.</p>
+<p>Formally, for a given embedding of input query \(q \in Q\) and the desired modification text \(t \in T\), we optimize for a multi-modal encoder \(f\) and a visual encoder \(g\), such that \(f(q, t) \approx g(v)\), where \(v \in V\) is the target video from a database.</p>
+<h3 id="baseline-framework">
+  Baseline Framework
+  <a class="heading-link" href="#baseline-framework">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>To address the above problem, we base our method on the recently introduced framework, named <strong>CoVR-BLIP</strong>, that trains the multi-modal encoder \(f\) which takes the representations from the visual encoder \(g\).</p>
+<p>The visual encoder \(g\) remains frozen and is used to get the latent embeddings for visual input query which are then provided to multi-modal encoder \(f\) along with the tokenized change text $t$ to produce multi-modal embedding \(f(q, t)\). Then, the input visual query and the change text $t$ are aligned with the desired target videos using a contrastive loss between \(f(q, t)\) and \(g(v)\).</p>
+<h3 id="architecture-design">
+  Architecture Design
+  <a class="heading-link" href="#architecture-design">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Motivation.</strong> To motivate our proposed approach, we distinguish two desirable characteristics that are to be considered when designing an approach for the CoVR task.</p>
+<p>We argue that such a query-specific contextual information can be incorporated in the image-grounded text encoder through detailed language descriptions of these query videos.</p>
+<p>Therefore, the correspondence between embedding of the visual input \((q)\) and its corresponding detailed description \((d)\) results in an enhanced vision-text representation \(f(q, d)\) of \(q\), thereby ensuring a contextualized understanding of the query video.</p>
+<p>Further, the complementary nature of detailed descriptions aids in reducing the domain gap between the input query and the modification text by establishing correspondence between the detailed description of the input query and the modification text, as \(f(d, t)\).</p>
+$$
+v^*=\underset{v \in V}{\arg \max } \quad \mathcal{L}(\tilde{f}(q, d, t), g(v)),
+\tag{1}
+$$
+$$
+\tilde{f}(q, d, t)=f(q, t)+f(q, d)+f(e(d), t).
+\tag{2}
+$$
+<p>where, $q$ and $d$ represent input query (image/video) and its corresponding language description, t is the desired modification text, \(\tilde{f}(q, d, t)\) is the pairwise summation of individual correspondence embeddings and \(\mathcal{L}\) is a similarity-based loss.</p>
+<p><strong>Learning Discriminative Embeddings for Alignment.</strong> In the CoVR task, the model is desired to learn to align its output with the target video after mixing the change text with the query video. Instead of only representing the target video in the latent space through a visual embedding, a multiple discriminative embedding of vision, text, and vision-text is expected to provide better alignment due to complementary target video representation.</p>
+<p><strong>Overall Architecture.</strong> The proposed architecture comprising three inputs: the reference video, the text corresponding to the change, and the detailed video description. Compared to the baseline framework, the focus of our design is to effectively align the joint multi-modal embedding, comprised of the three inputs (\(\tilde{f}(q, d, t)\)), with the target video database to achieve enhanced contextual understanding during training for composed video retrieval.</p>
+<p><img alt="image" src="/images/HyFmafEWA.png"></p>
+<p>We first process the reference video and its description using pre-trained image encoder \(g\) and text encoder \(e\) to produce their latent embedding of the same dimension as, \(q \in \mathbb{R}^{m}\) and \(d \in \mathbb{R}^{m}\).</p>
+<p>The multi-modal encoder \(f\) takes the visual embeddings from a pre-trained visual encoder \(g\) along with tokenized textual inputs and produces a multi-modal embedding. Given the tokenized change text \(t\), and embeddings of the reference video and its descriptions, \(q\) and \(d\), we fuse any two inputs at a time using the multi-modal encoder \(f\) comprising of crossattention layers, to produce joint multi-modal embeddings (\(\tilde{f}(q, d, t)\)).</p>
+<p>Within the proposed framework, we only train the multimodal encoder \(f\) whereas the image and text encoders remain frozen. During training, we provide the change text \(t\) and the visual query embeddings \(q\) to the encoder \(f\) for obtaining the multi-model embeddings \(f(q, t)\) corresponding to the change text \(t\).</p>
+<p>We combine these grounded embeddings in a pairwise summation manner to obtain the joint multi-model embeddings \(\tilde{f}(q, d, t)\). These joint multimodel  mbeddings are then utilized to retrieve the target video from the database.</p>
+$$
+\begin{aligned}
+\mathcal{L}= & -\sum_{i \in \mathcal{B}} \log \left(\frac{e^{S_{i, i} / \tau}}{\alpha \cdot e^{S_{i, i} / \tau}+\sum_{j \neq i} e^{S_{i, j} / \tau} w_{i, j}}\right) -\sum_{i \in \mathcal{B}} \log \left(\frac{e^{S_{i, i} / \tau}}{\alpha \cdot e^{S_{i, i} / \tau}+\sum_{j \neq i} e^{S_{j, i} / \tau} w_{j, i}}\right)
+\end{aligned}
+$$
+<h3 id="query-specific-language-descriptions">
+  Query-specific Language Descriptions
+  <a class="heading-link" href="#query-specific-language-descriptions">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>In order to obtain the video descriptions, we employ a recent open-source multi-modal conversation model. Generally, multi-modal conversation models learn alignment between a pretrained large language model such as, Vicunna and a pretrained vision encoder of vision language model such as, CLIP or BLIP.</p>
+<p>Since these are image models and for our case of video inputs, we sample the middle frame of the video and generate its detailed description using a multi-modal conversation model by prompting the model with &ldquo;Describe the input image in detail&rdquo;. We further remove the noise within these descriptions by removing the manually curated unnecessary symbols, tokens, or special characters. Further, these models can hallucinate about a given visual sample.</p>
+<p>To identify hallucinated descriptions, we first measure the lower bound of cosine similarity between default WebVid captions and visual inputs within BLIP latent space to identify a hallucination threshold. We then discard those descriptions, where the cosine similarity between our generated description and the visual input is lower than the hallucination threshold. Consequently, the resulting enriched descriptions are better aligned with the videos (Fig. 3). As discussed earlier, the base framework only aligns the input video with the target video database.</p>
+<p><img alt="image" src="/images/B1-xLXNWC.png"></p>
+<h3 id="enhancing-diversity-in-target-database">
+  Enhancing Diversity in Target Database
+  <a class="heading-link" href="#enhancing-diversity-in-target-database">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The proposed method takes three inputs (video, modification text, and video description) and three target databases to train the model.</p>
+<ul>
+<li>The first target database is based on the visual embedding of input videos generated by a pretrained vision encoder of BLIP-2.</li>
+<li>The second target database is based on multi-model embeddings derived from the pretrained multi-modal encoder of BLIP-2.</li>
+<li>The final target database is based on a text-only embedding of the video description generated by the pretrained BLIP-2 text encoder.</li>
+</ul>
+<p>We use these additional databases only during training time to compute the hard negative contrastive loss between our joint multi-model embeddings and target datasets</p>
+<h3 id="overall-loss-formulation">
+  Overall Loss Formulation
+  <a class="heading-link" href="#overall-loss-formulation">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>For a given batch B, we formulate hard negative contrastive loss for each of our three target databases</p>
+$$
+\mathcal{L}_{\text {contr }}=\lambda * \mathcal{L}_{v e}+\mu * \mathcal{L}_{m m e}+\delta * \mathcal{L}_{t e},
+\tag{4}
+$$
+<p>where, \(\mathcal{L}_{v e}\), \(\mathcal{L}_{m m e}\), and \(\mathcal{L}_{t e}\) are the contrastive loss represented by Eq. (3). We compute the similarity of \(\tilde{f}(q_i, d_i, t_i)\) with the corresponding target video embedding \(g(v_i)\), target multi-modal embedding \(f(g(v_i), d_{vi})\), and the target text embedding \(d_{vi}\) for \(\mathcal{L}_{v e}\), \(\mathcal{L}_{m m e}\), and \(\mathcal{L}_{t e}\), respectively. \(\lambda\), \(\mu\), and \(\sigma\) are learnable parameters that scale the weightage of each loss during training.</p>
+<h3 id="inference">
+  Inference
+  <a class="heading-link" href="#inference">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>During inference, for the 3 given inputs: reference video, description and change text, we first process the reference video and its description using pre-trained frozen image encoder $g$ and text encoder $e$ to produce their latent embedding. The change text is simply tokenized as shown in Figure 2. We use the multi-modal encoder $f$ and gather the multi-model embeddings from 2 inputs at a time such as \(f(q, t)\), \(f(q, d)\) and \(f(e(d), t)\). Consequently, we simply do the pairwise addition of three (3) multi-model embeddings to produce joint multi-modal embeddings \(\tilde{f}(q, d, t)\) for target video retrieval.</p>
+<h2 id="experiments">
+  Experiments
+  <a class="heading-link" href="#experiments">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="experimental-setup">
+  Experimental Setup
+  <a class="heading-link" href="#experimental-setup">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<h4 id="dataset">
+  Dataset
+  <a class="heading-link" href="#dataset">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>We evaluate our approach on the recently introduced WebVid-CoVR dataset. The training set of WebVid-CoVR consists of triplets (input video, change text, and target video) and is generated synthetically, whereas the test set is manually curated using the model in the loop.</p>
+<p>We use CIRR and FashionIQ benchmarks for composed image retrieval. CIRR consists of manually annotated open-domain natural image and change text pairs with (36.5K, 19K) distinct pairs.</p>
+<h4 id="evaluation-metrics">
+  Evaluation Metrics
+  <a class="heading-link" href="#evaluation-metrics">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>We follow standard evaluation protocol for the composed image as well video retrieval from We report the retrieval results using recall values at rank 1, 5, 10, 50. Recall at rank \(k\) (\(R@k\)) denotes the number of times the correct retrieval occurred among the top-\(k\) results</p>
+<p><img alt="image" src="/images/Bk_j_mVbC.png"></p>
+<p><img alt="image" src="/images/SJLhumE-0.png"></p>
+<p><img alt="image" src="/images/S15xFX4bR.png"></p>
+<p><img alt="image" src="/images/HyDZtm4WR.png"></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2024
+     Tung Kieu 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

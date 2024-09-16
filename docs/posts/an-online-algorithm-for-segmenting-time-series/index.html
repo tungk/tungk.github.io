@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  An Online Algorithm for Segmenting Time Series · Tung Kieu
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Tung Kieu">
+<meta name="description" content="AbstractLink to headingIntuitively Piecewise Linear Representation refers to the approximation of a time series $T$, of length $n$, with $K$ straight lines. Because $K$ is typically muchsmaller that $n$, this representation makes the storage, transmission and computation of the data more efficient.
+The segmentation problem can be framed in several ways.
+Given a time series $T$, produce the best representation using only $K$ segments. Given a time series $T$, produce the best representation such that the maximum error for any segment does not exceed some user-specified threshold, max_error.">
+<meta name="keywords" content="blog, researcher, personal">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="An Online Algorithm for Segmenting Time Series">
+  <meta name="twitter:description" content="AbstractLink to headingIntuitively Piecewise Linear Representation refers to the approximation of a time series $T$, of length $n$, with $K$ straight lines. Because $K$ is typically muchsmaller that $n$, this representation makes the storage, transmission and computation of the data more efficient.
+The segmentation problem can be framed in several ways.
+Given a time series $T$, produce the best representation using only $K$ segments. Given a time series $T$, produce the best representation such that the maximum error for any segment does not exceed some user-specified threshold, max_error.">
+
+<meta property="og:url" content="http://localhost:1313/posts/an-online-algorithm-for-segmenting-time-series/">
+  <meta property="og:site_name" content="Tung Kieu">
+  <meta property="og:title" content="An Online Algorithm for Segmenting Time Series">
+  <meta property="og:description" content="AbstractLink to headingIntuitively Piecewise Linear Representation refers to the approximation of a time series $T$, of length $n$, with $K$ straight lines. Because $K$ is typically muchsmaller that $n$, this representation makes the storage, transmission and computation of the data more efficient.
+The segmentation problem can be framed in several ways.
+Given a time series $T$, produce the best representation using only $K$ segments. Given a time series $T$, produce the best representation such that the maximum error for any segment does not exceed some user-specified threshold, max_error.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-09-16T03:01:12+02:00">
+    <meta property="article:modified_time" content="2024-09-16T03:01:12+02:00">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/an-online-algorithm-for-segmenting-time-series/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+
+  
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+  
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      Tung Kieu
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/profile/">Profile</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/publication/">Publication</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/teaching/">Teaching</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/services/">Services</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/an-online-algorithm-for-segmenting-time-series/">
+              An Online Algorithm for Segmenting Time Series
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-09-16T03:01:12&#43;02:00">
+                September 16, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              6-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="abstract">
+  Abstract
+  <a class="heading-link" href="#abstract">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Intuitively Piecewise Linear Representation refers to the approximation of a time series $T$, of length $n$, with $K$ straight lines. Because $K$ is typically muchsmaller that $n$, this representation makes the storage, transmission and computation of the data more efficient.</p>
+<p>The segmentation problem can be framed in several ways.</p>
+<ul>
+<li>Given a time series $T$, produce the best representation using only $K$ segments.</li>
+<li>Given a time series $T$, produce the best representation such that the maximum error for any segment does not exceed some user-specified threshold, <code>max_error</code>.</li>
+<li>Given a time series $T$, produce the best representation such that the combined error of all segments is less than some user-specified threshold, <code>total_max_error</code>.</li>
+</ul>
+<p>Although appearing under different names and with slightly different implementation details,
+most time series segmentation algorithms can be grouped into one of the following three
+categories.</p>
+<ul>
+<li>Sliding Windows: A segment is grown until it exceeds some error bound. The process repeats with the next data point not included in the newly approximated segment.</li>
+<li>Top-Down: The time series is recursively partitioned until some stopping criteria is met.</li>
+<li>Bottom-Up: Starting from the finest possible approximation, segments are merged until some stopping criteria is met.</li>
+</ul>
+<p>Given that we are going to approximate a time series with straight lines, there are at least two ways we can find the approximating line.</p>
+<ul>
+<li>Linear Interpolation: Here the approximating line for the subsequence $T[a:b]$ is simply the line connecting $t_{a}$ and $t_{b}$. This can be obtained in constant time.</li>
+<li>Linear Regression: Here the approximating line for the subsequence $T[a:b]$ is taken to be the best fitting line in the least squares sense. This can be obtained in time linear in the length of segment.</li>
+</ul>
+<h3 id="the-sliding-window-algorithm">
+  The Sliding Window Algorithm
+  <a class="heading-link" href="#the-sliding-window-algorithm">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The Sliding Window algorithm works by anchoring the left point of a potential segment at the first data point of a time series, then attempting to approximate the data to the right with increasing longer segments. At some point $i$, the error for the potential segment is greater than the user-specified threshold, so the subsequence from the anchor to $i-1$ is transformed into a segment. The anchor is moved to location i, and the process repeats until the entire time series has been transformed into a piecewise linear approximation</p>
+<pre tabindex="0"><code>Algorithm Seg_TS = Sliding_Window(T , max_error)
+anchor = 1;
+while not finished segmenting time series
+    i = 2;
+    while calculate_error(T[anchor: anchor + i ]) &lt; max_error
+        i = i + 1;
+    end;
+    Seg_TS = concat(Seg_TS, create_segment(T[anchor: anchor + (i-1)]);
+    anchor = anchor + i;
+end;
+</code></pre><h3 id="the-top-down-algorithm">
+  The Top-Down Algorithm
+  <a class="heading-link" href="#the-top-down-algorithm">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The Top-Down algorithm works by considering every possible partitioning of the times series and splitting it at the best location. Both subsections are then tested to see if their approximation error is below some user-specified threshold. If not, the algorithm recursively continues to split the subsequences until all the segments have approximation errors below the threshold.</p>
+<pre tabindex="0"><code>Algorithm Seg_TS = Top_Down(T , max_error)
+best_so_far = inf;
+for i = 2 to length(T) - 2 // Find best place to split the time series.
+improvement_in_approximation = improvement_splitting_here(T,i);
+    if improvement_in_approximation &lt; best_so_far
+        breakpoint = i;
+        best_so_far = improvement_in_approximation;
+    end;
+end;
+
+// Recursively split the left segment if necessary.
+if calculate_error(T[1:breakpoint]) &gt; max_error
+    Seg_TS = Top_Down(T[1: breakpoint]);
+end;
+
+// Recursively split the right segment if necessary.
+if calculate_error(T[breakpoint + 1:length(T)] ) &gt; max_error
+    Seg_TS = Top_Down(T[breakpoint + 1: length(T)]);
+end;
+</code></pre><h3 id="the-bottom-up-algorithm">
+  The Bottom-Up Algorithm
+  <a class="heading-link" href="#the-bottom-up-algorithm">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The Bottom-Up algorithm is the natural complement to the Top-Down algorithm. The algorithm begins by creating the finest possible approximation of the time series, so that $n/2$ segments are used to approximate the n-length time series. Next, the cost of merging each pair of adjacent segments is calculated, and the algorithm begins to iteratively merge the lowest cost pair until a stopping criteria is met. When the pair of adjacent segments $i$ and $i+1$ are merged, the algorithm needs to perform some bookkeeping. First, the cost of merging the new segment with its right neighbor must be calculated. In addition, the cost of merging the $i–1$ segments with its new larger neighbor must be recalculated.</p>
+<pre tabindex="0"><code>Algorithm Seg_TS = Bottom_Up(T , max_error)
+for i = 1 : 2 : length(T) // Create initial fine approximation.
+    Seg_TS = concat(Seg_TS, create_segment(T[i: i + 1 ]));
+end;
+
+for i = 1 : length(Seg_TS) – 1 // Find cost of merging each pair of segments.
+    merge_cost(i) = calculate_error([merge(Seg_TS(i), Seg_TS(i+1))]);
+end;
+
+while min(merge_cost) &lt; max_error // While not finished.
+    index = min(merge_cost); // Find “cheapest” pair to merge.
+    Seg_TS(index) = merge(Seg_TS(index), Seg_TS(index+1))); // Merge them.
+	delete(Seg_TS(index+1)); // Update records.
+	merge_cost(index) = calculate_error(merge(Seg_TS(index), Seg_TS(index+1)));
+	merge_cost(index-1) = calculate_error(merge(Seg_TS(index-1), Seg_TS(index)));
+end;
+</code></pre><h3 id="complexity">
+  Complexity
+  <a class="heading-link" href="#complexity">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><img alt="image" src="https://hackmd.io/_uploads/SkCT62Ln0.png"></p>
+<p><img alt="image" src="https://hackmd.io/_uploads/Bkog0h8n0.png"></p>
+<p><img alt="image" src="https://hackmd.io/_uploads/BkGQAnI30.png"></p>
+<p><img alt="image" src="https://hackmd.io/_uploads/HJUdA2L2A.png"></p>
+<h3 id="the-swab-segmentation-algorithm">
+  The SWAB Segmentation Algorithm
+  <a class="heading-link" href="#the-swab-segmentation-algorithm">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The SWAB algorithm keeps a buffer of size $w$. The buffer size should initially be chosen so that there is enough data to create about 5 or 6 segments. Bottom-Up is applied to the data in the buffer and the leftmost segment is reported. The data corresponding to the reported segment is removed from the buffer and more datapoints are read in. The number of datapoints read in depends on the structure of the incoming data. This process is performed by the <code>Best_Line</code> function, which is basically just classic Sliding Windows. These points are incorporated into the buffer and Bottom-Up is applied again. This process of applying Bottom-Up to the buffer, reporting the leftmost segment, and reading in the next “best fit” subsequence is repeated as long as data arrives (potentially forever).</p>
+<p>The intuition behind the algorithm is this. The <code>Best_Line</code> function finds data corresponding to a single segment using the (relatively poor) Sliding Windows and gives it to the buffer. As the data moves through the buffer the (relatively good) Bottom-Up algorithm is given a chance to refine the segmentation, because it has a “semi-global” view of the data. By the time the data is ejected from the buffer, the segmentation breakpoints are usually the same as the ones the batch version of Bottom-Up would have chosen.</p>
+<pre tabindex="0"><code>Algorithm Seg_TS = SWAB(max_error, seg_num) // seg_num is integer 5 or 6
+read in w number of data points // Enough to approximate seg_num of segments.
+lower_bound = w / 2;
+upper_bound = 2 * w;
+
+while data at input
+    T = Bottom_Up(w, max_error) // Call the classic Bottom-Up algorithm
+    Seg_TS = CONCAT(SEG_TS, T(1));
+    // Sliding window to the right.
+    w = TAKEOUT(w, w’); // Deletes w’ points in T(1) from w.
+    if data at input // Add w” points from BEST_LINE() to w.
+        w = CONCAT(w, BEST_LINE(max_error));
+        {check upper and lower bound, adjustment if necessary}
+    else // flush approximated segments from buffer.
+        Seg_TS = CONCAT(SEG_TS, (T – T(1)))
+    end;
+end;
+
+Function S = BEST_LINE(max_error) //returns S points to approximate
+while error &lt;= max_error // next potential segment.
+    read in one additional data point, d, into S
+    S = CONCAT(S, d);
+    error = approx_segment(S);
+end while
+return S;
+</code></pre><p><img alt="image" src="https://hackmd.io/_uploads/rybmfpU2R.png"></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2024
+     Tung Kieu 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

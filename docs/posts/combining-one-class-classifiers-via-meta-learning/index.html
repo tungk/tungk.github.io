@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Combining One-Class Classifiers via Meta Learning · Tung Kieu
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Tung Kieu">
+<meta name="description" content="AbstractLink to headingSelecting the best classifier among the available ones is a difficult task, especially when only instances of one class exist. In this work we examine the notion of combining one-class classifiers as an alternative for selecting the best classifier. In particular, we propose two one-class classification performance measures to weigh classifiers and show that a simple ensemble that implements these measures can outperform the most popular one-class ensembles.">
+<meta name="keywords" content="blog, researcher, personal">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Combining One-Class Classifiers via Meta Learning">
+  <meta name="twitter:description" content="AbstractLink to headingSelecting the best classifier among the available ones is a difficult task, especially when only instances of one class exist. In this work we examine the notion of combining one-class classifiers as an alternative for selecting the best classifier. In particular, we propose two one-class classification performance measures to weigh classifiers and show that a simple ensemble that implements these measures can outperform the most popular one-class ensembles.">
+
+<meta property="og:url" content="http://localhost:1313/posts/combining-one-class-classifiers-via-meta-learning/">
+  <meta property="og:site_name" content="Tung Kieu">
+  <meta property="og:title" content="Combining One-Class Classifiers via Meta Learning">
+  <meta property="og:description" content="AbstractLink to headingSelecting the best classifier among the available ones is a difficult task, especially when only instances of one class exist. In this work we examine the notion of combining one-class classifiers as an alternative for selecting the best classifier. In particular, we propose two one-class classification performance measures to weigh classifiers and show that a simple ensemble that implements these measures can outperform the most popular one-class ensembles.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-09-16T03:09:12+02:00">
+    <meta property="article:modified_time" content="2024-09-16T03:09:12+02:00">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/combining-one-class-classifiers-via-meta-learning/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+
+  
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+  
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      Tung Kieu
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/profile/">Profile</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/publication/">Publication</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/teaching/">Teaching</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/services/">Services</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/combining-one-class-classifiers-via-meta-learning/">
+              Combining One-Class Classifiers via Meta Learning
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-09-16T03:09:12&#43;02:00">
+                September 16, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              13-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="abstract">
+  Abstract
+  <a class="heading-link" href="#abstract">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Selecting the best classifier among the available ones is a difficult task, especially when only instances of one class exist. In this work we examine the notion of combining one-class classifiers as an alternative for selecting the best classifier. In particular, we propose two one-class classification performance measures to weigh classifiers and show that a simple ensemble that implements these measures can outperform the most popular one-class ensembles. Furthermore, we propose a new one-class ensemble scheme, <strong>TUPSO</strong>, which uses meta-learning to combine one-class classifiers. Our experiments demonstrate the superiority of <strong>TUPSO</strong> over all other tested ensembles and show that the <strong>TUPSO</strong> performance is statistically indistinguishable from that of the hypothetical best classifier.</p>
+<h2 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The one-class classification task is of particular importance to information retrieval tasks. Consider, for example, trying to identify documents of interest to a user, where the only information available is the previous documents that this user has read (i.e. positive examples), yet another example is citation recommendation, in which the system helps authors in selecting the most relevant papers to cite, from a potentially overwhelming number of references.</p>
+<p>While there are plenty of learning algorithms to choose from, identifying the one that performs best in relation to the problem at hand is difficult. This is because evaluating a one-class classifier’s performance is problematic. By definition, the data collections only contain one-class examples and thus, performance metrics, such as false-positive (<em>FP</em>), and true negative (<em>TN</em>), cannot be computed. In the absence of <em>FP</em> and <em>TN</em>, derived performance metrics, such as classification accuracy, precision, among others, cannot be computed. Moreover, prior knowledge concerning the classification performance on some previous tasks may not be very useful for a new classification task because classifiers can excel in one dataset and fail in another, i.e., there is no consistent winning algorithm.</p>
+<p>In this paper we search for a new method for combining one-class classifiers. We begin by presenting two heuristic methods to evaluate the classification performance of one-class classifiers. We then introduce a simple heuristic ensemble that uses these heuristic methods to select a single base-classifier. Later, we present <strong>TUPSO</strong>, a general meta-learning based ensemble, roughly based on the Stacking technique and incorporates the two classification performance evaluators. We then experiment with the discussed ensemble techniques on forty different datasets. The experiments show that <strong>TUPSO</strong> is by far the best option to use when multiple one-class classifiers exist. Furthermore, we show that <strong>TUPSO</strong>’s classification performance is strongly correlated with that of the actual best ensemble-member.</p>
+<h2 id="background">
+  Background
+  <a class="heading-link" href="#background">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="one-class-ensemble">
+  One-Class Ensemble
+  <a class="heading-link" href="#one-class-ensemble">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The main motivation behind the ensemble methodology is to weigh several individual classifiers and combine them to obtain a classifier that outperforms them all.</p>
+<p>Compared to supervised ensemble learning, progress in the one-class ensemble research field is limited. Specifically, the Fix-rule technique was the only method which was considered for combining one-class classifiers. In this method, the combiner regards each participating classifier’s output as a single vote upon which it applies an aggregation function (a combining rule), to produce a final classification. In the following few years, further research was carried out and presently there are several applications reaching domains, such as information security (intrusion detection), remote sensing, image retrieval, image segmentation, on-line signature verification, and fingerprint matching.</p>
+<p>Fixed-rule ensemble techniques, however, are not optimal as they use combining rules that are assigned statically and independently of the training data. As a consequence, as we will show later, the fixed rule ensembles produce inferior classification performance in comparison to the best classifier in the ensemble.</p>
+<p>In the following lines we use the notation $P_k(x|\omega_{Tc})$ as the estimated probability of instance $x$ given the target class $\omega_{Tc}$, $fr_{(T,k)}$ as the fraction of the target class, which should be accepted for classifier $k = 1, \ldots , R$, $N$ as number of features, and $\theta_k$ notates the classification threshold for classifier $k$. A list of fixed combining rules is presented.</p>
+<ul>
+<li>Majority voting $\displaystyle y(x) = I_{&gt;k/2}(\sum_k(I(P_k(x|\omega_{Tc})\ge\theta_k))$</li>
+<li>Mean vote $\displaystyle y(x) = \frac{1}{R}\sum_{k=1}^RI(P_k(x|\omega_{Tc})\ge\theta_k)$</li>
+<li>Weighted mean vote $\displaystyle y(x) = \frac{1}{R}\sum_{k=1}^R[f_{T,k}I(P_k(x|\omega_{Tc})\ge\theta_k) + (1-f_{T,k})I(P_k(x|\omega_{Tc})\ge\theta_k)]$</li>
+<li>Avg. rule $\displaystyle y(x) = \frac{1}{R}\sum_{k=1}^RP_k(x|\omega_{Tc})$</li>
+<li>Max rule $\displaystyle y(x) = \mathrm{arg}\max_k[P_k(x|\omega_{Tc})]$</li>
+<li>Product rule $\displaystyle y(x) = \prod_{k=1}^R[P_k(x|\omega_{Tc})]$</li>
+<li>Exclusive voting $\displaystyle y(x)=I_1(\sum_kI(P_k(x|\omega_{Tc})\ge\theta_k))$</li>
+<li>Weighted vote product $\displaystyle y(x) = \frac{\prod_{k=1}^R[fr_{(T,k)}I(P_k(x|\omega_{Tc})\ge\theta_k)]}{\prod_{k=1}^R[f_{(T,k)}I(P_k(x|\omega_{Tc})\ge\theta_k)] + \prod_{k=1}^R[(1-f_{(T,k)})I(P_k(x|\omega_{Tc})\ge\theta_k)]}$</li>
+</ul>
+<p>Instead of using the fix-rule (e.g., weighting methods), technique to combine one-class classifiers, the meta-learning approach can be used.</p>
+<h3 id="meta-learning">
+  Meta Learning
+  <a class="heading-link" href="#meta-learning">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Meta-learning is the process of learning from basic classifiers (ensemble members); the inputs of the meta-learner are the outputs of the ensemble-member classifiers. The goal of meta-learning ensembles is to train a meta-model (meta-classifier), which will combine the ensemble members’ predictions into a single prediction.</p>
+<p>To create such an ensemble, both the ensemble members and the meta-classifier need to be trained. Since the meta-classifier training requires already trained ensemble members, these must be trained first. The ensemble members are then used to produce outputs (classifications), from which the meta-level dataset (meta-dataset) is created. The basic building blocks of meta-learning are the meta-features, which are measured properties of the ensemble members output, e.g., the ensemble members’ predictions. A vector of meta-features and classification $k$ comprise a meta-instance, i.e., meta-instance $&lt;f^{meta}_1, \ldots , f^{meta}_k, y &gt;$, where $y$ is the real classification of the meta-instance that is identical to the class of the instance used to produce the ensemble members’ predictions. A collection of meta-instances comprises the meta-dataset upon which the meta-classifier is trained.</p>
+<h2 id="estimating-the-classification-quality">
+  Estimating the Classification Quality
+  <a class="heading-link" href="#estimating-the-classification-quality">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>$accuracy = (TP + \mathbf{TN})/(TP + \mathbf{TN} + \mathbf{FP} + FN)$, $Precision = TP/(TP + \mathbf{FP})$ and $F-score = 2 * \mathbf{P} * R/(\mathbf{P} + R)$, where $P$ is precision and $R$ is recall cannot be computed. Instead of computing the aforementioned metrics, we propose heuristic methods for estimating, rather than actually measuring, the classifier’s accuracy and F-score, respectively. Next, we describe the two performance estimators.</p>
+<h3 id="heuristic-based-classification-performance-measures">
+  Heuristic based Classification Performance Measures
+  <a class="heading-link" href="#heuristic-based-classification-performance-measures">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>By rewriting the error probability, one can estimate the classification error-rate, in the one-class paradigm, given a prior on the target-class:</p>
+$$
+Pr[f(x) \ne y] = Pr[f(x) = 1] - Pr[Y = 1] + 2Pr[f(x) = 0|Y = 1]Pr[Y = 1]
+$$
+<p>where $f(x)$ is the classifier’s classification result for the examined example $x$, $Pr[f(x) = 1]$ is the probability that the examined classifier will classify <em>Positive</em>, $Pr[f(x) = 0|Y = 1]$ is the probability that the classifier will classify <em>Negative</em> when given a <em>Positive</em> example, and lastly, $Pr[Y = 1]$ is the prior on the target-class probability.</p>
+<p>Naturally, we define the one-class accuracy (OCA), estimator as follows: $OCA = 1 - Pr[f(x) \ne y]$. Note that the probabilities $Pr[f(x) = 1]$ and $[f(x) = 0|Y = 1]$ can be estimated for any one-class problem at hand using a standard cross-validating procedure.</p>
+<p>An additional performance criteria, $\frac{r^2}{Pr[f(x)=1]}$, denoted as One-Class F-score (OCF), is given in. Using this criteria, one can estimate the classifier’s F-score in the semi-supervise paradigm. However, when only positive-labeled instances exist, the recall, $r = Pr[f(x) = 1|y = 1]$, equals to $Pr[f(x) = 1]$ (because $Pr[y = 1] = 1$), which only measures the fraction of correct classifications on positive test examples, i.e., true-positive rate (TPR). Using the TPR to measure the classification performance makes sense, because the TPR is strongly correlated with the classification accuracy when negative examples are very rare, such as in the case of most one-class problems.</p>
+<h3 id="best-classifier-by-estimation">
+  Best-Classifier By Estimation
+  <a class="heading-link" href="#best-classifier-by-estimation">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Using the discussed classification performance estimators, we define a new and very simple ensemble: Estimated Best-Classifier Ensemble (ESBE). This ensemble is comprised of an arbitrary number of one-class ensemble-members (classifiers). During the prediction phase, the ensemble’s output is determined by a single ensemble-member, denoted as the dominant classifier. The ensemble’s dominant member is selected during the training phase. This is achieved by evaluating the performance of the participating ensemble-members using a $5\times 2$ cross-validation procedure, as described in. During this procedure only the training-set’s instances are used, and the metric used to measure the ensemble-members‘ performance is either OCA or OCF.</p>
+<h2 id="tupso">
+  TUPSO
+  <a class="heading-link" href="#tupso">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><img src="https://i.imgur.com/DxMXjrY.png"></p>
+<p>Figure 1: The <strong>TUPSO</strong> ensemble scheme.</p>
+<p>The main principle of <strong>TUPSO</strong> is combining multiple and possibly diverse one-class classifiers using the meta-learning technique. <strong>TUPSO</strong> is roughly based on the Stacking technique, and as so, it uses a single meta-classifier to combine the ensembles‘ members. As opposed to Stacking, however, where the meta-classifier trains directly from the ensemble-members‘ outputs, <strong>TUPSO</strong>’s meta-classifier trains on a series of aggregations from the ensemble-members‘ outputs. To elevate the effectiveness of some of the aggregations used by <strong>TUPSO</strong>, and with that improve the ensemble’s over-all performance, during the training phase, the ensemble-members are evaluated using the aforementioned one-class performance evaluators. The performance estimates are then translated into static weights, which the meta-learning algorithm uses during the training of the meta-classifier, and during the prediction phases.</p>
+<p>The <strong>TUPSO</strong> ensemble, as shown in Figure 1, is made up of four major components: (1) Ensemble-members, (2) Performance evaluator, (3) Meta-features extractor, and (4) Meta-classifier. Next, we describe each component.</p>
+<h3 id="ensemble-members">
+  Ensemble Members
+  <a class="heading-link" href="#ensemble-members">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>In <strong>TUPSO</strong>, the ensemble members are one-class, machine-learning-based, classifiers. <strong>TUPSO</strong> regards its ensemble members as black boxes, in order to avoid any assumption regarding their inducing algorithm, data structures or methods for handling missing values and categorical features. During the ensemble’s training phase, the ensemble-members are trained several times, as part of a cross-validation process, which is required for generating the meta-classifier’s dataset.</p>
+<h3 id="performance-evaluator">
+  Performance Evaluator
+  <a class="heading-link" href="#performance-evaluator">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The Performance Evaluator estimates the ensemble members’ classification performance during the ensemble’s training phase. To fulfill its task, the Performance Evaluator uses one of the available classification performance estimators, i.e., OCA or OCF.</p>
+<h3 id="meta-features-extractor">
+  Meta-Features Extractor
+  <a class="heading-link" href="#meta-features-extractor">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The meta-features are measured properties of one or more ensemble-members’ output. A collection of meta features for a single instance makes a meta-instance. A collection of meta-instances is called a meta-dataset. The meta-dataset is used to train the meta-classifier. The Meta Features Extractor computes the meta-features by using multiple aggregations of the ensemble-members‘ output. Let $P_m = &lt; p(m_1), \ldots, p(m_k) &gt;$ be the vector containing the ensemble-members‘ outputs $p(m_1), \ldots , p(m_k)$, where $k$ is the number of members in the ensemble. A set of aggregate features is computed for each instance in the training set. A single set makes a single meta-instance, which will later be used either as a training instance for the meta-learner or as a test meta-instance.</p>
+<ul>
+<li>Sum-Votes $\displaystyle f_1(P_m) = \sum_{k=1}^k1_{{p_{m_i} \ge 0.5}}(P_{m_i})$</li>
+<li>Sum-Predictions $\displaystyle f_2(P_m) = \sum_{k=1}^k P_{m_i}$</li>
+<li>Sum-Weighted-Predictions $\displaystyle f_3(P_m) = \sum_{k=1}^k \alpha_i * P_{m_i}$</li>
+<li>Sum-Power-Weighted-Predictions $\displaystyle f_4(P_m) = \sum_{k=1}^k \alpha_i * (P_{m_i})^2$</li>
+<li>Sum-Log-Weighted-Predictions $\displaystyle f_5(P_m) = \sum_{k=1}^k \alpha_i * \log(P_{m_i})$</li>
+<li>Var-Votes $\displaystyle f_6(P_m) = \textrm{VAR}(1_{{p_{m_i} \ge 0.5}}(P_{m_i}))$</li>
+<li>Var-Predictions $\displaystyle f_7(P_m) =  \textrm{VAR}(P_{m_i})$</li>
+<li>Var-Weighted-Predictions $\displaystyle f_8(P_m) = \textrm{VAR}(\alpha_i * P_{m_i})$</li>
+</ul>
+<p>The aggregate functions $f_2 \ldots f_5$ and $f_6 \ldots f_8$ are based on the first and second moments, respectively. The first moment computes the“average”ensemble-members‘ prediction, whereas the second moment computes the variability among the ensemble-members‘ predictions. The first moment based aggregation, a subtle version of the mean voting rule, is motivated by Condorcet’s Jury Theorem, and is used in several supervised-learning ensembles, e.g., Distribution-Summation [4]. Furthermore, the second moment based aggregation is motivated by the knowledge it elicits over the first moment, i.e., the level of consent among the ensemble-members. From this information, unique high-level patterns of ensemble members’ predictions can be learned by the meta-learner, and thereafter be at the disposal of the meta-classifier.</p>
+<p><img src="https://i.imgur.com/9wmwMLG.png"></p>
+<p>Table 3: The training-set of the meta-classifier. Each column represents one aggregate feature over the ensemble members’ predictions and $ma_{i,j}$ denotes the value of meta-feature $j$ for meta-instance $i$.</p>
+<h2 id="meta-classifier">
+  Meta-Classifier
+  <a class="heading-link" href="#meta-classifier">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The meta-classifier is the ensemble’s combiner, thus, it is responsible for producing the ensemble’s prediction. Similar to the ensemble-members, the meta-classifier is a one-class classifier; it learns a classification model from meta-instances, which consist of meta-features. Practically, the meta-features used in training the meta-classifier can be either aggregate features, raw ensemble-members‘ predictions or their combination. However, preliminary experiments showed that training the meta-classifier using the raw ensemble-members‘ predictions alone or alongside the aggregate meta-features yielded less accurate ensembles.</p>
+<h3 id="training-process">
+  Training Process
+  <a class="heading-link" href="#training-process">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The training process of <strong>TUPSO</strong> begins with training the ensemble-members followed by training the meta-classifier. The ensemble-members and the meta-classifier are trained using an inner $k$-fold cross-validation training process. First, the training-set is partitioned into k splits. Then, in each fold, the ensemble-members are trained on $k-1$ splits. Afterwards, the trained ensemble-members classify the remaining split to produce the instances for training the meta-classifier. The meta-instances in each fold are added to a meta-dataset. After k iterations, the meta-dataset will contain the same amount of instances as the original dataset. Lastly, the ensemble-members are re-trained using the entire training-set and the meta-classifier is trained using the meta-dataset.</p>
+<h3 id="weighting-the-ensemble-members">
+  Weighting the Ensemble Members
+  <a class="heading-link" href="#weighting-the-ensemble-members">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>In order to calculate certain meta-features, e.g., $f_3$, the ensemble-members‘ predictions have to be weighed. To do so, a set of weights, one per ensemble-member, are learned as part of the ensemble training process. During the meta-classifier training, the ensemble-members predict the class of the evaluated instances. The predictions are fed to the Performance Evaluator, which calculates either OCA or OCF estimations for each of the ensemble-members, $Perf_{vect} =&lt; Perf_1, \ldots , Perf_m &gt;$, where $Perf_i$ is the estimated performance of ensemble-member $i$. Finally, a set of weights, $\alpha_1, \alpha_2, \ldots , \alpha_m$, is computed as follows:</p>
+$$
+\alpha_i = \frac{Perf_i}{\sum_{j=1}^m Perf_j}, \forall i = 1 \ldots m
+$$
+<h2 id="method">
+  Method
+  <a class="heading-link" href="#method">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="one-class-learning-algorithms">
+  One-Class Learning Algorithms
+  <a class="heading-link" href="#one-class-learning-algorithms">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>For evaluation purposes, we made use of four, one-class algorithms: OC-SVM [15], OC-GDE, OC-PGA, and ADIFA [14]. We selected these ensemble-members because they represent the prominent families of one-class classifiers, i.e., nearest-neighbor (OC-GDE, OC-PGA), density (ADIFA), and boundary (OC-SVM). The first two algorithms are our adaptations of two well-known supervised algorithms to one class learning.</p>
+<p>We used a static pool of six ensemble-members for all the evaluated ensembles: (i) ADIFA~HM~, (ii) ADIFA~GM~, (iii) OC-GDE, (iv) OC-PGA, OC-SVM~1~, and (vi) OC-SVM~2~.</p>
+<h3 id="ensemble-combining-methods">
+  Ensemble Combining Methods
+  <a class="heading-link" href="#ensemble-combining-methods">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The following evaluation includes several ensemble combining methods from three groups of algorithms: Heuristic-Ensemble: estimated best-classifier ensemble (ESBE); Fixed-rules: majority voting, mean-voting, max-rule and product-rule; and Meta-learning-based: TUPSO. The learning algorithm used for inducing the meta-classifier in TUPSO was ADIFA, as it outperformed the other three mentioned learning algorithms on the evaluation set.</p>
+<h3 id="datasets">
+  Datasets
+  <a class="heading-link" href="#datasets">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>During the evaluation we used a total of 40 distinct datasets from two different collections, UCI and KDD-CUP99. All datasets are fully labeled and binary-class. We selected 34 datasets from the widely used UCI dataset repository [3]. The datasets vary across dimensions, number of target classes, instances, input features, and feature type (nominal or numeric). So as to have only two classes in the UCI datasets, a pre-process was completed where only the instances of the two most prominent classes were selected. The other instances were filtered out. The KDD CUP 1999 dataset contains a set of instances that represent connections to a military computer network. The dataset contains 41 attributes, 34 of which are numerical and 7 of which are categorical. The original dataset contained 4,898,431 multi-class data instances. In order to divide the dataset into multiple binary-class sets, we followed the method performed in [20]. Compared with the UCI datasets, the KDD99-CUP are much more natural one-class datasets, as they are highly imbalanced (instances of the network’s normal state make the lion’s share of the de-rived binary datasets).</p>
+<h3 id="evaluation-methodology">
+  Evaluation Methodology
+  <a class="heading-link" href="#evaluation-methodology">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>During the training phase, only the examples of one-class were available to the learning algorithms and to the classification performance estimators. During the testing phase, however, both positive and negative examples were available, to evaluate the classifiers in real-life conditions. The generalized classification accuracy was measured by performing a 5x2 cross-validation procedure [6]. We used the area under the ROC curve (AUC) metric to measure the classification performance of the individual classifiers and ensemble methods.</p>
+<p><img src="https://i.imgur.com/NUYsE0T.png"></p>
+<p>Table 5: Ensembles classification AUC results.</p>
+<p><img src="https://i.imgur.com/wazcGny.png"></p>
+<p>Figure 2: Classification performance: ensembles vs. actual best classifier.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2024
+     Tung Kieu 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

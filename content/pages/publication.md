@@ -4,6 +4,7 @@ draft = false
 +++
 
 ## Selected Publication
+- Duc Kieu, **Tung Kieu**, Peng Han, Bin Yang, Christian S. Jensen, and Bac Le. _TEAM: Topological Evolution-aware Framework for Traffic Forecasting_. **VLDB** 2024 (**CORE A***)
 - David Campos, Bin Yang, **Tung Kieu**, Miao Zhang, Chenjuan Guo, and Christian S. Jensen. _QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models_. **VLDB** 2024 (**CORE A***)
 - Chenjuan Guo, Ronghui Xu, Yuan Ye, Bin Yang, **Tung Kieu**, Yan Zhao, and Christian S. Jensen. _Efficient Stochastic Routing in Path-Centric Uncertain Road Networks_. **VLDB** 2024 (**CORE A***)
 - Huy Le, **Tung Kieu**, Anh Nguyen, and Ngan Le. _WAVER: Writing-style Agnostic Video Retrieval via Distilling Vision-Language Models Through Open-Vocabulary Knowledge_. **ICASSP** 2024
@@ -23,6 +24,7 @@ draft = false
 
 
 ## Preprint
+- Duc Kieu, **Tung Kieu**, Peng Han, Bin Yang, Christian S. Jensen, and Bac Le. _TEAM: Topological Evolution-aware Framework for Traffic Forecasting--Extended Version_
 - Chenjuan Guo, Ronghui Xu, Bin Yang, Ye Yuan, **Tung Kieu**, Yan Zhao, and Christian S. Jensen. *Efficient Stochastic Routing in Path-Centric Uncertain Road Networks--Extended Version*
 - David Campos, Bin Yang, **Tung Kieu**, Miao Zhang, Chenjuan Guo, and Christian S. Jensen. _QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models--Extended Version_
 - Huy Le, **Tung Kieu**, Anh Nguyen, and Ngan Le. _WAVER: Writing-style Agnostic Video Retrieval via Distilling Vision-Language Models Through Open-Vocabulary Knowledge--Extended Version_

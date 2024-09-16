@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  DeepGPD: A Deep Learning Approach for Modeling Geospatio-Temporal Extreme Events · Tung Kieu
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Tung Kieu">
+<meta name="description" content="AbstractLink to headingGeospatio-temporal data are pervasive across numerous application domains. These rich datasets can be harnessed to predict extreme events such as disease outbreaks, ﬂooding, crime spikes, etc.
+Statistical methods based on extreme value theory provide a systematic way for modeling the distribution of extreme values. In particular, the generalized Pareto distribution (GPD) is useful for modeling the distribution of excess values above a certain threshold. However, applying such methods to large-scale spatio-temporal data is a challenge due to the difﬁculty in capturing the complex spatial relationships between extreme events at multiple locations.">
+<meta name="keywords" content="blog, researcher, personal">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="DeepGPD: A Deep Learning Approach for Modeling Geospatio-Temporal Extreme Events">
+  <meta name="twitter:description" content="AbstractLink to headingGeospatio-temporal data are pervasive across numerous application domains. These rich datasets can be harnessed to predict extreme events such as disease outbreaks, ﬂooding, crime spikes, etc.
+Statistical methods based on extreme value theory provide a systematic way for modeling the distribution of extreme values. In particular, the generalized Pareto distribution (GPD) is useful for modeling the distribution of excess values above a certain threshold. However, applying such methods to large-scale spatio-temporal data is a challenge due to the difﬁculty in capturing the complex spatial relationships between extreme events at multiple locations.">
+
+<meta property="og:url" content="http://localhost:1313/posts/deepgpd_-a-deep-learning-approach-for-modeling-geospatio-temporal--extreme-events/">
+  <meta property="og:site_name" content="Tung Kieu">
+  <meta property="og:title" content="DeepGPD: A Deep Learning Approach for Modeling Geospatio-Temporal Extreme Events">
+  <meta property="og:description" content="AbstractLink to headingGeospatio-temporal data are pervasive across numerous application domains. These rich datasets can be harnessed to predict extreme events such as disease outbreaks, ﬂooding, crime spikes, etc.
+Statistical methods based on extreme value theory provide a systematic way for modeling the distribution of extreme values. In particular, the generalized Pareto distribution (GPD) is useful for modeling the distribution of excess values above a certain threshold. However, applying such methods to large-scale spatio-temporal data is a challenge due to the difﬁculty in capturing the complex spatial relationships between extreme events at multiple locations.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-09-16T03:05:12+02:00">
+    <meta property="article:modified_time" content="2024-09-16T03:05:12+02:00">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/deepgpd_-a-deep-learning-approach-for-modeling-geospatio-temporal--extreme-events/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+
+  
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+  
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      Tung Kieu
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/profile/">Profile</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/publication/">Publication</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/teaching/">Teaching</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/services/">Services</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/deepgpd_-a-deep-learning-approach-for-modeling-geospatio-temporal--extreme-events/">
+              DeepGPD: A Deep Learning Approach for Modeling Geospatio-Temporal Extreme Events
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-09-16T03:05:12&#43;02:00">
+                September 16, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              12-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="abstract">
+  Abstract
+  <a class="heading-link" href="#abstract">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Geospatio-temporal data are pervasive across numerous application domains. These rich datasets can be harnessed to predict extreme events such as disease outbreaks, ﬂooding,  crime spikes, etc.</p>
+<p>Statistical methods based on extreme value theory provide a systematic way for modeling the distribution of extreme values. In particular, the generalized Pareto distribution (GPD) is useful for modeling the distribution of excess values above a certain threshold. However, applying such methods to large-scale spatio-temporal data is a challenge due to the difﬁculty in capturing the complex spatial relationships between extreme events at multiple locations.</p>
+<p>This paper presents a deep learning framework for long-term prediction of the distribution of extreme values at different locations.</p>
+<h2 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Given the severity of their impact, accurate modeling of extreme events are therefore critical to provide timely information to the public threatened and to minimize the risk for human casualties and property destruction.</p>
+<p>Numerous methods have been developed in the past for modeling extremes. This includes outlier detection methods where the goal is not to predict future extreme events but to detect them retrospectively from observation data after they have occurred.</p>
+<p>Statistical approaches based on extreme value are also commonly used to infer the statistical distribution of the extreme values.  Another approach is to cast the prediction of extreme events as a supervised learning problem.</p>
+<p>we are interested in predicting the conditional distribution of excesses over a threshold (e.g., monthly precipitation or temperature that exceeds their 95th percentile) at various spatial locations. However, predicting the conditional distribution of such excesses is a challenging problem due to their rare frequency of occurrence. In addition, the predictive model must consider the complex spatial relationships between events at multiple locations.</p>
+<blockquote>
+<p>Identifying such complex and potentially nonlinear interactions among the predictors is a challenge that must be addressed.</p>
+</blockquote>
+<p>Non-parametric deep learning methods are generally ineffective at inferring the distribution of extreme events unless there are sufficiently long, historical observation data available. When trained for regression problems, deep learning models are generally trained to predict the conditional mean of a distribution using the mean squared error loss, and thus, fail to capture the tail of the distribution.</p>
+<p>Extreme events are governed by two parametric distributions: the distribution of block maxima is governed by the generalized extreme value distribution (GEV) and the distribution of excesses over a threshold are governed by the generalized Pareto distribution (GPD).</p>
+<p>The authors propose a novel framework that combines extreme value theory (EVT) with deep learning. Specifically, the framework leverages the strengths of deep learning in modeling complex relationships in geospatio-temporal data as well as the ability of GPD to capture the distribution of excess values with limited observations.</p>
+<blockquote>
+<p>However, integrating a deep neural network (DNN) with EVT is a challenge as the loss function minimized by the DNN must be modified to maximize the likelihood function of the GPD.</p>
+</blockquote>
+<blockquote>
+<p>Another computational challenge is that the sufficient statistics of GPD must satisfy certain positiv-
+ity constraints unlike the output of DNN, which are typically unconstrained.</p>
+</blockquote>
+<blockquote>
+<p>Further, the distribution of extreme values are often temporally correlated. This poses a challenge from a modeling perspective as the number of excesses above a threshold tends to vary from one time step to the next.</p>
+</blockquote>
+<p><img alt="image" src="https://hackmd.io/_uploads/r1ef2Y33R.png"></p>
+<p>The major contributions of this paper:</p>
+<ul>
+<li>
+<p>A deep learning framework to model the distribution of extreme events. The framework combines CNN with deep sets for modeling geo-spatial relationships among predictors that include ﬁxed-length vectors and variable-sized sets.</p>
+</li>
+<li>
+<p>A re-parameterization method for constraining the outputs of the DNN so that they satisfy the requisite constraints and present an algorithm that learns the GPD parameters in an end-to-end fashion.</p>
+</li>
+<li>
+<p>Evaluate the proposed framework on a real world climate dataset and demonstrate its effectiveness in comparison to conventional EVT and deep learning approaches.</p>
+</li>
+</ul>
+<h2 id="related-work">
+  Related Work
+  <a class="heading-link" href="#related-work">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The strength of CNN lies in its ability to model spatial relationships. For example, CNN has been success- fully used to model spatial relationships in geographic applications. There have also been concerted efforts to model both spatial and temporal relationships jointly using CNN. Instead of applying convolution to model temporal relationships, some research uses recurrent layers to model temporal relationships.  However, none of these approaches are designed for modeling extreme values.</p>
+<p>Statistical approaches based on extreme value theory (EVT) are commonly used to infer the distribution of extreme values. Several recent papers have combined deep learning with EVT but often only as a post-processing step. In none of these cases are deep learning and EVT integrated together within a single end-to-end learning framework. Instead, EVT is used as a post-processing step to identify unusual samples or as a robustness score of the network. In contrast, the authors integrate EVT directly into our deep learning formulation to predict the GPD parameters and training it in an end-to-end fashion.</p>
+<h2 id="preliminaries">
+  Preliminaries
+  <a class="heading-link" href="#preliminaries">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Let</p>
+$$\mathcal{D}=\left\{(X_{il},Y_{il})|i=\in\{1,\cdots,n\}; l\in\{1,\cdot,L\}\right\}$$
+<p>be a geospatio-temporal dataset, where $X_{il}$ denote the predictor attribute values for the time window $(t_{i-1},t_i]$ in lo cation $l$ and $Y_{il}$ denote the corresponding target (response) values for the time window $(t_i,\dot{t}<em>{i+1}].$ Since we are interested in predicting the excesses above a threshold in the next time window, the target variable corresponds to the set of excess values at location $l$ during the period $(t_i,t</em>{i+1}]$, i.e.,</p>
+$$Y_{il}=\{y_{tl}\mid y_{tl}\geq u,t\in(t_i,t_{i+1}]\}.$$
+<p>In addition, the predictors can be divided into two groups, $X_{il}\equiv(X_{il}^v,X_{il}^s)$, where $X_{il}^v\in\mathbb{R}^d$ is a fixed length vector and $X_il^s\in\mathbb{R}^{p_i}$ is a variable length vector corresponding to the set of excess values in the previous window, i. e. ,</p>
+$$X_{il}^{s}= \{ y_{tl}\mid y_{tl}\geq u, t\in ( t_{i- 1}, t_{i}] \} .$$
+<p>Note that the number of excess values can vary, e.g., one window may have $10$ excess values while the previous window has only $5$ excess values. The collections of excess values associated with the current and next time windows form the sets $X_{il}^s$ and $Y_{il}$, respectively. Our goal is to estimate the conditional distribution $P(Y_{il,j}|X_{il})$ for all the locations $l_{i}$ conditioned on the predictors observed in the current window, where $Y_{il,j}$ is an element of the set $Y_{il}$.</p>
+<h3 id="extreme-value-theory">
+  Extreme Value Theory
+  <a class="heading-link" href="#extreme-value-theory">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>This paper focuses primarily on the use of generalized Pareto distribution (GPD) for modeling the distribution of excesses above a given threshold. For example, in precipitation prediction, one may be interested in modeling the distribution of high precipitation values above a certain threshold.</p>
+<p>Let $Y_{1}, Y_{2}, \cdots$ be a sequence of independent and identically distributed random variables. Given an excess value $Y=u+y$, where $u$ is some pre-defined threshold, the conditional probability of observing the excess event is:</p>
+$$
+P(Y-u \leq y \mid Y>u)= \begin{cases}1-\left[1+\frac{\xi y}{\sigma}\right]^{-1 / \xi}, & \xi \neq 0 \\ 1-e^{-y}, & \xi=0\end{cases}
+$$
+<p>Furthermore, its density function is given by:</p>
+$$
+P(y)= \begin{cases}\frac{1}{\sigma}\left[1+\frac{\xi y}{\sigma}\right]^{-\frac{1}{\xi}-1}, & \xi \neq 0  \tag{1}\\ \frac{1}{\sigma} e^{-\frac{y}{\sigma}} & \xi=0\end{cases}
+$$
+<p>subject to the constraint $\forall y: 1+\frac{\xi y}{\sigma}&gt;0$. The GPD has two parameters, shape, $\xi$, and scale, $\sigma$ The shape parameter has a significant impact on the overall structure of the probability density. When $\xi$ is negative, the support of the distribution is finite such that $0&lt;y&lt;-\frac{\sigma}{\xi}$ due to the constraint. When $\xi$ is zero or positive, its support ranges from 0 to positive infinity.</p>
+<p>:::warning
+The advantage of using the GPD to model extreme values is its generality as one does not have to know the underlying distribution of the random variable prior to thresholding since the distribution of excesses will be governed by the GPD in relatively general conditions.</p>
+<p>In many cases, the values of $\xi$ and $\sigma$ may depend on some contextual features as predictors $x$. Assuming a linear relationship between $\xi$ and $x$ and between $\log (\sigma)$ and $x$ (the log linear relationship is used to guarantee that the estimate of $\sigma$ is non-negative)</p>
+$$
+\xi=f_{\xi}(x)=w_{1}^{T} x, \quad \log (\sigma)=f_{\sigma}(x)=w_{2}^{T} x \tag{2}
+$$
+<p>where $w_{1}$ and $w_{1}$ are the model parameters, which can be learned by minimizing the negative log-likelihood of GPD.
+:::</p>
+<p>One important consideration when modeling data using a GPD is the choice of threshold $u$ since the threshold must be set high enough for the GPD to be applicable. A common way to evaluate the suitability of a given threshold is by examining the mean residual life plot. If a collection of samples were drawn from a GPD then the empirical distribution of the excesses should have a linear relationship with selected threshold. Specifically, we have:</p>
+$$
+\begin{equation*}
+E(Y-u \mid Y>u)=\frac{\sigma_{0}+\xi u}{1-\xi} \tag{3}
+\end{equation*}
+$$
+<p>for threshold $u$, and $Y \sim G P D\left(\xi, \sigma_{0}\right)$. In the experiment section, we will verify our choice of threshold by examining the mean residual life plot for our precipitation data.</p>
+<h3 id="deep-set">
+  Deep Set
+  <a class="heading-link" href="#deep-set">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>To accommodate the variable size set of excess values as input predictor, $x_{i l}^{s}$, we employ a deep set architecture to transform the variable-length input into fixed size vector. The transformation consists of the following two stages.</p>
+<p>The first stage is responsible for transforming each element of the set, $x_{i l, j}^{s}$, from its raw representation into a high-level vector representation, $h_{i l, j}$ by using a fully connected network, $\phi$. These element-wise representations are then aggregated to obtain a fixed-length vector representation for the set.</p>
+<p>This set-level representation is then used as input to a fully connected network, $\rho$, to produce the final output representation, $z_{i l}^{s}=\rho\left[\sum_{j} \phi\left(x_{i l, j}^{s}\right)\right]$</p>
+<h2 id="deegpd-framework">
+  DeeGPD Framework
+  <a class="heading-link" href="#deegpd-framework">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ol>
+<li>Local Feature Extraction - This component is responsible for transforming both the (fixed-length) vectorvalued, $x_{i l}^{v}$, and (variable-length) set-valued predictors, $x_{i l}^{s}$, at each location into a fixed-length feature vector.</li>
+<li>Spatial Feature Extraction - This component models the spatial relationships among the predictors in the data.</li>
+<li>Extreme Value Modeling (EVM) - This component is responsible for ensuring that the constraints on the GPD parameters are satisfied by the induced model.</li>
+</ol>
+<h3 id="local-feature-extraction">
+  Local Feature Extraction
+  <a class="heading-link" href="#local-feature-extraction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>:::warning
+Learning a representation of the predictors is challenging for two reasons. First, because the set-valued predictors are variable length the authors must transform them into a fixed length vector so that it can be used by the later stages of the model. Second, the set-valued predictors may not always be available for some locations.
+:::</p>
+<p>To address the first challenge, the authors employ the deep set architecture described in subsection to transform the set-valued predictors into a fixed-length vector, $z_{i l}^{s}$.</p>
+<p>For the second challenge, there may be some cases where a given grid cell lacks set-valued predictors, $x_{i l}^{s}$. In these cases the authors set $z_{i l}^{s}=0$. However, zeroing the inputs in this way risks the possibility that predictions at locations without set predictors will be distorted. To address this, an indicator variable, $I_{i l}$ is introduced to indicate whether set-valued predictors are available at a given location and time. This indicator variable is then concatenated with the vector-valued predictors and the deep set representation of the set-valued predictors to generate the following vector: $z_{i l}=z_{i l}^{s}\left|I_{i l}\right| x_{i l}^{v}$, where $|$ denotes the concatenation operator.</p>
+<p>After each set element is processed by several fully connected layers, only the representations of the actual set elements (i.e. dummy elements excluded) are averaged together. This is implemented through the use of a masking array multiplied by the set member representations element-wise.</p>
+<h3 id="spatial-feature-extraction">
+  Spatial Feature Extraction
+  <a class="heading-link" href="#spatial-feature-extraction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>After extracting a separate representation for each location, the authors need to model the spatial relationships between the representations at different locations. <strong>DeepGPD</strong> uses a CNN to capture the geospatial relationships in the data. The authors arrange the representation extracted from all the gridded locations into a $3$-dimensional tensor (excluding the batch dimension) and then provide the tensor as input to a CNN with residual layers. The final linear layer of the CNN produces a response map for each location, $k_{i l} \in \mathbb{R}^{2}$, for the prediction time window $\left(t_{i}, t_{i+1}\right]$.</p>
+<h3 id="extreme-value-modeling-evm">
+  Extreme Value Modeling (EVM)
+  <a class="heading-link" href="#extreme-value-modeling-evm">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The EVM component is designed to predict the conditional distribution of excess values by utilizing the response map generated by the CNN. Specifically, it will convert the CNN output for each location and time window $\left(t_{i}, t_{i+1}\right]$ to the generalized Pareto model parameters, $\xi_{i l}$ and $\sigma_{i l}$. These parameters enable us to infer various statistics about the excess values in the predicted time window, such as the expected values at varying quantiles (including maximum and median value) as well as their return level.</p>
+<p><strong>DeepGPD</strong> enables both parameters to be automatically learned from the data. Specifically, the deep architecture is trained to minimize the following negative loglikelihood function of the excess values in the next time step:</p>
+$$
+\mathcal{L}\left(\left\{\xi_{i l}, \sigma_{i l}\right\}\right)=\sum_{i, l, j}\left[\log \sigma_{i l}+\left(1+\frac{1}{\xi_{i l}}\right) \log \left(1+\xi_{i l} \frac{y_{i l j}}{\sigma_{i l}}\right)\right] \tag{4}
+$$
+<p>One major computational challenge in estimating the GPD parameters using a deep learning architecture is the need to enforce positivity constraints on the solution of (4) during training. To address this challenge, <strong>DeepGPD</strong> employs a re-parameterization trick to transform $\left(\xi_{i l}, \sigma_{i l}\right)$ into a pair of unconstrained variables $k_{i l}=\left(k_{i l}^{(1)}, k_{i l}^{(2)}\right)$ that can be learned by the convolutional neural network.</p>
+<p>Let $\left{\xi_{i l}^{<em>}, \sigma_{i l}^{</em>}\right}=\operatorname{argmin} \mathcal{L}\left(\left{\xi_{i l}, \sigma_{i l}\right}\right)$ subject to the following positivity constraints:</p>
+$$
+\forall i, j, l: \sigma_{i l}>0 \text { and } 1+\xi_{i l} \frac{y_{i l j}}{\sigma_{i l}}>0
+$$
+<p>By re-parameterizing $\left(\xi_{i l}, \sigma_{i l}\right) \mapsto\left(k_{i l}^{(1)}, k_{i l}^{(2)}\right)$ as follows:</p>
+$$
+\sigma_{i l}=\exp \left(k_{i l}^{(1)}\right), \quad \xi_{i l}=\exp \left(k_{i l}^{(2)}\right)-\frac{\exp \left(k_{i l}^{(1)}\right)}{M_{i l}} \tag{5}
+$$
+<p>and solving for $\left{\hat{k}<em>{i l}^{(1)}, \hat{k}</em>{i l}^{(2)}\right}=\operatorname{argmin} \hat{\mathcal{L}}\left(\left{u_{i l}, v_{i l}\right}\right)$, where</p>
+$$
+\hat{\mathcal{L}}\left(\left\{u_{i l}, v_{i l}\right\}\right)=\sum_{i l j}\left[u_{i l}+\left(1+\frac{M_{i l}}{M_{i l} e^{v_{i l}}-e^{u_{i l}}}\right)\times \log \left(1+e^{v_{i l}} \frac{y_{i l j}}{e^{u_{i l}}}-\frac{y_{i l j}}{M_{i l}}\right)\right] \tag{6}
+$$
+<p>and $M_{i l}=\max <em>{j} Y</em>{i l j}$, then the solution set $\left{\xi_{i l}^{<em>}, \sigma_{i l}^{</em>}\right}$ can be derived from the solution for $\left{\hat{k}<em>{i l}^{(1)}, \hat{k}</em>{i l}^{(1)}\right}$ by applying the mapping given in Equation (5).</p>
+<p>The proof for the preceding theorem can be shown by substituting (5) into (4), which yields the equivalent objective function for $\hat{\mathcal{L}}\left(\left{k_{i l}^{(1)}, k_{i l}^{(2)}\right}\right)$. Furthermore, since Equation (4) can be re-written as follows:</p>
+$$
+\sigma_{i l} =e^{k_{i l}^{(1)}} \geq 0
+$$
+$$
+1+\xi_{i l} \frac{y_{i l j}}{\sigma_{i l}} =1-\frac{y_{i l j}}{M_{i l}}+e^{k_{i l}^{(2)}} \frac{y_{i l j}}{e^{k_{i l}^{(1)}}} \geq 0
+$$
+<p>the positivity constraints are automatically satisfied given the fact that $\forall i, l, j: y_{i l j} \leq M_{i l}, e^{k_{i l}^{(1)}}&gt;0$ and $e^{k_{i l}^{(2)}}&gt;0$ as long as $k_{i l}^{(1)}$ and $k_{i l}^{(2)}$ are not equal to $-\infty$.</p>
+<p>long as $k_{i l}^{(1)}$ and $k_{i l}^{(2)}$ are not equal to $-\infty$.</p>
+<p>The DeepGPD framework trained to optimize the loss function in Equation (6) will generate the maximum likelihood solution for $\left{\xi_{i l}^{<em>}, \sigma_{i l}^{</em>}\right}$ in Equation (4) given the one-to-one mapping with $\left{\hat{k}<em>{i l}^{(1)}, \hat{k}</em>{i l}^{(2)}\right}$ in Equation (5).</p>
+<p>$\left{\xi_{i l}^{<em>}\right.$ and $\left.\sigma_{i l}^{</em>}\right}$. This enables the parameters to be more easily learned by DeepGPD. All three components of the framework, including deep set and CNN, are trained in an endto-end fashion using Adam (Kingma and Ba 2015). Once the parameters for $\hat{k}<em>{i l}^{(1)}$ and $\hat{k}</em>{i l}^{(2)}$ are obtained, we can apply Equation (5) to derive the corresponding GPD parameters.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2024
+     Tung Kieu 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
