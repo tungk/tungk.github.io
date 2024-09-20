@@ -76,7 +76,7 @@ where large constants $\epsilon_{1}$, $\epsilon_{2} > 0$ are called thresholds. 
 
 Only a few number of parametric distributions are heavy-tailed, e.g. Pareto distribution and log-Cauchy distribution. Therefore modeling with light-tailed parametric distributions would bring unavoidable losses in the tail part of the data.
 
-![image](https://hackmd.io/_uploads/rk3YpVJ3A.png)
+![image](/images/rk3YpVJ3A.png)
 
 **Extreme Value Theory.** EVT studies the distribution of maximum in observed samples [43]. Formally speaking, suppose $T$ random variables $y_{1}, \ldots ,y_{T}$ are i.i.d sampled from distribution $F_{Y}$, then the distribution of the maximum is
 
