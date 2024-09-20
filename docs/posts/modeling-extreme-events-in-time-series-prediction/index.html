@@ -204,12 +204,10 @@
   </a>
 </h2>
 <p>Most previously studied DNN are observed to have troubles in dealing with data imbalance Following the discussion in Lin et al., such an imbalance in data will potentially bring any classifier into either of two unexpected situations: <strong>a.</strong> the model hardly learns any pattern and simply chooses to recognize all samples as positive. <strong>b.</strong> the model memorizes the training set perfectly while it generalizes poorly to test set.</p>
-<p>:::warning
-In the context of time-series prediction, imbalanced data in time series, or extreme events, is also harmful to deep learning models. Intuitively, an extreme event intime series is usually featured by extremely small or large values, of irregular and rare occurrences.
-:::</p>
+<p>In the context of time-series prediction, imbalanced data in time series, or extreme events, is also harmful to deep learning models. Intuitively, an extreme event intime series is usually featured by extremely small or large values, of irregular and rare occurrences.</p>
 <p>As an empirical justification of its harmfulness on deep learning models, the authors train a standard GRU to predict one-dimensional time series, where certain thresholds are used to label a small proportion of datasets as extreme events in prior.</p>
 <p><strong>a.</strong> In Fig. 1(a), most of its predictions are bounded by thresholds and therefore it fails to recognize future extreme events, the authors claim this as underfitting phenomenon. <strong>b.</strong> In Fig. 1(b), although the model learns extreme events in the train set correctly, it behaves poorly on test sets, the authors cliam this as overfitting phenomenon</p>
-<p><img alt="image" src="https://hackmd.io/_uploads/BkZRsGJ2C.png"></p>
+<p><img alt="image" src="/images/BkZRsGJ2C.png"></p>
 <p>However from the authors&rsquo; perspective, it would be really valuable if a time-series prediction model could recognize future extreme events with reasonable predictions.</p>
 <ul>
 <li>We provide a formal analysis on why deep neural network suffers underfitting or overfitting phenomenons during predicting time series data with extreme value</li>
@@ -267,7 +265,7 @@ $$
     G(y) = \begin{cases} \exp(-(1-\frac{1}{\gamma}y)^{\gamma}), \quad \gamma \neq 0, 1 - \frac{1}{\gamma}y > 0 \\ \exp(-e^{-y}), \quad \gamma = 0 \end{cases}
 $$
 <p>Usually, the form $G(y)$ is called Generalized Extreme Value distribution, with $\gamma$, $0$ as extreme value index.</p>
-<p><img alt="image" src="https://hackmd.io/_uploads/rJVRaNJnA.png"></p>
+<p><img alt="image" src="/images/rJVRaNJnA.png"></p>
 <p><strong>Modeling The Tail.</strong>  Previous works extend the above theorem to model the tail distribution</p>
 $$
     1 - F(y) \approx (1 - F(\xi))\left[1 - \log G \left(\frac{y-\xi}{f(\xi)}\right)\right], y > \xi
@@ -313,9 +311,7 @@ $$
   </a>
 </h2>
 <p>The distribution of output from a learning model with optimal parameters can be regarded as a KDE with Gaussian Kernel. Since nonparametric kernel density estimator only works well with sufficient samples, the performance therefore is expected to decrease at the tail part of the data, where sampled data points would be rather limited.</p>
-<p>:::warning
-The main reason is that the range of extreme values are commonly very large, thus few samples hardly can cover the range.
-:::</p>
+<p>The main reason is that the range of extreme values are commonly very large, thus few samples hardly can cover the range.</p>
 <p>Suppose $x_{1}$, $x_{2}$ are two test samples with corresponding outputs as $o_{1} = 0.5$, $o_{2} = 1.5$. As our studied model is assumed to have sufficient learning capacity for modeling $P(X)$, $P(X|Y)$, thus the authors have</p>
 $$
     P(y_{1}|x_{1},\theta) = \frac{P(X|Y)\hat{P}(Y)}{P(X)} \ge \frac{P(X|Y)P_{\text{true}}(Y)}{P(X)} = P_{\text{true}}(y_{1}|x_{1})
@@ -349,7 +345,7 @@ $$
 <p>In summary, at each time step $t$, the memory consists of the following two parts:
 -Embedding Module $S \in \mathbb{R}^{M \times H}: s_{j}$ is the latent representation of history window $j$.
 -History Module $Q \in {−1, 0, 1}^{M} : q_{j}$ is the label of whether there is a extreme event after the window $j$.</p>
-<p><img alt="image" src="https://hackmd.io/_uploads/SkUXZXe2A.png"></p>
+<p><img alt="image" src="/images/SkUXZXe2A.png"></p>
 <p><strong>Attention Mechanism.</strong>. At each time step $t$, the authors use GRU to produce the output value</p>
 $$
     \tilde{o}_{t} = W_{o}^{\top}h_{t}+b_{o} \text{  where  } h_{t} = \mathrm{GRU}([x_{1}, x_{2}, \ldots, x_{t}])
@@ -363,7 +359,7 @@ $$
 $$
     o_{t} = \tilde{o}_{t} + b^{\top}u_{t}, \text{  where  } u_{t} = \sum_{j=1}^{M}\alpha_{tj}q_{j}
 $$
-<p>$u_{t} \in [−1, 1]$ is the prediction of whether there will be an extreme event after time step $t$, and $b \in \mathbb{R}<em>{+}$ is the scale parameter. When there is a similarity between the current time step and certain extreme events in history, then ut will help detect such a pumping point by settingut non-vanishing, while when the current event is observed to hardly have any relation with the history, then the output would choose to mainly depend on $\tilde{o}</em>{t}$, i.e. the value predicted by a standard GRU gate</p>
+<p>$u_{t} \in [−1, 1]$ is the prediction of whether there will be an extreme event after time step $t$, and \(b \in \mathbb{R}_{+}\) is the scale parameter. When there is a similarity between the current time step and certain extreme events in history, then ut will help detect such a pumping point by settingut non-vanishing, while when the current event is observed to hardly have any relation with the history, then the output would choose to mainly depend on $\tilde{o}_{t}$, i.e. the value predicted by a standard GRU gate</p>
 <h3 id="extreme-value-loss">
   Extreme Value Loss
   <a class="heading-link" href="#extreme-value-loss">
@@ -413,9 +409,9 @@ $$
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<p><img alt="image" src="https://hackmd.io/_uploads/ryTI2TznC.png"></p>
-<p><img alt="image" src="https://hackmd.io/_uploads/HyjPn6G2C.png"></p>
-<p><img alt="image" src="https://hackmd.io/_uploads/Syod2Tfn0.png"></p>
+<p><img alt="image" src="/images/ryTI2TznC.png"></p>
+<p><img alt="image" src="/images/HyjPn6G2C.png"></p>
+<p><img alt="image" src="/images/Syod2Tfn0.png"></p>
 
       </div>
 

@@ -211,11 +211,9 @@ The authors describe our approach to address this challenge and present an archi
 <p>The two most popular distributions studied in EVT are the generalized extreme value (<strong>GEV</strong>) and generalized Pareto (<strong>GP</strong>) distributions. Given a prediction time window, GEV governs the distribution of its block maxima, whereas GP is concerned with the distribution of excess values over a certain threshold.</p>
 <p>This paper focuses on forecasting the block maxima as it allows us to assess the worst-case scenario in the given forecast time window and avoids making ad-hoc decisions regarding the choice of excess threshold to use for the GP distribution.</p>
 <p>Deep learning methods have grown in popularity in recent years due to their ability to capture nonlinear dependencies in the data. Previous studies have utilized a variety of deep neural network architectures for time series modeling. However, these works are mostly focused on predicting the conditional mean of the target variable.</p>
-<p><img alt="image" src="https://hackmd.io/_uploads/HJoSA3FhR.png"></p>
+<p><img alt="image" src="/images/HJoSA3FhR.png"></p>
 <p>While there have some recent attempts to incorporate EVT into deep learning they are primarily focused on modeling the tail distribution, i.e., excess values over a threshold, using the GP distribution, rather than forecasting the block maxima using the GEV distribution.</p>
-<p>:::warning
-Incorporating the GEV distribution into the deep learning formulation presents many technical challenges. First, the GEV parameters must satisfy certain positivity constraints to ensure that the predicted distribution has a finite bound. Another challenge is the scarcity of data since there is only one block maximum value per time window. This makes it hard to accurately infer the GEV parameters for each window from a set of predictors. Finally, the training process is highly sensitive to model initialization. For example, the random initialization of a deep neural network (DNN) can easily violate certain regularity conditions of the GEV parameters estimated using maximum likelihood (ML) estimation.
-:::</p>
+<p>Incorporating the GEV distribution into the deep learning formulation presents many technical challenges. First, the GEV parameters must satisfy certain positivity constraints to ensure that the predicted distribution has a finite bound. Another challenge is the scarcity of data since there is only one block maximum value per time window. This makes it hard to accurately infer the GEV parameters for each window from a set of predictors. Finally, the training process is highly sensitive to model initialization. For example, the random initialization of a deep neural network (DNN) can easily violate certain regularity conditions of the GEV parameters estimated using maximum likelihood (ML) estimation.</p>
 <p>To overcome these challenges, the authors propose a novel framework called <strong>DeepExtrema</strong> that utilizes the GEV distribution to characterize the distribution of block maximum values for a given forecast time window. The parameters of the GEV distribution are estimated using a DNN, which is trained to capture the nonlinear dependencies in the time series data.</p>
 <ol>
 <li>The authors present a novel framework to predict the block maxima of a given time window by incorporating GEV distribution into the training of a DNN.</li>
@@ -237,7 +235,7 @@ Incorporating the GEV distribution into the deep learning formulation presents m
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p>Let $z_1, z_2, \cdots, z_T$ be a time series of length $T$. Assume the time series is partitioned into a set of time windows, where each window $[t-\alpha, t+\beta]$ contains a sequence of predictors, $x_t=\left(z_{t-\alpha}, z_{t-\alpha+1}, \cdots, z_t\right)$, and target, $\tilde{y}<em>t=$ $\left(z</em>{t+1}, z_{t+2}, \cdots, z_{t+\beta}\right)$. Note that $\beta$ is known as the forecast horizon of the prediction. For each time window, let $y_t=\max <em>{\tau \in{1, \cdots, \beta}} z</em>{t+\tau}$ be the block maxima of the target variable at time $t$. Our time series forecasting task is to estimate the block maxima, $\hat{y}<em>t$, as well as its upper and lower quantile estimates, $\hat{y}</em>{U}$ and $\hat{y}_{L}$, of a future time window based on current and past data, $x_t$.</p>
+<p>Let $z_1, z_2, \cdots, z_T$ be a time series of length $T$. Assume the time series is partitioned into a set of time windows, where each window $[t-\alpha, t+\beta]$ contains a sequence of predictors, $x_t=\left(z_{t-\alpha}, z_{t-\alpha+1}, \cdots, z_t\right)$, and target, \(\tilde{y}_t=\left(z_{t+1}, z_{t+2}, \cdots, z_{t+\beta}\right)\). Note that $\beta$ is known as the forecast horizon of the prediction. For each time window, let $y_t=\max_{\tau \in{1, \cdots, \beta}} z_{t+\tau}$ be the block maxima of the target variable at time $t$. Our time series forecasting task is to estimate the block maxima, \(\hat{y}_t\), as well as its upper and lower quantile estimates, \(\hat{y}_{U}\) and \(\hat{y}_{L}\), of a future time window based on current and past data, $x_t$.</p>
 <h3 id="generalized-extreme-value-distribution">
   Generalized Extreme Value Distribution
   <a class="heading-link" href="#generalized-extreme-value-distribution">
@@ -245,7 +243,7 @@ Incorporating the GEV distribution into the deep learning formulation presents m
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p>The GEV distribution governs the distribution of block maxima in a given window. Let $Y=\max \left{z_1, z_2, \cdots, z_t\right}$. If there exist sequences of constants $a_t&gt;0$ and $b_t$ such that
+<p>The GEV distribution governs the distribution of block maxima in a given window. Let \(Y=\max\left\{z_1, z_2, \cdots, z_t\right\}\). If there exist sequences of constants $a_t&gt;0$ and $b_t$ such that
 </p>
 $$
 \operatorname{Pr}\left(Y-b_t\right) / a_t \leq y \rightarrow G(y) \quad \text { as } t \rightarrow \infty
@@ -267,7 +265,7 @@ $$
 y_p=\mu+\frac{\sigma}{\xi}\left[(-\log p)^{-\xi}-1\right]
 \tag{3}
 $$
-<p>Given $n$ independent block maxima values, $\left{y_1, y_2, \cdots, y_n\right}$, with the distribution function given by Equation (1) and assuming $\xi \neq 0$, its log-likelihood function is given by:</p>
+<p>Given $n$ independent block maxima values, \(\left\{y_1, y_2, \cdots, y_n\right\}\), with the distribution function given by Equation (1) and assuming $\xi \neq 0$, its log-likelihood function is given by:</p>
 $$
 \ell_{G E V}(\mu, \sigma, \xi)= -n \log \sigma-\left(\frac{1}{\xi}+1\right) \sum_{i=1}^n \log \left(1+\xi \frac{y_i-\mu}{\sigma}\right) -\sum_{i=1}^n\left(1+\xi \frac{y_i-\mu}{\sigma}\right)^{-1 / \xi}
 \tag{4}
@@ -279,7 +277,7 @@ $$
 \tag{5}
 $$
 <p>In addition to the above positivity constraints, the shape parameter $\xi$ must be within certain range of values in order for the ML estimators to exist and have regular asymptotic properties. Specifcally, the ML estimators have regular asymptotic properties as long as $\xi &gt; −0.5$. Otherwise, if $−1 &lt; \xi &lt; −0.5$, then the ML estimators may exist but will not have regular asymptotic properties. Finally, the ML estimators do not exist if $\xi &lt; −1$</p>
-<p><img alt="image" src="https://hackmd.io/_uploads/B1VkA3F3C.png"></p>
+<p><img alt="image" src="/images/B1VkA3F3C.png"></p>
 <h2 id="deepextrema">
   DeepExtrema
   <a class="heading-link" href="#deepextrema">
@@ -293,7 +291,7 @@ $$
     \tag{6}
 $$
 <p>where $\mu$, $\sigma$, and $\xi$’s are the location, shape, and scale parameters of the GEV distribution.</p>
-<p>The proposed Model Bias Offset (MBO) component performs bias correction on the estimated GEV parameters to ensure that the LSTM outputs preserve the regularity conditions of the GEV parameters irrespective of how the network was initialized. The GEV parameters are subsequently provided to a fully connected layer to obtain point estimates of the block maxima, which include its expected value yˆ as well as upper and lower quantiles, $\hat{y}<em>{U}$ and $\hat{y}</em>{L}$.</p>
+<p>The proposed Model Bias Offset (MBO) component performs bias correction on the estimated GEV parameters to ensure that the LSTM outputs preserve the regularity conditions of the GEV parameters irrespective of how the network was initialized. The GEV parameters are subsequently provided to a fully connected layer to obtain point estimates of the block maxima, which include its expected value yˆ as well as upper and lower quantiles, \(\hat{y}_{U}\) and \(\hat{y}_{L}\).</p>
 <p>The GEV parameters are then used to compute the negative log-likelihood of the estimated GEV distribution, which will be combined with the root-mean-square error (RMSE) of the predicted block maxima to determine the overall loss function.</p>
 <h3 id="gev-parameter-estimation">
   GEV Parameter Estimation
@@ -302,13 +300,9 @@ $$
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p>Let $D = {(x_{i}, y_{i})}<em>{n}^{i=1}$ be a set of training examples, where each $x</em>{i}$ denotes the predictor time series and $y_{i}$ is the corresponding block maxima for time window $i$.</p>
-<p>:::warning
-A naıve approach is to assume that the GEV parameters $(\mu, \sigma, \xi)$ are constants for all time windows. This can be done by fitting a global GEV distribution to the set of block maxima values $y_{i}$’s using the maximum likelihood approach.
-:::</p>
-<p>:::danger
-Instead of using a global GEV distribution with fixed parameters, our goal is to learn the parameters $(\mu_{i}, \sigma_{i}, \xi_{i})$ of each window $i$ using the predictors $x_{i}$.
-:::</p>
+<p>Let \(D = \{(x_{i}, y_{i})\}_{n}^{i=1}\) be a set of training examples, where each $x_{i}$ denotes the predictor time series and $y_{i}$ is the corresponding block maxima for time window $i$.</p>
+<p>A naıve approach is to assume that the GEV parameters $(\mu, \sigma, \xi)$ are constants for all time windows. This can be done by fitting a global GEV distribution to the set of block maxima values $y_{i}$’s using the maximum likelihood approach.</p>
+<p>Instead of using a global GEV distribution with fixed parameters, our goal is to learn the parameters $(\mu_{i}, \sigma_{i}, \xi_{i})$ of each window $i$ using the predictors $x_{i}$.</p>
 <p>The estimated GEV parameters generated by the LSTM must satisfy the two positivity constraints given by the inequalities in (5). While the frst positivity constraint on $\sigma_{i}$ is straightforward to enforce, maintaining the second one is harder as it involves a nonlinear relationship.</p>
 <p>The authors propose a reformulation of the second constraint in (5). This allows the training process to proceed even though the second constraint in (5) has yet to be satisfed especially in the early rounds of the training epochs. Specifcally, we relax the hard constraint by adding a small tolerance factor, $\tau &gt; 0$</p>
 $$
@@ -352,10 +346,8 @@ $$
 \end{aligned}
 $$
 <p>The MLestimated distribution may not have the asymptotic GEV distribution when $\xi &lt; −0.5$ while its conditional mean is not well-defned when $\xi &gt; 1$. Additionally, the estimated location parameter µ may not fall within the desired range between $y_{\text{min}}$ and $y_{\text{max}}$ when the DNN is randomly initialized</p>
-<p>:::warning
-One way to address this challenge is to repeat the random initialization of the DNN until a reasonable set of initial GEV parameters, i.e., $y_{\text{min}} \le \mu \le y_{\text{max}}$ and $−0.5 &lt; \xi &lt; 1$, is found.
-:::</p>
-<p><img alt="image" src="https://hackmd.io/_uploads/SJCA9k9n0.png"></p>
+<p>One way to address this challenge is to repeat the random initialization of the DNN until a reasonable set of initial GEV parameters, i.e., $y_{\text{min}} \le \mu \le y_{\text{max}}$ and $−0.5 &lt; \xi &lt; 1$, is found.</p>
+<p><img alt="image" src="/images/SJCA9k9n0.png"></p>
 <p>The authors introduce a simple but effective technique called Model Bias Offset (MBO) to address this challenge. The key insight here is to view the GEV parameters as a biased output due to the random initialization of the DNN and then perform bias correction to alleviate the effect of the initialization</p>
 <p>To do this, let $\mu_{\text{desired}}$, $\sigma_{\text{desired}}$, and $\xi_{\text{desired}}$ be an acceptable set of initial GEV parameters. The values of these initial parameters must satisfy the regularity conditions $−0.5 &lt; \xi_{\text{desired}}&lt; 1$, $\sigma_{\text{desired}} &gt; 0$, and $y_{\text{min}} \le \mu_{\text{desired}} \le y_{\text{min}}$.</p>
 <p>When the DNN is randomly initialized, let $\mu_{0}$, $\sigma_{0}$, $\xi_{u,0}$, and $\xi_{l,0}$ be the initial DNN output for the GEV parameters. These initial outputs may not necessarily fall within their respective range of acceptable values.</p>
@@ -387,15 +379,13 @@ $$
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p>Given an input $x_{i}$, the DNN will estimate the GEV parameters needed to compute the block maxima $\hat{y}<em>{i}$ along with its upper and lower quantiles, $\hat{y}</em>{U,i}$ and $\hat{y}_{L,i}$, respectively.  The quantiles are estimated using the formula given in (3).</p>
+<p>Given an input $x_{i}$, the DNN will estimate the GEV parameters needed to compute the block maxima \(\hat{y}_{i}\) along with its upper and lower quantiles, \(\hat{y}_{U,i}\) and \(\hat{y}_{L,i}\), respectively.  The quantiles are estimated using the formula given in (3).</p>
 <p>The loss function to be minimized by <strong>DeepExtrema</strong></p>
 $$
 \mathcal{L} = \lambda_{1}\hat{\mathcal{L}} + (1-\lambda_{1})\sum_{i=1}^{n}(y_{i}-\hat{y}_{i})^{2}
 $$
 <p>where $\hat{\mathcal{L}} = -\lambda_{2} \ell_{GEV} (\mu, \sigma, \xi)+ (1-\lambda_{2})\sum_{i=1}^{n}(\xi_{u,i} −\xi_{l,i})^{2}$ is the regularized GEV loss.</p>
-<p>:::danger
-The first term in $\hat{\mathcal{L}}$ corresponds to the negative log-likelihood function given in Equation (4) while the second term minimizes the difference between the upper and lower-bound estimates of $\xi$.
-:::</p>
+<p>The first term in $\hat{\mathcal{L}}$ corresponds to the negative log-likelihood function given in Equation (4) while the second term minimizes the difference between the upper and lower-bound estimates of $\xi$.</p>
 
       </div>
 

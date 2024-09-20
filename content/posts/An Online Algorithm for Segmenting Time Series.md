@@ -1,4 +1,4 @@
-+++ 
++++
 draft = false
 date = 2024-09-16T03:01:12+02:00
 title = "An Online Algorithm for Segmenting Time Series"
@@ -101,13 +101,13 @@ end;
 
 ### Complexity
 
-![image](https://hackmd.io/_uploads/SkCT62Ln0.png)
+![image](/images/SkCT62Ln0.png)
 
-![image](https://hackmd.io/_uploads/Bkog0h8n0.png)
+![image](/images/Bkog0h8n0.png)
 
-![image](https://hackmd.io/_uploads/BkGQAnI30.png)
+![image](/images/BkGQAnI30.png)
 
-![image](https://hackmd.io/_uploads/HJUdA2L2A.png)
+![image](/images/HJUdA2L2A.png)
 
 
 ### The SWAB Segmentation Algorithm
@@ -145,4 +145,4 @@ end while
 return S;
 ```
 
-![image](https://hackmd.io/_uploads/rybmfpU2R.png)
+![image](/images/rybmfpU2R.png)

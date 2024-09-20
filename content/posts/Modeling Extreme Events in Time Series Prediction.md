@@ -21,15 +21,13 @@ The authors first find that the weakness of deep learning methods roots in the c
 
 Most previously studied DNN are observed to have troubles in dealing with data imbalance Following the discussion in Lin et al., such an imbalance in data will potentially bring any classifier into either of two unexpected situations: **a.** the model hardly learns any pattern and simply chooses to recognize all samples as positive. **b.** the model memorizes the training set perfectly while it generalizes poorly to test set.
 
-:::warning
 In the context of time-series prediction, imbalanced data in time series, or extreme events, is also harmful to deep learning models. Intuitively, an extreme event intime series is usually featured by extremely small or large values, of irregular and rare occurrences. 
-:::
 
 As an empirical justification of its harmfulness on deep learning models, the authors train a standard GRU to predict one-dimensional time series, where certain thresholds are used to label a small proportion of datasets as extreme events in prior.
 
 **a.** In Fig. 1(a), most of its predictions are bounded by thresholds and therefore it fails to recognize future extreme events, the authors claim this as underfitting phenomenon. **b.** In Fig. 1(b), although the model learns extreme events in the train set correctly, it behaves poorly on test sets, the authors cliam this as overfitting phenomenon
 
-![image](https://hackmd.io/_uploads/BkZRsGJ2C.png)
+![image](/images/BkZRsGJ2C.png)
 
 
 However from the authors' perspective, it would be really valuable if a time-series prediction model could recognize future extreme events with reasonable predictions.
@@ -97,7 +95,7 @@ $$
 
 Usually, the form $G(y)$ is called Generalized Extreme Value distribution, with $\gamma$, $0$ as extreme value index.
 
-![image](https://hackmd.io/_uploads/rJVRaNJnA.png)
+![image](/images/rJVRaNJnA.png)
 
 **Modeling The Tail.**  Previous works extend the above theorem to model the tail distribution
 
@@ -143,9 +141,7 @@ where constant $\hat{\tau}$ is an unknown variance. In consideration of its simi
 
 The distribution of output from a learning model with optimal parameters can be regarded as a KDE with Gaussian Kernel. Since nonparametric kernel density estimator only works well with sufficient samples, the performance therefore is expected to decrease at the tail part of the data, where sampled data points would be rather limited.
 
-:::warning
 The main reason is that the range of extreme values are commonly very large, thus few samples hardly can cover the range.
-:::
 
 Suppose $x_{1}$, $x_{2}$ are two test samples with corresponding outputs as $o_{1} = 0.5$, $o_{2} = 1.5$. As our studied model is assumed to have sufficient learning capacity for modeling $P(X)$, $P(X|Y)$, thus the authors have
 
@@ -183,7 +179,7 @@ In summary, at each time step $t$, the memory consists of the following two part
 -Embedding Module $S \in \mathbb{R}^{M \times H}: s_{j}$ is the latent representation of history window $j$.
 -History Module $Q \in \{−1, 0, 1\}^{M} : q_{j}$ is the label of whether there is a extreme event after the window $j$.
 
-![image](https://hackmd.io/_uploads/SkUXZXe2A.png)
+![image](/images/SkUXZXe2A.png)
 
 
 **Attention Mechanism.**. At each time step $t$, the authors use GRU to produce the output value 
@@ -206,7 +202,7 @@ $$
     o_{t} = \tilde{o}_{t} + b^{\top}u_{t}, \text{  where  } u_{t} = \sum_{j=1}^{M}\alpha_{tj}q_{j}
 $$
 
-$u_{t} \in [−1, 1]$ is the prediction of whether there will be an extreme event after time step $t$, and $b \in \mathbb{R}_{+}$ is the scale parameter. When there is a similarity between the current time step and certain extreme events in history, then ut will help detect such a pumping point by settingut non-vanishing, while when the current event is observed to hardly have any relation with the history, then the output would choose to mainly depend on $\tilde{o}_{t}$, i.e. the value predicted by a standard GRU gate
+$u_{t} \in [−1, 1]$ is the prediction of whether there will be an extreme event after time step $t$, and \(b \in \mathbb{R}_{+}\) is the scale parameter. When there is a similarity between the current time step and certain extreme events in history, then ut will help detect such a pumping point by settingut non-vanishing, while when the current event is observed to hardly have any relation with the history, then the output would choose to mainly depend on $\tilde{o}_{t}$, i.e. the value predicted by a standard GRU gate
 
 ### Extreme Value Loss
 
@@ -254,8 +250,8 @@ where $p_{j} \in [−1, 1]$ is calculated through $s_{j}$, which is the embedded
 
 ## Experiments
 
-![image](https://hackmd.io/_uploads/ryTI2TznC.png)
+![image](/images/ryTI2TznC.png)
 
-![image](https://hackmd.io/_uploads/HyjPn6G2C.png)
+![image](/images/HyjPn6G2C.png)
 
-![image](https://hackmd.io/_uploads/Syod2Tfn0.png)
+![image](/images/Syod2Tfn0.png)

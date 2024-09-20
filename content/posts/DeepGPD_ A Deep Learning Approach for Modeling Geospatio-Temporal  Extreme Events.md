@@ -45,7 +45,7 @@ ity constraints unlike the output of DNN, which are typically unconstrained.
 
 > Further, the distribution of extreme values are often temporally correlated. This poses a challenge from a modeling perspective as the number of excesses above a threshold tends to vary from one time step to the next.
 
-![image](https://hackmd.io/_uploads/r1ef2Y33R.png)
+![image](/images/r1ef2Y33R.png)
 
 
 The major contributions of this paper:
@@ -70,7 +70,7 @@ Let
 
 $$\mathcal{D}=\left\{(X_{il},Y_{il})|i=\in\{1,\cdots,n\}; l\in\{1,\cdot,L\}\right\}$$
 
-be a geospatio-temporal dataset, where $X_{il}$ denote the predictor attribute values for the time window $(t_{i-1},t_i]$ in lo cation $l$ and $Y_{il}$ denote the corresponding target (response) values for the time window $(t_i,\dot{t}_{i+1}].$ Since we are interested in predicting the excesses above a threshold in the next time window, the target variable corresponds to the set of excess values at location $l$ during the period $(t_i,t_{i+1}]$, i.e., 
+be a geospatio-temporal dataset, where $X_{il}$ denote the predictor attribute values for the time window $(t_{i-1},t_i]$ in location $l$ and $Y_{il}$ denote the corresponding target (response) values for the time window $(t_i,\dot t_{i+1}]$ Since we are interested in predicting the excesses above a threshold in the next time window, the target variable corresponds to the set of excess values at location $l$ during the period $(t_i,t_{i+1}]$, i.e., 
 
 $$Y_{il}=\{y_{tl}\mid y_{tl}\geq u,t\in(t_i,t_{i+1}]\}.$$ 
 
@@ -100,7 +100,7 @@ $$
 
 subject to the constraint $\forall y: 1+\frac{\xi y}{\sigma}>0$. The GPD has two parameters, shape, $\xi$, and scale, $\sigma$ The shape parameter has a significant impact on the overall structure of the probability density. When $\xi$ is negative, the support of the distribution is finite such that $0<y<-\frac{\sigma}{\xi}$ due to the constraint. When $\xi$ is zero or positive, its support ranges from 0 to positive infinity.
 
-:::warning
+
 The advantage of using the GPD to model extreme values is its generality as one does not have to know the underlying distribution of the random variable prior to thresholding since the distribution of excesses will be governed by the GPD in relatively general conditions. 
 
 In many cases, the values of $\xi$ and $\sigma$ may depend on some contextual features as predictors $x$. Assuming a linear relationship between $\xi$ and $x$ and between $\log (\sigma)$ and $x$ (the log linear relationship is used to guarantee that the estimate of $\sigma$ is non-negative)
@@ -110,7 +110,6 @@ $$
 $$
 
 where $w_{1}$ and $w_{1}$ are the model parameters, which can be learned by minimizing the negative log-likelihood of GPD.
-:::
 
 
 One important consideration when modeling data using a GPD is the choice of threshold $u$ since the threshold must be set high enough for the GPD to be applicable. A common way to evaluate the suitability of a given threshold is by examining the mean residual life plot. If a collection of samples were drawn from a GPD then the empirical distribution of the excesses should have a linear relationship with selected threshold. Specifically, we have:
@@ -141,10 +140,7 @@ This set-level representation is then used as input to a fully connected network
 
 ### Local Feature Extraction
 
-:::warning
 Learning a representation of the predictors is challenging for two reasons. First, because the set-valued predictors are variable length the authors must transform them into a fixed length vector so that it can be used by the later stages of the model. Second, the set-valued predictors may not always be available for some locations.
-:::
-
 
 To address the first challenge, the authors employ the deep set architecture described in subsection to transform the set-valued predictors into a fixed-length vector, $z_{i l}^{s}$. 
 
@@ -169,7 +165,7 @@ $$
 
 One major computational challenge in estimating the GPD parameters using a deep learning architecture is the need to enforce positivity constraints on the solution of (4) during training. To address this challenge, **DeepGPD** employs a re-parameterization trick to transform $\left(\xi_{i l}, \sigma_{i l}\right)$ into a pair of unconstrained variables $k_{i l}=\left(k_{i l}^{(1)}, k_{i l}^{(2)}\right)$ that can be learned by the convolutional neural network.
 
-Let $\left\{\xi_{i l}^{*}, \sigma_{i l}^{*}\right\}=\operatorname{argmin} \mathcal{L}\left(\left\{\xi_{i l}, \sigma_{i l}\right\}\right)$ subject to the following positivity constraints:
+Let \(\left\{\xi_{i l}^{*}, \sigma_{i l}^{*}\right\}=\operatorname{argmin} \mathcal{L}\left(\left\{\xi_{i l}, \sigma_{i l}\right\}\right)\) subject to the following positivity constraints:
 
 $$
 \forall i, j, l: \sigma_{i l}>0 \text { and } 1+\xi_{i l} \frac{y_{i l j}}{\sigma_{i l}}>0
@@ -183,16 +179,16 @@ $$
 $$
 
 
-and solving for $\left\{\hat{k}_{i l}^{(1)}, \hat{k}_{i l}^{(2)}\right\}=\operatorname{argmin} \hat{\mathcal{L}}\left(\left\{u_{i l}, v_{i l}\right\}\right)$, where
+and solving for \(\left\{\hat{k}_{i l}^{(1)}, \hat{k}_{i l}^{(2)}\right\}=\operatorname{argmin} \hat{\mathcal{L}}\left(\left\{u_{i l}, v_{i l}\right\}\right)\), where
 
 $$
 \hat{\mathcal{L}}\left(\left\{u_{i l}, v_{i l}\right\}\right)=\sum_{i l j}\left[u_{i l}+\left(1+\frac{M_{i l}}{M_{i l} e^{v_{i l}}-e^{u_{i l}}}\right)\times \log \left(1+e^{v_{i l}} \frac{y_{i l j}}{e^{u_{i l}}}-\frac{y_{i l j}}{M_{i l}}\right)\right] \tag{6}
 $$
 
 
-and $M_{i l}=\max _{j} Y_{i l j}$, then the solution set $\left\{\xi_{i l}^{*}, \sigma_{i l}^{*}\right\}$ can be derived from the solution for $\left\{\hat{k}_{i l}^{(1)}, \hat{k}_{i l}^{(1)}\right\}$ by applying the mapping given in Equation (5).
+and $M_{i l}=\max_{j} Y_{i l j}$, then the solution set \(\left\{\xi_{i l}^{*}, \sigma_{i l}^{*}\right\}\) can be derived from the solution for \(\left\{\hat{k}_{i l}^{(1)}, \hat{k}_{i l}^{(1)}\right\}\) by applying the mapping given in Equation (5).
 
-The proof for the preceding theorem can be shown by substituting (5) into (4), which yields the equivalent objective function for $\hat{\mathcal{L}}\left(\left\{k_{i l}^{(1)}, k_{i l}^{(2)}\right\}\right)$. Furthermore, since Equation (4) can be re-written as follows:
+The proof for the preceding theorem can be shown by substituting (5) into (4), which yields the equivalent objective function for \(\hat{\mathcal{L}}\left(\left\{k_{il}^{(1)}, k_{il}^{(2)}\right\}\right)\). Furthermore, since Equation (4) can be re-written as follows:
 
 $$
 \sigma_{i l} =e^{k_{i l}^{(1)}} \geq 0
@@ -205,9 +201,7 @@ $$
 
 the positivity constraints are automatically satisfied given the fact that $\forall i, l, j: y_{i l j} \leq M_{i l}, e^{k_{i l}^{(1)}}>0$ and $e^{k_{i l}^{(2)}}>0$ as long as $k_{i l}^{(1)}$ and $k_{i l}^{(2)}$ are not equal to $-\infty$.
 
- long as $k_{i l}^{(1)}$ and $k_{i l}^{(2)}$ are not equal to $-\infty$.
-
-The DeepGPD framework trained to optimize the loss function in Equation (6) will generate the maximum likelihood solution for $\left\{\xi_{i l}^{*}, \sigma_{i l}^{*}\right\}$ in Equation (4) given the one-to-one mapping with $\left\{\hat{k}_{i l}^{(1)}, \hat{k}_{i l}^{(2)}\right\}$ in Equation (5).
+The DeepGPD framework trained to optimize the loss function in Equation (6) will generate the maximum likelihood solution for \(\left\{\xi_{i l}^{*}, \sigma_{i l}^{*}\right\}\) in Equation (4) given the one-to-one mapping with \(\left\{\hat{k}_{i l}^{(1)}, \hat{k}_{i l}^{(2)}\right\}\) in Equation (5).
 
 
-$\left\{\xi_{i l}^{*}\right.$ and $\left.\sigma_{i l}^{*}\right\}$. This enables the parameters to be more easily learned by DeepGPD. All three components of the framework, including deep set and CNN, are trained in an endto-end fashion using Adam (Kingma and Ba 2015). Once the parameters for $\hat{k}_{i l}^{(1)}$ and $\hat{k}_{i l}^{(2)}$ are obtained, we can apply Equation (5) to derive the corresponding GPD parameters.
+\(\left\{\xi_{i l}^{*}\right. and \left.\sigma_{i l}^{*}\right\}\). This enables the parameters to be more easily learned by DeepGPD. All three components of the framework, including deep set and CNN, are trained in an endto-end fashion using Adam. Once the parameters for \(\hat{k}_{i l}^{(1)}\) and \(\hat{k}_{i l}^{(2)}\) are obtained, we can apply Equation (5) to derive the corresponding GPD parameters.
