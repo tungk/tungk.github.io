@@ -4,7 +4,8 @@ draft = false
 +++
 
 ## Selected Publication
-- Duc Kieu, **Tung Kieu**, Peng Han, Bin Yang, Christian S. Jensen, and Bac Le. _TEAM: Topological Evolution-aware Framework for Traffic Forecasting_. **VLDB** 2024 (**CORE A***)
+- Huy Le, Nhat Chung, **Tung Kieu**, Anh Nguyen, and Ngan Le. _BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance_. **MM** 2025 (**CORE A**)
+- Duc Kieu, **Tung Kieu**, Peng Han, Bin Yang, Christian S. Jensen, and Bac Le. _TEAM: Topological Evolution-aware Framework for Traffic Forecasting_. **VLDB** 2025 (**CORE A***)
 - David Campos, Bin Yang, **Tung Kieu**, Miao Zhang, Chenjuan Guo, and Christian S. Jensen. _QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models_. **VLDB** 2024 (**CORE A***)
 - Chenjuan Guo, Ronghui Xu, Yuan Ye, Bin Yang, **Tung Kieu**, Yan Zhao, and Christian S. Jensen. _Efficient Stochastic Routing in Path-Centric Uncertain Road Networks_. **VLDB** 2024 (**CORE A***)
 - Huy Le, **Tung Kieu**, Anh Nguyen, and Ngan Le. _WAVER: Writing-style Agnostic Video Retrieval via Distilling Vision-Language Models Through Open-Vocabulary Knowledge_. **ICASSP** 2024
@@ -19,11 +20,12 @@ draft = false
 - **Tung Kieu**, Bin Yang, Chenjuan Guo, and Christian S. Jensen. _Outlier Detection for Time Series with Recurrent Autoencoder Ensembles_. **IJCAI** 2019 (**CORE A***)
 - **Tung Kieu**, Bin Yang, Chenjuan Guo, and Christian S. Jensen. _Distinguishing Trajectories from Different Drivers using Incompletely Labeled Trajectories_. **CIKM** 2018 (**CORE A**)
 - **Tung Kieu**, Bin Yang, and Christian S. Jensen. _Outlier Detection for Multidimensional Time Series Using Deep Neural Networks_. **MDM** 2018
-- Toan Nguyen, Duc Kieu, Bao Duong, **Tung Kieu**, Kien Do, Thin Nguyen, Bac Le. _Class-incremental Learning with Causal Relational Replay_. **Expert Syst. Appl.** 250 2024
+- Toan Nguyen, Duc Kieu, Bao Duong, **Tung Kieu**, Kien Do, Thin Nguyen, and Bac Le. _Class-incremental Learning with Causal Relational Replay_. **Expert Syst. Appl.** 250 2024
 - **Tung Kieu**, Bay Vo, Tuong Le, Zhi-Hong Deng, and Bac Le. _Mining Top-k Co-occurrence Items with Sequential Pattern_. **Expert Syst. Appl.** 85 2017
 
 
 ## Preprint
+- Huy Le, Nhat Chung, **Tung Kieu**, Anh Nguyen, and Ngan Le. _BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance--Extended Version_.
 - Duc Kieu, **Tung Kieu**, Peng Han, Bin Yang, Christian S. Jensen, and Bac Le. _TEAM: Topological Evolution-aware Framework for Traffic Forecasting--Extended Version_
 - Chenjuan Guo, Ronghui Xu, Bin Yang, Ye Yuan, **Tung Kieu**, Yan Zhao, and Christian S. Jensen. *Efficient Stochastic Routing in Path-Centric Uncertain Road Networks--Extended Version*
 - David Campos, Bin Yang, **Tung Kieu**, Miao Zhang, Chenjuan Guo, and Christian S. Jensen. _QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models--Extended Version_
