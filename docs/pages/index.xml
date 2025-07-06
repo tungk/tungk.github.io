@@ -19,7 +19,7 @@
       <link>http://localhost:1313/pages/publication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/publication/</guid>
-      <description>Selected Publication&#xD;Link to heading&#xD;Huy Le, Nhat Chung, Tung Kieu, Anh Nguyen, and Ngan Le. BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance. MM 2025 (CORE A) Duc Kieu, Tung Kieu, Peng Han, Bin Yang, Christian S. Jensen, and Bac Le. TEAM: Topological Evolution-aware Framework for Traffic Forecasting. VLDB 2025 (CORE A*) David Campos, Bin Yang, Tung Kieu, Miao Zhang, Chenjuan Guo, and Christian S. Jensen.</description>
+      <description>Selected Publication&#xD;Link to heading&#xD;Huy Le, Nhat Chung, Tung Kieu, Anh Nguyen, and Ngan Le. BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance. ACM International Conference on Multimedia&amp;mdash;MM 2025 (CORE A*) Duc Kieu, Tung Kieu, Peng Han, Bin Yang, Christian S. Jensen, and Bac Le. TEAM: Topological Evolution-aware Framework for Traffic Forecasting. International Conference on Very Large Data Bases&amp;mdash;VLDB 2025 (CORE A*) David Campos, Bin Yang, Tung Kieu, Miao Zhang, Chenjuan Guo, and Christian S.</description>
     </item>
     <item>
       <title>Services</title>
@@ -33,7 +33,7 @@
       <link>http://localhost:1313/pages/teaching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/teaching/</guid>
-      <description>Courses&#xD;Link to heading&#xD;Advanced Algorithms (shared with Prof. Bin Yang and Prof. Chenjuan Guo). Algorithms and Computability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba). Algorithms and Satisfiability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba). Introduction to Database Systems (at RMIT University). Programming Bootcamp (at RMIT University). Programming Studio (at RMIT University). Data-intensive Sytems. Mobile Data and Location-based Services (shared with Prof.</description>
+      <description>Coordination&#xD;Link to heading&#xD;Software 9 (SW9). Courses&#xD;Link to heading&#xD;Advanced Algorithms (shared with Prof. Bin Yang and Prof. Chenjuan Guo). Algorithms and Computability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba). Algorithms and Satisfiability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba). Introduction to Database Systems (at RMIT University). Programming Bootcamp (at RMIT University). Programming Studio (at RMIT University). Data-intensive Sytems.</description>
     </item>
   </channel>
 </rss>
