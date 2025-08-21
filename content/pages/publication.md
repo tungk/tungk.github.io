@@ -4,6 +4,7 @@ draft = false
 +++
 
 ## Selected Publication
+- Nghiem Thanh Pham, **Tung Kieu**, Duc-Manh Nguyen, Son Ha Xuan, Nghia Duong-Trung, Danh Le-Phuoc. _SLM-Bench: A Comprehensive Benchmark of Small Language Models on Environmental Impact_. International Conference on Empirical Methods in Natural Language Processing---**EMNLP** 2025 (**CORE A***)
 - Huy Le, Nhat Chung, **Tung Kieu**, Anh Nguyen, and Ngan Le. _BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance_. ACM International Conference on Multimedia---**MM** 2025 (**CORE A***)
 - Duc Kieu, **Tung Kieu**, Peng Han, Bin Yang, Christian S. Jensen, and Bac Le. _TEAM: Topological Evolution-aware Framework for Traffic Forecasting_. International Conference on Very Large Data Bases---**VLDB** 2025 (**CORE A***)
 - David Campos, Bin Yang, **Tung Kieu**, Miao Zhang, Chenjuan Guo, and Christian S. Jensen. _QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models_. International Conference on Very Large Data Bases---**VLDB** 2024 (**CORE A***)
@@ -25,7 +26,8 @@ draft = false
 
 
 ## Preprint
-- Huy Le, Nhat Chung, **Tung Kieu**, Anh Nguyen, and Ngan Le. _BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance--Extended Version_.
+- Nghiem Thanh Pham, **Tung Kieu**, Duc-Manh Nguyen, Son Ha Xuan, Nghia Duong-Trung, Danh Le-Phuoc. _SLM-Bench: A Comprehensive Benchmark of Small Language Models on Environmental Impact--Extended Version_
+- Huy Le, Nhat Chung, **Tung Kieu**, Anh Nguyen, and Ngan Le. _BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance--Extended Version_
 - Duc Kieu, **Tung Kieu**, Peng Han, Bin Yang, Christian S. Jensen, and Bac Le. _TEAM: Topological Evolution-aware Framework for Traffic Forecasting--Extended Version_
 - Chenjuan Guo, Ronghui Xu, Bin Yang, Ye Yuan, **Tung Kieu**, Yan Zhao, and Christian S. Jensen. _Efficient Stochastic Routing in Path-Centric Uncertain Road Networks--Extended Version_
 - David Campos, Bin Yang, **Tung Kieu**, Miao Zhang, Chenjuan Guo, and Christian S. Jensen. _QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models--Extended Version_
