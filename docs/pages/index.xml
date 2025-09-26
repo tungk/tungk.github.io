@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Tung Kieu</title>
-    <link>http://localhost:1313/pages/</link>
+    <link>https://tungk.github.io/pages/</link>
     <description>Recent content in Pages on Tung Kieu</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tungk.github.io/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Profile</title>
-      <link>http://localhost:1313/pages/profile/</link>
+      <link>https://tungk.github.io/pages/profile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/profile/</guid>
+      <guid>https://tungk.github.io/pages/profile/</guid>
       <description>Contact Information&#xD;Link to heading&#xD;Office: (1) A.C. Meyers Vaenge 15, Room 2.095, Copenhagen, Denmark; (2) Selma Lagerlofs Vej 300, Room 3-2-05, Aalborg, Denmark&#xA;Email: (1) tungkvt[at]cs[dot]aau[dot]dk; (2) kvttung[at]gmail[dot]com&#xA;Biography&#xD;Link to heading&#xD;I am an Assistant Professor in the Department of Computer Science at Aalborg University. I am a faculty member in Center for Data-Intensive Systems. I am also affiliated with the department&amp;rsquo;s team on Artificial Intelligence and Machine Learning and the university&amp;rsquo;s Center on AI for the People.</description>
     </item>
     <item>
       <title>Publication</title>
-      <link>http://localhost:1313/pages/publication/</link>
+      <link>https://tungk.github.io/pages/publication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/publication/</guid>
+      <guid>https://tungk.github.io/pages/publication/</guid>
       <description>Selected Publication&#xD;Link to heading&#xD;Nghiem Thanh Pham, Tung Kieu, Duc-Manh Nguyen, Son Ha Xuan, Nghia Duong-Trung, Danh Le-Phuoc. SLM-Bench: A Comprehensive Benchmark of Small Language Models on Environmental Impact. International Conference on Empirical Methods in Natural Language Processing&amp;mdash;EMNLP 2025 (CORE A*) Huy Le, Nhat Chung, Tung Kieu, Anh Nguyen, and Ngan Le. BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance. ACM International Conference on Multimedia&amp;mdash;MM 2025 (CORE A*) Duc Kieu, Tung Kieu, Peng Han, Bin Yang, Christian S.</description>
     </item>
     <item>
       <title>Services</title>
-      <link>http://localhost:1313/pages/services/</link>
+      <link>https://tungk.github.io/pages/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/services/</guid>
-      <description>Conferences&#xD;Link to heading&#xD;ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD) ACM SIGMOD Conference on Management of Data (SIGMOD) Conference on Neural Information Processing Systems (NEURIPS) International Joint Conference on Artificial Intelligence (IJCAI) AAAI Conference on Artificial Intelligence (AAAI) International Conference on Very Large Data Bases (VLDB) IEEE International Conference on Data Engineering (ICDE) ACM International Conference on Information and Knowledge Management (CIKM) ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (SIGSPATIAL/GIS) International Conference on Advanced Data Mining and Applications (ADMA) APWeb-WAIM International Joint Conference on Web and Big Data (APWEB-WAIM) IEEE International Conference on Mobile Data Management (MDM) Journals&#xD;Link to heading&#xD;Journal of Artificial Intelligence Research (JAIR) ACM Transactions on Information Systems (TOIS) IEEE Transactions on Neural Networks and Learning Systems (TNNLS) IEEE Transactions on Knowledge and Data Engineering (TKDE) IEEE Transactions on Intelligent Transportation Systems (TITS) IEEE Transactions on Network Science and Engineering (TNSE) IEEE Transactions on Industrial Informatics (TII) Data Mining and Knowledge Discovery (DMKD) Pattern Recognition Neural Networks Machine Learning Expert Systems with Applications Neural Processing Letters IEEE Access Collaboration&#xD;Link to heading&#xD;Collaborating with TADAA!</description>
+      <guid>https://tungk.github.io/pages/services/</guid>
+      <description>Conferences&#xD;Link to heading&#xD;ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD) ACM SIGMOD Conference on Management of Data (SIGMOD) Conference on Neural Information Processing Systems (NEURIPS) International Joint Conference on Artificial Intelligence (IJCAI) AAAI Conference on Artificial Intelligence (AAAI) International Conference on Very Large Data Bases (VLDB) IEEE International Conference on Data Engineering (ICDE) ACM International Conference on Information and Knowledge Management (CIKM) ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (SIGSPATIAL/GIS) International Conference on Advanced Data Mining and Applications (ADMA) APWeb-WAIM International Joint Conference on Web and Big Data (APWEB-WAIM) IEEE International Conference on Mobile Data Management (MDM) Journals&#xD;Link to heading&#xD;Journal of Artificial Intelligence Research (JAIR) ACM Transactions on Information Systems (TOIS) IEEE Transactions on Neural Networks and Learning Systems (TNNLS) IEEE Transactions on Knowledge and Data Engineering (TKDE) IEEE Transactions on Intelligent Transportation Systems (TITS) IEEE Transactions on Network Science and Engineering (TNSE) IEEE Transactions on Industrial Informatics (TII) Data Mining and Knowledge Discovery (DMKD) Pattern Recognition Neural Networks Machine Learning Expert Systems with Applications Neural Processing Letters IEEE Access Awards&#xD;Link to heading&#xD;Best PC Award in IEEE International Conference on Data Engineering (ICDE) Collaboration&#xD;Link to heading&#xD;Collaborating with TADAA!</description>
     </item>
     <item>
       <title>Teaching</title>
-      <link>http://localhost:1313/pages/teaching/</link>
+      <link>https://tungk.github.io/pages/teaching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/teaching/</guid>
-      <description>Coordination&#xD;Link to heading&#xD;Software 9 (SW9). Courses&#xD;Link to heading&#xD;Advanced Algorithms (shared with Prof. Bin Yang and Prof. Chenjuan Guo). Algorithms and Computability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba). Algorithms and Satisfiability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba). Introduction to Database Systems (at RMIT University). Programming Bootcamp (at RMIT University). Programming Studio (at RMIT University). Data-intensive Sytems.</description>
+      <guid>https://tungk.github.io/pages/teaching/</guid>
+      <description>Coordination&#xD;Link to heading&#xD;Software 7 (SW9). Software 9 (SW9). Courses&#xD;Link to heading&#xD;Advanced Algorithms (shared with Prof. Bin Yang and Prof. Chenjuan Guo). Algorithms and Computability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba). Algorithms and Satisfiability (shared with Prof. Bin Yang, Prof. Dalin Zhang, and Prof. Alvaro Torralba). Introduction to Database Systems (at RMIT University). Programming Bootcamp (at RMIT University). Programming Studio (at RMIT University).</description>
     </item>
   </channel>
 </rss>

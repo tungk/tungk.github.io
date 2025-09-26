@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Tung Kieu</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://tungk.github.io/posts/</link>
     <description>Recent content in Posts on Tung Kieu</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 16 Sep 2024 03:09:12 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tungk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Combining One-Class Classifiers via Meta Learning</title>
-      <link>http://localhost:1313/posts/combining-one-class-classifiers-via-meta-learning/</link>
+      <link>https://tungk.github.io/posts/combining-one-class-classifiers-via-meta-learning/</link>
       <pubDate>Mon, 16 Sep 2024 03:09:12 +0200</pubDate>
-      <guid>http://localhost:1313/posts/combining-one-class-classifiers-via-meta-learning/</guid>
+      <guid>https://tungk.github.io/posts/combining-one-class-classifiers-via-meta-learning/</guid>
       <description>Abstract&#xD;Link to heading&#xD;Selecting the best classifier among the available ones is a difficult task, especially when only instances of one class exist. In this work we examine the notion of combining one-class classifiers as an alternative for selecting the best classifier. In particular, we propose two one-class classification performance measures to weigh classifiers and show that a simple ensemble that implements these measures can outperform the most popular one-class ensembles.</description>
     </item>
     <item>
       <title>Modeling Extreme Events in Time Series Prediction</title>
-      <link>http://localhost:1313/posts/modeling-extreme-events-in-time-series-prediction/</link>
+      <link>https://tungk.github.io/posts/modeling-extreme-events-in-time-series-prediction/</link>
       <pubDate>Mon, 16 Sep 2024 03:06:12 +0200</pubDate>
-      <guid>http://localhost:1313/posts/modeling-extreme-events-in-time-series-prediction/</guid>
+      <guid>https://tungk.github.io/posts/modeling-extreme-events-in-time-series-prediction/</guid>
       <description>Abstract&#xD;Link to heading&#xD;Recent deep learningbased methods overlook the existence of extreme events, which result in weak performance when applying them to real time series. Extreme events are rare and random, but do play a critical role in many real applications, such as the forecasting of financial crisis and natural disasters. In this paper, the authors explore the central theme of improving the ability of deep learning on modeling extreme events for time series prediction.</description>
     </item>
     <item>
       <title>DeepGPD: A Deep Learning Approach for Modeling Geospatio-Temporal Extreme Events</title>
-      <link>http://localhost:1313/posts/deepgpd_-a-deep-learning-approach-for-modeling-geospatio-temporal--extreme-events/</link>
+      <link>https://tungk.github.io/posts/deepgpd_-a-deep-learning-approach-for-modeling-geospatio-temporal--extreme-events/</link>
       <pubDate>Mon, 16 Sep 2024 03:05:12 +0200</pubDate>
-      <guid>http://localhost:1313/posts/deepgpd_-a-deep-learning-approach-for-modeling-geospatio-temporal--extreme-events/</guid>
+      <guid>https://tungk.github.io/posts/deepgpd_-a-deep-learning-approach-for-modeling-geospatio-temporal--extreme-events/</guid>
       <description>Abstract&#xD;Link to heading&#xD;Geospatio-temporal data are pervasive across numerous application domains. These rich datasets can be harnessed to predict extreme events such as disease outbreaks, ﬂooding, crime spikes, etc.&#xA;Statistical methods based on extreme value theory provide a systematic way for modeling the distribution of extreme values. In particular, the generalized Pareto distribution (GPD) is useful for modeling the distribution of excess values above a certain threshold. However, applying such methods to large-scale spatio-temporal data is a challenge due to the difﬁculty in capturing the complex spatial relationships between extreme events at multiple locations.</description>
     </item>
     <item>
       <title>An Online Algorithm for Segmenting Time Series</title>
-      <link>http://localhost:1313/posts/an-online-algorithm-for-segmenting-time-series/</link>
+      <link>https://tungk.github.io/posts/an-online-algorithm-for-segmenting-time-series/</link>
       <pubDate>Mon, 16 Sep 2024 03:01:12 +0200</pubDate>
-      <guid>http://localhost:1313/posts/an-online-algorithm-for-segmenting-time-series/</guid>
+      <guid>https://tungk.github.io/posts/an-online-algorithm-for-segmenting-time-series/</guid>
       <description>Abstract&#xD;Link to heading&#xD;Intuitively Piecewise Linear Representation refers to the approximation of a time series $T$, of length $n$, with $K$ straight lines. Because $K$ is typically muchsmaller that $n$, this representation makes the storage, transmission and computation of the data more efficient.&#xA;The segmentation problem can be framed in several ways.&#xA;Given a time series $T$, produce the best representation using only $K$ segments. Given a time series $T$, produce the best representation such that the maximum error for any segment does not exceed some user-specified threshold, max_error.</description>
     </item>
     <item>
       <title>DeepExtrema: A Deep Learning Approach for Forecasting Block Maxima</title>
-      <link>http://localhost:1313/posts/deepextrema_-a-deep-learning-approach-for-forecasting-block-maxima/</link>
+      <link>https://tungk.github.io/posts/deepextrema_-a-deep-learning-approach-for-forecasting-block-maxima/</link>
       <pubDate>Mon, 16 Sep 2024 02:55:12 +0200</pubDate>
-      <guid>http://localhost:1313/posts/deepextrema_-a-deep-learning-approach-for-forecasting-block-maxima/</guid>
+      <guid>https://tungk.github.io/posts/deepextrema_-a-deep-learning-approach-for-forecasting-block-maxima/</guid>
       <description>Abstract&#xD;Link to heading&#xD;This paper presents DeepExtrema, a novel framework that combines a deep neural network (DNN) with generalized extreme value (GEV) distribution to forecast the block maximum value of a time se- ries. Implementing such a network is a challenge as the framework must preserve the inter-dependent constraints among the GEV model parameters even when the DNN is initialized.&#xA;The authors describe our approach to address this challenge and present an architecture that enables both conditional mean and quantile prediction of the block maxima.</description>
     </item>
     <item>
       <title>Composed Video Retrieval via Enriched Context and Discriminative Embeddings</title>
-      <link>http://localhost:1313/posts/composed-video-retrieval-via-enriched-context-and-discriminative-embeddings/</link>
+      <link>https://tungk.github.io/posts/composed-video-retrieval-via-enriched-context-and-discriminative-embeddings/</link>
       <pubDate>Wed, 26 Jun 2024 23:55:12 +0200</pubDate>
-      <guid>http://localhost:1313/posts/composed-video-retrieval-via-enriched-context-and-discriminative-embeddings/</guid>
+      <guid>https://tungk.github.io/posts/composed-video-retrieval-via-enriched-context-and-discriminative-embeddings/</guid>
       <description>Abstract&#xD;Link to heading&#xD;Composed video retrieval (CoVR) is a challenging problem in computer vision which has recently highlighted the integration of modification text with visual queries for more sophisticated video search in large databases. Existing works predominantly rely on visual queries combined with modification text to distinguish relevant videos. However, such a strategy struggles to fully preserve the rich query-specific context in retrieved target videos and only represents the target video using visual embedding.</description>
     </item>
     <item>
       <title>Self-Trained One-class Classification for Unsupervised Anomaly Detection</title>
-      <link>http://localhost:1313/posts/self-trained-one-class-classification-for-unsupervised-anomaly-detection/</link>
+      <link>https://tungk.github.io/posts/self-trained-one-class-classification-for-unsupervised-anomaly-detection/</link>
       <pubDate>Sat, 22 Jun 2024 19:43:19 +0200</pubDate>
-      <guid>http://localhost:1313/posts/self-trained-one-class-classification-for-unsupervised-anomaly-detection/</guid>
+      <guid>https://tungk.github.io/posts/self-trained-one-class-classification-for-unsupervised-anomaly-detection/</guid>
       <description>Abstract&#xD;Link to heading&#xD;In this work, we focus on unsupervised AD problems whose entire training data are unlabeled and may contain both normal and anomalous samples. To tackle this problem, we build a robust one-class classification framework via data refinement. To refine the data accurately, we propose an ensemble of one-class classifiers, each of which is trained on a disjoint subset of training data. Moreover, we propose a self-training of deep representation one-class classifiers (STOC) that iteratively refines the data and deep representations.</description>
     </item>
     <item>
       <title>HDC-MiniROCKET: Explicit Time Encoding in Time Series Classification with Hyperdimensional Computing</title>
-      <link>http://localhost:1313/posts/hdc-mini_rocket-explicit-time-encoding-in-time-series-classification-with-hyperdimensional-computing/</link>
+      <link>https://tungk.github.io/posts/hdc-mini_rocket-explicit-time-encoding-in-time-series-classification-with-hyperdimensional-computing/</link>
       <pubDate>Sat, 22 Jun 2024 14:55:12 +0200</pubDate>
-      <guid>http://localhost:1313/posts/hdc-mini_rocket-explicit-time-encoding-in-time-series-classification-with-hyperdimensional-computing/</guid>
+      <guid>https://tungk.github.io/posts/hdc-mini_rocket-explicit-time-encoding-in-time-series-classification-with-hyperdimensional-computing/</guid>
       <description>Abstract&#xD;Link to heading&#xD;Classification of time series data is an important task for many application domains. One of the best existing methods for this task, in terms of accuracy and computation time, is MiniROCKET. In this work, we extend this approach to provide better global temporal encodings using hyperdimensional computing (HDC) mechanisms. HDC (also known as Vector Symbolic Architectures, VSA) is a general method to explicitly represent and process information in high-dimensional vectors.</description>
     </item>
     <item>
       <title>Robustness of Autoencoders for Anomaly Detection Under Adversarial Impact</title>
-      <link>http://localhost:1313/posts/robustness-of-autoencoders-for-anomaly-detection-under-adversarial-impact/</link>
+      <link>https://tungk.github.io/posts/robustness-of-autoencoders-for-anomaly-detection-under-adversarial-impact/</link>
       <pubDate>Sat, 22 Jun 2024 01:20:14 +0200</pubDate>
-      <guid>http://localhost:1313/posts/robustness-of-autoencoders-for-anomaly-detection-under-adversarial-impact/</guid>
+      <guid>https://tungk.github.io/posts/robustness-of-autoencoders-for-anomaly-detection-under-adversarial-impact/</guid>
       <description>Abstract&#xD;Link to heading&#xD;Deep learning methods have achieved state-of-the-art performance in anomaly detection in recent years; unsupervised methods being particularly popular. However, deep learning methods can be fragile to small perturbations in the input data. This phenomena has been widely studied in the context of supervised image classification since its discovery, however such studies for an anomaly detection setting are sorely lacking. Moreover, the plethora of defense mechanisms that have been proposed are often not applicable to unsupervised anomaly detection models</description>
     </item>
     <item>
       <title>Stichable Neural Networks</title>
-      <link>http://localhost:1313/posts/stichable-neural-networks/</link>
+      <link>https://tungk.github.io/posts/stichable-neural-networks/</link>
       <pubDate>Fri, 21 Jun 2024 23:55:12 +0200</pubDate>
-      <guid>http://localhost:1313/posts/stichable-neural-networks/</guid>
+      <guid>https://tungk.github.io/posts/stichable-neural-networks/</guid>
       <description>Abstract&#xD;Link to heading&#xD;As each model family consists of pretrained models with diverse scales (e.g., DeiT-Ti/S/B), it naturally arises a fundamental question of how to efficiently assemble these readily available models in a family for dynamic accuracy-efficiency trade-offs at runtime.&#xA;The paper presents Stitchable Neural Networks (SN-Net), a novel scalable and efficient framework for model deployment. It cheaply produces numerous networks with different complexity and performance trade-offs given a family of pretrained neural networks, which are called anchors.</description>
     </item>
   </channel>

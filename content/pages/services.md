@@ -34,6 +34,9 @@ draft = false
 - Neural Processing Letters
 - IEEE Access
 
+# Awards
+- Best PC Award in IEEE International Conference on Data Engineering (ICDE)
+
 ## Collaboration
 - Collaborating with _TADAA!_ (in aSTEP project).
 - Collaborating with the _BioX_ (in aSTEP project).

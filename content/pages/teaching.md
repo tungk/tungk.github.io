@@ -5,6 +5,7 @@ draft = false
 
 <!-- # Teaching -->
 ## Coordination
+- Software 7 (SW9).
 - Software 9 (SW9).
 
 ## Courses
@@ -15,6 +16,7 @@ draft = false
 - Programming Bootcamp (at RMIT University).
 - Programming Studio (at RMIT University).
 - Data-intensive Sytems.
+- Specilization Course in Database/Data Mining.
 - Mobile Data and Location-based Services (shared with Prof. Tiantian Liu).
 
 ## Supervision

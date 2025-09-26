@@ -26,6 +26,8 @@ draft = false
 
 
 ## Preprint
+- Duc Kieu, Kien Do, Tuan Hoang, Thao Minh Le, **Tung Kieu**, Dang Nguyen, Thin Nguyen. _Universal Multi-Domain Translation via Diffusion Routers--Extended Version_
+- Huy Le, Nhat Chung, **Tung Kieu**, Jingkang Yang, Ngan Le. _UNO: Unifying One-stage Video Scene Graph Generation via Object-Centric Visual Representation Learning--Extended Version_
 - Nghiem Thanh Pham, **Tung Kieu**, Duc-Manh Nguyen, Son Ha Xuan, Nghia Duong-Trung, Danh Le-Phuoc. _SLM-Bench: A Comprehensive Benchmark of Small Language Models on Environmental Impact--Extended Version_
 - Huy Le, Nhat Chung, **Tung Kieu**, Anh Nguyen, and Ngan Le. _BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance--Extended Version_
 - Duc Kieu, **Tung Kieu**, Peng Han, Bin Yang, Christian S. Jensen, and Bac Le. _TEAM: Topological Evolution-aware Framework for Traffic Forecasting--Extended Version_
@@ -37,4 +39,4 @@ draft = false
 - Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Xuanyi Dong, Shirui Pan, and Bin Yang. _Triformer: Triangular, Variable-Specific Attentions for Long Sequence Multivariate Time Series Forecasting--Extended Version_
 - Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Shirui Pan, and Bin Yang. _Towards Spatio-Temporal Aware Traffic Time Series Forecasting--Extended Version_ 
 - David Campos, **Tung Kieu**, Chenjuan Guo, Feiteng Huang, Kai Zheng, Bin Yang, and Christian S. Jensen. _Unsupervised Time Series Outlier Detection with Diversity-Driven Convolutional Ensembles--Extended Version_
-- Yan Zhao, Liwei Deng, Xuanhao Chen, Chenjuan Guo, Bin Yang, **Tung Kieu**, Feiteng Huang, Torben Bach Pedersen, Kai Zheng, and Christian S. Jensen. _A Comparative Study on Unsupervised Anomaly Detection for Time Series: Experiments and Analysis_
+- Yan Zhao, Liwei Deng, Xuanhao Chen, Chenjuan Guo, Bin Yang, **Tung Kieu**, Feiteng Huang, Torben Bach Pedersen, Kai Zheng, and Christian S. Jensen. _A Comparative Study on Unsupervised Anomaly Detection for Time Series: Experiments and Analysis--Extended Version_
