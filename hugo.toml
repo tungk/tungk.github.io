@@ -3,7 +3,7 @@ title = "Tung Kieu"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
-paginate = 6
+pagination.pagerSize = 6
 enableEmoji = true
 publishDir = "docs"
 
