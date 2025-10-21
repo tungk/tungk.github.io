@@ -4,7 +4,8 @@ draft = false
 +++
 
 ## Selected Publication
-- Nghiem Thanh Pham, **Tung Kieu**, Duc-Manh Nguyen, Son Ha Xuan, Nghia Duong-Trung, Danh Le-Phuoc. _SLM-Bench: A Comprehensive Benchmark of Small Language Models on Environmental Impact_. International Conference on Empirical Methods in Natural Language Processing---**EMNLP** 2025 (**CORE A***)
+- Buang Zhang, **Tung Kieu**, Xiangfei Qiu, Chenjuan Guo, Jilin Hu, Aoying Zhou, Christian S. Jensen, and Bin Yang. _An Encode-then-Decompose Approach to Unsupervised Time Series Anomaly Detection on Contaminated Training Data_. IEEE International Conference on Data Engineering---**ICDE** 2026 (**CORE A***)
+- Nghiem Thanh Pham, **Tung Kieu**, Duc-Manh Nguyen, Son Ha Xuan, Nghia Duong-Trung, and Danh Le-Phuoc. _SLM-Bench: A Comprehensive Benchmark of Small Language Models on Environmental Impact_. International Conference on Empirical Methods in Natural Language Processing---**EMNLP** 2025 (**CORE A***)
 - Huy Le, Nhat Chung, **Tung Kieu**, Anh Nguyen, and Ngan Le. _BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance_. ACM International Conference on Multimedia---**MM** 2025 (**CORE A***)
 - Duc Kieu, **Tung Kieu**, Peng Han, Bin Yang, Christian S. Jensen, and Bac Le. _TEAM: Topological Evolution-aware Framework for Traffic Forecasting_. International Conference on Very Large Data Bases---**VLDB** 2025 (**CORE A***)
 - David Campos, Bin Yang, **Tung Kieu**, Miao Zhang, Chenjuan Guo, and Christian S. Jensen. _QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models_. International Conference on Very Large Data Bases---**VLDB** 2024 (**CORE A***)
@@ -26,9 +27,10 @@ draft = false
 
 
 ## Preprint
-- Duc Kieu, Kien Do, Tuan Hoang, Thao Minh Le, **Tung Kieu**, Dang Nguyen, Thin Nguyen. _Universal Multi-Domain Translation via Diffusion Routers--Extended Version_
-- Huy Le, Nhat Chung, **Tung Kieu**, Jingkang Yang, Ngan Le. _UNO: Unifying One-stage Video Scene Graph Generation via Object-Centric Visual Representation Learning--Extended Version_
-- Nghiem Thanh Pham, **Tung Kieu**, Duc-Manh Nguyen, Son Ha Xuan, Nghia Duong-Trung, Danh Le-Phuoc. _SLM-Bench: A Comprehensive Benchmark of Small Language Models on Environmental Impact--Extended Version_
+- Buang Zhang, **Tung Kieu**, Xiangfei Qiu, Chenjuan Guo, Jilin Hu, Aoying Zhou, Christian S. Jensen, and Bin Yang. _An Encode-then-Decompose Approach to Unsupervised Time Series Anomaly Detection on Contaminated Training Data--Extended Version_.
+- Duc Kieu, Kien Do, Tuan Hoang, Thao Minh Le, **Tung Kieu**, Dang Nguyen, and Thin Nguyen. _Universal Multi-Domain Translation via Diffusion Routers--Extended Version_
+- Huy Le, Nhat Chung, **Tung Kieu**, Jingkang Yang, and Ngan Le. _UNO: Unifying One-stage Video Scene Graph Generation via Object-Centric Visual Representation Learning--Extended Version_
+- Nghiem Thanh Pham, **Tung Kieu**, Duc-Manh Nguyen, Son Ha Xuan, Nghia Duong-Trung, and Danh Le-Phuoc. _SLM-Bench: A Comprehensive Benchmark of Small Language Models on Environmental Impact--Extended Version_
 - Huy Le, Nhat Chung, **Tung Kieu**, Anh Nguyen, and Ngan Le. _BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance--Extended Version_
 - Duc Kieu, **Tung Kieu**, Peng Han, Bin Yang, Christian S. Jensen, and Bac Le. _TEAM: Topological Evolution-aware Framework for Traffic Forecasting--Extended Version_
 - Chenjuan Guo, Ronghui Xu, Bin Yang, Ye Yuan, **Tung Kieu**, Yan Zhao, and Christian S. Jensen. _Efficient Stochastic Routing in Path-Centric Uncertain Road Networks--Extended Version_

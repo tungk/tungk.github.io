@@ -13,7 +13,14 @@
 
 
 <meta name="author" content="Tung Kieu">
-<meta name="description" content="AbstractLink to headingDeep learning methods have achieved state-of-the-art performance in anomaly detection in recent years; unsupervised methods being particularly popular. However, deep learning methods can be fragile to small perturbations in the input data. This phenomena has been widely studied in the context of supervised image classification since its discovery, however such studies for an anomaly detection setting are sorely lacking. Moreover, the plethora of defense mechanisms that have been proposed are often not applicable to unsupervised anomaly detection models">
+<meta name="description" content="
+  Abstract
+  
+    
+    Link to heading
+  
+
+Deep learning methods have achieved state-of-the-art performance in anomaly detection in recent years; unsupervised methods being particularly popular. However, deep learning methods can be fragile to small perturbations in the input data. This phenomena has been widely studied in the context of supervised image classification since its discovery, however such studies for an anomaly detection setting are sorely lacking. Moreover, the plethora of defense mechanisms that have been proposed are often not applicable to unsupervised anomaly detection models">
 <meta name="keywords" content="blog, researcher, personal">
 
 
@@ -44,7 +51,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.38c4552ac40f9ae3408bad40358f654ebd8804412fe74ed56f2d6c8a7af82dd3.css" integrity="sha256-OMRVKsQPmuNAi61ANY9lTr2IBEEv507Vby1sinr4LdM=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.min.0ab58f0bc42b4f21bff7ac349245f3c5579ad3c46dee51b49ad860d174431d73.css" integrity="sha256-CrWPC8QrTyG/96w0kkXzxVea08Rt7lG0mthg0XRDHXM=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -225,8 +232,7 @@
 $$
 \tag{1}
 \mathrm{err}(\mathbf{x}) = || \mathbf{x} - \mathrm{AE}(\mathbf{x}) ||
-$$
-<p>where \(\mathbf{x}\) and \(\mathrm{AE}(\mathbf{x})\) is the input and output of the autoencoder respectively and \(|| \cdot ||\) is typically some type of norm.</p>
+$$<p>where \(\mathbf{x}\) and \(\mathrm{AE}(\mathbf{x})\) is the input and output of the autoencoder respectively and \(|| \cdot ||\) is typically some type of norm.</p>
 <h3 id="adversarial-attack">
   Adversarial Attack
   <a class="heading-link" href="#adversarial-attack">
@@ -239,8 +245,7 @@ $$
 \tag{2}
 \mathbf{x}_{0}^{\text{adv}} = \mathbf{x}\\
 \mathbf{x}_{t+1}^{\text{adv}} = \mathrm{clip}_{\mathbf{x}, \epsilon}\{\mathbf{x}_{t}^{\text{adv}} + \alpha \cdot \mathrm{sign}(\nabla_{\mathbf{x}}(\mathcal{L}(\mathbf{x}_{t}^{\text{adv}}, y_{\text{true}})))\}
-$$
-<h2 id="related-work">
+$$<h2 id="related-work">
   Related Work
   <a class="heading-link" href="#related-work">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
@@ -271,8 +276,7 @@ $$
 \tag{3}
 \mathbf{x}_{0}^{\text{adv}} = \mathbf{x}\\
 \mathbf{x}_{t+1}^{\text{adv}} = \mathbf{x}_{t}^{\text{adv}} - \alpha \cdot \mathrm{sign}(\nabla_{\mathbf{x}}(\mathcal{L}(\mathbf{x}_{t}^{\text{adv}})))
-$$
-<h3 id="defenses">
+$$<h3 id="defenses">
   Defenses
   <a class="heading-link" href="#defenses">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
@@ -286,7 +290,7 @@ $$
     <span class="sr-only">Link to heading</span>
   </a>
 </h4>
-<p><img src="/images/Dcekcbt.png">
+<p><img src="/images/Dcekcbt.png" alt="">
 Figure 1: Points \(\mathbf{x}\) and \(\mathbf{y}\) and their projections \(\mathbf{x}'\) and \(\mathbf{y}\), respectively on the image \(\mathcal{M}\).</p>
 <p>Autoencoders reconstruct complex data using lower dimensional representations. Adversarial vulnerability can arise because they can learn highly unstable functions that change rapidly in response to small input perturbations.</p>
 <p>A class of <strong>projection</strong> functions which are much more robust is considered.</p>
@@ -294,37 +298,31 @@ Figure 1: Points \(\mathbf{x}\) and \(\mathbf{y}\) and their projections \(\math
 <p>Define the projection \(f(\mathbf{x})\) as the closest point in \(\mathcal{M}\) to \(x\).</p>
 $$
 f(\mathbf{x}) = \mathrm{arg}\min_{\mathbf{x}' \in \mathcal{M}} ||\mathbf{x} - \mathbf{x}'||
-$$
-<p>Like in autoencoders, the reconstruction error \(\mathrm{err}(x) = ||\mathbf{x}-f(\mathbf{x})||\) is used as an anomaly score.</p>
+$$<p>Like in autoencoders, the reconstruction error \(\mathrm{err}(x) = ||\mathbf{x}-f(\mathbf{x})||\) is used as an anomaly score.</p>
 <p><strong>Theorem 1.</strong> If an adversary perturbs a data point from \(\mathbf{x}\) to \(\mathbf{y}\) such that \(||\mathbf{x} - \mathbf{y}|| \leq \epsilon\), then we have:</p>
 $$
 ||\mathrm{err}(\mathbf{y}) - \mathrm{err}(\mathbf{x})|| \leq \epsilon
-$$
-<p>i.e. the adversary can change the reconstruction error of any point \(\mathbf{x}\) by at most $\epsilon$.</p>
+$$<p>i.e. the adversary can change the reconstruction error of any point \(\mathbf{x}\) by at most $\epsilon$.</p>
 <p><strong>Proof.</strong> By the triangle inequality we have:</p>
 $$
 \tag{4}
 ||\mathbf{x} - f(\mathbf{y})|| \leq ||y - f(\mathbf{x})|| + \epsilon
-$$
-<p>\(f(\mathbf{x})\) is the projection of \(\mathbf{x}\) onto \(\mathcal{M}\), therefore, it is the closest point to \(\mathbf{x}\) on \(\mathcal{M}\), so:</p>
+$$<p>\(f(\mathbf{x})\) is the projection of \(\mathbf{x}\) onto \(\mathcal{M}\), therefore, it is the closest point to \(\mathbf{x}\) on \(\mathcal{M}\), so:</p>
 $$
 \tag{5}
 ||\mathbf{x} - f(\mathbf{x})|| \leq ||\mathbf{x} - f(\mathbf{y})||
-$$
-<p>Combining this with Equation 4 gives:</p>
+$$<p>Combining this with Equation 4 gives:</p>
 $$
 \tag{6}
 ||\mathbf{x} - f(\mathbf{x})|| \leq ||\mathbf{y} - f(\mathbf{y})|| + \epsilon
-$$
-<p>or \(\mathrm{err}(x) \leq \mathrm{err}(x) + \epsilon\). By symmetry, the same result holds when swapping \(\mathbf{x}$ and $\mathbf{y}\), completing the proof.</p>
+$$<p>or \(\mathrm{err}(x) \leq \mathrm{err}(x) + \epsilon\). By symmetry, the same result holds when swapping \(\mathbf{x}$ and $\mathbf{y}\), completing the proof.</p>
 <p>Theorem 1 shows that in the worst-case scenario, an adversary moving a point by \(\epsilon\) distance can decrease the reconstruction error under \(f\) by at most \(\epsilon\). In reality, the projection \(f\) is not accessible as the image \(\mathcal{M}\) is unknown and highly complex.</p>
 <p>Instead, after fitting an autoencoder \(A\), we approximate a projection by performing gradient descent on the latent embedding of the data, encoded at the bottleneck layer. Upon convergence, this will lead to a reconstruction that is closer to the optimum; the projection. Gradient descent updates are made via the following formula:</p>
 $$
 \tag{7}
 \mathbf{z}_{0} = \mathbf{z} \\
 \mathbf{z}_{t+1} = \mathbf{z}_{t} - \alpha * \nabla_{\mathbf{z}}\mathcal{L}(\theta, \mathbf{z})
-$$
-<p>where \(\mathbf{z}\) is the original latent embeddings of test set points under $A$.</p>
+$$<p>where \(\mathbf{z}\) is the original latent embeddings of test set points under $A$.</p>
 <h4 id="feature-weighting">
   Feature Weighting
   <a class="heading-link" href="#feature-weighting">
@@ -335,8 +333,7 @@ $$
 <p>Different features vary in their discriminative capabilities. In particular, regardless of whether points are normal or anomalous, different features tend to be more accurately reconstructed than others through the autoencoder. It is useful to normalize reconstruction error across the different features in order to account for these differences</p>
 $$
 \hat{J}_{i} = \frac{J_{i}}{\epsilon + \tilde{J}_{i}}
-$$
-<p>where \(J_{i}\) is the reconstruction error associated with feature \(i\) for a single point, \(\tilde{J}_{i}\) is the normalizing factor and \(\epsilon\) is a small constant. Various formulations of \(\tilde{J}_{i}\) were considered; the median provides robustness against outliers and good empirical performance. The optimal value of \(\epsilon\) varies between \(10^{-4}\) and \(10^{-6}\) depending on the dataset.</p>
+$$<p>where \(J_{i}\) is the reconstruction error associated with feature \(i\) for a single point, \(\tilde{J}_{i}\) is the normalizing factor and \(\epsilon\) is a small constant. Various formulations of \(\tilde{J}_{i}\) were considered; the median provides robustness against outliers and good empirical performance. The optimal value of \(\epsilon\) varies between \(10^{-4}\) and \(10^{-6}\) depending on the dataset.</p>
 <p>This is a form of normalization which prevents the reconstruction error, and therefore the anomaly score, from being dominated by those features which are reconstructed most poorly regardless of the class.</p>
 <p>Whilst improving detection performance, this step alone does not necessarily improve robustness against adversarial attacks. However, in combination with the gradient descent defense, the autoencoder would be more accurate as well as more robust in both the presence and absence of adversarial attacks.</p>
 <h2 id="experiments">
@@ -354,31 +351,31 @@ $$
   </a>
 </h4>
 <table>
-<thead>
-<tr>
-<th>Dataset</th>
-<th>#Feature</th>
-<th>#Train</th>
-<th>#Test</th>
-<th>#Anomalies</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>WADI</td>
-<td>1220</td>
-<td>1,048,571</td>
-<td>127,792</td>
-<td>5.99%</td>
-</tr>
-<tr>
-<td>SWaT</td>
-<td>500</td>
-<td>496,791</td>
-<td>449,910</td>
-<td>11.97%</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Dataset</th>
+          <th>#Feature</th>
+          <th>#Train</th>
+          <th>#Test</th>
+          <th>#Anomalies</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>WADI</td>
+          <td>1220</td>
+          <td>1,048,571</td>
+          <td>127,792</td>
+          <td>5.99%</td>
+      </tr>
+      <tr>
+          <td>SWaT</td>
+          <td>500</td>
+          <td>496,791</td>
+          <td>449,910</td>
+          <td>11.97%</td>
+      </tr>
+  </tbody>
 </table>
 <p>Table 1: Summary of the two datasets used in experiments.</p>
 <h4 id="models">
@@ -403,15 +400,15 @@ $$
     <span class="sr-only">Link to heading</span>
   </a>
 </h4>
-<p><img src="/images/ztUhPu4.png">
+<p><img src="/images/ztUhPu4.png" alt="">
 Table 2: AUC score for various anomaly detection methods.</p>
-<p><img src="/images/8XqGxzU.png">
+<p><img src="/images/8XqGxzU.png" alt="">
 Table 3: Precision, Recall and F1 measures for various anomaly score thresholds for the original test set, the randomly-attacked test set and the FGSM-attacked test set for WADI (top) and SWaT (bottom) datasets</p>
-<p><img src="/images/Z8OWv7r.png"> <img src="/images/OiL5mGn.png">
+<p><img src="/images/Z8OWv7r.png" alt=""> <img src="/images/OiL5mGn.png" alt="">
 Figure 4: Receiver operating characteristic (ROC) curve for the anomaly-detecting autoencoder on the three test sets used for WADI (left) and SWaT (right).</p>
-<p><img src="/images/vJDV0uV.png">
+<p><img src="/images/vJDV0uV.png" alt="">
 Table 5: WADI: AUC for the three different types of attack with and without defenses.</p>
-<p><img src="/images/7AN8P7D.png">
+<p><img src="/images/7AN8P7D.png" alt="">
 Table 6: SWaT: AUC for the three different types of attack with and without defenses.</p>
 <h2 id="conclusion">
   Conclusion
@@ -491,9 +488,6 @@ Table 6: SWaT: AUC for the three different types of attack with and without defe
 
 
   
-  
-
-
 
   
 

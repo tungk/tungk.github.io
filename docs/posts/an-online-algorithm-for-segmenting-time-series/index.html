@@ -13,9 +13,23 @@
 
 
 <meta name="author" content="Tung Kieu">
-<meta name="description" content="AbstractLink to headingIntuitively Piecewise Linear Representation refers to the approximation of a time series $T$, of length $n$, with $K$ straight lines. Because $K$ is typically muchsmaller that $n$, this representation makes the storage, transmission and computation of the data more efficient.
+<meta name="description" content="
+  Abstract
+  
+    
+    Link to heading
+  
+
+Intuitively Piecewise Linear Representation refers to the approximation of a time series $T$, of length $n$, with $K$ straight lines. Because $K$ is typically muchsmaller that $n$, this representation makes the storage, transmission and computation of the data more efficient.
 The segmentation problem can be framed in several ways.
-Given a time series $T$, produce the best representation using only $K$ segments. Given a time series $T$, produce the best representation such that the maximum error for any segment does not exceed some user-specified threshold, max_error.">
+
+Given a time series $T$, produce the best representation using only $K$ segments.
+Given a time series $T$, produce the best representation such that the maximum error for any segment does not exceed some user-specified threshold, max_error.
+Given a time series $T$, produce the best representation such that the combined error of all segments is less than some user-specified threshold, total_max_error.
+
+Although appearing under different names and with slightly different implementation details,
+most time series segmentation algorithms can be grouped into one of the following three
+categories.">
 <meta name="keywords" content="blog, researcher, personal">
 
 
@@ -23,14 +37,14 @@ Given a time series $T$, produce the best representation using only $K$ segments
   <meta name="twitter:title" content="An Online Algorithm for Segmenting Time Series">
   <meta name="twitter:description" content="AbstractLink to headingIntuitively Piecewise Linear Representation refers to the approximation of a time series $T$, of length $n$, with $K$ straight lines. Because $K$ is typically muchsmaller that $n$, this representation makes the storage, transmission and computation of the data more efficient.
 The segmentation problem can be framed in several ways.
-Given a time series $T$, produce the best representation using only $K$ segments. Given a time series $T$, produce the best representation such that the maximum error for any segment does not exceed some user-specified threshold, max_error.">
+Given a time series $T$, produce the best representation using only $K$ segments. Given a time series $T$, produce the best representation such that the maximum error for any segment does not exceed some user-specified threshold, max_error. Given a time series $T$, produce the best representation such that the combined error of all segments is less than some user-specified threshold, total_max_error. Although appearing under different names and with slightly different implementation details, most time series segmentation algorithms can be grouped into one of the following three categories.">
 
 <meta property="og:url" content="https://tungk.github.io/posts/an-online-algorithm-for-segmenting-time-series/">
   <meta property="og:site_name" content="Tung Kieu">
   <meta property="og:title" content="An Online Algorithm for Segmenting Time Series">
   <meta property="og:description" content="AbstractLink to headingIntuitively Piecewise Linear Representation refers to the approximation of a time series $T$, of length $n$, with $K$ straight lines. Because $K$ is typically muchsmaller that $n$, this representation makes the storage, transmission and computation of the data more efficient.
 The segmentation problem can be framed in several ways.
-Given a time series $T$, produce the best representation using only $K$ segments. Given a time series $T$, produce the best representation such that the maximum error for any segment does not exceed some user-specified threshold, max_error.">
+Given a time series $T$, produce the best representation using only $K$ segments. Given a time series $T$, produce the best representation such that the maximum error for any segment does not exceed some user-specified threshold, max_error. Given a time series $T$, produce the best representation such that the combined error of all segments is less than some user-specified threshold, total_max_error. Although appearing under different names and with slightly different implementation details, most time series segmentation algorithms can be grouped into one of the following three categories.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -50,7 +64,7 @@ Given a time series $T$, produce the best representation using only $K$ segments
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.38c4552ac40f9ae3408bad40358f654ebd8804412fe74ed56f2d6c8a7af82dd3.css" integrity="sha256-OMRVKsQPmuNAi61ANY9lTr2IBEEv507Vby1sinr4LdM=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.min.0ab58f0bc42b4f21bff7ac349245f3c5579ad3c46dee51b49ad860d174431d73.css" integrity="sha256-CrWPC8QrTyG/96w0kkXzxVea08Rt7lG0mthg0XRDHXM=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -296,10 +310,10 @@ end;
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p><img alt="image" src="/images/SkCT62Ln0.png"></p>
-<p><img alt="image" src="/images/Bkog0h8n0.png"></p>
-<p><img alt="image" src="/images/BkGQAnI30.png"></p>
-<p><img alt="image" src="/images/HJUdA2L2A.png"></p>
+<p><img src="/images/SkCT62Ln0.png" alt="image"></p>
+<p><img src="/images/Bkog0h8n0.png" alt="image"></p>
+<p><img src="/images/BkGQAnI30.png" alt="image"></p>
+<p><img src="/images/HJUdA2L2A.png" alt="image"></p>
 <h3 id="the-swab-segmentation-algorithm">
   The SWAB Segmentation Algorithm
   <a class="heading-link" href="#the-swab-segmentation-algorithm">
@@ -334,7 +348,7 @@ while error &lt;= max_error // next potential segment.
     error = approx_segment(S);
 end while
 return S;
-</code></pre><p><img alt="image" src="/images/rybmfpU2R.png"></p>
+</code></pre><p><img src="/images/rybmfpU2R.png" alt="image"></p>
 
       </div>
 
@@ -405,9 +419,6 @@ return S;
 
 
   
-  
-
-
 
   
 

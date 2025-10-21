@@ -13,18 +13,25 @@
 
 
 <meta name="author" content="Tung Kieu">
-<meta name="description" content="AbstractLink to headingClassification of time series data is an important task for many application domains. One of the best existing methods for this task, in terms of accuracy and computation time, is MiniROCKET. In this work, we extend this approach to provide better global temporal encodings using hyperdimensional computing (HDC) mechanisms. HDC (also known as Vector Symbolic Architectures, VSA) is a general method to explicitly represent and process information in high-dimensional vectors.">
+<meta name="description" content="
+  Abstract
+  
+    
+    Link to heading
+  
+
+Classification of time series data is an important task for many application domains. One of the best existing methods for this task, in terms of accuracy and computation time, is MiniROCKET. In this work, we extend this approach to provide better global temporal encodings using hyperdimensional computing (HDC) mechanisms. HDC (also known as Vector Symbolic Architectures, VSA) is a general method to explicitly represent and process information in high-dimensional vectors. It has previously been used successfully in combination with deep neural networks and other signal processing algorithms. We argue that the internal high-dimensional representation of MiniROCKET is well suited to be complemented by the algebra of HDC. This leads to a more general formulation, HDC-MiniROCKET, where the original algorithm is only a special case. We will discuss and demonstrate that HDC-MiniROCKET can systematically overcome catastrophic failures of MiniROCKET on simple synthetic datasets. These results are confirmed by experiments on the 128 datasets from the UCR time series classification benchmark. The extension with HDC can achieve considerably better results on datasets with high temporal dependence without increasing the computational effort for inference.">
 <meta name="keywords" content="blog, researcher, personal">
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="HDC-MiniROCKET: Explicit Time Encoding in Time Series Classification with Hyperdimensional Computing">
-  <meta name="twitter:description" content="AbstractLink to headingClassification of time series data is an important task for many application domains. One of the best existing methods for this task, in terms of accuracy and computation time, is MiniROCKET. In this work, we extend this approach to provide better global temporal encodings using hyperdimensional computing (HDC) mechanisms. HDC (also known as Vector Symbolic Architectures, VSA) is a general method to explicitly represent and process information in high-dimensional vectors.">
+  <meta name="twitter:description" content="AbstractLink to headingClassification of time series data is an important task for many application domains. One of the best existing methods for this task, in terms of accuracy and computation time, is MiniROCKET. In this work, we extend this approach to provide better global temporal encodings using hyperdimensional computing (HDC) mechanisms. HDC (also known as Vector Symbolic Architectures, VSA) is a general method to explicitly represent and process information in high-dimensional vectors. It has previously been used successfully in combination with deep neural networks and other signal processing algorithms. We argue that the internal high-dimensional representation of MiniROCKET is well suited to be complemented by the algebra of HDC. This leads to a more general formulation, HDC-MiniROCKET, where the original algorithm is only a special case. We will discuss and demonstrate that HDC-MiniROCKET can systematically overcome catastrophic failures of MiniROCKET on simple synthetic datasets. These results are confirmed by experiments on the 128 datasets from the UCR time series classification benchmark. The extension with HDC can achieve considerably better results on datasets with high temporal dependence without increasing the computational effort for inference.">
 
 <meta property="og:url" content="https://tungk.github.io/posts/hdc-mini_rocket-explicit-time-encoding-in-time-series-classification-with-hyperdimensional-computing/">
   <meta property="og:site_name" content="Tung Kieu">
   <meta property="og:title" content="HDC-MiniROCKET: Explicit Time Encoding in Time Series Classification with Hyperdimensional Computing">
-  <meta property="og:description" content="AbstractLink to headingClassification of time series data is an important task for many application domains. One of the best existing methods for this task, in terms of accuracy and computation time, is MiniROCKET. In this work, we extend this approach to provide better global temporal encodings using hyperdimensional computing (HDC) mechanisms. HDC (also known as Vector Symbolic Architectures, VSA) is a general method to explicitly represent and process information in high-dimensional vectors.">
+  <meta property="og:description" content="AbstractLink to headingClassification of time series data is an important task for many application domains. One of the best existing methods for this task, in terms of accuracy and computation time, is MiniROCKET. In this work, we extend this approach to provide better global temporal encodings using hyperdimensional computing (HDC) mechanisms. HDC (also known as Vector Symbolic Architectures, VSA) is a general method to explicitly represent and process information in high-dimensional vectors. It has previously been used successfully in combination with deep neural networks and other signal processing algorithms. We argue that the internal high-dimensional representation of MiniROCKET is well suited to be complemented by the algebra of HDC. This leads to a more general formulation, HDC-MiniROCKET, where the original algorithm is only a special case. We will discuss and demonstrate that HDC-MiniROCKET can systematically overcome catastrophic failures of MiniROCKET on simple synthetic datasets. These results are confirmed by experiments on the 128 datasets from the UCR time series classification benchmark. The extension with HDC can achieve considerably better results on datasets with high temporal dependence without increasing the computational effort for inference.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -44,7 +51,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.38c4552ac40f9ae3408bad40358f654ebd8804412fe74ed56f2d6c8a7af82dd3.css" integrity="sha256-OMRVKsQPmuNAi61ANY9lTr2IBEEv507Vby1sinr4LdM=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.min.0ab58f0bc42b4f21bff7ac349245f3c5579ad3c46dee51b49ad860d174431d73.css" integrity="sha256-CrWPC8QrTyG/96w0kkXzxVea08Rt7lG0mthg0XRDHXM=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -203,7 +210,7 @@
   </a>
 </h2>
 <p>MiniROCKET applies a set of parallel convolutions to the input signal. To achieve a low runtime, two important design decisions of MiniROCKET are (1) the usage of convolution filters of small size and (2) accumulation of filter responses over time based on the Proportion of Positive Values (PPV), which is a special kind of averaging. However, the combination of these design decisions can hamper the encoding of temporal variation of signals on a larger scale than the size of the convolution filters. To address this, the authors of MiniROCKET propose to use dilated convolutions. A dilated convolution virtually increases a filter kernel by adding sequences of zeros in between the values of the original filter kernel [12] (e.g. \([-1, 2, 1]\) becomes \([-1, 0, 2, 0 1]\) or \([-1, 0, 0, 2, 0, 0, 1]\) and so on).</p>
-<p><img src="/images/2DfUTpl.png"></p>
+<p><img src="/images/2DfUTpl.png" alt=""></p>
 <p>The first contribution of this paper is to demonstrate that although the dilatated convolutions of MiniROCKET perform well on a series of standard benchmark datasets like UCR [13], it is easy to create datasets where classification based on MiniROCKET is not much better than random guessing. This is due to a combination of two problems: (1) The location of the sharp peaks cannot be well captured by dilated convolutions with high dilation values due to their large gaps. (2) Although responses of filters with small or no dilation can represent the peak, the averaging implemented by PPV removes the temporal information on the global scale.</p>
 <p>HDC-MiniROCKET, that addressed this second problem. It is based on the observation that MiniROCKET’s Proportion of Positive Values (the second design decision from above) is a special case of a broader class of accumulation operations known as bundling in the context of Hyperdimensional Computing (HDC) and Vector Symbolic Architectures (VSA) [14]–[17]. This novel perspective encourages a straight-forward and computational efficient usage of a second HDC operator, binding, in order to explicitly and flexibly encode temporal information during the accumulation process in MiniROCKET. The original MiniROCKET then becomes a special case of the proposed more general HDC-MiniROCKET.</p>
 <h2 id="related-work">
@@ -255,13 +262,11 @@
 <p>The first step in MiniROCKET is a dilated convolution of the input signal \(x\) with kernels \(W_{k,d}\):</p>
 $$
 c_{k,d} = x \star W_{k,d}
-$$
-<p>$d$ is the dilation parameter, \(k \in \{1, \ldots, 84\}\) refers to \(84\) predefined kernels \(W_k\). The length and weights of these kernels are based on insights from the first ROCKET method [8]: the MiniROCKET kernels have a length of \(9\), the weights are restricted to one of two values \(\{-1, 2\}\), and there are exactly three weights with value \(2\).</p>
+$$<p>$d$ is the dilation parameter, \(k \in \{1, \ldots, 84\}\) refers to \(84\) predefined kernels \(W_k\). The length and weights of these kernels are based on insights from the first ROCKET method [8]: the MiniROCKET kernels have a length of \(9\), the weights are restricted to one of two values \(\{-1, 2\}\), and there are exactly three weights with value \(2\).</p>
 <p>In a second step, each convolution result \(c_{k,d}\) is element-wise compared to one or multiple bias values \(B_b\)</p>
 $$
 c_{k,d,b} = c_{k,d} > B_b
-$$
-<p>This is an approximation of the cumulative distribution function of the filter responses of this particular combination of kernel $k$ and dilation $d$.</p>
+$$<p>This is an approximation of the cumulative distribution function of the filter responses of this particular combination of kernel $k$ and dilation $d$.</p>
 <p>The final step of MiniROCKET is to compute each of the \(9,996\) dimensions of the output descriptor \(y^{PPV}\) as the mean value of one of the \(c_{k,d,b}\) vectors (referred to as PPV in [9]). This averaging is where potentially important temporal information is lost and this final step will be different in HDC-MiniROCKET.</p>
 <h3 id="hdc-minirocket">
   HDC-MiniROCKET
@@ -282,13 +287,11 @@ $$
 <p>The valuable connection between HDC and MiniROCKET is that the \(9,996\) different vectors \(c_{k,d,b} \in \{0, 1\}^T\) from Eq. 2 in MiniROCKET also constitute a \(9,996\)-dimensional feature vector \(F_t\) for each timestep \(t \in \{1,\ldots,T\}\) (think of each vector \(c_{k,d,b}\) being a row in a matrix, then these feature vectors \(F_t\) are the columns). The averaging in MiniROCKET’s PPV (i.e. the row-wise mean in the above matrix) is then equivalent to bundling of these vectors \(F_t\). More specifically, if we convert \(F_t\) to bipolar by \(F_{t}^{BP} = 1 - 2 F_{t}\) and use the MAP architecture’s bundling operation (i.e. elementwise addition) then the result is proportional to the output of MiniROCKET:</p>
 $$
 \bigoplus_{t=1}^{T}F_{t}^{B P}=\sum_{t=1}^{T}(1-2F_{t})\propto y_{PPV}
-$$
-<p>This is just another way to compute output vectors that point in the same directions as the MiniROCKET output – which preserves cosine similarities between vectors. But much more importantly, it encourages the integration of a second HDC operation, <em>binding</em> \(\otimes\), as described in the following section.</p>
+$$<p>This is just another way to compute output vectors that point in the same directions as the MiniROCKET output – which preserves cosine similarities between vectors. But much more importantly, it encourages the integration of a second HDC operation, <em>binding</em> \(\otimes\), as described in the following section.</p>
 <p>HDC-MiniROCKET extends MiniROCKET by using the HDC binding \(\otimes\) operation to also encode the timestamp \(t\) of each feature \(F_t^{BP}\) in the output vector (without increasing the vector size).</p>
 $$
 $y^{H D C}=\bigoplus_{t=1}^{T}(F_{t}^{B P}\otimes P_{t})=\sum_{t=1}^{T}(1-2F_{t}) \odot P_{t}
 $$
-
       </div>
 
 
@@ -358,9 +361,6 @@ $$
 
 
   
-  
-
-
 
   
 

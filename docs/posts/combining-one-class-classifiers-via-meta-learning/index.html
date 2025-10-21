@@ -13,18 +13,25 @@
 
 
 <meta name="author" content="Tung Kieu">
-<meta name="description" content="AbstractLink to headingSelecting the best classifier among the available ones is a difficult task, especially when only instances of one class exist. In this work we examine the notion of combining one-class classifiers as an alternative for selecting the best classifier. In particular, we propose two one-class classification performance measures to weigh classifiers and show that a simple ensemble that implements these measures can outperform the most popular one-class ensembles.">
+<meta name="description" content="
+  Abstract
+  
+    
+    Link to heading
+  
+
+Selecting the best classifier among the available ones is a difficult task, especially when only instances of one class exist. In this work we examine the notion of combining one-class classifiers as an alternative for selecting the best classifier. In particular, we propose two one-class classification performance measures to weigh classifiers and show that a simple ensemble that implements these measures can outperform the most popular one-class ensembles. Furthermore, we propose a new one-class ensemble scheme, TUPSO, which uses meta-learning to combine one-class classifiers. Our experiments demonstrate the superiority of TUPSO over all other tested ensembles and show that the TUPSO performance is statistically indistinguishable from that of the hypothetical best classifier.">
 <meta name="keywords" content="blog, researcher, personal">
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Combining One-Class Classifiers via Meta Learning">
-  <meta name="twitter:description" content="AbstractLink to headingSelecting the best classifier among the available ones is a difficult task, especially when only instances of one class exist. In this work we examine the notion of combining one-class classifiers as an alternative for selecting the best classifier. In particular, we propose two one-class classification performance measures to weigh classifiers and show that a simple ensemble that implements these measures can outperform the most popular one-class ensembles.">
+  <meta name="twitter:description" content="AbstractLink to headingSelecting the best classifier among the available ones is a difficult task, especially when only instances of one class exist. In this work we examine the notion of combining one-class classifiers as an alternative for selecting the best classifier. In particular, we propose two one-class classification performance measures to weigh classifiers and show that a simple ensemble that implements these measures can outperform the most popular one-class ensembles. Furthermore, we propose a new one-class ensemble scheme, TUPSO, which uses meta-learning to combine one-class classifiers. Our experiments demonstrate the superiority of TUPSO over all other tested ensembles and show that the TUPSO performance is statistically indistinguishable from that of the hypothetical best classifier.">
 
 <meta property="og:url" content="https://tungk.github.io/posts/combining-one-class-classifiers-via-meta-learning/">
   <meta property="og:site_name" content="Tung Kieu">
   <meta property="og:title" content="Combining One-Class Classifiers via Meta Learning">
-  <meta property="og:description" content="AbstractLink to headingSelecting the best classifier among the available ones is a difficult task, especially when only instances of one class exist. In this work we examine the notion of combining one-class classifiers as an alternative for selecting the best classifier. In particular, we propose two one-class classification performance measures to weigh classifiers and show that a simple ensemble that implements these measures can outperform the most popular one-class ensembles.">
+  <meta property="og:description" content="AbstractLink to headingSelecting the best classifier among the available ones is a difficult task, especially when only instances of one class exist. In this work we examine the notion of combining one-class classifiers as an alternative for selecting the best classifier. In particular, we propose two one-class classification performance measures to weigh classifiers and show that a simple ensemble that implements these measures can outperform the most popular one-class ensembles. Furthermore, we propose a new one-class ensemble scheme, TUPSO, which uses meta-learning to combine one-class classifiers. Our experiments demonstrate the superiority of TUPSO over all other tested ensembles and show that the TUPSO performance is statistically indistinguishable from that of the hypothetical best classifier.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -44,7 +51,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.38c4552ac40f9ae3408bad40358f654ebd8804412fe74ed56f2d6c8a7af82dd3.css" integrity="sha256-OMRVKsQPmuNAi61ANY9lTr2IBEEv507Vby1sinr4LdM=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.min.0ab58f0bc42b4f21bff7ac349245f3c5579ad3c46dee51b49ad860d174431d73.css" integrity="sha256-CrWPC8QrTyG/96w0kkXzxVea08Rt7lG0mthg0XRDHXM=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -261,8 +268,7 @@
 <p>By rewriting the error probability, one can estimate the classification error-rate, in the one-class paradigm, given a prior on the target-class:</p>
 $$
 Pr[f(x) \ne y] = Pr[f(x) = 1] - Pr[Y = 1] + 2Pr[f(x) = 0|Y = 1]Pr[Y = 1]
-$$
-<p>where $f(x)$ is the classifier’s classification result for the examined example $x$, $Pr[f(x) = 1]$ is the probability that the examined classifier will classify <em>Positive</em>, $Pr[f(x) = 0|Y = 1]$ is the probability that the classifier will classify <em>Negative</em> when given a <em>Positive</em> example, and lastly, $Pr[Y = 1]$ is the prior on the target-class probability.</p>
+$$<p>where $f(x)$ is the classifier’s classification result for the examined example $x$, $Pr[f(x) = 1]$ is the probability that the examined classifier will classify <em>Positive</em>, $Pr[f(x) = 0|Y = 1]$ is the probability that the classifier will classify <em>Negative</em> when given a <em>Positive</em> example, and lastly, $Pr[Y = 1]$ is the prior on the target-class probability.</p>
 <p>Naturally, we define the one-class accuracy (OCA), estimator as follows: $OCA = 1 - Pr[f(x) \ne y]$. Note that the probabilities $Pr[f(x) = 1]$ and $[f(x) = 0|Y = 1]$ can be estimated for any one-class problem at hand using a standard cross-validating procedure.</p>
 <p>An additional performance criteria, $\frac{r^2}{Pr[f(x)=1]}$, denoted as One-Class F-score (OCF), is given in. Using this criteria, one can estimate the classifier’s F-score in the semi-supervise paradigm. However, when only positive-labeled instances exist, the recall, $r = Pr[f(x) = 1|y = 1]$, equals to $Pr[f(x) = 1]$ (because $Pr[y = 1] = 1$), which only measures the fraction of correct classifications on positive test examples, i.e., true-positive rate (TPR). Using the TPR to measure the classification performance makes sense, because the TPR is strongly correlated with the classification accuracy when negative examples are very rare, such as in the case of most one-class problems.</p>
 <h3 id="best-classifier-by-estimation">
@@ -280,7 +286,7 @@ $$
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<p><img src="https://i.imgur.com/DxMXjrY.png"></p>
+<p><img src="https://i.imgur.com/DxMXjrY.png" alt=""></p>
 <p>Figure 1: The <strong>TUPSO</strong> ensemble scheme.</p>
 <p>The main principle of <strong>TUPSO</strong> is combining multiple and possibly diverse one-class classifiers using the meta-learning technique. <strong>TUPSO</strong> is roughly based on the Stacking technique, and as so, it uses a single meta-classifier to combine the ensembles‘ members. As opposed to Stacking, however, where the meta-classifier trains directly from the ensemble-members‘ outputs, <strong>TUPSO</strong>’s meta-classifier trains on a series of aggregations from the ensemble-members‘ outputs. To elevate the effectiveness of some of the aggregations used by <strong>TUPSO</strong>, and with that improve the ensemble’s over-all performance, during the training phase, the ensemble-members are evaluated using the aforementioned one-class performance evaluators. The performance estimates are then translated into static weights, which the meta-learning algorithm uses during the training of the meta-classifier, and during the prediction phases.</p>
 <p>The <strong>TUPSO</strong> ensemble, as shown in Figure 1, is made up of four major components: (1) Ensemble-members, (2) Performance evaluator, (3) Meta-features extractor, and (4) Meta-classifier. Next, we describe each component.</p>
@@ -319,7 +325,7 @@ $$
 <li>Var-Weighted-Predictions $\displaystyle f_8(P_m) = \textrm{VAR}(\alpha_i * P_{m_i})$</li>
 </ul>
 <p>The aggregate functions $f_2 \ldots f_5$ and $f_6 \ldots f_8$ are based on the first and second moments, respectively. The first moment computes the“average”ensemble-members‘ prediction, whereas the second moment computes the variability among the ensemble-members‘ predictions. The first moment based aggregation, a subtle version of the mean voting rule, is motivated by Condorcet’s Jury Theorem, and is used in several supervised-learning ensembles, e.g., Distribution-Summation [4]. Furthermore, the second moment based aggregation is motivated by the knowledge it elicits over the first moment, i.e., the level of consent among the ensemble-members. From this information, unique high-level patterns of ensemble members’ predictions can be learned by the meta-learner, and thereafter be at the disposal of the meta-classifier.</p>
-<p><img src="https://i.imgur.com/9wmwMLG.png"></p>
+<p><img src="https://i.imgur.com/9wmwMLG.png" alt=""></p>
 <p>Table 3: The training-set of the meta-classifier. Each column represents one aggregate feature over the ensemble members’ predictions and $ma_{i,j}$ denotes the value of meta-feature $j$ for meta-instance $i$.</p>
 <h2 id="meta-classifier">
   Meta-Classifier
@@ -347,8 +353,7 @@ $$
 <p>In order to calculate certain meta-features, e.g., $f_3$, the ensemble-members‘ predictions have to be weighed. To do so, a set of weights, one per ensemble-member, are learned as part of the ensemble training process. During the meta-classifier training, the ensemble-members predict the class of the evaluated instances. The predictions are fed to the Performance Evaluator, which calculates either OCA or OCF estimations for each of the ensemble-members, $Perf_{vect} =&lt; Perf_1, \ldots , Perf_m &gt;$, where $Perf_i$ is the estimated performance of ensemble-member $i$. Finally, a set of weights, $\alpha_1, \alpha_2, \ldots , \alpha_m$, is computed as follows:</p>
 $$
 \alpha_i = \frac{Perf_i}{\sum_{j=1}^m Perf_j}, \forall i = 1 \ldots m
-$$
-<h2 id="method">
+$$<h2 id="method">
   Method
   <a class="heading-link" href="#method">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
@@ -363,7 +368,7 @@ $$
   </a>
 </h3>
 <p>For evaluation purposes, we made use of four, one-class algorithms: OC-SVM [15], OC-GDE, OC-PGA, and ADIFA [14]. We selected these ensemble-members because they represent the prominent families of one-class classifiers, i.e., nearest-neighbor (OC-GDE, OC-PGA), density (ADIFA), and boundary (OC-SVM). The first two algorithms are our adaptations of two well-known supervised algorithms to one class learning.</p>
-<p>We used a static pool of six ensemble-members for all the evaluated ensembles: (i) ADIFA~HM~, (ii) ADIFA~GM~, (iii) OC-GDE, (iv) OC-PGA, OC-SVM~1~, and (vi) OC-SVM~2~.</p>
+<p>We used a static pool of six ensemble-members for all the evaluated ensembles: (i) ADIFA<del>HM</del>, (ii) ADIFA<del>GM</del>, (iii) OC-GDE, (iv) OC-PGA, OC-SVM<del>1</del>, and (vi) OC-SVM<del>2</del>.</p>
 <h3 id="ensemble-combining-methods">
   Ensemble Combining Methods
   <a class="heading-link" href="#ensemble-combining-methods">
@@ -388,9 +393,9 @@ $$
   </a>
 </h3>
 <p>During the training phase, only the examples of one-class were available to the learning algorithms and to the classification performance estimators. During the testing phase, however, both positive and negative examples were available, to evaluate the classifiers in real-life conditions. The generalized classification accuracy was measured by performing a 5x2 cross-validation procedure [6]. We used the area under the ROC curve (AUC) metric to measure the classification performance of the individual classifiers and ensemble methods.</p>
-<p><img src="https://i.imgur.com/NUYsE0T.png"></p>
+<p><img src="https://i.imgur.com/NUYsE0T.png" alt=""></p>
 <p>Table 5: Ensembles classification AUC results.</p>
-<p><img src="https://i.imgur.com/wazcGny.png"></p>
+<p><img src="https://i.imgur.com/wazcGny.png" alt=""></p>
 <p>Figure 2: Classification performance: ensembles vs. actual best classifier.</p>
 
       </div>
@@ -462,9 +467,6 @@ $$
 
 
   
-  
-
-
 
   
 

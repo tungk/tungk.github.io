@@ -13,7 +13,14 @@
 
 
 <meta name="author" content="Tung Kieu">
-<meta name="description" content="AbstractLink to headingGeospatio-temporal data are pervasive across numerous application domains. These rich datasets can be harnessed to predict extreme events such as disease outbreaks, ﬂooding, crime spikes, etc.
+<meta name="description" content="
+  Abstract
+  
+    
+    Link to heading
+  
+
+Geospatio-temporal data are pervasive across numerous application domains. These rich datasets can be harnessed to predict extreme events such as disease outbreaks, ﬂooding,  crime spikes, etc.
 Statistical methods based on extreme value theory provide a systematic way for modeling the distribution of extreme values. In particular, the generalized Pareto distribution (GPD) is useful for modeling the distribution of excess values above a certain threshold. However, applying such methods to large-scale spatio-temporal data is a challenge due to the difﬁculty in capturing the complex spatial relationships between extreme events at multiple locations.">
 <meta name="keywords" content="blog, researcher, personal">
 
@@ -47,7 +54,7 @@ Statistical methods based on extreme value theory provide a systematic way for m
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.38c4552ac40f9ae3408bad40358f654ebd8804412fe74ed56f2d6c8a7af82dd3.css" integrity="sha256-OMRVKsQPmuNAi61ANY9lTr2IBEEv507Vby1sinr4LdM=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.min.0ab58f0bc42b4f21bff7ac349245f3c5579ad3c46dee51b49ad860d174431d73.css" integrity="sha256-CrWPC8QrTyG/96w0kkXzxVea08Rt7lG0mthg0XRDHXM=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -227,7 +234,7 @@ ity constraints unlike the output of DNN, which are typically unconstrained.</p>
 <blockquote>
 <p>Further, the distribution of extreme values are often temporally correlated. This poses a challenge from a modeling perspective as the number of excesses above a threshold tends to vary from one time step to the next.</p>
 </blockquote>
-<p><img alt="image" src="/images/r1ef2Y33R.png"></p>
+<p><img src="/images/r1ef2Y33R.png" alt="image"></p>
 <p>The major contributions of this paper:</p>
 <ul>
 <li>
@@ -257,12 +264,9 @@ ity constraints unlike the output of DNN, which are typically unconstrained.</p>
   </a>
 </h2>
 <p>Let</p>
-$$\mathcal{D}=\left\{(X_{il},Y_{il})|i=\in\{1,\cdots,n\}; l\in\{1,\cdot,L\}\right\}$$
-<p>be a geospatio-temporal dataset, where $X_{il}$ denote the predictor attribute values for the time window $(t_{i-1},t_i]$ in location $l$ and $Y_{il}$ denote the corresponding target (response) values for the time window $(t_i,\dot t_{i+1}]$ Since we are interested in predicting the excesses above a threshold in the next time window, the target variable corresponds to the set of excess values at location $l$ during the period $(t_i,t_{i+1}]$, i.e.,</p>
-$$Y_{il}=\{y_{tl}\mid y_{tl}\geq u,t\in(t_i,t_{i+1}]\}.$$
-<p>In addition, the predictors can be divided into two groups, $X_{il}\equiv(X_{il}^v,X_{il}^s)$, where $X_{il}^v\in\mathbb{R}^d$ is a fixed length vector and $X_il^s\in\mathbb{R}^{p_i}$ is a variable length vector corresponding to the set of excess values in the previous window, i. e. ,</p>
-$$X_{il}^{s}= \{ y_{tl}\mid y_{tl}\geq u, t\in ( t_{i- 1}, t_{i}] \} .$$
-<p>Note that the number of excess values can vary, e.g., one window may have $10$ excess values while the previous window has only $5$ excess values. The collections of excess values associated with the current and next time windows form the sets $X_{il}^s$ and $Y_{il}$, respectively. Our goal is to estimate the conditional distribution $P(Y_{il,j}|X_{il})$ for all the locations $l_{i}$ conditioned on the predictors observed in the current window, where $Y_{il,j}$ is an element of the set $Y_{il}$.</p>
+$$\mathcal{D}=\left\{(X_{il},Y_{il})|i=\in\{1,\cdots,n\}; l\in\{1,\cdot,L\}\right\}$$<p>be a geospatio-temporal dataset, where $X_{il}$ denote the predictor attribute values for the time window $(t_{i-1},t_i]$ in location $l$ and $Y_{il}$ denote the corresponding target (response) values for the time window $(t_i,\dot t_{i+1}]$ Since we are interested in predicting the excesses above a threshold in the next time window, the target variable corresponds to the set of excess values at location $l$ during the period $(t_i,t_{i+1}]$, i.e.,</p>
+$$Y_{il}=\{y_{tl}\mid y_{tl}\geq u,t\in(t_i,t_{i+1}]\}.$$<p>In addition, the predictors can be divided into two groups, $X_{il}\equiv(X_{il}^v,X_{il}^s)$, where $X_{il}^v\in\mathbb{R}^d$ is a fixed length vector and $X_il^s\in\mathbb{R}^{p_i}$ is a variable length vector corresponding to the set of excess values in the previous window, i. e. ,</p>
+$$X_{il}^{s}= \{ y_{tl}\mid y_{tl}\geq u, t\in ( t_{i- 1}, t_{i}] \} .$$<p>Note that the number of excess values can vary, e.g., one window may have $10$ excess values while the previous window has only $5$ excess values. The collections of excess values associated with the current and next time windows form the sets $X_{il}^s$ and $Y_{il}$, respectively. Our goal is to estimate the conditional distribution $P(Y_{il,j}|X_{il})$ for all the locations $l_{i}$ conditioned on the predictors observed in the current window, where $Y_{il,j}$ is an element of the set $Y_{il}$.</p>
 <h3 id="extreme-value-theory">
   Extreme Value Theory
   <a class="heading-link" href="#extreme-value-theory">
@@ -274,25 +278,21 @@ $$X_{il}^{s}= \{ y_{tl}\mid y_{tl}\geq u, t\in ( t_{i- 1}, t_{i}] \} .$$
 <p>Let $Y_{1}, Y_{2}, \cdots$ be a sequence of independent and identically distributed random variables. Given an excess value $Y=u+y$, where $u$ is some pre-defined threshold, the conditional probability of observing the excess event is:</p>
 $$
 P(Y-u \leq y \mid Y>u)= \begin{cases}1-\left[1+\frac{\xi y}{\sigma}\right]^{-1 / \xi}, & \xi \neq 0 \\ 1-e^{-y}, & \xi=0\end{cases}
-$$
-<p>Furthermore, its density function is given by:</p>
+$$<p>Furthermore, its density function is given by:</p>
 $$
 P(y)= \begin{cases}\frac{1}{\sigma}\left[1+\frac{\xi y}{\sigma}\right]^{-\frac{1}{\xi}-1}, & \xi \neq 0  \tag{1}\\ \frac{1}{\sigma} e^{-\frac{y}{\sigma}} & \xi=0\end{cases}
-$$
-<p>subject to the constraint $\forall y: 1+\frac{\xi y}{\sigma}&gt;0$. The GPD has two parameters, shape, $\xi$, and scale, $\sigma$ The shape parameter has a significant impact on the overall structure of the probability density. When $\xi$ is negative, the support of the distribution is finite such that $0&lt;y&lt;-\frac{\sigma}{\xi}$ due to the constraint. When $\xi$ is zero or positive, its support ranges from 0 to positive infinity.</p>
+$$<p>subject to the constraint $\forall y: 1+\frac{\xi y}{\sigma}&gt;0$. The GPD has two parameters, shape, $\xi$, and scale, $\sigma$ The shape parameter has a significant impact on the overall structure of the probability density. When $\xi$ is negative, the support of the distribution is finite such that $0&lt;y&lt;-\frac{\sigma}{\xi}$ due to the constraint. When $\xi$ is zero or positive, its support ranges from 0 to positive infinity.</p>
 <p>The advantage of using the GPD to model extreme values is its generality as one does not have to know the underlying distribution of the random variable prior to thresholding since the distribution of excesses will be governed by the GPD in relatively general conditions.</p>
 <p>In many cases, the values of $\xi$ and $\sigma$ may depend on some contextual features as predictors $x$. Assuming a linear relationship between $\xi$ and $x$ and between $\log (\sigma)$ and $x$ (the log linear relationship is used to guarantee that the estimate of $\sigma$ is non-negative)</p>
 $$
 \xi=f_{\xi}(x)=w_{1}^{T} x, \quad \log (\sigma)=f_{\sigma}(x)=w_{2}^{T} x \tag{2}
-$$
-<p>where $w_{1}$ and $w_{1}$ are the model parameters, which can be learned by minimizing the negative log-likelihood of GPD.</p>
+$$<p>where $w_{1}$ and $w_{1}$ are the model parameters, which can be learned by minimizing the negative log-likelihood of GPD.</p>
 <p>One important consideration when modeling data using a GPD is the choice of threshold $u$ since the threshold must be set high enough for the GPD to be applicable. A common way to evaluate the suitability of a given threshold is by examining the mean residual life plot. If a collection of samples were drawn from a GPD then the empirical distribution of the excesses should have a linear relationship with selected threshold. Specifically, we have:</p>
 $$
 \begin{equation*}
 E(Y-u \mid Y>u)=\frac{\sigma_{0}+\xi u}{1-\xi} \tag{3}
 \end{equation*}
-$$
-<p>for threshold $u$, and $Y \sim G P D\left(\xi, \sigma_{0}\right)$. In the experiment section, we will verify our choice of threshold by examining the mean residual life plot for our precipitation data.</p>
+$$<p>for threshold $u$, and $Y \sim G P D\left(\xi, \sigma_{0}\right)$. In the experiment section, we will verify our choice of threshold by examining the mean residual life plot for our precipitation data.</p>
 <h3 id="deep-set">
   Deep Set
   <a class="heading-link" href="#deep-set">
@@ -345,29 +345,23 @@ $$
 <p><strong>DeepGPD</strong> enables both parameters to be automatically learned from the data. Specifically, the deep architecture is trained to minimize the following negative loglikelihood function of the excess values in the next time step:</p>
 $$
 \mathcal{L}\left(\left\{\xi_{i l}, \sigma_{i l}\right\}\right)=\sum_{i, l, j}\left[\log \sigma_{i l}+\left(1+\frac{1}{\xi_{i l}}\right) \log \left(1+\xi_{i l} \frac{y_{i l j}}{\sigma_{i l}}\right)\right] \tag{4}
-$$
-<p>One major computational challenge in estimating the GPD parameters using a deep learning architecture is the need to enforce positivity constraints on the solution of (4) during training. To address this challenge, <strong>DeepGPD</strong> employs a re-parameterization trick to transform $\left(\xi_{i l}, \sigma_{i l}\right)$ into a pair of unconstrained variables $k_{i l}=\left(k_{i l}^{(1)}, k_{i l}^{(2)}\right)$ that can be learned by the convolutional neural network.</p>
+$$<p>One major computational challenge in estimating the GPD parameters using a deep learning architecture is the need to enforce positivity constraints on the solution of (4) during training. To address this challenge, <strong>DeepGPD</strong> employs a re-parameterization trick to transform $\left(\xi_{i l}, \sigma_{i l}\right)$ into a pair of unconstrained variables $k_{i l}=\left(k_{i l}^{(1)}, k_{i l}^{(2)}\right)$ that can be learned by the convolutional neural network.</p>
 <p>Let \(\left\{\xi_{i l}^{*}, \sigma_{i l}^{*}\right\}=\operatorname{argmin} \mathcal{L}\left(\left\{\xi_{i l}, \sigma_{i l}\right\}\right)\) subject to the following positivity constraints:</p>
 $$
 \forall i, j, l: \sigma_{i l}>0 \text { and } 1+\xi_{i l} \frac{y_{i l j}}{\sigma_{i l}}>0
-$$
-<p>By re-parameterizing $\left(\xi_{i l}, \sigma_{i l}\right) \mapsto\left(k_{i l}^{(1)}, k_{i l}^{(2)}\right)$ as follows:</p>
+$$<p>By re-parameterizing $\left(\xi_{i l}, \sigma_{i l}\right) \mapsto\left(k_{i l}^{(1)}, k_{i l}^{(2)}\right)$ as follows:</p>
 $$
 \sigma_{i l}=\exp \left(k_{i l}^{(1)}\right), \quad \xi_{i l}=\exp \left(k_{i l}^{(2)}\right)-\frac{\exp \left(k_{i l}^{(1)}\right)}{M_{i l}} \tag{5}
-$$
-<p>and solving for \(\left\{\hat{k}_{i l}^{(1)}, \hat{k}_{i l}^{(2)}\right\}=\operatorname{argmin} \hat{\mathcal{L}}\left(\left\{u_{i l}, v_{i l}\right\}\right)\), where</p>
+$$<p>and solving for \(\left\{\hat{k}_{i l}^{(1)}, \hat{k}_{i l}^{(2)}\right\}=\operatorname{argmin} \hat{\mathcal{L}}\left(\left\{u_{i l}, v_{i l}\right\}\right)\), where</p>
 $$
 \hat{\mathcal{L}}\left(\left\{u_{i l}, v_{i l}\right\}\right)=\sum_{i l j}\left[u_{i l}+\left(1+\frac{M_{i l}}{M_{i l} e^{v_{i l}}-e^{u_{i l}}}\right)\times \log \left(1+e^{v_{i l}} \frac{y_{i l j}}{e^{u_{i l}}}-\frac{y_{i l j}}{M_{i l}}\right)\right] \tag{6}
-$$
-<p>and $M_{i l}=\max_{j} Y_{i l j}$, then the solution set \(\left\{\xi_{i l}^{*}, \sigma_{i l}^{*}\right\}\) can be derived from the solution for \(\left\{\hat{k}_{i l}^{(1)}, \hat{k}_{i l}^{(1)}\right\}\) by applying the mapping given in Equation (5).</p>
+$$<p>and $M_{i l}=\max_{j} Y_{i l j}$, then the solution set \(\left\{\xi_{i l}^{*}, \sigma_{i l}^{*}\right\}\) can be derived from the solution for \(\left\{\hat{k}_{i l}^{(1)}, \hat{k}_{i l}^{(1)}\right\}\) by applying the mapping given in Equation (5).</p>
 <p>The proof for the preceding theorem can be shown by substituting (5) into (4), which yields the equivalent objective function for \(\hat{\mathcal{L}}\left(\left\{k_{il}^{(1)}, k_{il}^{(2)}\right\}\right)\). Furthermore, since Equation (4) can be re-written as follows:</p>
 $$
 \sigma_{i l} =e^{k_{i l}^{(1)}} \geq 0
-$$
-$$
+$$$$
 1+\xi_{i l} \frac{y_{i l j}}{\sigma_{i l}} =1-\frac{y_{i l j}}{M_{i l}}+e^{k_{i l}^{(2)}} \frac{y_{i l j}}{e^{k_{i l}^{(1)}}} \geq 0
-$$
-<p>the positivity constraints are automatically satisfied given the fact that $\forall i, l, j: y_{i l j} \leq M_{i l}, e^{k_{i l}^{(1)}}&gt;0$ and $e^{k_{i l}^{(2)}}&gt;0$ as long as $k_{i l}^{(1)}$ and $k_{i l}^{(2)}$ are not equal to $-\infty$.</p>
+$$<p>the positivity constraints are automatically satisfied given the fact that $\forall i, l, j: y_{i l j} \leq M_{i l}, e^{k_{i l}^{(1)}}&gt;0$ and $e^{k_{i l}^{(2)}}&gt;0$ as long as $k_{i l}^{(1)}$ and $k_{i l}^{(2)}$ are not equal to $-\infty$.</p>
 <p>The DeepGPD framework trained to optimize the loss function in Equation (6) will generate the maximum likelihood solution for \(\left\{\xi_{i l}^{*}, \sigma_{i l}^{*}\right\}\) in Equation (4) given the one-to-one mapping with \(\left\{\hat{k}_{i l}^{(1)}, \hat{k}_{i l}^{(2)}\right\}\) in Equation (5).</p>
 <p>\(\left\{\xi_{i l}^{*}\right. and \left.\sigma_{i l}^{*}\right\}\). This enables the parameters to be more easily learned by DeepGPD. All three components of the framework, including deep set and CNN, are trained in an endto-end fashion using Adam. Once the parameters for \(\hat{k}_{i l}^{(1)}\) and \(\hat{k}_{i l}^{(2)}\) are obtained, we can apply Equation (5) to derive the corresponding GPD parameters.</p>
 
@@ -440,9 +434,6 @@ $$
 
 
   
-  
-
-
 
   
 
