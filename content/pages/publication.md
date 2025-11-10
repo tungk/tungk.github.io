@@ -4,7 +4,7 @@ draft = false
 +++
 
 ## Selected Publication
-- Huy Le, Nhat Chung, **Tung Kieu**, Jingkang Yang, and Ngan Le. _UNO: Unifying One-stage Video Scene Graph Generation via Object-Centric Visual Representation Learning--Extended Version_. Proc. IEEE/CVF Winter Conference on Applications of Computer Vision---**WACV** 2026 (**CORE A**)
+- Huy Le, Nhat Chung, **Tung Kieu**, Jingkang Yang, and Ngan Le. _UNO: Unifying One-stage Video Scene Graph Generation via Object-Centric Visual Representation Learning_. Proc. IEEE/CVF Winter Conference on Applications of Computer Vision---**WACV** 2026 (**CORE A**)
 - Nhat Chung, Taisei Hanyu, Toan Nguyen, Huy Le, Frederick Bumgarner, Duy Minh Ho Nguyen, Khoa Vo, Kashu Yamazaki, Chase Rainwater, **Tung Kieu**, Anh Nguyen, and Ngan Le. _Rethinking Progression of Memory State in Robotic Manipulation: An Object-Centric Perspective_. Proc. Annual AAAI Conference on Artificial Intelligence---**AAAI** 2026 (**CORE A***)
 - Buang Zhang, **Tung Kieu**, Xiangfei Qiu, Chenjuan Guo, Jilin Hu, Aoying Zhou, Christian S. Jensen, and Bin Yang. _An Encode-then-Decompose Approach to Unsupervised Time Series Anomaly Detection on Contaminated Training Data_. Proc. IEEE International Conference on Data Engineering---**ICDE** 2026 (**CORE A***)
 - Nghiem Thanh Pham, **Tung Kieu**, Duc-Manh Nguyen, Son Ha Xuan, Nghia Duong-Trung, and Danh Le-Phuoc. _SLM-Bench: A Comprehensive Benchmark of Small Language Models on Environmental Impact_. Proc. International Conference on Empirical Methods in Natural Language Processing---**EMNLP** 2025 (**CORE A***)
