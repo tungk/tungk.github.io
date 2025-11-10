@@ -4,6 +4,8 @@ draft = false
 +++
 
 ## Selected Publication
+- Huy Le, Nhat Chung, **Tung Kieu**, Jingkang Yang, and Ngan Le. _UNO: Unifying One-stage Video Scene Graph Generation via Object-Centric Visual Representation Learning--Extended Version_. Proc. IEEE/CVF Winter Conference on Applications of Computer Vision---**WACV** 2026 (**CORE A**)
+- Nhat Chung, Taisei Hanyu, Toan Nguyen, Huy Le, Frederick Bumgarner, Duy Minh Ho Nguyen, Khoa Vo, Kashu Yamazaki, Chase Rainwater, **Tung Kieu**, Anh Nguyen, and Ngan Le. _Rethinking Progression of Memory State in Robotic Manipulation: An Object-Centric Perspective_. Proc. Annual AAAI Conference on Artificial Intelligence---**AAAI** 2026 (**CORE A***)
 - Buang Zhang, **Tung Kieu**, Xiangfei Qiu, Chenjuan Guo, Jilin Hu, Aoying Zhou, Christian S. Jensen, and Bin Yang. _An Encode-then-Decompose Approach to Unsupervised Time Series Anomaly Detection on Contaminated Training Data_. Proc. IEEE International Conference on Data Engineering---**ICDE** 2026 (**CORE A***)
 - Nghiem Thanh Pham, **Tung Kieu**, Duc-Manh Nguyen, Son Ha Xuan, Nghia Duong-Trung, and Danh Le-Phuoc. _SLM-Bench: A Comprehensive Benchmark of Small Language Models on Environmental Impact_. Proc. International Conference on Empirical Methods in Natural Language Processing---**EMNLP** 2025 (**CORE A***)
 - Huy Le, Nhat Chung, **Tung Kieu**, Anh Nguyen, and Ngan Le. _BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance_. Proc. ACM International Conference on Multimedia---**MM** 2025 (**CORE A***)
@@ -27,6 +29,7 @@ draft = false
 
 
 ## Preprint
+- Nhat Chung, Taisei Hanyu, Toan Nguyen, Huy Le, Frederick Bumgarner, Duy Minh Ho Nguyen, Khoa Vo, Kashu Yamazaki, Chase Rainwater, **Tung Kieu**, Anh Nguyen, and Ngan Le. _Rethinking Progression of Memory State in Robotic Manipulation: An Object-Centric Perspective--Extended Version_
 - Buang Zhang, **Tung Kieu**, Xiangfei Qiu, Chenjuan Guo, Jilin Hu, Aoying Zhou, Christian S. Jensen, and Bin Yang. _An Encode-then-Decompose Approach to Unsupervised Time Series Anomaly Detection on Contaminated Training Data--Extended Version_
 - Duc Kieu, Kien Do, Tuan Hoang, Thao Minh Le, **Tung Kieu**, Dang Nguyen, and Thin Nguyen. _Universal Multi-Domain Translation via Diffusion Routers--Extended Version_
 - Huy Le, Nhat Chung, **Tung Kieu**, Jingkang Yang, and Ngan Le. _UNO: Unifying One-stage Video Scene Graph Generation via Object-Centric Visual Representation Learning--Extended Version_
@@ -39,6 +42,6 @@ draft = false
 - David Campos, Miao Zhang, Bin Yang, **Tung Kieu**, Chenjuan Guo, and Christian S. Jensen. _LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation--Extended Version_
 - **Tung Kieu**, Bin Yang, Chenjuan Guo, Christian S. Jensen, Yan Zhao, Feiteng Huang, and Kai Zheng. _Robust and Explainable Autoencoders for Time Series Outlier Detection--Extended Version_
 - Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Xuanyi Dong, Shirui Pan, and Bin Yang. _Triformer: Triangular, Variable-Specific Attentions for Long Sequence Multivariate Time Series Forecasting--Extended Version_
-- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Shirui Pan, and Bin Yang. _Towards Spatio-Temporal Aware Traffic Time Series Forecasting--Extended Version_ 
+- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Shirui Pan, and Bin Yang. _Towards Spatio-Temporal Aware Traffic Time Series Forecasting--Extended Version_
 - David Campos, **Tung Kieu**, Chenjuan Guo, Feiteng Huang, Kai Zheng, Bin Yang, and Christian S. Jensen. _Unsupervised Time Series Outlier Detection with Diversity-Driven Convolutional Ensembles--Extended Version_
 - Yan Zhao, Liwei Deng, Xuanhao Chen, Chenjuan Guo, Bin Yang, **Tung Kieu**, Feiteng Huang, Torben Bach Pedersen, Kai Zheng, and Christian S. Jensen. _A Comparative Study on Unsupervised Anomaly Detection for Time Series: Experiments and Analysis--Extended Version_
