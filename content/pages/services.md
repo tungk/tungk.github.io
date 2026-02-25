@@ -4,18 +4,22 @@ draft = false
 +++
 
 ## Awards
-- Best PC Award in IEEE International Conference on Data Engineering (ICDE)
+- Best Program Committee Member Award in IEEE International Conference on Data Engineering (ICDE)
+- Best Program Committee Member Award in IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
 
 ## Conferences
 - ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD)
 - ACM SIGMOD Conference on Management of Data (SIGMOD)
 - Conference on Neural Information Processing Systems (NEURIPS)
+- International Conference on Machine Learning (ICML)
 - International Joint Conference on Artificial Intelligence (IJCAI)
 - AAAI Conference on Artificial Intelligence (AAAI)
 - International Conference on Very Large Data Bases (VLDB)
 - ACM Web Conference (TheWebConf)
 - IEEE International Conference on Data Engineering (ICDE)
 - ACM International Conference on Multimedia (MM)
+- Annual Meeting of the Association for Computational Linguistics (ACL)
+- Conference on Empirical Methods in Natural Language Processing (EMNLP)
 - ACM International Conference on Information and Knowledge Management (CIKM)
 - IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
 - ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (SIGSPATIAL/GIS)
