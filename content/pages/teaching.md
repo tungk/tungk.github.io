@@ -41,10 +41,10 @@ draft = false
 - Tuan-Binh Tran (at Vin University).
 
 # Bachelor Students
-- Philip Shaffer-Lassen
-- Magnus Emil Wichmann
-- Jakob Rossander Kristensen
-- August Høivang Grane
+- Philip Shaffer-Lassen.
+- Magnus Emil Wichmann.
+- Jakob Rossander Kristensen.
+- August Høivang Grane.
 - Khanh-Toan Nguyen (at University of Science - Vietnam National Univeristy).
 - Duc Kieu (at University of Science - Vietnam National Univeristy).
 
