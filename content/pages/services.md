@@ -10,7 +10,7 @@ draft = false
 ## Conferences
 - ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD).
 - ACM SIGMOD Conference on Management of Data (SIGMOD).
-- Conference on Neural Information Processing Systems (NEURIPS).
+- Annual Conference on Neural Information Processing Systems (NEURIPS).
 - International Conference on Machine Learning (ICML).
 - International Conference on Learning Representations (ICLR).
 - International Joint Conference on Artificial Intelligence (IJCAI).
