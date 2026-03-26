@@ -5,9 +5,9 @@ draft = false
 
 ## Contact Information
 
-__Office__: (1) A.C. Meyers Vaenge 15, Room 2.095, Copenhagen, Denmark; (2) Selma Lagerlofs Vej 300, Room 3-2-05, Aalborg, Denmark
+__Office__: (1) A.C. Meyers Vaenge 15, Room 2.095, Copenhagen, Denmark; (2) Selma Lagerlofs Vej 300, Room 3-2-05, Aalborg, Denmark.
 
-__Email__: (1) tungkvt[at]cs[dot]aau[dot]dk; (2) kvttung[at]gmail[dot]com
+__Email__: (1) tungkvt[at]cs[dot]aau[dot]dk; (2) kvttung[at]gmail[dot]com.
 
 
 
