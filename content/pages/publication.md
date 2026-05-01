@@ -4,9 +4,10 @@ draft = false
 +++
 
 ## Selected Publication
-- Dat Nguyen Cong, **Tung Kieu**, Hoang Thanh-Tung. _FastDiSS: Few-step Match Many-step Diffusion Language Model on Sequence-to-Sequence Generation_. Proceedings of the Annual Meeting of the Association for Computational Linguistics (**ACL**), 2026, [**CORE A***].
+- Phuc Hong Phan, Anh Vu Tuan, **Tung Kieu**, Son Ha Xuan, Bin Yang, and Christian S. Jensen. _Automatic Unsupervised Ensemble Outlier Model Selection_. Proceedings of the International Conference on Machine Learning (**ICML**), 2026, [**CORE A***].
+- Dat Nguyen Cong, **Tung Kieu**, and Hoang Thanh-Tung. _FastDiSS: Few-step Match Many-step Diffusion Language Model on Sequence-to-Sequence Generation_. Proceedings of the Annual Meeting of the Association for Computational Linguistics (**ACL**), 2026, [**CORE A***].
 - Duc Kieu, Kien Do, Tuan Hoang, Thao Minh Le, **Tung Kieu**, Dang Nguyen, and Thin Nguyen. _Universal Multi-Domain Translation via Diffusion Routers_. Proceedings of the International on Learning Representations (**ICLR**), 2026, [**CORE A***].
-- Taisei Hanyu, Nhat Chung, Huy Le, Toan Nguyen, Yuki Ikebe, Anthony Gunderman, Duy Nguyen Ho Minh, Khoa Vo, **Tung Kieu**, Kashu Yamazaki, Chase Rainwater, Anh Nguyen, Ngan Le. _SlotVLA: Towards Modeling of Object-Relation Representations in Robotic Manipulation_. Proceedings of the IEEE International Conference on Robotics and Automation (**ICRA**), 2026, [**CORE A***].
+- Taisei Hanyu, Nhat Chung, Huy Le, Toan Nguyen, Yuki Ikebe, Anthony Gunderman, Duy Nguyen Ho Minh, Khoa Vo, **Tung Kieu**, Kashu Yamazaki, Chase Rainwater, Anh Nguyen, and Ngan Le. _SlotVLA: Towards Modeling of Object-Relation Representations in Robotic Manipulation_. Proceedings of the IEEE International Conference on Robotics and Automation (**ICRA**), 2026, [**CORE A***].
 - Huy Le, Nhat Chung, **Tung Kieu**, Jingkang Yang, and Ngan Le. _UNO: Unifying One-stage Video Scene Graph Generation via Object-Centric Visual Representation Learning_. Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (**WACV**), 2026, [**CORE A**].
 - Nhat Chung, Taisei Hanyu, Toan Nguyen, Huy Le, Frederick Bumgarner, Duy Minh Ho Nguyen, Khoa Vo, Kashu Yamazaki, Chase Rainwater, **Tung Kieu**, Anh Nguyen, and Ngan Le. _Rethinking Progression of Memory State in Robotic Manipulation: An Object-Centric Perspective_. Proceedings of the Annual AAAI Conference on Artificial Intelligence (**AAAI**), 2026, [**CORE A***].
 - Buang Zhang, **Tung Kieu**, Xiangfei Qiu, Chenjuan Guo, Jilin Hu, Aoying Zhou, Christian S. Jensen, and Bin Yang. _An Encode-then-Decompose Approach to Unsupervised Time Series Anomaly Detection on Contaminated Training Data_. Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2026, [**CORE A***].
@@ -32,8 +33,9 @@ draft = false
 
 
 ## Preprint
-- Dat Nguyen Cong, **Tung Kieu**, Hoang Thanh-Tung. _FastDiSS: Few-step Match Many-step Diffusion Language Model on Sequence-to-Sequence Generation--Extended Version_.
-- Taisei Hanyu, Nhat Chung, Huy Le, Toan Nguyen, Yuki Ikebe, Anthony Gunderman, Duy Nguyen Ho Minh, Khoa Vo, **Tung Kieu**, Kashu Yamazaki, Chase Rainwater, Anh Nguyen, Ngan Le. _SlotVLA: Towards Modeling of Object-Relation Representations in Robotic Manipulation--Extended Version_.
+- Phuc Hong Phan, Anh Vu Tuan, **Tung Kieu**, Son Ha Xuan, Bin Yang, and Christian S. Jensen. _Automatic Unsupervised Ensemble Outlier Model Selection--Extended Version_.
+- Dat Nguyen Cong, **Tung Kieu**, and Hoang Thanh-Tung. _FastDiSS: Few-step Match Many-step Diffusion Language Model on Sequence-to-Sequence Generation--Extended Version_.
+- Taisei Hanyu, Nhat Chung, Huy Le, Toan Nguyen, Yuki Ikebe, Anthony Gunderman, Duy Nguyen Ho Minh, Khoa Vo, **Tung Kieu**, Kashu Yamazaki, Chase Rainwater, Anh Nguyen, and Ngan Le. _SlotVLA: Towards Modeling of Object-Relation Representations in Robotic Manipulation--Extended Version_.
 - Nhat Chung, Taisei Hanyu, Toan Nguyen, Huy Le, Frederick Bumgarner, Duy Minh Ho Nguyen, Khoa Vo, Kashu Yamazaki, Chase Rainwater, **Tung Kieu**, Anh Nguyen, and Ngan Le. _Rethinking Progression of Memory State in Robotic Manipulation: An Object-Centric Perspective--Extended Version_.
 - Buang Zhang, **Tung Kieu**, Xiangfei Qiu, Chenjuan Guo, Jilin Hu, Aoying Zhou, Christian S. Jensen, and Bin Yang. _An Encode-then-Decompose Approach to Unsupervised Time Series Anomaly Detection on Contaminated Training Data--Extended Version_.
 - Duc Kieu, Kien Do, Tuan Hoang, Thao Minh Le, **Tung Kieu**, Dang Nguyen, and Thin Nguyen. _Universal Multi-Domain Translation via Diffusion Routers--Extended Version_.
