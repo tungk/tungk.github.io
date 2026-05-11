@@ -5,7 +5,7 @@ draft = false
 
 <!-- # Teaching -->
 ## Coordination
-- Software 7 (SW9).
+- Software 7 (SW7).
 - Software 9 (SW9).
 
 ## Courses

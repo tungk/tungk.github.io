@@ -40,6 +40,7 @@ I also obtained _B.Eng._ in _Civil Engineering_ at the *University of Architectu
 
 ## Work Experience
 
+- Associate Professor at _Aalborg University_, Aalborg, Denmark.
 - (Tenure-Track) Assistant Professor at _Aalborg University_, Aalborg, Denmark.
 - Lecturer at _RMIT University_, Ho Chi Minh City, Vietnam.
 - Researcher at _Aalborg University_, Aalborg, Denmark.
