@@ -4,6 +4,7 @@ draft = false
 +++
 
 ## Selected Publication
+- David Campos, Bin Yang, **Tung Kieu**, Lei Chen, Chenjuan Guo, and Christian S. Jensen. _TimeBlocks: Versatile and Continual Time-Series Blockbase_. Proceedings of the ACM SIGKDD Conference on Knowledge Discovery and Data Mining (**KDD**), 2026, [**CORE A***].
 - Phuc Hong Phan, Anh Vu Tuan, **Tung Kieu**, Son Ha Xuan, Bin Yang, and Christian S. Jensen. _Automatic Unsupervised Ensemble Outlier Model Selection_. Proceedings of the International Conference on Machine Learning (**ICML**), 2026, [**CORE A***].
 - Dat Nguyen Cong, **Tung Kieu**, and Hoang Thanh-Tung. _FastDiSS: Few-step Match Many-step Diffusion Language Model on Sequence-to-Sequence Generation_. Proceedings of the Annual Meeting of the Association for Computational Linguistics (**ACL**), 2026, [**CORE A***].
 - Duc Kieu, Kien Do, Tuan Hoang, Thao Minh Le, **Tung Kieu**, Dang Nguyen, and Thin Nguyen. _Universal Multi-Domain Translation via Diffusion Routers_. Proceedings of the International Conference on Learning Representations (**ICLR**), 2026, [**CORE A***].
@@ -33,6 +34,7 @@ draft = false
 
 
 ## Preprint
+- David Campos, Bin Yang, **Tung Kieu**, Lei Chen, Chenjuan Guo, and Christian S. Jensen. _TimeBlocks: Versatile and Continual Time-Series Blockbase--Extended Version_.
 - Phuc Hong Phan, Anh Vu Tuan, **Tung Kieu**, Son Ha Xuan, Bin Yang, and Christian S. Jensen. _Automatic Unsupervised Ensemble Outlier Model Selection--Extended Version_.
 - Dat Nguyen Cong, **Tung Kieu**, and Hoang Thanh-Tung. _FastDiSS: Few-step Match Many-step Diffusion Language Model on Sequence-to-Sequence Generation--Extended Version_.
 - Taisei Hanyu, Nhat Chung, Huy Le, Toan Nguyen, Yuki Ikebe, Anthony Gunderman, Duy Nguyen Ho Minh, Khoa Vo, **Tung Kieu**, Kashu Yamazaki, Chase Rainwater, Anh Nguyen, and Ngan Le. _SlotVLA: Towards Modeling of Object-Relation Representations in Robotic Manipulation--Extended Version_.
