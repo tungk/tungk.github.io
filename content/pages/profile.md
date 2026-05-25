@@ -20,7 +20,7 @@ All the time, I have worked in the _Data-Intensive Systems_ [(Daisy)](https://ww
 
 I obtained _B.Sc._ and _M.Sc._ degrees in _Computer Science_ at the *University of Science, Vietnam National University*, Ho Chi Minh City in September 2012 and 2015, respectively, under the supervision of  Prof. [Bac Le](https://scholar.google.com.vn/citations?user=UA_83MUAAAAJ&hl=en) and Prof. [Bay Vo](https://scholar.google.com.vn/citations?user=UBGqPDYAAAAJ&hl=en). 
 
-I also obtained _B.Eng._ in _Civil Engineering_ at the *University of Architecture*, Ho Chi Minh City in April 2013. 
+I also obtained _B.Eng._ degree in _Civil Engineering_ at the *University of Architecture*, Ho Chi Minh City in April 2013. 
 
 
 
