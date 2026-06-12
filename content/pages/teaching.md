@@ -38,7 +38,10 @@ draft = false
 
 # Mentees
 - Cong-Dat Nguyen (at FPT AI Center).
-- Tuan-Binh Tran (at Vin University).
+- Huy Le (shared with Prof. Ngan Le at FPT AI Center).
+- Nhat Chung (shared with Prof. Ngan Le at FPT AI Center).
+- Tuan-Binh Tran (at VinUniversity).
+- Kien Le (at VinUniversity).
 
 # Bachelor Students
 - Philip Shaffer-Lassen.

@@ -7,7 +7,7 @@ draft = false
 - Best Program Committee Member Award in IEEE International Conference on Data Engineering (ICDE).
 - Best Program Committee Member Award in IEEE/CVF Winter Conference on Applications of Computer Vision (WACV).
 
-## Conferences
+## Program Committee Member
 - ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD).
 - ACM SIGMOD Conference on Management of Data (SIGMOD).
 - Annual Conference on Neural Information Processing Systems (NEURIPS).

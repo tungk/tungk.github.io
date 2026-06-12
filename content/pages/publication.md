@@ -34,6 +34,7 @@ draft = false
 
 
 ## Preprint
+- Trung Duc Anh Dang, **Tung Kieu**, and Sarah Masud. _Scenario-based Probing and Steering Cultural Values in Large Language Models--Extended Version_.
 - David Campos, Bin Yang, **Tung Kieu**, Lei Chen, Chenjuan Guo, and Christian S. Jensen. _TimeBlocks: Versatile and Continual Time-Series Blockbase--Extended Version_.
 - Phuc Hong Phan, Anh Vu Tuan, **Tung Kieu**, Son Ha Xuan, Bin Yang, and Christian S. Jensen. _Automatic Unsupervised Ensemble Outlier Model Selection--Extended Version_.
 - Dat Nguyen Cong, **Tung Kieu**, and Hoang Thanh-Tung. _FastDiSS: Few-step Match Many-step Diffusion Language Model on Sequence-to-Sequence Generation--Extended Version_.

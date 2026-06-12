@@ -170,12 +170,6 @@ weight = 4
 url = "mailto:tungkvt@cs.aau.dk;kvttung@gmail.com"
 
 [[params.social]]
-name = "Twitter"
-icon = "fa-brands fa-x-twitter fa-2x"
-weight = 5
-url = "https://twitter.com/tungsomot/"
-
-[[params.social]]
 name = "LinkedIn"
 icon = "fa-brands fa-linkedin fa-2x"
 weight = 6
