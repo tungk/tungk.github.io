@@ -44,7 +44,7 @@ I also obtained _B.Eng._ degree in _Civil Engineering_ at the *University of Arc
 - (Tenure-Track) Assistant Professor at _Aalborg University_, Aalborg, Denmark.
 - Lecturer at _RMIT University_, Ho Chi Minh City, Vietnam.
 - Researcher at _Aalborg University_, Aalborg, Denmark.
-- Database Specialist at _FPT_, Ho Chi Minh City, Vietnam.
-- Data Warehouse Specialist at _FPT_, Ho Chi Minh City, Vietnam.
+- Database Specialist at _FPT Software_, Ho Chi Minh City, Vietnam.
+- Data Warehouse Specialist at _FPT Software_, Ho Chi Minh City, Vietnam.
 - Data Entry Operator at _FTA Research & Consultant_, Ho Chi Minh City, Vietnam.
 - Web Developer at _BeRich.vn_, Ho Chi Minh City, Vietnam.

@@ -10,15 +10,17 @@ draft = false
 ## Program Committee Member
 - ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD).
 - ACM SIGMOD Conference on Management of Data (SIGMOD).
-- Annual Conference on Neural Information Processing Systems (NEURIPS).
+- Annual Conference on Neural Information Processing Systems (NeurIPS).
 - International Conference on Machine Learning (ICML).
 - International Conference on Learning Representations (ICLR).
 - International Joint Conference on Artificial Intelligence (IJCAI).
 - AAAI Conference on Artificial Intelligence (AAAI).
 - International Conference on Very Large Data Bases (VLDB).
 - ACM Web Conference (TheWebConf).
-- IEEE International Conference on Data Engin.eering (ICDE).
+- IEEE International Conference on Data Engineering (ICDE).
+- IEEE International Conference on Data Mining (ICDM).
 - ACM International Conference on Multimedia (MM).
+- European Conference on Computer Vision (ECCV).
 - Annual Meeting of the Association for Computational Linguistics (ACL).
 - Conference on Empirical Methods in Natural Language Processing (EMNLP).
 - ACM International Conference on Information and Knowledge Management (CIKM).
@@ -50,4 +52,4 @@ draft = false
 ## Collaboration
 - Collaborating with _TADAA!_ (in aSTEP project).
 - Collaborating with the _BioX_ (in aSTEP project).
-- Collaborating with _Huawei_ (in Huawei project)
+- Collaborating with _Huawei_ (in Huawei project).
