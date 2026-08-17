@@ -48,3 +48,7 @@ I also obtained _B.Eng._ degree in _Civil Engineering_ at the *University of Arc
 - Data Warehouse Specialist at _FPT Software_, Ho Chi Minh City, Vietnam.
 - Data Entry Operator at _FTA Research & Consultant_, Ho Chi Minh City, Vietnam.
 - Web Developer at _BeRich.vn_, Ho Chi Minh City, Vietnam.
+
+## Personal
+
+I cherish time with my wife and our two kids. I also enjoy reading, a good cup of coffee or tea, and listening to music. I also enjoy going around Saigon with my family and my younger brother.
