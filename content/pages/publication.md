@@ -4,6 +4,7 @@ draft = false
 +++
 
 ## Selected Publication
+- Trung Duc Anh Dang, **Tung Kieu**, and Sarah Masud. _Scenario-based Probing and Steering Cultural Values in Large Language Models_. Proceedings of the International Conference on Empirical Methods in Natural Language Processing (**EMNLP**), 2026, [**CORE A***].
 - Tuan-Binh Tran, Dat Nguyen Cong, Duc-Trong Le, Thanh Trung Huynh, and **Tung Kieu**. _SCENARIODIFF: A Scenario-level Guidance Framework for Multimodal Time Series Forecasting_. Proceedings of the IEEE International Conference on Data Mining (**ICDM**), 2026, [**CORE A***].
 - David Campos, Bin Yang, **Tung Kieu**, Lei Chen, Chenjuan Guo, and Christian S. Jensen. _TimeBlocks: Versatile and Continual Time-Series Blockbase_. Proceedings of the ACM SIGKDD Conference on Knowledge Discovery and Data Mining (**KDD**), 2026, [**CORE A***].
 - Phuc Hong Phan, Anh Vu Tuan, **Tung Kieu**, Son Ha Xuan, Bin Yang, and Christian S. Jensen. _Automatic Unsupervised Ensemble Outlier Model Selection_. Proceedings of the International Conference on Machine Learning (**ICML**), 2026, [**CORE A***].
