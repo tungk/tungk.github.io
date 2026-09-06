@@ -36,6 +36,7 @@ draft = false
 
 
 ## Preprint
+- Tuan-Binh Tran, Thanh Tam Nguyen, Quoc Viet Hung Nguyen, Dung D. Le, **Tung Kieu**, and Thanh Trung Huynh. _EPIC: Explicit Posterior Item Conditioning for Semantic ID Diffusion Recommendation--Extended Version_.
 - Tuan-Binh Tran, Dat Nguyen Cong, Duc-Trong Le, Thanh Trung Huynh, and **Tung Kieu**. _SCENARIODIFF: A Scenario-level Guidance Framework for Multimodal Time Series Forecasting--Extended Version_.
 - Xuan-Thong Truong, Trung-Kien Le, **Tung Kieu**, Thi-Thu Nguyen, Nhat-Hai Nguyen. _ALER-TI: Aligned Latent Embedding Retrieval for Time Series Imputation--Extended Version_.
 - Trung Duc Anh Dang, **Tung Kieu**, and Sarah Masud. _Scenario-based Probing and Steering Cultural Values in Large Language Models--Extended Version_.
