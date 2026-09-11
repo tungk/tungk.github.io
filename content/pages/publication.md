@@ -4,6 +4,8 @@ draft = false
 +++
 
 ## Selected Publication
+- Sean Bin Yang, Ying Sun, Zongyi Xu, **Tung Kieu**, Jilin Hu, Bin Yang, Kristian Torp, Hua Lu, and Torben Bach Pedersen. _When Correlations Mislead: Confounder-Aware Multi-View Urban Region Representation Learning_. Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2027, [**CORE A***].
+- Zhe Li, Tengxue Zhang, Yang Shu, **Tung Kieu**, Lunting Fan, Yingying Zhang, and Bin Yang. _BEACON: Bridging Multi-Modal Semantics and Asynchronous Propagation for Cloud System Anomaly Detection_. Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2027, [**CORE A***].
 - Trung Duc Anh Dang, **Tung Kieu**, and Sarah Masud. _Scenario-based Probing and Steering Cultural Values in Large Language Models_. Proceedings of the International Conference on Empirical Methods in Natural Language Processing (**EMNLP**), 2026, [**CORE A***].
 - Tuan-Binh Tran, Dat Nguyen Cong, Duc-Trong Le, Thanh Trung Huynh, and **Tung Kieu**. _SCENARIODIFF: A Scenario-level Guidance Framework for Multimodal Time Series Forecasting_. Proceedings of the IEEE International Conference on Data Mining (**ICDM**), 2026, [**CORE A***].
 - David Campos, Bin Yang, **Tung Kieu**, Lei Chen, Chenjuan Guo, and Christian S. Jensen. _TimeBlocks: Versatile and Continual Time-Series Blockbase_. Proceedings of the ACM SIGKDD Conference on Knowledge Discovery and Data Mining (**KDD**), 2026, [**CORE A***].
@@ -36,6 +38,8 @@ draft = false
 
 
 ## Preprint
+- Sean Bin Yang, Ying Sun, Zongyi Xu, **Tung Kieu**, Jilin Hu, Bin Yang, Kristian Torp, Hua Lu, and Torben Bach Pedersen. _When Correlations Mislead: Confounder-Aware Multi-View Urban Region Representation Learning--Extended Version_.
+- Zhe Li, Tengxue Zhang, Yang Shu, **Tung Kieu**, Lunting Fan, Yingying Zhang, and Bin Yang. _BEACON: Bridging Multi-Modal Semantics and Asynchronous Propagation for Cloud System Anomaly Detection--Extended Version_.
 - Tuan-Binh Tran, Thanh Tam Nguyen, Quoc Viet Hung Nguyen, Dung D. Le, **Tung Kieu**, and Thanh Trung Huynh. _EPIC: Explicit Posterior Item Conditioning for Semantic ID Diffusion Recommendation--Extended Version_.
 - Tuan-Binh Tran, Dat Nguyen Cong, Duc-Trong Le, Thanh Trung Huynh, and **Tung Kieu**. _SCENARIODIFF: A Scenario-level Guidance Framework for Multimodal Time Series Forecasting--Extended Version_.
 - Xuan-Thong Truong, Trung-Kien Le, **Tung Kieu**, Thi-Thu Nguyen, Nhat-Hai Nguyen. _ALER-TI: Aligned Latent Embedding Retrieval for Time Series Imputation--Extended Version_.
