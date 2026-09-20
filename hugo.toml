@@ -170,10 +170,16 @@ weight = 4
 url = "mailto:tungkvt@cs.aau.dk;kvttung@gmail.com"
 
 [[params.social]]
+name = "Facebook"
+icon = "fa-brands fa-facebook-f fa-2x"
+weight = 5
+url = "https://facebook.com"
+
+[[params.social]]
 name = "LinkedIn"
 icon = "fa-brands fa-linkedin fa-2x"
 weight = 6
-url = "https://www.linkedin.com/tungkieu"
+url = "https://www.linkedin.com/in/tungkieu/"
 
 
 
