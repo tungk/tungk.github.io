@@ -42,14 +42,27 @@ draft = false
 - Nhat Chung (shared with Prof. Ngan Le at FPT AI Center).
 - Tuan-Binh Tran (at VinUniversity).
 - Kien Le (at VinUniversity).
+- Hong-Phuc Phan (at FPT University)
+- Tuan-Anh Vu (at FPT University)
+- Thong X. Truong (Hanoi University of Science and Technology)
 
 # Bachelor Students
 - Philip Shaffer-Lassen.
 - Magnus Emil Wichmann.
 - Jakob Rossander Kristensen.
 - August Høivang Grane.
+- Thor Christian Koustrup-Müller.
+- Daniel Brenet.
 - Khanh-Toan Nguyen (at University of Science - Vietnam National Univeristy).
 - Duc Kieu (at University of Science - Vietnam National Univeristy).
+- Hung D. Nguyen and Quyen Y. T. Dang (at University of Science - Vietnam National Univeristy).
+- Phat P. Le and Vu N. Dang (at University of Science - Vietnam National Univeristy).
+- Thu T. Ta and Van D. Mai (at University of Science - Vietnam National Univeristy).
+- Hieu M. Do and Tuong C. V. Nguyen (at University of Science - Vietnam National Univeristy).
+- Hoang V. Dao (at University of Science - Vietnam National Univeristy).
+- Khoi A. Nguyen (at University of Science - Vietnam National Univeristy).
+- Huong Dang (at International University - Vietnam National Univeristy).
+- Hoang Nguyen (at International University - Vietnam National Univeristy).
 
 ## Master Students
 - David Campos (co-supervised with Prof. Bin Yang).

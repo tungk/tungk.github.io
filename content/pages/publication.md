@@ -4,6 +4,8 @@ draft = false
 +++
 
 ## Selected Publication
+- Kien Le Trung, **Tung Kieu**, Dinh Duc Nha Nguyen, Cuong Do, Bin Yang, Phi Long Nguyen. _AeroChem: Closed-loop Physics-Informed State Space Modeling for Long-term Chemically-Reactive Air Quality Forecasting_. Proceedings of the Annual Conference on Neural Information Processing Systems (***NEURIPS*), 2026, [**CORE A***].
+- Jicheng Yuan, **Tung Kieu**, Duc Manh Nguyen, Manfred Hauswirth, Danh Le-Phuoc. _Contrastive Hypergraph Source-free Domain Adaptive Object Detection in Adverse Weathers_. Proceedings of the Annual Conference on Neural Information Processing Systems (***NEURIPS*), 2026, [**CORE A***].
 - Sean Bin Yang, Ying Sun, Zongyi Xu, **Tung Kieu**, Jilin Hu, Bin Yang, Kristian Torp, Hua Lu, and Torben Bach Pedersen. _When Correlations Mislead: Confounder-Aware Multi-View Urban Region Representation Learning_. Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2027, [**CORE A***].
 - Zhe Li, Tengxue Zhang, Yang Shu, **Tung Kieu**, Lunting Fan, Yingying Zhang, and Bin Yang. _BEACON: Bridging Multi-Modal Semantics and Asynchronous Propagation for Cloud System Anomaly Detection_. Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2027, [**CORE A***].
 - Trung Duc Anh Dang, **Tung Kieu**, and Sarah Masud. _Scenario-based Probing and Steering Cultural Values in Large Language Models_. Proceedings of the International Conference on Empirical Methods in Natural Language Processing (**EMNLP**), 2026, [**CORE A***].
@@ -38,6 +40,8 @@ draft = false
 
 
 ## Preprint
+- Kien Le Trung, **Tung Kieu**, Dinh Duc Nha Nguyen, Cuong Do, Bin Yang, Phi Long Nguyen. _AeroChem: Closed-loop Physics-Informed State Space Modeling for Long-term Chemically-Reactive Air Quality Forecasting--Extended Version_.
+- Jicheng Yuan, **Tung Kieu**, Duc Manh Nguyen, Manfred Hauswirth, Danh Le-Phuoc. _Contrastive Hypergraph Source-free Domain Adaptive Object Detection in Adverse Weathers--Extended Version_.
 - Sean Bin Yang, Ying Sun, Zongyi Xu, **Tung Kieu**, Jilin Hu, Bin Yang, Kristian Torp, Hua Lu, and Torben Bach Pedersen. _When Correlations Mislead: Confounder-Aware Multi-View Urban Region Representation Learning--Extended Version_.
 - Zhe Li, Tengxue Zhang, Yang Shu, **Tung Kieu**, Lunting Fan, Yingying Zhang, and Bin Yang. _BEACON: Bridging Multi-Modal Semantics and Asynchronous Propagation for Cloud System Anomaly Detection--Extended Version_.
 - Tuan-Binh Tran, Thanh Tam Nguyen, Quoc Viet Hung Nguyen, Dung D. Le, **Tung Kieu**, and Thanh Trung Huynh. _EPIC: Explicit Posterior Item Conditioning for Semantic ID Diffusion Recommendation--Extended Version_.
