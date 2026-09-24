@@ -78,4 +78,9 @@ draft = false
 
 ## Ph.D. Students
 - David Campos (co-supervised with Prof. Bin Yang).
-- Jichen Yuan (co-supervised with Prof. Danh Le Phuoc).
+- Jichen Yuan (at Technical University Berlin, co-supervised with Prof. Danh Le Phuoc).
+- Hai Nguyen (co-supervised with Prof. Christian S. Jensen and Prof. Tianyi Li).
+- Rifqi Juli Indrayanto (co-supervised with Prof. Sokol Kosta and Prof. Mustafa Özger).
+
+## Postdocs
+- Duc Kieu (co-supervised with Prof. Christian S. Jensen and Prof. Tianyi Li).
