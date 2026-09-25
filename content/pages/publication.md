@@ -4,164 +4,160 @@ draft = false
 +++
 
 ## Selected Publication
-- Kien Le Trung, **Tung Kieu**, Dinh Duc Nha Nguyen, Cuong Do, Bin Yang, Phi Long Nguyen. <br>_AeroChem: Closed-loop Physics-Informed State Space Modeling for Long-term Chemically-Reactive Air Quality Forecasting_. 
-<br>Proceedings of the Annual Conference on Neural Information Processing Systems (**NEURIPS**), 2026, [**CORE A***].
-
-- Jicheng Yuan, **Tung Kieu**, Duc Manh Nguyen, Manfred Hauswirth, Danh Le-Phuoc. 
-<br>_Contrastive Hypergraph Source-free Domain Adaptive Object Detection in Adverse Weathers_. 
-<br>Proceedings of the Annual Conference on Neural Information Processing Systems (**NEURIPS**), 2026, [**CORE A***].
-
+- Kien Le Trung, **Tung Kieu**, Dinh Duc Nha Nguyen, Cuong Do, Bin Yang, and Phi Long Nguyen. 
+_AeroChem: Closed-loop Physics-Informed State Space Modeling for Long-term Chemically-Reactive Air Quality Forecasting_. 
+Proceedings of the Annual Conference on Neural Information Processing Systems (**NEURIPS**), 2026, [**CORE A***].
+- Jicheng Yuan, **Tung Kieu**, Duc Manh Nguyen, Manfred Hauswirth, and Danh Le-Phuoc. 
+_Contrastive Hypergraph Source-free Domain Adaptive Object Detection in Adverse Weathers_. 
+Proceedings of the Annual Conference on Neural Information Processing Systems (**NEURIPS**), 2026, [**CORE A***].
 - Sean Bin Yang, Ying Sun, Zongyi Xu, **Tung Kieu**, Jilin Hu, Bin Yang, Kristian Torp, Hua Lu, and Torben Bach Pedersen. 
-<br>_When Correlations Mislead: Confounder-Aware Multi-View Urban Region Representation Learning_. 
-<br>Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2027, [**CORE A***].
-
+_When Correlations Mislead: Confounder-Aware Multi-View Urban Region Representation Learning_. 
+Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2027, [**CORE A***].
 - Zhe Li, Tengxue Zhang, Yang Shu, **Tung Kieu**, Lunting Fan, Yingying Zhang, and Bin Yang. 
-<br>_BEACON: Bridging Multi-Modal Semantics and Asynchronous Propagation for Cloud System Anomaly Detection_. 
-<br>Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2027, [**CORE A***].
-
+_BEACON: Bridging Multi-Modal Semantics and Asynchronous Propagation for Cloud System Anomaly Detection_. 
+Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2027, [**CORE A***].
 - Trung Duc Anh Dang, **Tung Kieu**, and Sarah Masud. 
-<br>_Scenario-based Probing and Steering Cultural Values in Large Language Models_. 
-<br>Proceedings of the International Conference on Empirical Methods in Natural Language Processing (**EMNLP**), 2026, [**CORE A***].
-
+_Scenario-based Probing and Steering Cultural Values in Large Language Models_. 
+Proceedings of the International Conference on Empirical Methods in Natural Language Processing (**EMNLP**), 2026, [**CORE A***].
 - Tuan-Binh Tran, Dat Nguyen Cong, Duc-Trong Le, Thanh Trung Huynh, and **Tung Kieu**. 
-<br>_SCENARIODIFF: A Scenario-level Guidance Framework for Multimodal Time Series Forecasting_. 
-<br>Proceedings of the IEEE International Conference on Data Mining (**ICDM**), 2026, [**CORE A***].
-
+_SCENARIODIFF: A Scenario-level Guidance Framework for Multimodal Time Series Forecasting_. 
+Proceedings of the IEEE International Conference on Data Mining (**ICDM**), 2026, [**CORE A***].
 - David Campos, Bin Yang, **Tung Kieu**, Lei Chen, Chenjuan Guo, and Christian S. Jensen. 
-<br>_TimeBlocks: Versatile and Continual Time-Series Blockbase_. 
-<br>Proceedings of the ACM SIGKDD Conference on Knowledge Discovery and Data Mining (**KDD**), 2026, [**CORE A***].
-
+_TimeBlocks: Versatile and Continual Time-Series Blockbase_. 
+Proceedings of the ACM SIGKDD Conference on Knowledge Discovery and Data Mining (**KDD**), 2026, [**CORE A***].
 - Phuc Hong Phan, Anh Vu Tuan, **Tung Kieu**, Son Ha Xuan, Bin Yang, and Christian S. Jensen. 
-<br>_Automatic Unsupervised Ensemble Outlier Model Selection_. 
-<br>Proceedings of the International Conference on Machine Learning (**ICML**), 2026, [**CORE A***].
-
+_Automatic Unsupervised Ensemble Outlier Model Selection_. 
+Proceedings of the International Conference on Machine Learning (**ICML**), 2026, [**CORE A***].
 - Dat Nguyen Cong, **Tung Kieu**, and Hoang Thanh-Tung. 
-<br>_FastDiSS: Few-step Match Many-step Diffusion Language Model on Sequence-to-Sequence Generation_. 
-<br>Proceedings of the Annual Meeting of the Association for Computational Linguistics (**ACL**), 2026, [**CORE A***].
-
+_FastDiSS: Few-step Match Many-step Diffusion Language Model on Sequence-to-Sequence Generation_. 
+Proceedings of the Annual Meeting of the Association for Computational Linguistics (**ACL**), 2026, [**CORE A***].
 - Duc Kieu, Kien Do, Tuan Hoang, Thao Minh Le, **Tung Kieu**, Dang Nguyen, and Thin Nguyen. 
-<br>_Universal Multi-Domain Translation via Diffusion Routers_. 
-<br>Proceedings of the International Conference on Learning Representations (**ICLR**), 2026, [**CORE A***].
-
+_Universal Multi-Domain Translation via Diffusion Routers_. 
+Proceedings of the International Conference on Learning Representations (**ICLR**), 2026, [**CORE A***].
 - Taisei Hanyu, Nhat Chung, Huy Le, Toan Nguyen, Yuki Ikebe, Anthony Gunderman, Duy Nguyen Ho Minh, Khoa Vo, **Tung Kieu**, Kashu Yamazaki, Chase Rainwater, Anh Nguyen, and Ngan Le. 
-<br>_SlotVLA: Towards Modeling of Object-Relation Representations in Robotic Manipulation_. 
-<br>Proceedings of the IEEE International Conference on Robotics and Automation (**ICRA**), 2026, [**CORE A***].
-
+_SlotVLA: Towards Modeling of Object-Relation Representations in Robotic Manipulation_. 
+Proceedings of the IEEE International Conference on Robotics and Automation (**ICRA**), 2026, [**CORE A***].
 - Huy Le, Nhat Chung, **Tung Kieu**, Jingkang Yang, and Ngan Le. 
-<br>_UNO: Unifying One-stage Video Scene Graph Generation via Object-Centric Visual Representation Learning_. 
-<br>Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (**WACV**), 2026, [**CORE A**].
-
+_UNO: Unifying One-stage Video Scene Graph Generation via Object-Centric Visual Representation Learning_. 
+Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (**WACV**), 2026, [**CORE A**].
 - Nhat Chung, Taisei Hanyu, Toan Nguyen, Huy Le, Frederick Bumgarner, Duy Minh Ho Nguyen, Khoa Vo, Kashu Yamazaki, Chase Rainwater, **Tung Kieu**, Anh Nguyen, and Ngan Le. 
-<br>_Rethinking Progression of Memory State in Robotic Manipulation: An Object-Centric Perspective_. 
-<br>Proceedings of the Annual AAAI Conference on Artificial Intelligence (**AAAI**), 2026, [**CORE A***].
-
+_Rethinking Progression of Memory State in Robotic Manipulation: An Object-Centric Perspective_. 
+Proceedings of the Annual AAAI Conference on Artificial Intelligence (**AAAI**), 2026, [**CORE A***].
 - Buang Zhang, **Tung Kieu**, Xiangfei Qiu, Chenjuan Guo, Jilin Hu, Aoying Zhou, Christian S. Jensen, and Bin Yang. 
-<br>_An Encode-then-Decompose Approach to Unsupervised Time Series Anomaly Detection on Contaminated Training Data_. 
-<br>Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2026, [**CORE A***].
-
+_An Encode-then-Decompose Approach to Unsupervised Time Series Anomaly Detection on Contaminated Training Data_. 
+Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2026, [**CORE A***].
 - Nghiem Thanh Pham, **Tung Kieu**, Duc-Manh Nguyen, Son Ha Xuan, Nghia Duong-Trung, and Danh Le-Phuoc. 
-<br>_SLM-Bench: A Comprehensive Benchmark of Small Language Models on Environmental Impact_. 
-<br>Proceedings of the International Conference on Empirical Methods in Natural Language Processing (**EMNLP**), 2025, [**CORE A***].
-
+_SLM-Bench: A Comprehensive Benchmark of Small Language Models on Environmental Impact_. 
+Proceedings of the International Conference on Empirical Methods in Natural Language Processing (**EMNLP**), 2025, [**CORE A***].
 - Huy Le, Nhat Chung, **Tung Kieu**, Anh Nguyen, and Ngan Le. 
-<br>_BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance_. 
-<br>Proceedings of the ACM International Conference on Multimedia (**MM**), 2025, [**CORE A***].
-
+_BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance_. 
+Proceedings of the ACM International Conference on Multimedia (**MM**), 2025, [**CORE A***].
 - Duc Kieu, **Tung Kieu**, Peng Han, Bin Yang, Christian S. Jensen, and Bac Le. 
-<br>_TEAM: Topological Evolution-aware Framework for Traffic Forecasting_. 
-<br>Proceedings of the International Conference on Very Large Data Bases (**VLDB**), 2025, [**CORE A***].
-
+_TEAM: Topological Evolution-aware Framework for Traffic Forecasting_. 
+Proceedings of the International Conference on Very Large Data Bases (**VLDB**), 2025, [**CORE A***].
 - David Campos, Bin Yang, **Tung Kieu**, Miao Zhang, Chenjuan Guo, and Christian S. Jensen. 
-<br>_QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models_. 
-<br>Proceedings of the International Conference on Very Large Data Bases (**VLDB**), 2024, [**CORE A***].
-
+_QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models_. 
+Proceedings of the International Conference on Very Large Data Bases (**VLDB**), 2024, [**CORE A***].
 - Chenjuan Guo, Ronghui Xu, Yuan Ye, Bin Yang, **Tung Kieu**, Yan Zhao, and Christian S. Jensen. 
-<br>_Efficient Stochastic Routing in Path-Centric Uncertain Road Networks_. 
-<br>Proceedings of the International Conference on Very Large Data Bases (**VLDB**), 2024, [**CORE A***].
-
+_Efficient Stochastic Routing in Path-Centric Uncertain Road Networks_. 
+Proceedings of the International Conference on Very Large Data Bases (**VLDB**), 2024, [**CORE A***].
 - Huy Le, **Tung Kieu**, Anh Nguyen, and Ngan Le. 
-<br>_WAVER: Writing-style Agnostic Video Retrieval via Distilling Vision-Language Models Through Open-Vocabulary Knowledge_. 
-<br>Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing (**ICASSP**), 2024, [**CORE A**].
-
+_WAVER: Writing-style Agnostic Video Retrieval via Distilling Vision-Language Models Through Open-Vocabulary Knowledge_. 
+Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing (**ICASSP**), 2024, [**CORE A**].
 - David Campos, Miao Zhang, Bin Yang, **Tung Kieu**, Chenjuan Guo, and Christian S. Jensen. 
-<br>_LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation_. 
-<br>Proceedings of the ACM SIGMOD International Conference on Management of Data (**SIGMOD**), 2023, [**CORE A***].
-
+_LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation_. 
+Proceedings of the ACM SIGMOD International Conference on Management of Data (**SIGMOD**), 2023, [**CORE A***].
 - Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Xuanyi Dong, Shirui Pan, and Bin Yang. 
-<br>_Triformer: Triangular, Variable-Specific Attention for Long Sequence Multivariate Time Series Forecasting_. 
-<br>Proceedings of the International Joint Conference on Artificial Intelligence (**IJCAI**), 2022, [**CORE A***].
-
+_Triformer: Triangular, Variable-Specific Attention for Long Sequence Multivariate Time Series Forecasting_. 
+Proceedings of the International Joint Conference on Artificial Intelligence (**IJCAI**), 2022, [**CORE A***].
 - Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Shirui Pan, and Bin Yang. 
-<br>_Towards Spatio-Temporal Aware Traffic Time Series Forecasting_. 
-<br>Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2022, [**CORE A***].
-
+_Towards Spatio-Temporal Aware Traffic Time Series Forecasting_. 
+Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2022, [**CORE A***].
 - **Tung Kieu**, Bin Yang, Chenjuan Guo, Christian S. Jensen, Yan Zhao, Feiteng Huang, and Kai Zheng. 
-<br>_Robust and Explainable Autoencoders for Time Series Outlier Detection_. 
-<br>Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2022, [**CORE A***].
-
+_Robust and Explainable Autoencoders for Time Series Outlier Detection_. 
+Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2022, [**CORE A***].
 - **Tung Kieu**, Bin Yang, Chenjuan Guo, Razvan-Gabriel Cirstea, Yan Zhao, Yale Song, and Christian S. Jensen. 
-<br>_Anomaly Detection in Time Series with Robust Variational Quasi-Recurrent Autoencoders_. 
-<br>Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2022, [**CORE A***].
-
+_Anomaly Detection in Time Series with Robust Variational Quasi-Recurrent Autoencoders_. 
+Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2022, [**CORE A***].
 - Yan Zhao, Xuanhao Chen, Liwei Deng, **Tung Kieu**, Chenjuan Guo, Bin Yang, Kai Zheng, and Christian S. Jensen. 
-<br>_Outlier Detection for Streaming Task Assignment in Crowdsourcing_. 
-<br>Proceedings of the ACM The Web Conference (**WWW**), 2022, [**CORE A***].
-
+_Outlier Detection for Streaming Task Assignment in Crowdsourcing_. 
+Proceedings of the ACM The Web Conference (**WWW**), 2022, [**CORE A***].
 - David Campos, **Tung Kieu**, Chenjuan Guo, Feiteng Huang, Kai Zheng, Bin Yang, and Christian S. Jensen. 
-<br>_Unsupervised Time Series Outlier Detection with Diversity-Driven Convolutional Ensembles_. 
-<br>Proceedings of the International Conference on Very Large Data Bases (**VLDB**), 2022, [**CORE A***].
-
+_Unsupervised Time Series Outlier Detection with Diversity-Driven Convolutional Ensembles_. 
+Proceedings of the International Conference on Very Large Data Bases (**VLDB**), 2022, [**CORE A***].
 - Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Bin Yang, and Sinno Jialin Pan. 
-<br>_EnhanceNet: Plugin Neural Networks for Enhancing Correlated Time Series Forecasting_. 
-<br>Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2021, [**CORE A***].
-
+_EnhanceNet: Plugin Neural Networks for Enhancing Correlated Time Series Forecasting_. 
+Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2021, [**CORE A***].
 - **Tung Kieu**, Bin Yang, Chenjuan Guo, and Christian S. Jensen. 
-<br>_Outlier Detection for Time Series with Recurrent Autoencoder Ensembles_. 
-<br>Proceedings of the International Joint Conference on Artificial Intelligence (**IJCAI**), 2019, [**CORE A***].
-
+_Outlier Detection for Time Series with Recurrent Autoencoder Ensembles_. 
+Proceedings of the International Joint Conference on Artificial Intelligence (**IJCAI**), 2019, [**CORE A***].
 - **Tung Kieu**, Bin Yang, Chenjuan Guo, and Christian S. Jensen. 
-<br>_Distinguishing Trajectories from Different Drivers using Incompletely Labeled Trajectories_. 
-<br>Proceedings of the ACM International Conference on Information and Knowledge Management (**CIKM**), 2018, [**CORE A**].
-
+_Distinguishing Trajectories from Different Drivers using Incompletely Labeled Trajectories_. 
+Proceedings of the ACM International Conference on Information and Knowledge Management (**CIKM**), 2018, [**CORE A**].
 - **Tung Kieu**, Bin Yang, and Christian S. Jensen. 
-<br>_Outlier Detection for Multidimensional Time Series Using Deep Neural Networks_. 
-<br>Proceedings of the IEEE International Conference on Mobile Data Management (**MDM**), 2018, [**CORE B**].
-
+_Outlier Detection for Multidimensional Time Series Using Deep Neural Networks_. 
+Proceedings of the IEEE International Conference on Mobile Data Management (**MDM**), 2018, [**CORE B**].
 - Toan Nguyen, Duc Kieu, Bao Duong, **Tung Kieu**, Kien Do, Thin Nguyen, and Bac Le. 
-<br>_Class-incremental Learning with Causal Relational Replay_. 
-<br>**Expert Syst. Appl.**, 250, 2024.
-
+_Class-incremental Learning with Causal Relational Replay_. 
+**Expert Syst. Appl.**, 250, 2024.
 - **Tung Kieu**, Bay Vo, Tuong Le, Zhi-Hong Deng, and Bac Le. 
-<br>_Mining Top-k Co-occurrence Items with Sequential Pattern_. 
-<br>**Expert Syst. Appl.**, 85, 2017.
+_Mining Top-k Co-occurrence Items with Sequential Pattern_. 
+**Expert Syst. Appl.**, 85, 2017.
 
 
 ## Preprint
-- Kien Le Trung, **Tung Kieu**, Dinh Duc Nha Nguyen, Cuong Do, Bin Yang, Phi Long Nguyen. _AeroChem: Closed-loop Physics-Informed State Space Modeling for Long-term Chemically-Reactive Air Quality Forecasting--Extended Version_.
-- Jicheng Yuan, **Tung Kieu**, Duc Manh Nguyen, Manfred Hauswirth, Danh Le-Phuoc. _Contrastive Hypergraph Source-free Domain Adaptive Object Detection in Adverse Weathers--Extended Version_.
-- Sean Bin Yang, Ying Sun, Zongyi Xu, **Tung Kieu**, Jilin Hu, Bin Yang, Kristian Torp, Hua Lu, and Torben Bach Pedersen. _When Correlations Mislead: Confounder-Aware Multi-View Urban Region Representation Learning--Extended Version_.
-- Zhe Li, Tengxue Zhang, Yang Shu, **Tung Kieu**, Lunting Fan, Yingying Zhang, and Bin Yang. _BEACON: Bridging Multi-Modal Semantics and Asynchronous Propagation for Cloud System Anomaly Detection--Extended Version_.
-- Tuan-Binh Tran, Thanh Tam Nguyen, Quoc Viet Hung Nguyen, Dung D. Le, **Tung Kieu**, and Thanh Trung Huynh. _EPIC: Explicit Posterior Item Conditioning for Semantic ID Diffusion Recommendation--Extended Version_.
-- Tuan-Binh Tran, Dat Nguyen Cong, Duc-Trong Le, Thanh Trung Huynh, and **Tung Kieu**. _SCENARIODIFF: A Scenario-level Guidance Framework for Multimodal Time Series Forecasting--Extended Version_.
-- Xuan-Thong Truong, Trung-Kien Le, **Tung Kieu**, Thi-Thu Nguyen, Nhat-Hai Nguyen. _ALER-TI: Aligned Latent Embedding Retrieval for Time Series Imputation--Extended Version_.
-- Trung Duc Anh Dang, **Tung Kieu**, and Sarah Masud. _Scenario-based Probing and Steering Cultural Values in Large Language Models--Extended Version_.
-- David Campos, Bin Yang, **Tung Kieu**, Lei Chen, Chenjuan Guo, and Christian S. Jensen. _TimeBlocks: Versatile and Continual Time-Series Blockbase--Extended Version_.
-- Phuc Hong Phan, Anh Vu Tuan, **Tung Kieu**, Son Ha Xuan, Bin Yang, and Christian S. Jensen. _Automatic Unsupervised Ensemble Outlier Model Selection--Extended Version_.
-- Dat Nguyen Cong, **Tung Kieu**, and Hoang Thanh-Tung. _FastDiSS: Few-step Match Many-step Diffusion Language Model on Sequence-to-Sequence Generation--Extended Version_.
-- Taisei Hanyu, Nhat Chung, Huy Le, Toan Nguyen, Yuki Ikebe, Anthony Gunderman, Duy Nguyen Ho Minh, Khoa Vo, **Tung Kieu**, Kashu Yamazaki, Chase Rainwater, Anh Nguyen, and Ngan Le. _SlotVLA: Towards Modeling of Object-Relation Representations in Robotic Manipulation--Extended Version_.
-- Nhat Chung, Taisei Hanyu, Toan Nguyen, Huy Le, Frederick Bumgarner, Duy Minh Ho Nguyen, Khoa Vo, Kashu Yamazaki, Chase Rainwater, **Tung Kieu**, Anh Nguyen, and Ngan Le. _Rethinking Progression of Memory State in Robotic Manipulation: An Object-Centric Perspective--Extended Version_.
-- Buang Zhang, **Tung Kieu**, Xiangfei Qiu, Chenjuan Guo, Jilin Hu, Aoying Zhou, Christian S. Jensen, and Bin Yang. _An Encode-then-Decompose Approach to Unsupervised Time Series Anomaly Detection on Contaminated Training Data--Extended Version_.
-- Duc Kieu, Kien Do, Tuan Hoang, Thao Minh Le, **Tung Kieu**, Dang Nguyen, and Thin Nguyen. _Universal Multi-Domain Translation via Diffusion Routers--Extended Version_.
-- Huy Le, Nhat Chung, **Tung Kieu**, Jingkang Yang, and Ngan Le. _UNO: Unifying One-stage Video Scene Graph Generation via Object-Centric Visual Representation Learning--Extended Version_.
-- Nghiem Thanh Pham, **Tung Kieu**, Duc-Manh Nguyen, Son Ha Xuan, Nghia Duong-Trung, and Danh Le-Phuoc. _SLM-Bench: A Comprehensive Benchmark of Small Language Models on Environmental Impact--Extended Version_.
-- Huy Le, Nhat Chung, **Tung Kieu**, Anh Nguyen, and Ngan Le. _BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance--Extended Version_.
-- Duc Kieu, **Tung Kieu**, Peng Han, Bin Yang, Christian S. Jensen, and Bac Le. _TEAM: Topological Evolution-aware Framework for Traffic Forecasting--Extended Version_.
-- Chenjuan Guo, Ronghui Xu, Bin Yang, Ye Yuan, **Tung Kieu**, Yan Zhao, and Christian S. Jensen. _Efficient Stochastic Routing in Path-Centric Uncertain Road Networks--Extended Version_.
-- David Campos, Bin Yang, **Tung Kieu**, Miao Zhang, Chenjuan Guo, and Christian S. Jensen. _QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models--Extended Version_.
-- Huy Le, **Tung Kieu**, Anh Nguyen, and Ngan Le. _WAVER: Writing-style Agnostic Video Retrieval via Distilling Vision-Language Models Through Open-Vocabulary Knowledge--Extended Version_.
-- David Campos, Miao Zhang, Bin Yang, **Tung Kieu**, Chenjuan Guo, and Christian S. Jensen. _LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation--Extended Version_.
+- Kien Le Trung, **Tung Kieu**, Dinh Duc Nha Nguyen, Cuong Do, Bin Yang, and Phi Long Nguyen. 
+_AeroChem: Closed-loop Physics-Informed State Space Modeling for Long-term Chemically-Reactive Air Quality Forecasting--Extended Version_.
+- Jicheng Yuan, **Tung Kieu**, Duc Manh Nguyen, Manfred Hauswirth, and Danh Le-Phuoc. 
+_Contrastive Hypergraph Source-free Domain Adaptive Object Detection in Adverse Weathers--Extended Version_.
+- Sean Bin Yang, Ying Sun, Zongyi Xu, **Tung Kieu**, Jilin Hu, Bin Yang, Kristian Torp, Hua Lu, and Torben Bach Pedersen. 
+_When Correlations Mislead: Confounder-Aware Multi-View Urban Region Representation Learning--Extended Version_.
+- Zhe Li, Tengxue Zhang, Yang Shu, **Tung Kieu**, Lunting Fan, Yingying Zhang, and Bin Yang. 
+_BEACON: Bridging Multi-Modal Semantics and Asynchronous Propagation for Cloud System Anomaly Detection--Extended Version_.
+- Tuan-Binh Tran, Thanh Tam Nguyen, Quoc Viet Hung Nguyen, Dung D. Le, **Tung Kieu**, and Thanh Trung Huynh. 
+_EPIC: Explicit Posterior Item Conditioning for Semantic ID Diffusion Recommendation--Extended Version_.
+- Tuan-Binh Tran, Dat Nguyen Cong, Duc-Trong Le, Thanh Trung Huynh, and **Tung Kieu**. 
+_SCENARIODIFF: A Scenario-level Guidance Framework for Multimodal Time Series Forecasting--Extended Version_.
+- Xuan-Thong Truong, Trung-Kien Le, **Tung Kieu**, Thi-Thu Nguyen, Nhat-Hai Nguyen. 
+_ALER-TI: Aligned Latent Embedding Retrieval for Time Series Imputation--Extended Version_.
+- Trung Duc Anh Dang, **Tung Kieu**, and Sarah Masud. 
+_Scenario-based Probing and Steering Cultural Values in Large Language Models--Extended Version_.
+- David Campos, Bin Yang, **Tung Kieu**, Lei Chen, Chenjuan Guo, and Christian S. Jensen. 
+_TimeBlocks: Versatile and Continual Time-Series Blockbase--Extended Version_.
+- Phuc Hong Phan, Anh Vu Tuan, **Tung Kieu**, Son Ha Xuan, Bin Yang, and Christian S. Jensen. 
+_Automatic Unsupervised Ensemble Outlier Model Selection--Extended Version_.
+- Dat Nguyen Cong, **Tung Kieu**, and Hoang Thanh-Tung. 
+_FastDiSS: Few-step Match Many-step Diffusion Language Model on Sequence-to-Sequence Generation--Extended Version_.
+- Taisei Hanyu, Nhat Chung, Huy Le, Toan Nguyen, Yuki Ikebe, Anthony Gunderman, Duy Nguyen Ho Minh, Khoa Vo, **Tung Kieu**, Kashu Yamazaki, Chase Rainwater, Anh Nguyen, and Ngan Le. 
+_SlotVLA: Towards Modeling of Object-Relation Representations in Robotic Manipulation--Extended Version_.
+- Nhat Chung, Taisei Hanyu, Toan Nguyen, Huy Le, Frederick Bumgarner, Duy Minh Ho Nguyen, Khoa Vo, Kashu Yamazaki, Chase Rainwater, **Tung Kieu**, Anh Nguyen, and Ngan Le. 
+_Rethinking Progression of Memory State in Robotic Manipulation: An Object-Centric Perspective--Extended Version_.
+- Buang Zhang, **Tung Kieu**, Xiangfei Qiu, Chenjuan Guo, Jilin Hu, Aoying Zhou, Christian S. Jensen, and Bin Yang. 
+_An Encode-then-Decompose Approach to Unsupervised Time Series Anomaly Detection on Contaminated Training Data--Extended Version_.
+- Duc Kieu, Kien Do, Tuan Hoang, Thao Minh Le, **Tung Kieu**, Dang Nguyen, and Thin Nguyen. 
+_Universal Multi-Domain Translation via Diffusion Routers--Extended Version_.
+- Huy Le, Nhat Chung, **Tung Kieu**, Jingkang Yang, and Ngan Le. 
+_UNO: Unifying One-stage Video Scene Graph Generation via Object-Centric Visual Representation Learning--Extended Version_.
+- Nghiem Thanh Pham, **Tung Kieu**, Duc-Manh Nguyen, Son Ha Xuan, Nghia Duong-Trung, and Danh Le-Phuoc. 
+_SLM-Bench: A Comprehensive Benchmark of Small Language Models on Environmental Impact--Extended Version_.
+- Huy Le, Nhat Chung, **Tung Kieu**, Anh Nguyen, and Ngan Le. 
+_BiMa: Towards Biases Mitigation for Text-Video Retrieval via Scene Element Guidance--Extended Version_.
+- Duc Kieu, **Tung Kieu**, Peng Han, Bin Yang, Christian S. Jensen, and Bac Le. 
+_TEAM: Topological Evolution-aware Framework for Traffic Forecasting--Extended Version_.
+- Chenjuan Guo, Ronghui Xu, Bin Yang, Ye Yuan, **Tung Kieu**, Yan Zhao, and Christian S. Jensen. 
+_Efficient Stochastic Routing in Path-Centric Uncertain Road Networks--Extended Version_.
+- David Campos, Bin Yang, **Tung Kieu**, Miao Zhang, Chenjuan Guo, and Christian S. Jensen. 
+_QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models--Extended Version_.
+- Huy Le, **Tung Kieu**, Anh Nguyen, and Ngan Le. 
+_WAVER: Writing-style Agnostic Video Retrieval via Distilling Vision-Language Models Through Open-Vocabulary Knowledge--Extended Version_.
+- David Campos, Miao Zhang, Bin Yang, **Tung Kieu**, Chenjuan Guo, and Christian S. Jensen. 
+_LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation--Extended Version_.
 - **Tung Kieu**, Bin Yang, Chenjuan Guo, Christian S. Jensen, Yan Zhao, Feiteng Huang, and Kai Zheng. _Robust and Explainable Autoencoders for Time Series Outlier Detection--Extended Version_.
-- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Xuanyi Dong, Shirui Pan, and Bin Yang. _Triformer: Triangular, Variable-Specific Attentions for Long Sequence Multivariate Time Series Forecasting--Extended Version_.
-- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Shirui Pan, and Bin Yang. _Towards Spatio-Temporal Aware Traffic Time Series Forecasting--Extended Version_.
-- David Campos, **Tung Kieu**, Chenjuan Guo, Feiteng Huang, Kai Zheng, Bin Yang, and Christian S. Jensen. _Unsupervised Time Series Outlier Detection with Diversity-Driven Convolutional Ensembles--Extended Version_.
-- Yan Zhao, Liwei Deng, Xuanhao Chen, Chenjuan Guo, Bin Yang, **Tung Kieu**, Feiteng Huang, Torben Bach Pedersen, Kai Zheng, and Christian S. Jensen. _A Comparative Study on Unsupervised Anomaly Detection for Time Series: Experiments and Analysis--Extended Version_.
+- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Xuanyi Dong, Shirui Pan, and Bin Yang. 
+_Triformer: Triangular, Variable-Specific Attentions for Long Sequence Multivariate Time Series Forecasting--Extended Version_.
+- Razvan-Gabriel Cirstea, **Tung Kieu**, Chenjuan Guo, Shirui Pan, and Bin Yang. 
+_Towards Spatio-Temporal Aware Traffic Time Series Forecasting--Extended Version_.
+- David Campos, **Tung Kieu**, Chenjuan Guo, Feiteng Huang, Kai Zheng, Bin Yang, and Christian S. Jensen. 
+_Unsupervised Time Series Outlier Detection with Diversity-Driven Convolutional Ensembles--Extended Version_.
+- Yan Zhao, Liwei Deng, Xuanhao Chen, Chenjuan Guo, Bin Yang, **Tung Kieu**, Feiteng Huang, Torben Bach Pedersen, Kai Zheng, and Christian S. Jensen. 
+_A Comparative Study on Unsupervised Anomaly Detection for Time Series: Experiments and Analysis--Extended Version_.
