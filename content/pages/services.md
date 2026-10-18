@@ -43,6 +43,7 @@ draft = false
 - IEEE Transactions on Industrial Informatics (TII).
 - Data Mining and Knowledge Discovery (DMKD).
 - Pattern Recognition.
+- Information Sciences
 - Neural Networks.
 - Machine Learning.
 - Expert Systems with Applications.

@@ -106,6 +106,10 @@ _Mining Top-k Co-occurrence Items with Sequential Pattern_.
 
 
 ## Preprint
+- Nam V. Nguyen, Hoang Van Truong, Duy Khuong Nguyen, Quang Pham, Tung Kieu.
+_Agentic4PDM: Host-Governed Evidence Admissibility for Industrial Fault Diagnosis--Extended Version_.
+- Phat T Tran-Truong, Tung Kieu, Xuan-Bach Le, Son X Ha, Duc Kieu, Bin Yang, Christian S Jensen.
+_SemReuse: Certified Reuse of Cached Natural-Language Views for Semantic Operators--Extended Version_.
 - Kien Le Trung, **Tung Kieu**, Dinh Duc Nha Nguyen, Cuong Do, Bin Yang, and Phi Long Nguyen. 
 _AeroChem: Closed-loop Physics-Informed State Space Modeling for Long-term Chemically-Reactive Air Quality Forecasting--Extended Version_.
 - Jicheng Yuan, **Tung Kieu**, Duc Manh Nguyen, Manfred Hauswirth, and Danh Le-Phuoc. 
