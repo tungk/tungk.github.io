@@ -6,10 +6,10 @@ draft = false
 ## Selected Publication
 - Kien Le Trung, **Tung Kieu**, Dinh Duc Nha Nguyen, Cuong Do, Bin Yang, and Phi Long Nguyen. 
 _AeroChem: Closed-loop Physics-Informed State Space Modeling for Long-term Chemically-Reactive Air Quality Forecasting_. 
-Proceedings of the Annual Conference on Neural Information Processing Systems (**NEURIPS**), 2026, [**CORE A***].
+Proceedings of the Advances in Neural Information Processing Systems (**NEURIPS**), 2026, [**CORE A***].
 - Jicheng Yuan, **Tung Kieu**, Duc Manh Nguyen, Manfred Hauswirth, and Danh Le-Phuoc. 
 _Contrastive Hypergraph Source-free Domain Adaptive Object Detection in Adverse Weathers_. 
-Proceedings of the Annual Conference on Neural Information Processing Systems (**NEURIPS**), 2026, [**CORE A***].
+Proceedings of the Advances in Neural Information Processing Systems (**NEURIPS**), 2026, [**CORE A***].
 - Sean Bin Yang, Ying Sun, Zongyi Xu, **Tung Kieu**, Jilin Hu, Bin Yang, Kristian Torp, Hua Lu, and Torben Bach Pedersen. 
 _When Correlations Mislead: Confounder-Aware Multi-View Urban Region Representation Learning_. 
 Proceedings of the IEEE International Conference on Data Engineering (**ICDE**), 2027, [**CORE A***].
@@ -106,9 +106,11 @@ _Mining Top-k Co-occurrence Items with Sequential Pattern_.
 
 
 ## Preprint
-- Nam V. Nguyen, Hoang Van Truong, Duy Khuong Nguyen, Quang Pham, Tung Kieu.
+- Duc Kieu, Kien Do, Minh Khoa Le, **Tung Kieu**, Dang Nguyen, Thin Nguyen
+_Modaliff: A Unified Token Diffusion Model for Any-to-Any Generation--Extended Version_.
+- Nam V. Nguyen, Hoang Van Truong, Duy Khuong Nguyen, Quang Pham, **Tung Kieu**.
 _Agentic4PDM: Host-Governed Evidence Admissibility for Industrial Fault Diagnosis--Extended Version_.
-- Phat T Tran-Truong, Tung Kieu, Xuan-Bach Le, Son X Ha, Duc Kieu, Bin Yang, Christian S Jensen.
+- Phat T Tran-Truong, **Tung Kieu**, Xuan-Bach Le, Son X Ha, Duc Kieu, Bin Yang, Christian S Jensen.
 _SemReuse: Certified Reuse of Cached Natural-Language Views for Semantic Operators--Extended Version_.
 - Kien Le Trung, **Tung Kieu**, Dinh Duc Nha Nguyen, Cuong Do, Bin Yang, and Phi Long Nguyen. 
 _AeroChem: Closed-loop Physics-Informed State Space Modeling for Long-term Chemically-Reactive Air Quality Forecasting--Extended Version_.

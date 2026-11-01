@@ -81,6 +81,7 @@ draft = false
 - Jichen Yuan (at Technical University Berlin, co-supervised with Prof. Danh Le Phuoc).
 - Hai Nguyen (co-supervised with Prof. Christian S. Jensen and Prof. Tianyi Li).
 - Rifqi Juli Indrayanto (co-supervised with Prof. Sokol Kosta and Prof. Mustafa Özger).
+- Linh Nguyen (co-supervised with Dr. Hung Phuoc Truong)
 
 ## Postdocs
 - Duc Kieu (co-supervised with Prof. Christian S. Jensen and Prof. Tianyi Li).
