@@ -4,6 +4,10 @@ draft = false
 +++
 
 ## Selected Publication
+- Xuan-Thong Truong, Trung-Kien Le, **Tung Kieu**, Thi-Thu Nguyen, and Nhat-Hai Nguyen. 
+_ALER-TI: Aligned Latent Embedding Retrieval for Time Series Imputation_. Proceedings of the ACM International Conference on Web Search and Data Mining (**WSDM**), 2027, [**CORE A**].
+- Tuan-Binh Tran, Thanh Tam Nguyen, Quoc Viet Hung Nguyen, Dung D. Le, **Tung Kieu**, and Thanh Trung Huynh. 
+_EPIC: Explicit Posterior Item Conditioning for Semantic ID Diffusion Recommendation_. Proceedings of the ACM International Conference on Web Search and Data Mining (**WSDM**), 2027, [**CORE A**].
 - Kien Le Trung, **Tung Kieu**, Dinh Duc Nha Nguyen, Cuong Do, Bin Yang, and Phi Long Nguyen. 
 _AeroChem: Closed-loop Physics-Informed State Space Modeling for Long-term Chemically-Reactive Air Quality Forecasting_. 
 Proceedings of the Advances in Neural Information Processing Systems (**NEURIPS**), 2026, [**CORE A***].
@@ -106,11 +110,11 @@ _Mining Top-k Co-occurrence Items with Sequential Pattern_.
 
 
 ## Preprint
-- Duc Kieu, Kien Do, Minh Khoa Le, **Tung Kieu**, Dang Nguyen, Thin Nguyen
+- Duc Kieu, Kien Do, Minh Khoa Le, **Tung Kieu**, Dang Nguyen, and Thin Nguyen
 _Modaliff: A Unified Token Diffusion Model for Any-to-Any Generation--Extended Version_.
-- Nam V. Nguyen, Hoang Van Truong, Duy Khuong Nguyen, Quang Pham, **Tung Kieu**.
+- Nam V. Nguyen, Hoang Van Truong, Duy Khuong Nguyen, Quang Pham, and **Tung Kieu**.
 _Agentic4PDM: Host-Governed Evidence Admissibility for Industrial Fault Diagnosis--Extended Version_.
-- Phat T Tran-Truong, **Tung Kieu**, Xuan-Bach Le, Son X Ha, Duc Kieu, Bin Yang, Christian S Jensen.
+- Phat T Tran-Truong, **Tung Kieu**, Xuan-Bach Le, Son X Ha, Duc Kieu, Bin Yang, and Christian S Jensen.
 _SemReuse: Certified Reuse of Cached Natural-Language Views for Semantic Operators--Extended Version_.
 - Kien Le Trung, **Tung Kieu**, Dinh Duc Nha Nguyen, Cuong Do, Bin Yang, and Phi Long Nguyen. 
 _AeroChem: Closed-loop Physics-Informed State Space Modeling for Long-term Chemically-Reactive Air Quality Forecasting--Extended Version_.
@@ -124,7 +128,7 @@ _BEACON: Bridging Multi-Modal Semantics and Asynchronous Propagation for Cloud S
 _EPIC: Explicit Posterior Item Conditioning for Semantic ID Diffusion Recommendation--Extended Version_.
 - Tuan-Binh Tran, Dat Nguyen Cong, Duc-Trong Le, Thanh Trung Huynh, and **Tung Kieu**. 
 _SCENARIODIFF: A Scenario-level Guidance Framework for Multimodal Time Series Forecasting--Extended Version_.
-- Xuan-Thong Truong, Trung-Kien Le, **Tung Kieu**, Thi-Thu Nguyen, Nhat-Hai Nguyen. 
+- Xuan-Thong Truong, Trung-Kien Le, **Tung Kieu**, Thi-Thu Nguyen, and Nhat-Hai Nguyen. 
 _ALER-TI: Aligned Latent Embedding Retrieval for Time Series Imputation--Extended Version_.
 - Trung Duc Anh Dang, **Tung Kieu**, and Sarah Masud. 
 _Scenario-based Probing and Steering Cultural Values in Large Language Models--Extended Version_.
