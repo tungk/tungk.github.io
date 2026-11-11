@@ -22,10 +22,6 @@ I obtained B.Sc. and M.Sc. degrees in Computer Science at the **University of Sc
 
 I also obtained B.Eng. degree in Civil Engineering at the **University of Architecture**, Ho Chi Minh City in April 2013. 
 
-{{< details summary="See the details" >}}
-This is a **bold** word.
-{{< /details >}}
-
 ## Research Interests
 
 *Data management*, *data mining*, and *machine learning*, in particular, on *spatial data*, *temporal data*, *spatio-temporal data*, *time series data*, *graph data*, and *uncertain data*.
