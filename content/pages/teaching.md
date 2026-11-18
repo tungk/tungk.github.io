@@ -16,8 +16,8 @@ draft = false
 - Introduction to Database Systems (at RMIT University).
 - Programming Bootcamp (at RMIT University).
 - Programming Studio (at RMIT University).
-- Data-intensive Sytems.
-- Specilization Course in Database/Data Mining.
+- Data-intensive Systems.
+- Specialization Course in Database/Data Mining.
 - Mobile Data and Location-based Services (shared with Prof. Tiantian Liu).
 
 ## Supervision
@@ -53,16 +53,16 @@ draft = false
 - August Høivang Grane.
 - Thor Christian Koustrup-Müller.
 - Daniel Brenet.
-- Khanh-Toan Nguyen (at University of Science - Vietnam National Univeristy).
-- Duc Kieu (at University of Science - Vietnam National Univeristy).
-- Hung D. Nguyen and Quyen Y. T. Dang (at University of Science - Vietnam National Univeristy).
-- Phat P. Le and Vu N. Dang (at University of Science - Vietnam National Univeristy).
-- Thu T. Ta and Van D. Mai (at University of Science - Vietnam National Univeristy).
-- Hieu M. Do and Tuong C. V. Nguyen (at University of Science - Vietnam National Univeristy).
-- Hoang V. Dao (at University of Science - Vietnam National Univeristy).
-- Khoi A. Nguyen (at University of Science - Vietnam National Univeristy).
-- Huong Dang (at International University - Vietnam National Univeristy).
-- Hoang Nguyen (at International University - Vietnam National Univeristy).
+- Khanh-Toan Nguyen (at University of Science - Vietnam National University).
+- Duc Kieu (at University of Science - Vietnam National University).
+- Hung D. Nguyen and Quyen Y. T. Dang (at University of Science - Vietnam National University).
+- Phat P. Le and Vu N. Dang (at University of Science - Vietnam National University).
+- Thu T. Ta and Van D. Mai (at University of Science - Vietnam National University).
+- Hieu M. Do and Tuong C. V. Nguyen (at University of Science - Vietnam National University).
+- Hoang V. Dao (at University of Science - Vietnam National University).
+- Khoi A. Nguyen (at University of Science - Vietnam National University).
+- Huong Dang (at International University - Vietnam National University).
+- Hoang Nguyen (at International University - Vietnam National University).
 
 ## Master Students
 - David Campos (co-supervised with Prof. Bin Yang).

@@ -29,7 +29,7 @@ author = "Tung Kieu"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Tung Kieu's Personal Website"
 keywords = "blog, researcher, personal"
-info = ["Researcher", "Department of Computer Science, Aalborg University", "Pauca sed Matura"]
+info = ["Associate Professor", "Department of Computer Science, Aalborg University", "Pauca sed Matura"]
 avatarURL = "images/profile.jpg"
 logo="images/logo.gif"
 # gravatar = "tungk@gmail.com"
